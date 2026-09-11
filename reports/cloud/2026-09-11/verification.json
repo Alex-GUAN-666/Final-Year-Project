@@ -1,0 +1,445 @@
+{
+  "verified_date": "2026-09-11",
+  "tested_commit": "cfac02190ff74c00c8facdb81b863b36c5f1981c",
+  "repository": "https://github.com/Alex-GUAN-666/Final-Year-Project",
+  "run_id": 34580694788,
+  "run_url": "https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788",
+  "conclusion": "success",
+  "environment": {
+    "runner": "ubuntu-24.04",
+    "python": "3.12.14"
+  },
+  "evidence_origin": "GitHub Actions REST run/job metadata and JSON reports printed in completed job logs; JSON log blocks are parsed without changing their field values.",
+  "source_integrity": {
+    "source_publication_hashes_passed": 18,
+    "unit_tests_passed": 32,
+    "prepared_train_candidates": 436,
+    "prepared_evaluation_questions": 187,
+    "prepared_regeneration_byte_identical": true,
+    "normalized_question_overlap": 0,
+    "job_id": 103203295162,
+    "log_evidence": [
+      "PASS: 18 source hashes; saved reasoning scores 12/20 and 15/20; 5 overlapping questions.",
+      "PASS: 436 training candidates / 187 evaluation questions reproduce byte for byte; 32 unit tests passed.",
+      "Ran 32 tests in 0.459s",
+      "Prepared files reproduce byte for byte; all three hashes match; question overlap is zero."
+    ]
+  },
+  "tiny_model": {
+    "job_id": 103203295290,
+    "report": {
+      "test": "real_cpu_tiny_random_qwen3_lora_merge_inference",
+      "passed": true,
+      "random_base_parameters": 10352,
+      "training_steps": 2,
+      "training_candidates": 4,
+      "retained_samples": 4,
+      "maximum_logit_change_after_training": 0.09346713125705719,
+      "maximum_adapter_vs_merged_logit_error": 2.9802322387695312e-08,
+      "prediction_rows": 1,
+      "predictions_graded": 0,
+      "benchmark_accuracy": null,
+      "libraries": {
+        "torch": "2.6.0+cpu",
+        "transformers": "4.53.2",
+        "peft": "0.16.0",
+        "accelerate": "1.8.1",
+        "numpy": "2.5.3",
+        "bitsandbytes": null
+      },
+      "original_4b_model_used": false,
+      "generated_python_executed": false,
+      "docker_tested": false
+    }
+  },
+  "docker_integration": {
+    "job_id": 103203295315,
+    "report": {
+      "test": "real_docker_synthetic_execution_scoring_comparison",
+      "passed": true,
+      "docker_image_requested": "fyp-eval:ci",
+      "docker_image_id": "sha256:fe7523373426fa97a41feff1b1d78649677d37648bc73298bd5cc69e127e2827",
+      "passed_checks": [
+        "numeric_final_expression_and_grading",
+        "evaluator_numpy_scipy_sympy_imports",
+        "runtime_error_captured_and_graded",
+        "wall_clock_timeout",
+        "bounded_output_capture",
+        "deferred_scoring_reextracts_code_and_preserves_inputs",
+        "paired_comparison_and_category_totals",
+        "execution_containers_removed"
+      ],
+      "passed_check_count": 8,
+      "programs_are_synthetic": true,
+      "model_used": false,
+      "original_4b_model_used": false,
+      "historical_predictions_used": false,
+      "generated_python_executed_on_host": false,
+      "benchmark_accuracy": null,
+      "scope": "Software integration only; manually specified test responses do not establish model improvement."
+    }
+  },
+  "historical_replay": {
+    "job_id": 103203295315,
+    "exit_status": 0,
+    "response_count": 40,
+    "extractable_program_count": 36,
+    "model_used": false,
+    "responses_regenerated": false,
+    "models": {
+      "base": {
+        "historical_saved": {
+          "correct": 12,
+          "total": 20,
+          "accuracy": 0.6
+        },
+        "replayed": {
+          "correct": 12,
+          "total": 20,
+          "graded": 20,
+          "accuracy": 0.6
+        },
+        "all_rows_graded": true,
+        "all_correctness_flags_match_saved": true,
+        "correctness_disagreement_question_numbers": [],
+        "ungraded_question_numbers": [],
+        "comparable_saved_stdout_mismatch_question_numbers": [],
+        "execution_status_counts": {
+          "ok": 15,
+          "code_error": 2,
+          "no_code": 3
+        }
+      },
+      "merged": {
+        "historical_saved": {
+          "correct": 15,
+          "total": 20,
+          "accuracy": 0.75
+        },
+        "replayed": {
+          "correct": 15,
+          "total": 20,
+          "graded": 20,
+          "accuracy": 0.75
+        },
+        "all_rows_graded": true,
+        "all_correctness_flags_match_saved": true,
+        "correctness_disagreement_question_numbers": [],
+        "ungraded_question_numbers": [],
+        "comparable_saved_stdout_mismatch_question_numbers": [],
+        "execution_status_counts": {
+          "ok": 19,
+          "no_code": 1
+        }
+      }
+    }
+  },
+  "jobs": [
+    {
+      "conclusion": "success",
+      "id": 103203295162,
+      "logs_url": null,
+      "name": "Source integrity and standard-library tests",
+      "run_id": 34580694788,
+      "status": "completed",
+      "steps": [
+        {
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Set up Python",
+          "number": 3,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "One-command independent reviewer check",
+          "number": 4,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify original/public-derivative hashes and parse source files",
+          "number": 5,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Audit source data and reconcile saved results",
+          "number": 6,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Run standard-library unit tests",
+          "number": 7,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Regenerate and verify prepared data",
+          "number": 8,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Save source verification evidence",
+          "number": 9,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Set up Python",
+          "number": 17,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 18,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 19,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 103203295290,
+      "logs_url": null,
+      "name": "Real tiny Qwen3 CPU training, merge and inference",
+      "run_id": 34580694788,
+      "status": "completed",
+      "steps": [
+        {
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Set up Python",
+          "number": 3,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Install pinned CPU model dependencies",
+          "number": 4,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Train, merge, reload and generate using a random tiny Qwen3",
+          "number": 5,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Publish integration evidence in the run summary",
+          "number": 6,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Save tiny model integration evidence",
+          "number": 7,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Set up Python",
+          "number": 13,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 14,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 15,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 103203295315,
+      "logs_url": null,
+      "name": "Real isolated Docker scoring and paired comparison",
+      "run_id": 34580694788,
+      "status": "completed",
+      "steps": [
+        {
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Check out repository",
+          "number": 2,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Set up Python",
+          "number": 3,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Build the evaluation image",
+          "number": 4,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Exercise execution limits, deferred scoring and comparison",
+          "number": 5,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Publish Docker integration evidence in the run summary",
+          "number": 6,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Replay saved historical programs and compare recorded outcomes",
+          "number": 7,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Publish historical replay evidence",
+          "number": 8,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Save Docker and historical replay evidence",
+          "number": 9,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Set up Python",
+          "number": 17,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Check out repository",
+          "number": 18,
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 19,
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "archive_download_url": "https://api.github.com/repos/Alex-GUAN-666/Final-Year-Project/actions/artifacts/10191491887/zip",
+      "created_at": "2026-09-11T08:45:46Z",
+      "digest": "sha256:a212e8ddd5a7fc8a5103bede6c0bdcb778a8c49dec36d3b0eb8541e30e79cead",
+      "expired": false,
+      "expires_at": "2026-12-10T08:44:47Z",
+      "id": 10191491887,
+      "name": "tiny-model-integration",
+      "size_in_bytes": 534,
+      "updated_at": "2026-09-11T08:45:46Z",
+      "url": "https://api.github.com/repos/Alex-GUAN-666/Final-Year-Project/actions/artifacts/10191491887",
+      "workflow_run": {
+        "head_branch": "main",
+        "head_repository_id": 1365511466,
+        "head_sha": "cfac02190ff74c00c8facdb81b863b36c5f1981c",
+        "id": 34580694788,
+        "repository_id": 1365511466
+      }
+    },
+    {
+      "archive_download_url": "https://api.github.com/repos/Alex-GUAN-666/Final-Year-Project/actions/artifacts/10191488155/zip",
+      "created_at": "2026-09-11T08:45:39Z",
+      "digest": "sha256:a07466bed2de9ddb66002c5a7aa5d7cfa9b445e3a695a1fa0f18d0f92a4fa7d0",
+      "expired": false,
+      "expires_at": "2026-12-10T08:44:47Z",
+      "id": 10191488155,
+      "name": "docker-and-historical-replay",
+      "size_in_bytes": 16283,
+      "updated_at": "2026-09-11T08:45:39Z",
+      "url": "https://api.github.com/repos/Alex-GUAN-666/Final-Year-Project/actions/artifacts/10191488155",
+      "workflow_run": {
+        "head_branch": "main",
+        "head_repository_id": 1365511466,
+        "head_sha": "cfac02190ff74c00c8facdb81b863b36c5f1981c",
+        "id": 34580694788,
+        "repository_id": 1365511466
+      }
+    },
+    {
+      "archive_download_url": "https://api.github.com/repos/Alex-GUAN-666/Final-Year-Project/actions/artifacts/10191469484/zip",
+      "created_at": "2026-09-11T08:45:03Z",
+      "digest": "sha256:90399ca765c45d72ef5f5c99654d9435c5826d8b7c7a788c9461f4cd0e23985d",
+      "expired": false,
+      "expires_at": "2026-12-10T08:44:47Z",
+      "id": 10191469484,
+      "name": "source-verification",
+      "size_in_bytes": 29223,
+      "updated_at": "2026-09-11T08:45:03Z",
+      "url": "https://api.github.com/repos/Alex-GUAN-666/Final-Year-Project/actions/artifacts/10191469484",
+      "workflow_run": {
+        "head_branch": "main",
+        "head_repository_id": 1365511466,
+        "head_sha": "cfac02190ff74c00c8facdb81b863b36c5f1981c",
+        "id": 34580694788,
+        "repository_id": 1365511466
+      }
+    }
+  ],
+  "prior_attempts": [
+    "first_run.json",
+    "second_run.json"
+  ],
+  "limitations": [
+    "No full Qwen3-4B training or inference ran in these cloud checks.",
+    "Original fine-tuned model weights remain unavailable.",
+    "Saved-response replay is execution verification, not new model inference.",
+    "Historical reasoning evaluation has 5/20 normalized question overlaps with reconstructed historical training.",
+    "Arithmetic 14/20 to 17/20 remains thesis-reported only.",
+    "The new 187-question split has no new 4B benchmark result.",
+    "The official tokenizer filtering reports were produced earlier locally and are not freshly recomputed by these offline cloud jobs."
+  ]
+}

@@ -1,6 +1,6 @@
 # Reproduction status and experiment boundaries
 
-Updated 2026-09-11 after all five supplemental uploads. This replaces the first-upload status preserved in `v1/`.
+Updated 2026-09-11 after supplemental recovery and successful cloud validation. This replaces the first-upload status preserved in `v1/`. [Verified run](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788) · [Tested commit](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c).
 
 ## Established evidence
 
@@ -34,7 +34,7 @@ Paper statements about 4-bit/QLoRA, batch 64, LR `2e-4`, and `1e-6` evaluation t
 ## Results boundaries
 
 - Arithmetic 14/20 → 17/20 is **paper-reported only**; exact paired predictions and subset IDs are absent.
-- Reasoning 12/20 → 15/20 is supported by saved paired notebook logs. The new result CSVs add base stdout, not new merged predictions. Missing successful merged stdout remains null, never copied from gold answers.
+- Reasoning 12/20 → 15/20 is supported by saved paired notebook logs and a cloud replay matching all 40 individual correctness flags. The result CSVs add base stdout, not new merged predictions. Missing historical merged stdout remains null; newly replayed stdout is recorded separately and never substituted into the original evidence.
 - These are historical +15 percentage-point differences on small samples. In addition, the reasoning comparison has reconstructed train/test overlap, and its metric is numeric code-output accuracy, not proof validity.
 - The default new split has zero normalized question overlap, 372 token-retained training examples and 187 evaluation questions. Its references still have residual quality/provenance limitations. No new 4B accuracy result exists yet.
 
@@ -42,7 +42,11 @@ Paper statements about 4-bit/QLoRA, batch 64, LR `2e-4`, and `1e-6` evaluation t
 
 - Hash verification for all 18 bundled source/public-derivative files, full notebook/data parsing, static data audits and paired historical-result recovery.
 - Exact tokenizer filtering with a downloaded official tokenizer/config snapshot; both historical and new candidate counts were checked. No 4B weights were downloaded for this step.
-- Preparation and meaningful unit tests covering overlap removal, label masking, scoring failure states, provenance and comparison rules.
+- Preparation and 32 passing unit tests covering overlap removal, label masking, scoring failure states, container cleanup, provenance and comparison rules; verified on the cloud runner.
 - Two real optimizer steps on a random tiny Qwen3, LoRA saving, merging, reloading and inference. Adapter and merged logits agreed within numerical tolerance; see `reports/tiny_model_smoke.json`.
+- Cloud repetition of real tiny-Qwen3 CPU training/merge/inference, plus eight real Docker integration checks for execution, failure handling, deferred scoring and paired comparison.
+- Cloud replay of 40 saved historical responses, including 36 extractable programs and four no-code responses. All rows were graded; base 12/20 and merged 15/20 matched every saved correctness flag, with no comparable stdout mismatches and replay exit status 0. Historical inputs were unchanged.
 
-Not executed: full Qwen3-4B training/inference, original merged-model re-evaluation, optional GPU quantization, actual Docker execution. GitHub publication and CI state are tracked separately. Current verification status is recorded in `reports/validation_status.json`. The absence of old weights does not prevent a new run from the recovered data; it prevents exact re-evaluation of the historical checkpoint.
+All three GitHub workflow jobs passed. [Cloud validation](CLOUD_VALIDATION.md) links the tested source, run and [retained verification record](../reports/cloud/2026-09-11/verification.json), and explains the two earlier failed runs and their fixes. The official-tokenizer count checks above were performed locally; the cloud workflow verifies prepared-data reconstruction without downloading that tokenizer.
+
+Not executed: full Qwen3-4B training/inference, original merged-model re-evaluation, GPU optimizer validation and optional GPU quantization. Current status is recorded in `reports/validation_status.json`. The absence of old weights does not prevent a new run from the recovered data; it prevents exact re-evaluation of the historical checkpoint. Replaying saved programs does not recover those weights or generate a new model benchmark.

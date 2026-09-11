@@ -1,0 +1,11 @@
+{
+  "run_id": 34580580727,
+  "run_url": "https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580580727",
+  "tested_commit": "5019e8708484db13d5d79015b4dc4eaa84a7047c",
+  "docker_integration": "failure",
+  "cleanup_output_limit_case": "passed_before_next_failure",
+  "failing_case": "fixture_input_hash_capture",
+  "exception": "AttributeError: 'str' object has no attribute 'read_bytes'",
+  "historical_replay": "not_executed",
+  "fix": "Pass pathlib.Path objects at both fixture hash call sites in tests/smoke_docker.py; all three fixture files hash successfully in the local targeted check."
+}

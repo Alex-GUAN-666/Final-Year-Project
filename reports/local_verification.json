@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "unit_tests_passed": 27,
+  "unit_tests_passed": 32,
   "source_publication_hashes_passed": 18,
   "original_byte_identical_files": 7,
   "declared_public_derivatives": 11,
@@ -14,16 +14,27 @@
   "full_4b_training_passed": null,
   "full_4b_inference_passed": null,
   "docker_integration_passed": null,
-  "github_ci_passed": null,
-  "github_published": false,
+  "github_ci_passed": true,
+  "github_published": true,
   "notes": [
     "Null fields mean not executed, not a failed model experiment.",
     "All 40 historical reasoning question records were recovered again from sanitized public notebooks; base 12/20 and merged 15/20, with 5/20 training overlap.",
-    "Raw mathematical data and fixed prepared split were not changed by publication sanitization."
+    "Raw mathematical data and fixed prepared split were not changed by publication sanitization.",
+    "Docker integration remained unexecuted locally (null above); real Docker scoring and historical replay passed separately in GitHub Actions. Cloud evidence is recorded in cloud_validation."
   ],
-  "github_ci_status": "not_started_upload_blocked_by_automatic_review_context_limit",
+  "github_ci_status": "success",
   "prepared_manifest_checksum_required": true,
   "fresh_tokenizer_check_passed": true,
   "historical_retained_training_rows": 452,
-  "github_publication_status": "User explicitly authorized full public main upload; automatic approval review rejected tree creation because its model context window was exhausted. Remote main remains initial commit e275d372e597ff7e7af282ef344a18c232ad9a29."
+  "github_publication_status": "Published to public main; verified cloud execution is linked in docs/CLOUD_VALIDATION.md.",
+  "cloud_validation": {
+    "verified_date": "2026-09-11",
+    "tested_commit": "cfac02190ff74c00c8facdb81b863b36c5f1981c",
+    "run_id": 34580694788,
+    "run_url": "https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788",
+    "conclusion": "success",
+    "historical_replay_exit_status": 0,
+    "report": "docs/CLOUD_VALIDATION.md",
+    "machine_readable_evidence": "reports/cloud/2026-09-11/verification.json"
+  }
 }

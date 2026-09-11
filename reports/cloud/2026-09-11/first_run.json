@@ -1,0 +1,13 @@
+{
+  "run_id": 34580350929,
+  "run_url": "https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580350929",
+  "tested_commit": "d72a228d82cc6d87220b7626f34a58e65d86e944",
+  "conclusion": "failure",
+  "source_and_unit_tests": "success",
+  "tiny_qwen3_training_merge_inference": "success",
+  "docker_integration": "failure",
+  "failing_case": "bounded_output_capture",
+  "exception": "RuntimeError: Failed to confirm Docker container cleanup",
+  "historical_replay": "not_executed",
+  "followup": "Fix Docker cleanup synchronization, retain fail-closed absence verification, and rerun all cloud jobs."
+}

@@ -6,7 +6,9 @@
 
 A reconstruction of **Yuzhen Guan and Weizhou Lu’s** undergraduate project, *Enhancing Compact Language Models: Multi-Teacher Distillation and Supervised Fine-Tuning for Research and Application* (November 2025).
 
-**Validation snapshot, 2026-09-11:** recovered training data, fixed question-disjoint data preparation, and runnable LoRA training → merging → inference → isolated scoring → paired comparison. All **27 unit tests passed**, and real CPU training/merge/inference passed with a randomly initialized tiny Qwen3. **Full 4B GPU training, Docker execution, and a new accuracy comparison have not been run.** Original fine-tuned weights remain unavailable. The badge tracks GitHub checks; the full 4B experiment is outside their scope. The first hosted CI run is pending.
+**Cloud validation passed, 2026-09-11:** all **32 unit tests**, real tiny-Qwen3 CPU training/merge/inference, and **8 Docker integration checks** passed. Replaying all 40 saved historical responses reproduced base **12/20** and merged **15/20**, with every individual correctness flag matching. [Verified run](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788) · [Tested commit `cfac021`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c) · [Cloud evidence and reproduction commands](docs/CLOUD_VALIDATION.md).
+
+**Full Qwen3-4B training and inference have not been rerun.** Original fine-tuned weights remain unavailable, and there is no new 4B benchmark result. Cloud checks validate software and replay saved programs; they do not regenerate the historical responses with the original model.
 
 Method: [METHODOLOGY.md](docs/METHODOLOGY.md).
 
@@ -17,7 +19,7 @@ Method: [METHODOLOGY.md](docs/METHODOLOGY.md).
 | Task | Base | Historical merged | What the evidence supports |
 |---|---:|---:|---|
 | Arithmetic | 14/20 (70%) | 17/20 (85%) | Reported in the November thesis; paired prediction files and exact question IDs were not recovered |
-| Mathematical reasoning | 12/20 (60%) | 15/20 (75%) | Saved paired notebook outputs; **5 of these 20 questions overlap the reconstructed training set** |
+| Mathematical reasoning | 12/20 (60%) | 15/20 (75%) | Saved paired notebook outputs and matching cloud program replay; **5 of these 20 questions overlap the reconstructed training set** |
 
 The increases are 15 **percentage points**, not a new result. The reasoning score measures numeric output from generated Python; it does not establish proof validity or independent held-out generalization. The two newly recovered CSVs named `base` and `merged` are byte-identical and both match the base notebook. Merged results come from the original merged notebook, not from the mislabeled CSV.
 
@@ -66,7 +68,7 @@ Audits read all bundled source files without executing generated Python. `data/p
 python -m fyp.prepare --output-dir outputs/prepared-check
 ```
 
-The [validation workflow](.github/workflows/validate.yml) has three jobs: source/data audits and unit tests with byte-for-byte split regeneration; real tiny-Qwen3 CPU training, merging and inference; and Docker execution, deferred scoring and paired comparison using explicitly synthetic programs. No job downloads pretrained model weights or uses custom secrets. Synthetic scores test software behavior and are not model accuracy results. Job logs and integration reports are available on the [Actions page](https://github.com/Alex-GUAN-666/Final-Year-Project/actions).
+The [validation workflow](.github/workflows/validate.yml) has three jobs: source/data audits and unit tests with byte-for-byte split regeneration; real tiny-Qwen3 CPU training, merging and inference; and Docker integration plus replay of saved historical programs. Synthetic fixtures test execution, deferred scoring and paired comparison. No job downloads pretrained model weights or uses custom secrets. Synthetic scores are not model accuracy results. All three jobs passed in the [recorded run](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788); see the [retained verification record](reports/cloud/2026-09-11/verification.json).
 
 ## Real model workflow
 
@@ -96,7 +98,7 @@ python -m fyp.evaluate --data-dir data/prepared/question_disjoint_v1 \
   --output outputs/merged_predictions.jsonl
 ```
 
-Inference defaults to no code execution, so accuracy is `null` until scoring. On Linux or WSL2 with Docker, build the proposed evaluator image, score both completed prediction files, then compare them:
+Inference defaults to no code execution, so accuracy is `null` until scoring. On Linux or WSL2 with Docker, build the evaluator image, score both completed prediction files, then compare them:
 
 ```bash
 docker build -f docker/Dockerfile.eval -t fyp-python-math .
@@ -108,7 +110,7 @@ python -m fyp.compare --base outputs/base_scored.jsonl \
   --merged outputs/merged_scored.jsonl --output outputs/comparison.json
 ```
 
-Copy prediction `.jsonl`, `.jsonl.meta.json`, and `.jsonl.summary.json` together when moving from a GPU notebook to the scoring machine. Scoring requires complete files. The comparison refuses mismatched evaluation protocols or ungraded rows. Docker scoring is implemented and unit-tested through mocks; real Docker execution is not yet validated.
+Copy prediction `.jsonl`, `.jsonl.meta.json`, and `.jsonl.summary.json` together when moving from a GPU notebook to the scoring machine. Scoring requires complete files. The comparison refuses mismatched evaluation protocols or ungraded rows. Real Docker execution, failure handling and paired comparison passed the [cloud integration checks](docs/CLOUD_VALIDATION.md).
 
 For a real, small CPU integration check with no pretrained weights:
 
@@ -128,7 +130,7 @@ python scripts/replay_historical_programs.py --docker-image fyp-python-math \
   --output outputs/historical-replay.json
 ```
 
-All 40 saved responses are verified against the archived notebooks and references; 36 contain extractable programs and four have no code. The report preserves the saved 12/20 and 15/20 and records replayed results and disagreements separately. Replaying saved responses does not regenerate them with the original model. A mismatch is reported as a nonzero exit rather than rewriting the historical evidence.
+All 40 saved responses are verified against the archived notebooks and references; 36 contain extractable programs and four have no code. The cloud replay graded all 40 and reproduced the saved 12/20 and 15/20: every correctness flag matched, and there were no comparable saved-stdout mismatches. The report preserves historical and replayed results separately. Replaying saved responses does not regenerate them with the original model. A mismatch in a future replay produces a nonzero exit rather than rewriting the historical evidence.
 
 ## Reconstruction choices
 
@@ -140,7 +142,7 @@ The exact historical prompts and template are in `prompts/`. Both new model eval
 
 - `archive/`: nine historical notebook files, three historical scripts, and two result CSVs. Public notebooks omit personal local paths and rich UI caches; plain-text research evidence is retained. Two scripts use generic paths. One notebook and the two CSVs include exact duplicates.
 - `data/raw/`: both original 100-row input CSVs, the 309-row arithmetic JSONL, and the recovered 1,125-row distilled JSONL.
-- `fyp/`, `tests/`, `docker/`: new implementation, meaningful tests, and proposed isolated evaluator image.
+- `fyp/`, `tests/`, `docker/`: new implementation, meaningful tests, and cloud-validated isolated evaluator image.
 - `reports/`, `docs/`: historical evidence, audits, new-protocol manifests and verification status. `v1/` preserves superseded first-upload findings.
 - `source_manifest.json`: original SHA-256 hashes for all 20 supplied files plus separate publication hashes for 11 sanitized derivatives. Seven bundled files preserve their original bytes; two papers were reviewed separately. See [publication notes](docs/PUBLICATION_NOTES.md).
 

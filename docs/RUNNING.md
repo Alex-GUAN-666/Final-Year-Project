@@ -65,7 +65,7 @@ In a Kaggle notebook, unpack/upload this repository, change the working director
 
 ## 4. Isolated scoring and paired comparison
 
-Use Linux or WSL2 with Docker. Native Windows execution is rejected because the bounded pipe reader uses Linux-style selectors. Docker was not available during this review, so the image and real isolation path remain to be exercised on a Docker host.
+Use Linux or WSL2 with Docker. Native Windows execution is rejected because the bounded pipe reader uses Linux-style selectors. Real Docker execution passed eight integration checks on a GitHub-hosted Linux runner, followed by a successful replay of all 40 saved historical responses. See [cloud validation](CLOUD_VALIDATION.md) for the tested commit and run. Docker was unavailable in the earlier local review; the cloud run supplies the actual execution evidence.
 
 The README builds `docker/Dockerfile.eval`, which installs fixed NumPy, SciPy and SymPy versions. Use exactly the same built image for both runs. The scorer resolves the tag to an image ID and records it. It will not pull an image implicitly. Each generated program gets no network, a read-only filesystem, an unprivileged user, dropped capabilities, CPU/memory/process limits, a temporary writable directory, a timeout and an output-byte limit. It never falls back to executing generated code on the host.
 
@@ -77,4 +77,6 @@ The scorer extracts the first Python/py/unlabeled fenced code block. A final exp
 
 The archive preserves supplied sources; `fyp/` is the clean executable implementation. Keep bulky model weights and generated `outputs/` outside Git; the supplied `.gitignore` excludes them. When a full run is available, release its adapters/merged weights through an appropriate model artifact host and attach the immutable model revision, run manifest and complete paired predictions. Do not copy a historical score into the new experiment’s result file.
 
-Repository: https://github.com/Alex-GUAN-666/Final-Year-Project . The workflow defines source-integrity, tiny-model CPU and synthetic Docker checks. The first hosted CI run is pending; the badge and Actions logs report its live status. No full 4B GPU experiment has been completed. The remaining experimental step is to run the pinned 4B commands on an available GPU, then run Docker scoring and retain the resulting comparison regardless of its direction.
+The [public repository](https://github.com/Alex-GUAN-666/Final-Year-Project) passed all three workflow jobs in [run 34580694788](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788), testing [commit `cfac021`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c). The [cloud report](CLOUD_VALIDATION.md) records 32 unit tests, real tiny-model CPU integration, eight Docker checks and historical program replay. The badge reflects the latest workflow state; the linked run records this specific verification.
+
+No full 4B GPU experiment has been completed. The remaining experimental step is to run the pinned 4B commands on an available GPU, then score the new predictions and retain the resulting comparison regardless of its direction. The recorded cloud success does not verify 4B GPU memory requirements or the optional quantized branch.
