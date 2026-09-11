@@ -128,7 +128,7 @@ def main():
             source = folder / (label + ".jsonl")
             destination = folder / (label + "-scored.jsonl")
             write_prediction_fixture(source, correct_second)
-            original_hashes = {suffix: file_hash(str(source) + suffix)
+            original_hashes = {suffix: file_hash(Path(str(source) + suffix))
                                for suffix in ("", ".meta.json", ".summary.json")}
             run_cli("fyp.score", "--predictions", str(source), "--output", str(destination),
                     "--docker-image", image_id, "--timeout", "15")
@@ -139,7 +139,7 @@ def main():
             metadata = json.loads(Path(str(destination) + ".meta.json").read_text(encoding="utf-8"))
             require(metadata["docker_image_id"] == image_id, "Immutable Docker image ID was not recorded")
             for suffix, original_hash in original_hashes.items():
-                require(file_hash(str(source) + suffix) == original_hash, "Scoring modified a source fixture")
+                require(file_hash(Path(str(source) + suffix)) == original_hash, "Scoring modified a source fixture")
         cases.append("deferred_scoring_reextracts_code_and_preserves_inputs")
 
         comparison_path = folder / "comparison.json"
