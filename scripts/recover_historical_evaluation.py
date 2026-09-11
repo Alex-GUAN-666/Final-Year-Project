@@ -11,8 +11,13 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from fyp.sources import source_path
+
 SOURCE = ROOT / "data" / "raw"
 NOTEBOOKS = ROOT / "archive" / "notebooks"
 DEST = ROOT / "reports"
@@ -36,7 +41,8 @@ def main():
     models = {}
     all_records = []
     for model, stem in STEMS.items():
-        nb = json.loads((NOTEBOOKS / (stem + ".ipynb")).read_text(encoding="utf-8"))
+        notebook_path = source_path(stem + ".ipynb")
+        nb = json.loads(notebook_path.read_text(encoding="utf-8"))
         # stderr is deliberately separate: Jupyter asynchronous stream ordering can
         # place a question's execution error after the next question's header.
         stdout = "".join("".join(o.get("text", [])) for o in nb["cells"][13]["outputs"] if o.get("name") == "stdout")
@@ -102,7 +108,7 @@ def main():
         reported = int(re.search(r"Correct Predictions: (\d+)", stdout).group(1))
         assert correct_total == reported
         models[model] = {
-            "notebook_sha256": hashlib.sha256((NOTEBOOKS / (stem + ".ipynb")).read_bytes()).hexdigest(),
+            "notebook_sha256": hashlib.sha256(notebook_path.read_bytes()).hexdigest(),
             "sample_count": len(records),
             "correct": correct_total,
             "accuracy": correct_total / len(records),

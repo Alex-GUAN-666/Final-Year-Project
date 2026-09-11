@@ -53,7 +53,7 @@ Expected counts are **560 candidates → 452 retained**. This intentionally reta
 
 ## 3. Train, merge and infer
 
-Use the commands in the main README with explicit immutable base revision. Each output directory/file must be new or empty; existing runs are not overwritten. Training defaults are two epochs, batch 1, accumulation 8, LR `3e-5`, warmup 10, full-text causal loss and no packing. Training writes token membership, actual shuffled IDs, configuration and dependency versions, metrics, adapter and tokenizer files. It does not support resuming an interrupted run in this version. `--max-steps 2` provides a short 4B GPU trial but is not the full experiment.
+Use the commands below with the explicit immutable base revision. Each output directory/file must be new or empty; existing runs are not overwritten. Training defaults are two epochs, batch 1, accumulation 8, LR `3e-5`, warmup 10, full-text causal loss and no packing. Training writes token membership, actual shuffled IDs, configuration and dependency versions, metrics, adapter and tokenizer files. It does not support resuming an interrupted run in this version. `--max-steps 2` provides a short 4B GPU trial but is not the full experiment.
 
 Merging requires an adapter made by this implementation, plus its completed `reproduction_manifest.json`. It checks the recorded base identifier, revision and semantic config fingerprint before reloading and merging. That fingerprint is not a hash of original Kaggle weights. The original adapter is absent; the command does not pretend to recover it.
 
@@ -61,17 +61,51 @@ Inference uses greedy decoding, a shared explicit template/EOS, at most 1,024 ge
 
 `--execution none` is the default. It writes predictions incrementally, then a completion summary. A stopped run has no completed summary and is refused by the deferred scorer. Save the JSONL and both `.meta.json` and `.summary.json` sidecars together. It is expected that unexecuted predictions have `accuracy: null`.
 
-In a Kaggle notebook, unpack/upload this repository, change the working directory to its root, and execute the README shell commands using `!` or a `%%bash` cell after preparing the Python environment. Keep Internet enabled only when downloading dependencies/model assets is required. Preserve/download `outputs/sft/adapter/`, `outputs/merged/`, manifests and predictions before ending the session. No access to the old Kaggle account is needed for this new experiment. Current GPU availability and allocation are not assumed by this package.
+In a Kaggle notebook, unpack/upload this repository, change the working directory to its root, and execute the commands in this guide using `!` or a `%%bash` cell after preparing the Python environment. Keep Internet enabled only when downloading dependencies/model assets is required. Preserve/download `outputs/sft/adapter/`, `outputs/merged/`, manifests and predictions before ending the session. No access to the old Kaggle account is needed for this new experiment. Current GPU availability and allocation are not assumed by this package.
+
+```bash
+# No model weights needed for this token-filter check.
+python -m fyp.tokenize --data-dir data/prepared/question_disjoint_v1 \
+  --output outputs/token_filter.json
+
+# Full Qwen3-4B training requires a suitable GPU; it has not been rerun for this repository.
+CUDA_VISIBLE_DEVICES=0 python -m fyp.train \
+  --data-dir data/prepared/question_disjoint_v1 \
+  --model Qwen/Qwen3-4B-Base \
+  --model-revision 906bfd4b4dc7f14ee4320094d8b41684abff8539 \
+  --output-dir outputs/sft
+
+python -m fyp.merge --adapter outputs/sft/adapter \
+  --output-dir outputs/merged --device cpu --dtype float16
+
+python -m fyp.evaluate --data-dir data/prepared/question_disjoint_v1 \
+  --model Qwen/Qwen3-4B-Base \
+  --model-revision 906bfd4b4dc7f14ee4320094d8b41684abff8539 \
+  --output outputs/base_predictions.jsonl
+python -m fyp.evaluate --data-dir data/prepared/question_disjoint_v1 \
+  --model outputs/merged --local-files-only \
+  --output outputs/merged_predictions.jsonl
+```
 
 ## 4. Isolated scoring and paired comparison
 
 Use Linux or WSL2 with Docker. Native Windows execution is rejected because the bounded pipe reader uses Linux-style selectors. Real Docker execution passed eight integration checks on a GitHub-hosted Linux runner, followed by a successful replay of all 40 saved historical responses. See [cloud validation](CLOUD_VALIDATION.md) for the tested commit and run. Docker was unavailable in the earlier local review; the cloud run supplies the actual execution evidence.
 
-The README builds `docker/Dockerfile.eval`, which installs fixed NumPy, SciPy and SymPy versions. Use exactly the same built image for both runs. The scorer resolves the tag to an image ID and records it. It will not pull an image implicitly. Each generated program gets no network, a read-only filesystem, an unprivileged user, dropped capabilities, CPU/memory/process limits, a temporary writable directory, a timeout and an output-byte limit. It never falls back to executing generated code on the host.
+`docker/Dockerfile.eval` installs fixed NumPy, SciPy and SymPy versions. Use exactly the same built image for both runs. The scorer resolves the tag to an image ID and records it. It will not pull an image implicitly. Each generated program gets no network, a read-only filesystem, an unprivileged user, dropped capabilities, CPU/memory/process limits, a temporary writable directory, a timeout and an output-byte limit. It never falls back to executing generated code on the host.
 
-The scorer extracts the first Python/py/unlabeled fenced code block. A final expression is printed; a function definition is not silently called. Runtime errors, absent code, timeouts and malformed output are scored as failures; Docker/infrastructure failures remain ungraded. Finite numeric output is compared using relative tolerance `1e-3`, absolute tolerance `0`, matching the saved historical evaluator’s tolerance. Zero requires exact numeric agreement. This evaluates output correctness, not the validity of reasoning or proof.
+The scorer inspects the first fenced block and accepts it only if labeled Python, `py`, or left unlabeled; it does not skip an earlier block to find a later Python block. A final expression is printed; a function definition is not silently called. Runtime errors, absent code, timeouts and malformed output are scored as failures; Docker/infrastructure failures remain ungraded. Finite numeric output is compared using relative tolerance `1e-3`, absolute tolerance `0`, matching the saved historical evaluator’s tolerance. Zero requires exact numeric agreement. This evaluates output correctness, not the validity of reasoning or proof.
 
 `fyp.compare` requires completed outputs, every row graded, identical question IDs/order/content/references and matching inference/scoring conditions, including recorded model dtype, device type, torch/Transformers versions and seed. It reports counts, accuracy, percentage-point change and improved/regressed question IDs for each category. It does not optimize the split or select a checkpoint using test scores. Keep failed or negative results as well as positive ones.
+
+```bash
+docker build -f docker/Dockerfile.eval -t fyp-python-math .
+python -m fyp.score --predictions outputs/base_predictions.jsonl \
+  --output outputs/base_scored.jsonl --docker-image fyp-python-math
+python -m fyp.score --predictions outputs/merged_predictions.jsonl \
+  --output outputs/merged_scored.jsonl --docker-image fyp-python-math
+python -m fyp.compare --base outputs/base_scored.jsonl \
+  --merged outputs/merged_scored.jsonl --output outputs/comparison.json
+```
 
 ## 5. GitHub layout and release boundary
 

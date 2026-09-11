@@ -12,9 +12,14 @@ import json
 import math
 import re
 import statistics
+import sys
 import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from fyp.sources import source_path
 
 SCHEMA = ('problem', 'generated_solution', 'expected_answer', 'problem_type',
           'generated_python_code', 'execution_result', 'is_correct')
@@ -200,8 +205,8 @@ def main():
         'reasoning_eval': ('data/raw/random_samples_for_inference.csv', 'csv'),
         'arithmetic_eval': ('data/raw/arithmetic_problems_v3.csv', 'csv'),
         'historical_eval': ('reports/cot_historical_paired_results.csv', 'csv'),
-        'base_results': ('archive/evaluation/evaluation_results_base_cot_v5(1).csv', 'csv'),
-        'merged_results': ('archive/evaluation/evaluation_results_merged_cot_v5(1).csv', 'csv'),
+        'base_results': (source_path('evaluation_results_base_cot_v5(1).csv', root), 'csv'),
+        'merged_results': (source_path('evaluation_results_merged_cot_v5(1).csv', root), 'csv'),
     }
     datasets, manifest = {}, {}
     for name, (path, kind) in files.items():

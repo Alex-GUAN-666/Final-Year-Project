@@ -17,10 +17,14 @@ import json
 import math
 from pathlib import Path
 import re
+import sys
 
 FIELDS = ["question", "ground_truth", "llm_response", "extracted_code", "execution_result", "is_correct"]
 FENCE = re.compile(r"```+(?:python|py)?\s*\n(.*?)\n```+", re.DOTALL)
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from fyp.sources import source_path
 
 
 def sha(data: bytes | str) -> str:
@@ -195,10 +199,10 @@ ROW_NOTES = {
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     defaults = {
-        "base-csv": ROOT / "archive/evaluation/evaluation_results_base_cot_v5(1).csv",
-        "merged-csv": ROOT / "archive/evaluation/evaluation_results_merged_cot_v5(1).csv",
-        "base-notebook": ROOT / "archive/notebooks/notebookd84987e9c1_base_cot.ipynb",
-        "merged-notebook": ROOT / "archive/notebooks/notebookd84987e9c1_merged_cot.ipynb",
+        "base-csv": source_path("evaluation_results_base_cot_v5(1).csv"),
+        "merged-csv": source_path("evaluation_results_merged_cot_v5(1).csv"),
+        "base-notebook": source_path("notebookd84987e9c1_base_cot.ipynb"),
+        "merged-notebook": source_path("notebookd84987e9c1_merged_cot.ipynb"),
         "reference-data": ROOT / "data/raw/random_samples_for_inference.csv",
         "historical-json": ROOT / "reports/cot_historical_results.json",
         "token-filter": ROOT / "reports/historical_token_filter.json",

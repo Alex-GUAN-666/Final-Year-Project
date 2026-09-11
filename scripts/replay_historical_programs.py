@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from fyp.execution import GRADER_PROTOCOL, ensure_docker, execute_docker, extract_first_code, grade_execution
+from fyp.sources import source_path
 from scripts.reconcile_evaluation_files import notebook_records, read_csv
 
 
@@ -57,7 +58,7 @@ def load_verified_source(path: Path) -> tuple[dict, dict]:
         data = source["models"][model]
         filename = data["notebook"]
         require(Path(filename).name == filename, "Notebook must be an archive basename")
-        notebook = notebook_records(ROOT / "archive/notebooks" / filename, model)
+        notebook = notebook_records(source_path(filename), model)
         provenance["notebooks"][model] = {"filename": filename, "sha256": notebook["sha256"]}
         require(data["sha256"] == notebook["sha256"], "Notebook digest differs from report: " + model)
         require(len(data["records"]) == len(notebook["records"]) == 20, "Expected 20 rows per model")
@@ -86,7 +87,7 @@ def load_verified_source(path: Path) -> tuple[dict, dict]:
                 for csv_name in matches:
                     require(Path(csv_name).name == csv_name, "CSV must be an archive basename")
                     if csv_name not in uploaded:
-                        uploaded[csv_name] = read_csv(ROOT / "archive/evaluation" / csv_name)
+                        uploaded[csv_name] = read_csv(source_path(csv_name))
                         provenance["uploaded_csvs"][csv_name] = uploaded[csv_name]["sha256"]
                     csv_rows = uploaded[csv_name]["rows"]
                     require(len(csv_rows) == 20, "Expected 20 uploaded CSV rows")
