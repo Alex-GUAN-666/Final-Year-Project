@@ -1,0 +1,545 @@
+{
+  "datasets": [
+    {
+      "name": "arithmetic_logic_data_revised_v2.jsonl",
+      "bytes": 108308,
+      "sha256": "f371ac9f40f3367daa4e31f651cb8a37b8324bff25007a8e419bdbbebac4ce20",
+      "physical_lines": 309,
+      "rows": 309,
+      "schema": [
+        "problem",
+        "problem_type",
+        "is_correct",
+        "generated_solution",
+        "generated_python_code"
+      ],
+      "empty_fields": {
+        "problem": 0,
+        "problem_type": 0,
+        "is_correct": 0,
+        "generated_solution": 0,
+        "generated_python_code": 0
+      },
+      "unique_questions": 309,
+      "duplicate_question_groups": [],
+      "duplicate_full_record_groups": [],
+      "syntax_valid_rows": 309,
+      "imports": {
+        "math": 43
+      },
+      "constant_only_solve_rows": [],
+      "closed_ast_numeric_checks": {
+        "matched": 270,
+        "mismatched": 6,
+        "no_numeric_reference": 33
+      },
+      "issues": [
+        {
+          "row": 205,
+          "physical_start": 205,
+          "physical_end": 205,
+          "issue": "code_reference_mismatch",
+          "calculated": "9044",
+          "stored_answer": "The answer is 9028.",
+          "question": "What is the result of 10101 AND 11100?"
+        },
+        {
+          "row": 207,
+          "physical_start": 207,
+          "physical_end": 207,
+          "issue": "code_reference_mismatch",
+          "calculated": "12157",
+          "stored_answer": "The answer is 12173.",
+          "question": "What is the result of 10101 OR 11100?"
+        },
+        {
+          "row": 209,
+          "physical_start": 209,
+          "physical_end": 209,
+          "issue": "code_reference_mismatch",
+          "calculated": "3168731130",
+          "stored_answer": "The answer is 2882400010.",
+          "question": "$Calculate# the 32-bit left cyclic shift of 0xABCDEFFF by 4 bits."
+        },
+        {
+          "row": 210,
+          "physical_start": 210,
+          "physical_end": 210,
+          "issue": "code_reference_mismatch",
+          "calculated": "2014458966",
+          "stored_answer": "The answer is 2003195395.",
+          "question": "What is the result of a 32-bit right cyclic shift of 0x12345678 by 8 bits?"
+        },
+        {
+          "row": 211,
+          "physical_start": 211,
+          "physical_end": 211,
+          "issue": "code_reference_mismatch",
+          "calculated": "6230900220451885620",
+          "stored_answer": "The answer is 3735928559.",
+          "question": "$Calculate# the 64-bit left cyclic shift of 0x123456789ABCDEF0 by 16 bits."
+        },
+        {
+          "row": 212,
+          "physical_start": 212,
+          "physical_end": 212,
+          "issue": "code_reference_mismatch",
+          "calculated": "8526495043095935640",
+          "stored_answer": "The answer is 8509377377798222589.",
+          "question": "What is the result of a 64-bit right cyclic shift of 0xFEDCBA9876543210 by 32 bits?"
+        }
+      ],
+      "operator_row_counts": {
+        "Mult": 35,
+        "LShift": 61,
+        "Add": 34,
+        "FloorDiv": 23,
+        "RShift": 67,
+        "BitAnd": 66,
+        "Invert": 21,
+        "BitOr": 70,
+        "Sub": 71,
+        "BitXor": 21,
+        "Pow": 1,
+        "Div": 5
+      },
+      "problem_type_counts": {
+        "COMPUTATIONAL": 309
+      },
+      "is_correct_counts": {
+        "True": 309
+      },
+      "solution_chars": {
+        "min": 3,
+        "median": 25.0,
+        "max": 73,
+        "total": 8469
+      },
+      "placeholder_solution_rows": [
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309
+      ]
+    },
+    {
+      "name": "arithmetic_problems_v3.csv",
+      "bytes": 16139,
+      "sha256": "f381ff8704f8d609c6671f846149b94d13a921d1897efc6b2e3d0ea1d63ac48f",
+      "physical_lines": 429,
+      "rows": 100,
+      "schema": [
+        "series no",
+        "arithmetical question",
+        "code for solving the question",
+        "answer to the question"
+      ],
+      "empty_fields": {
+        "series no": 0,
+        "arithmetical question": 0,
+        "code for solving the question": 0,
+        "answer to the question": 0
+      },
+      "unique_questions": 100,
+      "duplicate_question_groups": [],
+      "duplicate_full_record_groups": [],
+      "syntax_valid_rows": 100,
+      "imports": {
+        "math": 14
+      },
+      "constant_only_solve_rows": [],
+      "closed_ast_numeric_checks": {
+        "matched": 100
+      },
+      "issues": [
+        {
+          "row": 7,
+          "physical_start": 26,
+          "physical_end": 31,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (57.7030 * e)",
+          "question_result": "156.8530163475723",
+          "stored_answer": "156.8530244796648",
+          "absolute_difference": "8.132092517598721e-06",
+          "relative_difference": 5.1845302598248626e-08,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 8,
+          "physical_start": 32,
+          "physical_end": 37,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (51.3499 + pi)",
+          "question_result": "54.49149265358979",
+          "stored_answer": "54.49148872961668",
+          "absolute_difference": "3.923973110886436e-06",
+          "relative_difference": 7.201074736255978e-08,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 9,
+          "physical_start": 38,
+          "physical_end": 43,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (92.3849 / pi)",
+          "question_result": "29.407027004100886",
+          "stored_answer": "29.407030738796337",
+          "absolute_difference": "3.734695450674508e-06",
+          "relative_difference": 1.2700008660675046e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 38,
+          "physical_start": 156,
+          "physical_end": 161,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (4.9722 / e)",
+          "question_result": "1.8291701573926455",
+          "stored_answer": "1.8291622009515272",
+          "absolute_difference": "7.956441118395219e-06",
+          "relative_difference": 4.349754497272452e-06,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 41,
+          "physical_start": 170,
+          "physical_end": 175,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (10.0623 - e)",
+          "question_result": "7.344018171540956",
+          "stored_answer": "7.3439695603794615",
+          "absolute_difference": "4.861116149434963e-05",
+          "relative_difference": 6.619150492127637e-06,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 50,
+          "physical_start": 208,
+          "physical_end": 213,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (66.3730 / pi)",
+          "question_result": "21.12718207567674",
+          "stored_answer": "21.127196554773896",
+          "absolute_difference": "1.4479097156794296e-05",
+          "relative_difference": 6.853297889881468e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 53,
+          "physical_start": 222,
+          "physical_end": 227,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (86.5047 + pi)",
+          "question_result": "89.6462926535898",
+          "stored_answer": "89.64633390742517",
+          "absolute_difference": "4.1253835377119685e-05",
+          "relative_difference": 4.6018429955787333e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 62,
+          "physical_start": 260,
+          "physical_end": 265,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (97.2675 - pi)",
+          "question_result": "94.1259073464102",
+          "stored_answer": "94.12593327088709",
+          "absolute_difference": "2.592447688698485e-05",
+          "relative_difference": 2.7542331837896607e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 65,
+          "physical_start": 274,
+          "physical_end": 279,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (52.5540 / e)",
+          "question_result": "19.333536151323983",
+          "stored_answer": "19.33351894111594",
+          "absolute_difference": "1.7210208042683917e-05",
+          "relative_difference": 8.901738361766448e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 69,
+          "physical_start": 292,
+          "physical_end": 297,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (45.3293 / e)",
+          "question_result": "16.675717552692664",
+          "stored_answer": "16.6757336739515",
+          "absolute_difference": "1.612125883454496e-05",
+          "relative_difference": 9.667495985335468e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 70,
+          "physical_start": 298,
+          "physical_end": 303,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (38.5566 * pi)",
+          "question_result": "121.12913130740023",
+          "stored_answer": "121.12922457371008",
+          "absolute_difference": "9.326630984674011e-05",
+          "relative_difference": 7.699736391029673e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 82,
+          "physical_start": 348,
+          "physical_end": 353,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (52.0547 - pi)",
+          "question_result": "48.9131073464102",
+          "stored_answer": "48.913148162159146",
+          "absolute_difference": "4.081574894598816e-05",
+          "relative_difference": 8.34453525883754e-07,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 86,
+          "physical_start": 366,
+          "physical_end": 371,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (6.7273 / e)",
+          "question_result": "2.4748353645926437",
+          "stored_answer": "2.474852085454571",
+          "absolute_difference": "1.6720861927055353e-05",
+          "relative_difference": 6.756307589180277e-06,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        },
+        {
+          "row": 88,
+          "physical_start": 376,
+          "physical_end": 381,
+          "issue": "question_reference_mismatch",
+          "question": "Calculate the value of (12.8775 + pi)",
+          "question_result": "16.019092653589794",
+          "stored_answer": "16.019121689640656",
+          "absolute_difference": "2.903605086146399e-05",
+          "relative_difference": 1.8125869460272098e-06,
+          "passes_paired_cot_isclose_rel_tol_1e_3_abs_tol_0": true,
+          "passes_batch_generator_abs_tol_1e_9": false
+        }
+      ],
+      "operator_row_counts": {
+        "FloorDiv": 11,
+        "BitOr": 18,
+        "BitAnd": 11,
+        "Sub": 11,
+        "Mult": 14,
+        "Add": 17,
+        "Div": 6,
+        "BitXor": 21,
+        "LShift": 5,
+        "Pow": 9,
+        "RShift": 8
+      }
+    },
+    {
+      "name": "random_samples_for_inference.csv",
+      "bytes": 550349,
+      "sha256": "5c4d32efc079a57edb64f669e5aa068c77c0ba6e919be41e2c23a600cc382b80",
+      "physical_lines": 10845,
+      "rows": 100,
+      "schema": [
+        "arithmetical question",
+        "answer to the question",
+        "generated_python_code",
+        "generated_solution"
+      ],
+      "empty_fields": {
+        "arithmetical question": 0,
+        "answer to the question": 0,
+        "generated_python_code": 0,
+        "generated_solution": 0
+      },
+      "unique_questions": 89,
+      "duplicate_question_groups": [
+        [
+          3,
+          29
+        ],
+        [
+          4,
+          66
+        ],
+        [
+          12,
+          56,
+          82
+        ],
+        [
+          21,
+          50
+        ],
+        [
+          31,
+          55
+        ],
+        [
+          34,
+          41
+        ],
+        [
+          35,
+          44,
+          67
+        ],
+        [
+          42,
+          46
+        ],
+        [
+          89,
+          98
+        ]
+      ],
+      "duplicate_full_record_groups": [],
+      "syntax_valid_rows": 100,
+      "imports": {
+        "math": 13,
+        "sympy": 5
+      },
+      "constant_only_solve_rows": [
+        1,
+        8,
+        16,
+        18,
+        34,
+        37,
+        41,
+        42,
+        43,
+        49,
+        51,
+        57,
+        58,
+        60,
+        74,
+        78,
+        81
+      ],
+      "closed_ast_numeric_checks": {
+        "matched": 75,
+        "not_evaluated": 25
+      },
+      "issues": [],
+      "operator_row_counts": {
+        "Add": 48,
+        "Div": 25,
+        "Mult": 47,
+        "Sub": 44,
+        "Pow": 16,
+        "FloorDiv": 14,
+        "Mod": 2,
+        "USub": 8
+      },
+      "solution_chars": {
+        "min": 1907,
+        "median": 3783.0,
+        "max": 18482,
+        "total": 492440
+      },
+      "placeholder_solution_rows": []
+    }
+  ],
+  "cross_file_overlap": [
+    {
+      "a": "arithmetic_logic_data_revised_v2.jsonl",
+      "b": "arithmetic_problems_v3.csv",
+      "normalized_question_overlap": 0,
+      "code_ast_overlap": 0
+    },
+    {
+      "a": "arithmetic_logic_data_revised_v2.jsonl",
+      "b": "random_samples_for_inference.csv",
+      "normalized_question_overlap": 0,
+      "code_ast_overlap": 0
+    },
+    {
+      "a": "arithmetic_problems_v3.csv",
+      "b": "random_samples_for_inference.csv",
+      "normalized_question_overlap": 0,
+      "code_ast_overlap": 0
+    }
+  ],
+  "scripts": [
+    {
+      "name": "add_more_data.py",
+      "bytes": 3905,
+      "lines": 116,
+      "sha256": "6f4880c44e930c114e0ff6fed91d7b97d7feb7d3f6782527ce5f8d96d0ab9b29",
+      "syntax_valid": true
+    },
+    {
+      "name": "generate_arithmetic_data.py",
+      "bytes": 4279,
+      "lines": 110,
+      "sha256": "8a6ccab4335fdda1b8f983b62e8d06b3a822cad96df6218bfdf04c9fb845cfb8",
+      "syntax_valid": true
+    },
+    {
+      "name": "batch_generate_and_verify_v3_1.py",
+      "bytes": 15696,
+      "lines": 396,
+      "sha256": "9c18c30b1bf841e03e8e2551f4c23b1595c7f342bb9ef4460e3240c04cca58ae",
+      "syntax_valid": true
+    }
+  ],
+  "environment": {
+    "python_version": "3.12.14",
+    "os": "Linux",
+    "machine": "x86_64",
+    "dependencies": "Python standard library only"
+  },
+  "method": "All source bytes decoded and all records parsed. Closed AST interpreter for arithmetic expressions only; generated Python was not exec/eval or imported. Complex reference programs statically inspected.",
+  "tolerance_notes": {
+    "this_audit": "Exact integer equality; otherwise abs_tol=1e-9, rel_tol=0.",
+    "batch_generate_and_verify_v3_1.py": "compare_answers line233 uses sympy Abs(result_val-expected_val)<1e-9, after evalf(30); this audit does not execute that parser.",
+    "paired_cot_notebooks": "math.isclose(result_decimal, ground_truth_decimal, rel_tol=1e-3), default abs_tol=0; all14 displayed-input discrepancies remain accepted under that tolerance.",
+    "no_metric_inference": "Source data inconsistencies do not themselves establish a change in historical model accuracy."
+  }
+}

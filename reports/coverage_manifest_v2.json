@@ -1,0 +1,1500 @@
+{
+  "review_date": "2026-09-11",
+  "originals_executed": false,
+  "files": [
+    {
+      "path": "upload/qwen4b-train-code-100920859-279441290..ipynb",
+      "sha256": "3790e0e38706dc4bb3ea04c3e9178505f6437a0f6b384ba97f11183ab5463f10",
+      "bytes": 128272,
+      "prior_path": "source/notebook4d41ab3228 _train and reference.ipynb",
+      "prior_sha256": "009946a653bbb35bc787c5759cd5331740c65e9a647497d0f03e6eb745cee20e",
+      "byte_identical_previous": false,
+      "cell_count": 36,
+      "metadata_without_widgets": {
+        "accelerator": "GPU",
+        "colab": {
+          "gpuType": "T4",
+          "include_colab_link": true,
+          "provenance": []
+        },
+        "kaggle": {
+          "accelerator": "nvidiaTeslaT4",
+          "dataSources": [
+            {
+              "datasetId": 8679486,
+              "sourceId": 13652781,
+              "sourceType": "datasetVersion"
+            },
+            {
+              "isSourceIdPinned": true,
+              "modelId": 322000,
+              "modelInstanceId": 301515,
+              "sourceId": 363135,
+              "sourceType": "modelInstanceVersion"
+            }
+          ],
+          "dockerImageVersionId": 31193,
+          "isGpuEnabled": true,
+          "isInternetEnabled": true,
+          "language": "python",
+          "sourceType": "notebook"
+        },
+        "kernelspec": {
+          "display_name": "Python 3 (ipykernel)",
+          "language": "python",
+          "name": "python3"
+        },
+        "language_info": {
+          "codemirror_mode": {
+            "name": "ipython",
+            "version": 3
+          },
+          "file_extension": ".py",
+          "mimetype": "text/x-python",
+          "name": "python",
+          "nbconvert_exporter": "python",
+          "pygments_lexer": "ipython3",
+          "version": "3.11.13"
+        },
+        "papermill": {
+          "default_parameters": {},
+          "duration": 1415.60018,
+          "end_time": "2025-11-18T08:26:38.956392",
+          "environment_variables": {},
+          "exception": null,
+          "input_path": "__notebook__.ipynb",
+          "output_path": "__notebook__.ipynb",
+          "parameters": {},
+          "start_time": "2025-11-18T08:03:03.356212",
+          "version": "2.6.0"
+        }
+      },
+      "cells": [
+        {
+          "cell_1_based": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "67059745a156df39876ce44293675d7993d7d3902c71694a7c7bc2c0978cf1e8",
+          "source_characters": 1039,
+          "source_lines": 10,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.038208,
+            "end_time": "2025-11-18T08:03:08.379624",
+            "exception": false,
+            "start_time": "2025-11-18T08:03:08.341416",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 2,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "fe90a724be43bec8893336889792785a98e7347c7018f1f671fda6bfe0201b2e",
+          "source_characters": 8,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.032066,
+            "end_time": "2025-11-18T08:03:08.443784",
+            "exception": false,
+            "start_time": "2025-11-18T08:03:08.411718",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 3,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "9a9959fe99dcb10f6fb398d19cdab893b776c82e716417b0ccf2a550a1129c8f",
+          "source_characters": 1031,
+          "source_lines": 10,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.034033,
+            "end_time": "2025-11-18T08:03:08.509706",
+            "exception": false,
+            "start_time": "2025-11-18T08:03:08.475673",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "7636d729445425eaab9b78ffb2ff0e3b63808bee6394a3b301a49374018133e1",
+          "source_characters": 53,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.031939,
+            "end_time": "2025-11-18T08:03:08.573371",
+            "exception": false,
+            "start_time": "2025-11-18T08:03:08.541432",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 5,
+          "type": "code",
+          "execution_count": 1,
+          "source_sha256": "d9c9be85b3464dc5f2ab240388ec60f2d179eb1f8e1d6c2052224639ebca16e5",
+          "source_characters": 763,
+          "source_lines": 15,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 62.480938,
+            "end_time": "2025-11-18T08:04:11.087105",
+            "exception": false,
+            "start_time": "2025-11-18T08:03:08.606167",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 6,
+          "type": "code",
+          "execution_count": 2,
+          "source_sha256": "3342e7167098e43e0c889d2919c81b581c8effc628af26eb30e1c461e730ec25",
+          "source_characters": 166,
+          "source_lines": 5,
+          "output_sha256": "55266a3c9b05ca2a17b5c07b40b00e40c28051c498d8b9683b3e861d3417c233",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 5.987509,
+            "end_time": "2025-11-18T08:04:17.108990",
+            "exception": false,
+            "start_time": "2025-11-18T08:04:11.121481",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 7,
+          "type": "code",
+          "execution_count": 3,
+          "source_sha256": "6eb588367592b38723467a34677594bef76b18e769d0abb62517247e8d15c8d8",
+          "source_characters": 227,
+          "source_lines": 6,
+          "output_sha256": "1a7bd82c5bda9cbaa16198eb85a1f7fb0ee9ad65ce058d55f785471ab60817a4",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 1.598238,
+            "end_time": "2025-11-18T08:04:18.745406",
+            "exception": false,
+            "start_time": "2025-11-18T08:04:17.147168",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 8,
+          "type": "code",
+          "execution_count": 4,
+          "source_sha256": "0faddd50b9f300609e3adaa7bc3cab0d8ea17d938246327ad050d11d5f900bd6",
+          "source_characters": 1025,
+          "source_lines": 27,
+          "output_sha256": "f326634cff224f11a56d797e2a8d8f9a0a1e2397d72a45f372580d75191f05be",
+          "output_objects": 5,
+          "output_mime_types": [
+            "application/vnd.jupyter.widget-view+json",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 174.335781,
+            "end_time": "2025-11-18T08:07:13.120028",
+            "exception": false,
+            "start_time": "2025-11-18T08:04:18.784247",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 9,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "c1a29879b0e0acafcedfa8fa3235f4a1fea8830436638a411f7bf5d9998522e3",
+          "source_characters": 30,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.041353,
+            "end_time": "2025-11-18T08:07:13.205994",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.164641",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 10,
+          "type": "code",
+          "execution_count": 5,
+          "source_sha256": "2c0566a8c12bf954a8c7db0ffbdbeb7873d901e619eb62efba69b6b1125b923c",
+          "source_characters": 1655,
+          "source_lines": 28,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.049431,
+            "end_time": "2025-11-18T08:07:13.296300",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.246869",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 11,
+          "type": "code",
+          "execution_count": 6,
+          "source_sha256": "60f5e0e86fe2458d2c5dd9493952c4d22020ef56e12a9ff973a4ae116134a4f7",
+          "source_characters": 1050,
+          "source_lines": 9,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.046885,
+            "end_time": "2025-11-18T08:07:13.383880",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.336995",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 12,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "25c91bf8b343c44b633437de285e294ae275d4e944b60679909d2add821ceae4",
+          "source_characters": 32,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.041155,
+            "end_time": "2025-11-18T08:07:13.465330",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.424175",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_sha256": "6ce99eaa4c50eef4646347afc873a2318a56889a7f64dfcc7e550d90ac142c87",
+          "source_characters": 137,
+          "source_lines": 6,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.048051,
+            "end_time": "2025-11-18T08:07:13.554705",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.506654",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 14,
+          "type": "code",
+          "execution_count": 8,
+          "source_sha256": "4b5cdfa2e728475a198066df13c1fda3e332a04262be099ad9f198de4cccd8cc",
+          "source_characters": 1665,
+          "source_lines": 42,
+          "output_sha256": "58739384d6968e5281372687a77def3179c438e8ae453387d391f6b3108a6d03",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.34511,
+            "end_time": "2025-11-18T08:07:13.942196",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.597086",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 15,
+          "type": "code",
+          "execution_count": 9,
+          "source_sha256": "848bcf418b2fe279e625a56e18f183b4e952d7281073a88ef4770cecbf15aaab",
+          "source_characters": 23,
+          "source_lines": 1,
+          "output_sha256": "1bc744bbbdcb56b014e11cf5a0fc9e7a73e22efb396947dfd9790bc6e6fa23a7",
+          "output_objects": 1,
+          "output_mime_types": [
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.048552,
+            "end_time": "2025-11-18T08:07:14.031624",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:13.983072",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 16,
+          "type": "code",
+          "execution_count": 10,
+          "source_sha256": "90c76c13f73a6adb3f4c471916147b5ae5fae92a0a1eee745ca74233351d2c8e",
+          "source_characters": 1134,
+          "source_lines": 27,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.049224,
+            "end_time": "2025-11-18T08:07:14.123227",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:14.074003",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 17,
+          "type": "code",
+          "execution_count": 11,
+          "source_sha256": "c1044ad8df92d500af87ce524516a4d196f2bc3725e73981d27e0800f5101661",
+          "source_characters": 894,
+          "source_lines": 19,
+          "output_sha256": "e6e518deeaf4459a51e9ce4b02c528885b6bf383051f7ffb363071f3f4e7ec8b",
+          "output_objects": 2,
+          "output_mime_types": [
+            "application/vnd.jupyter.widget-view+json",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 1.749738,
+            "end_time": "2025-11-18T08:07:15.916525",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:14.166787",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 18,
+          "type": "code",
+          "execution_count": 12,
+          "source_sha256": "ffa0040517b1b16f0e78a5117d11686c8a2b6acfba6d2ee7c76db867a3485477",
+          "source_characters": 77,
+          "source_lines": 2,
+          "output_sha256": "ba324a79a492cbfe29f1e05cd1f56580d4342ddcd0383b58ee2f47eef942d5be",
+          "output_objects": 1,
+          "output_mime_types": [
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.049352,
+            "end_time": "2025-11-18T08:07:16.007601",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:15.958249",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 19,
+          "type": "code",
+          "execution_count": 13,
+          "source_sha256": "ee7188d89e3b262ec8194d5eaa2de13ec042f207e1a6c3b07dff64adeef84d39",
+          "source_characters": 278,
+          "source_lines": 4,
+          "output_sha256": "362aaf8bea1203110f3cdb4054847d5a55ff438f7ae7e02e17cc363d10e76ab0",
+          "output_objects": 1,
+          "output_mime_types": [
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.058829,
+            "end_time": "2025-11-18T08:07:16.108518",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:16.049689",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 20,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "57517eaeb9260ce7b08144e2812fe74bd8ae118e19169a924357cec9e7791000",
+          "source_characters": 37,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.042534,
+            "end_time": "2025-11-18T08:07:16.191940",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:16.149406",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 21,
+          "type": "code",
+          "execution_count": 14,
+          "source_sha256": "732b837e14962cd8c780a7e4a28527b0fe7f6a68687007aa12e6166d0a7a2565",
+          "source_characters": 748,
+          "source_lines": 21,
+          "output_sha256": "6eab6c435241cd0dec006a986ee04ed4185de3599cc990222d32d0b5052e6dd2",
+          "output_objects": 1,
+          "output_mime_types": [
+            "application/vnd.jupyter.widget-view+json",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 4.068689,
+            "end_time": "2025-11-18T08:07:20.300742",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:16.232053",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 22,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "a27800c8f2899347eba06745eac23b0a3b64bf10eb1821beb43f24ac3e9b599d",
+          "source_characters": 27,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.041857,
+            "end_time": "2025-11-18T08:07:20.385572",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:20.343715",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 23,
+          "type": "code",
+          "execution_count": 15,
+          "source_sha256": "6e1d9cf733fa939a12e46641c3a6dd2383146c5e1680bbd9b01ba593673b7de8",
+          "source_characters": 85,
+          "source_lines": 3,
+          "output_sha256": "25d8ef6a1f376928a53e4c116b4b652d24e9a586745d012a61078b19ec857802",
+          "output_objects": 5,
+          "output_mime_types": [
+            "text/html",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 1074.11744,
+            "end_time": "2025-11-18T08:25:14.544558",
+            "exception": false,
+            "start_time": "2025-11-18T08:07:20.427118",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 24,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "437a17fe4394ad47fd04883e44f78400af756716e9985dd7c7001dc866e97531",
+          "source_characters": 43,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.040928,
+            "end_time": "2025-11-18T08:25:14.626904",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:14.585976",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 25,
+          "type": "code",
+          "execution_count": 16,
+          "source_sha256": "de42c04895a7be5c94af057a51435011851fe5ef80a701fdf8043025e85411ad",
+          "source_characters": 715,
+          "source_lines": 17,
+          "output_sha256": "b650b4beadeb2586d3c47cc44a2d093ae658ccb5d8059a007f5b89167a6049a6",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": false,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata",
+            "source"
+          ],
+          "papermill": {
+            "duration": 24.887137,
+            "end_time": "2025-11-18T08:25:39.673009",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:14.785872",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 26,
+          "type": "code",
+          "execution_count": 17,
+          "source_sha256": "fa60f32726be9919b1c2fe2c43d782f3c749899812937d149db70e9768f4b7db",
+          "source_characters": 137,
+          "source_lines": 9,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.054857,
+            "end_time": "2025-11-18T08:25:39.774037",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:39.719180",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 27,
+          "type": "code",
+          "execution_count": 18,
+          "source_sha256": "86c69f1ff2f0526931656d53d4257eb94a65cf667661b3bbc6f20e740fe0a236",
+          "source_characters": 282,
+          "source_lines": 9,
+          "output_sha256": "3f65d149dbde8ddf79c49d8819d3dac49028d0eb27e174479cc415adbf444c33",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.050733,
+            "end_time": "2025-11-18T08:25:39.868575",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:39.817842",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 28,
+          "type": "code",
+          "execution_count": 19,
+          "source_sha256": "688bd87591527b46442b41a32be6aeb5f09e7ac521ab5930cd2e63f6c1c903a0",
+          "source_characters": 2527,
+          "source_lines": 53,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.051946,
+            "end_time": "2025-11-18T08:25:39.964532",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:39.912586",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 29,
+          "type": "code",
+          "execution_count": 20,
+          "source_sha256": "be8ad6dff0d2c4416313f2742d1c4d67a503d297cedd01e5f6c84e543b07112d",
+          "source_characters": 4280,
+          "source_lines": 34,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.051135,
+            "end_time": "2025-11-18T08:25:40.063244",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:40.012109",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 30,
+          "type": "code",
+          "execution_count": 21,
+          "source_sha256": "6f8400d3161b40a0a74e22e4a90eca12e9bbfdc4e75c79447cc1328f1bce2ca7",
+          "source_characters": 206,
+          "source_lines": 4,
+          "output_sha256": "6fc95c524d960fa1101b89f663cd91eacee4e29891e9e26ab49b37bfdab76c1c",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 0.048912,
+            "end_time": "2025-11-18T08:25:40.153873",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:40.104961",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 31,
+          "type": "code",
+          "execution_count": 22,
+          "source_sha256": "c020298fb36e534eb9093b6fe5d0c0f18d8a5f418263b7f4dd848a821b77146f",
+          "source_characters": 1704,
+          "source_lines": 50,
+          "output_sha256": "5c101eee8defef8d71f6bb024b44bdf329b2a995cb0b4d306bca40b19a360b0a",
+          "output_objects": 2,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 55.159615,
+            "end_time": "2025-11-18T08:26:35.354768",
+            "exception": false,
+            "start_time": "2025-11-18T08:25:40.195153",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 32,
+          "type": "code",
+          "execution_count": 23,
+          "source_sha256": "71559ce9529764b51a1646c2a2201a071e12836ce3fada662dad09d5b54d38ad",
+          "source_characters": 401,
+          "source_lines": 13,
+          "output_sha256": "df43e7689547af72e49e4d967e3260779bf679188b6cc22b3dbb837800db518e",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 0.049189,
+            "end_time": "2025-11-18T08:26:35.444392",
+            "exception": false,
+            "start_time": "2025-11-18T08:26:35.395203",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 33,
+          "type": "code",
+          "execution_count": 24,
+          "source_sha256": "dcf89af04af58536e3d4ff255013a6bcc73417f697b4ca0333fe0911fb9caf1e",
+          "source_characters": 2719,
+          "source_lines": 66,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.052238,
+            "end_time": "2025-11-18T08:26:35.539279",
+            "exception": false,
+            "start_time": "2025-11-18T08:26:35.487041",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 34,
+          "type": "code",
+          "execution_count": 25,
+          "source_sha256": "1dc7d796dbcb5dfb6757b56b7eeafb70a08162da1274707d2135694bb979b821",
+          "source_characters": 1339,
+          "source_lines": 34,
+          "output_sha256": "d441889710249970fdcc3e11ddf196f763a11600b04b296f3d862eea78820f88",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": false,
+          "changed_keys": [
+            "execution_count",
+            "id",
+            "metadata",
+            "outputs"
+          ],
+          "papermill": {
+            "duration": 0.049605,
+            "end_time": "2025-11-18T08:26:35.630629",
+            "exception": false,
+            "start_time": "2025-11-18T08:26:35.581024",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 35,
+          "type": "code",
+          "execution_count": null,
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_characters": 0,
+          "source_lines": 0,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.041307,
+            "end_time": "2025-11-18T08:26:35.713700",
+            "exception": false,
+            "start_time": "2025-11-18T08:26:35.672393",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        },
+        {
+          "cell_1_based": 36,
+          "type": "code",
+          "execution_count": null,
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_characters": 0,
+          "source_lines": 0,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [
+            "id",
+            "metadata"
+          ],
+          "papermill": {
+            "duration": 0.040641,
+            "end_time": "2025-11-18T08:26:35.795705",
+            "exception": false,
+            "start_time": "2025-11-18T08:26:35.755064",
+            "status": "completed"
+          },
+          "review_method": "full source/text/html output static review; widget values separately inspected"
+        }
+      ]
+    },
+    {
+      "path": "upload/Qwen3_(4B)_SFFT_code_0811(2).ipynb",
+      "sha256": "42cef8097628bb2d09f1fc6c51a6aa7bb1d20c462e2f56fbda44236807b14aa9",
+      "bytes": 359790,
+      "prior_path": "source/Qwen3_(4B)_SFFT_code_0811.ipynb",
+      "prior_sha256": "42cef8097628bb2d09f1fc6c51a6aa7bb1d20c462e2f56fbda44236807b14aa9",
+      "byte_identical_previous": true,
+      "cell_count": 27,
+      "metadata_without_widgets": {
+        "accelerator": "GPU",
+        "colab": {
+          "gpuType": "T4",
+          "provenance": []
+        },
+        "kernelspec": {
+          "display_name": "Python 3 (ipykernel)",
+          "language": "python",
+          "name": "python3"
+        },
+        "language_info": {
+          "codemirror_mode": {
+            "name": "ipython",
+            "version": 3
+          },
+          "file_extension": ".py",
+          "mimetype": "text/x-python",
+          "name": "python",
+          "nbconvert_exporter": "python",
+          "pygments_lexer": "ipython3",
+          "version": "3.10.12"
+        }
+      },
+      "cells": [
+        {
+          "cell_1_based": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "26e002e2cf3684c6cd911a97d7bb3496daa3566788fc786c99696381ffa2eca8",
+          "source_characters": 16,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_sha256": "ff8675052629ce34b82f2044d0b42e82133c2d5380908f0e25a8ae9af517594c",
+          "source_characters": 281,
+          "source_lines": 8,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 3,
+          "type": "code",
+          "execution_count": 2,
+          "source_sha256": "15b5950d42377aca1cf150a4177a7f122ef599ee6c44fa66f4ac47e09270b020",
+          "source_characters": 1119,
+          "source_lines": 19,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "7d1c67c535b3161d7335e9335357e55b2f30546065f3cd768ad2712e45d52a0e",
+          "source_characters": 125,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 5,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "32c2ccd2375bc0dbf3ec4c0e138ad156251ceca94d4fc5b769ab8c0797dc11ca",
+          "source_characters": 164,
+          "source_lines": 4,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 6,
+          "type": "code",
+          "execution_count": 3,
+          "source_sha256": "6ce99eaa4c50eef4646347afc873a2318a56889a7f64dfcc7e550d90ac142c87",
+          "source_characters": 137,
+          "source_lines": 6,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 7,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "92b148318d56635cff3aadbf0a3cee6396924e033901f099f1854ab9dac62691",
+          "source_characters": 51,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 8,
+          "type": "code",
+          "execution_count": 4,
+          "source_sha256": "f5fd37e84bffe2d9332e8993060d250957cfff6204c47cdaf2e02a6d6f5978b0",
+          "source_characters": 1048,
+          "source_lines": 28,
+          "output_sha256": "cc5651ba158e57c07be917bf9e47301562f94df829cfdd0e9bc8ddd352c70ef1",
+          "output_objects": 6,
+          "output_mime_types": [
+            "application/vnd.jupyter.widget-view+json",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 9,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "85732f80fec7e8a050ea5293d0fa8bfdfd3e837d58ae60e4bb32cae825821692",
+          "source_characters": 26,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 10,
+          "type": "code",
+          "execution_count": 5,
+          "source_sha256": "e8b46c1a5f501238f34f4c0bd6e3f260813551aef167f173f07e5b5ab7a67d9c",
+          "source_characters": 1661,
+          "source_lines": 28,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 11,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "25c91bf8b343c44b633437de285e294ae275d4e944b60679909d2add821ceae4",
+          "source_characters": 32,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 12,
+          "type": "code",
+          "execution_count": 6,
+          "source_sha256": "f77a03f82ae4b81579d4ccfaa6b06383e88828218b03e0feced8b67accdf4c06",
+          "source_characters": 1706,
+          "source_lines": 42,
+          "output_sha256": "cac0afb07abc4add54a34be513ebd5b3deb9c43cb06a9f30a23b4681aa832590",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_sha256": "90c76c13f73a6adb3f4c471916147b5ae5fae92a0a1eee745ca74233351d2c8e",
+          "source_characters": 1134,
+          "source_lines": 27,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 14,
+          "type": "code",
+          "execution_count": 8,
+          "source_sha256": "c1044ad8df92d500af87ce524516a4d196f2bc3725e73981d27e0800f5101661",
+          "source_characters": 894,
+          "source_lines": 19,
+          "output_sha256": "34393958a5934a52062586a823ba7a454d59b7b5aaf8dfbbbb9e3eaa6d0878b5",
+          "output_objects": 2,
+          "output_mime_types": [
+            "application/vnd.jupyter.widget-view+json",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 15,
+          "type": "code",
+          "execution_count": 9,
+          "source_sha256": "a1579be3dca85c507811f7674030327c864a1a9cf6bb6aad43c1d1970e833df6",
+          "source_characters": 77,
+          "source_lines": 2,
+          "output_sha256": "0989c90a31b463d413b0ed884b84540eb2bd5bcba7bdaa0f7a194e8a797ccb1a",
+          "output_objects": 1,
+          "output_mime_types": [
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 16,
+          "type": "code",
+          "execution_count": 10,
+          "source_sha256": "ee7188d89e3b262ec8194d5eaa2de13ec042f207e1a6c3b07dff64adeef84d39",
+          "source_characters": 278,
+          "source_lines": 4,
+          "output_sha256": "528643767da4a5a4ece1971bd2f8a0dd8b210c3c3f5646d9d416f5e338bc9d7a",
+          "output_objects": 1,
+          "output_mime_types": [
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 17,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "d6cd196b59e02732353eaf8d91d4f79ebdd8bdfc0004d1a152d3cbb803a640f3",
+          "source_characters": 37,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 18,
+          "type": "code",
+          "execution_count": 12,
+          "source_sha256": "732b837e14962cd8c780a7e4a28527b0fe7f6a68687007aa12e6166d0a7a2565",
+          "source_characters": 748,
+          "source_lines": 21,
+          "output_sha256": "422b9b92475ba7dce98aa29eea957085366728547395be91e70422e1e7eedb15",
+          "output_objects": 1,
+          "output_mime_types": [
+            "application/vnd.jupyter.widget-view+json",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 19,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "e9bff67d3ff96ea8244ad7e2181eca6b9d3cfe4ea2f62c93db320586b0c2e6f4",
+          "source_characters": 27,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 20,
+          "type": "code",
+          "execution_count": 13,
+          "source_sha256": "6e1d9cf733fa939a12e46641c3a6dd2383146c5e1680bbd9b01ba593673b7de8",
+          "source_characters": 85,
+          "source_lines": 3,
+          "output_sha256": "e140283381f917ead845b9c4d5d5caf06ce44d3ed7560e55e38dfc2cb03c206a",
+          "output_objects": 5,
+          "output_mime_types": [
+            "text/html",
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 21,
+          "type": "markdown",
+          "execution_count": null,
+          "source_sha256": "8cce4cda2fe77930622409454f4c6f455b9784c3b8162e8c2cba4febde13bac4",
+          "source_characters": 43,
+          "source_lines": 1,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 22,
+          "type": "code",
+          "execution_count": 14,
+          "source_sha256": "c272714cd7d3d7fbf154aadd685b1742cbd7afd15c512427d383bf2fa144081f",
+          "source_characters": 437,
+          "source_lines": 10,
+          "output_sha256": "f8320df31dad31b250b4115c11538b124336982e63b35637df24e3e9fa6e586f",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 23,
+          "type": "code",
+          "execution_count": 14,
+          "source_sha256": "0062078f7934e97f4a80350bca1b5eb800675dee26e72b991e54ed441f19c959",
+          "source_characters": 132,
+          "source_lines": 2,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 24,
+          "type": "code",
+          "execution_count": 20,
+          "source_sha256": "e1ff292ca2af03b8483f8b22654d58730a8e30b2225d93916a52e2a9ab21a81e",
+          "source_characters": 233,
+          "source_lines": 10,
+          "output_sha256": "c2d2bebbf1a882dcf471e96cb719bad2f47ff60f17eccb3ac78c19a46adf0b40",
+          "output_objects": 2,
+          "output_mime_types": [
+            "text/plain"
+          ],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 25,
+          "type": "code",
+          "execution_count": null,
+          "source_sha256": "9fcbc437deb3c802170907b30356b78b2847e414a2ef41470a44972e86a4b5ff",
+          "source_characters": 126,
+          "source_lines": 2,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 26,
+          "type": "code",
+          "execution_count": 1,
+          "source_sha256": "0b1e88cdcbf10665aacb1de69bc6dfca22cc66634db78530c34ef63ab42bb14d",
+          "source_characters": 11,
+          "source_lines": 1,
+          "output_sha256": "6687670e3a6e81cbdfa34e606471a0336e0b2dba87a874d24fb3881a6eafd4e6",
+          "output_objects": 1,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        },
+        {
+          "cell_1_based": 27,
+          "type": "code",
+          "execution_count": null,
+          "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_characters": 0,
+          "source_lines": 0,
+          "output_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "output_objects": 0,
+          "output_mime_types": [],
+          "source_equal_previous": true,
+          "outputs_equal_previous": true,
+          "changed_keys": [],
+          "papermill": null,
+          "review_method": "byte-identical prior complete audit reused"
+        }
+      ]
+    }
+  ]
+}

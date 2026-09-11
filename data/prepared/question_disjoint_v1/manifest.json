@@ -1,0 +1,178 @@
+{
+  "protocol": "question_disjoint_v1",
+  "experiment_status": "new experiment, no new model results",
+  "token_filter_applied": false,
+  "token_filter_stage": "train: exact tokenizer/template length <= max_seq_length; no truncation",
+  "source_hashes": {
+    "arithmetic_logic_data_revised_v2.jsonl": "f371ac9f40f3367daa4e31f651cb8a37b8324bff25007a8e419bdbbebac4ce20",
+    "results_v3.jsonl": "ada65f97a005ae64f86b8d514b0ff0daae80942fec0b494ca0c39578c2dea35c",
+    "arithmetic_problems_v3.csv": "f381ff8704f8d609c6671f846149b94d13a921d1897efc6b2e3d0ea1d63ac48f",
+    "random_samples_for_inference.csv": "5c4d32efc079a57edb64f669e5aa068c77c0ba6e919be41e2c23a600cc382b80"
+  },
+  "prompt_hashes": {
+    "arithmetic_code_only.txt": "dc134cb23ba034b0c7334d981fc25dbb2960ee12fb9522b1e0323be42092da07",
+    "reasoning_cot_code.txt": "0fe31c997f411d743b2def33272ac2d34ac0fa43f18a16d0f8ef78e0a1797e25"
+  },
+  "template_hash": "29182b952267775d40578652f19b0289ee629a4639feb2fcad52a930737d5f76",
+  "question_normalization": "Unicode NFKC, replace $Calculate# with Calculate, whitespace collapse, casefold",
+  "excluded_evaluation_question_count": 189,
+  "training_candidates": 436,
+  "training_by_category": {
+    "arithmetic_only": 309,
+    "cot_and_code": 127
+  },
+  "training_dispositions": {
+    "training_candidate": 436,
+    "evaluation_question_overlap": 114,
+    "not_historically_eligible": 874,
+    "duplicate_training_question": 10
+  },
+  "evaluation_questions": 187,
+  "evaluation_by_category": {
+    "arithmetic_only": 100,
+    "cot_and_code": 87
+  },
+  "evaluation_exclusions": [
+    {
+      "id": "random_samples_for_inference.csv:15",
+      "question_id": "b704f920257391c7be4cee30d2b3a5a04caec606445bae7a32a89771d920e258",
+      "problem": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 15,
+      "reason": "quarantined_reference_problem",
+      "detail": "Additional even-per-line condition contradicts reference answer 59."
+    },
+    {
+      "id": "random_samples_for_inference.csv:29",
+      "question_id": "e3821129214ef451df6f52eb4aad8fa96b4ce8da9783cee1d576ccc60c1384ac",
+      "problem": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 29,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:41",
+      "question_id": "42389ee16212ff4d6d72654b91858c5d3943baa760cfcba31807ca730bbf8dac",
+      "problem": "Determine the number of solutions in $\\mathbb{R}^2$ for the system of equations:\n\\[ |x| + |y| = 3 \\]\n\\[ \\frac{\\sin(\\pi x^2)}{2} = 1 \\]",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 41,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:43",
+      "question_id": "a930dd05a15ab59b2137cbb17a3c3d1954e2c0b0132d622b54d1e3754e632b22",
+      "problem": "Given the function \\( f(x) = \\log\\left(\\sqrt{x^2 + 1} + x\\right) + \\sin x \\), if \\( f(a+2) = 5 \\) and \\( f(b-7) = -5 \\), find the value of \\( a + b \\).",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 43,
+      "reason": "quarantined_reference_problem",
+      "detail": "Oddness incorrectly used as injectivity; reference answer is not uniquely determined."
+    },
+    {
+      "id": "random_samples_for_inference.csv:44",
+      "question_id": "89cdd686c4cab769b8cee8a3dec559e7410da97891bd37fa1c3247bf3d521351",
+      "problem": "In how many different ways can 14 identical cans of tennis balls be sold over three days (Friday, Saturday, and Sunday)?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 44,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:46",
+      "question_id": "d190c9ccb2d8ce6d212b1b8c70f91cfd7a2faa212d572f4756c6c20d5b5502ee",
+      "problem": "Evaluate the limit \\(\\lim_{h \\to 0} \\frac{1}{h} \\left[ \\int_{2}^{2+h} \\sqrt{1+t^3} \\, dt \\right]\\).",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 46,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:50",
+      "question_id": "c411a27d4294e2376ffebd647f4aa2507af76058dcd6d5696a46c19dd67721f7",
+      "problem": "In order for Mateen to walk a kilometer (1000 meters) in his rectangular backyard, he must walk the length 25 times or walk its perimeter 10 times. What is the area of Mateen's backyard in square meters?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 50,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:55",
+      "question_id": "1be10435e1fbcd8d1484fc7ed7113b2779fe9f72085ab93f5ada6675ce90a52f",
+      "problem": "Let \\( n \\) be a positive integer such that \\( (x^n + x - 37) \\equiv 2013 \\pmod{(x-2)} \\). Find \\( n \\).",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 55,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:56",
+      "question_id": "45c98998fe4bf308d5f0a93a0cb56531d412201e29548dff624dfa02d76e72a3",
+      "problem": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 56,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:66",
+      "question_id": "b86fa53badbeb35a32ad9448b29e89e8c556403d47e1a2a7ed38db98cc48da9a",
+      "problem": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 66,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:67",
+      "question_id": "89cdd686c4cab769b8cee8a3dec559e7410da97891bd37fa1c3247bf3d521351",
+      "problem": "In how many different ways can 14 identical cans of tennis balls be sold over three days (Friday, Saturday, and Sunday)?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 67,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:82",
+      "question_id": "45c98998fe4bf308d5f0a93a0cb56531d412201e29548dff624dfa02d76e72a3",
+      "problem": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 82,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    },
+    {
+      "id": "random_samples_for_inference.csv:98",
+      "question_id": "531271fe028a998e31b77f9a0c6220a4ab2e8fcfcca277b6f532eb5a7bddc41c",
+      "problem": "If $n! = 2,432,902,008,176,640,000,$ find the value of $n$ without using any electronic device.",
+      "category": "cot_and_code",
+      "source_file": "random_samples_for_inference.csv",
+      "source_row": 98,
+      "reason": "duplicate_evaluation_question",
+      "detail": null
+    }
+  ],
+  "train_eval_normalized_question_overlap": 0,
+  "limitations": [
+    "String normalization does not detect every semantic duplicate or pretraining exposure.",
+    "References are mathematical numeric answers, not formally verified proofs.",
+    "New protocol differs from historical training; original weights are absent."
+  ],
+  "prepared_hashes": {
+    "train_candidates.jsonl": "e1d2207ed1b415ccb6f253732242bbd073d2ecb98058a779244711fd1ce83083",
+    "eval_questions.jsonl": "81212aa309979160c4c331755735c3e35fa127cebfb17ca9e717b968d10ef7e6",
+    "source_dispositions.jsonl": "dfc7920a8d667c2a4af59ab1bef1bde6fceb685ca896a38a944fda68d006f62d"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "scope": "Public derivatives prepared after automatic approval review rejected a raw notebook upload.",
+  "private_user_paths_removed": true,
+  "raw_mathematical_data_changed": false,
+  "model_results_changed": false,
+  "historical_text_evidence_retained": true,
+  "changes": [
+    {
+      "path": "archive/notebooks/Qwen3_(4B)_SFFT_code_0811.ipynb",
+      "original_sha256": "42cef8097628bb2d09f1fc6c51a6aa7bb1d20c462e2f56fbda44236807b14aa9",
+      "published_sha256": "02e4665981e958352a2094b4df01af7af50ba2c71d23ed267700bc2846069049",
+      "published_bytes": 42448,
+      "removed_rich_mime_entries": 4
+    },
+    {
+      "path": "archive/notebooks/Qwen3_(4B)_SFTT_inference_exec_0816.ipynb",
+      "original_sha256": "398b0da394b4fec7ba2d779e17cb03af3cb3853c945368ba98c02923a16b44e4",
+      "published_sha256": "fbba93e8195583d0dd6f0c26b200172cdd2200dfa2a1cd119bbf64b732c3cd7a",
+      "published_bytes": 38765,
+      "removed_rich_mime_entries": 1
+    },
+    {
+      "path": "archive/notebooks/Qwen3_4B_GRPO_V1.ipynb",
+      "original_sha256": "97eed699f0e913c01b7e5665b18a6618b0ba22fec16651b51ed30c511f8667b3",
+      "published_sha256": "b494845e00d1c067ce39011a21e25d0715bae3ccff83bc6eca54d4dd9f604cc1",
+      "published_bytes": 206623,
+      "removed_rich_mime_entries": 42
+    },
+    {
+      "path": "archive/scripts/add_more_data.py",
+      "original_sha256": "3f3665a5f57ef90d86e7405d377f2853d95b8ad8258fec81a4923b79f87ff47a",
+      "published_sha256": "6f4880c44e930c114e0ff6fed91d7b97d7feb7d3f6782527ce5f8d96d0ab9b29",
+      "published_bytes": 3905,
+      "removed_rich_mime_entries": 0
+    },
+    {
+      "path": "archive/scripts/generate_arithmetic_data.py",
+      "original_sha256": "76e8460332e5da976853cce3407ae78b1688dd45b3c49fc32185a62cdecb496d",
+      "published_sha256": "8a6ccab4335fdda1b8f983b62e8d06b3a822cad96df6218bfdf04c9fb845cfb8",
+      "published_bytes": 4279,
+      "removed_rich_mime_entries": 0
+    },
+    {
+      "path": "archive/notebooks/notebook4d41ab3228 _train and reference.ipynb",
+      "original_sha256": "009946a653bbb35bc787c5759cd5331740c65e9a647497d0f03e6eb745cee20e",
+      "published_sha256": "4172a3a42b76605debe5ee1daf6d94a3f20c832e78103369858dc6b3173bab2f",
+      "published_bytes": 70752,
+      "removed_rich_mime_entries": 4
+    },
+    {
+      "path": "archive/notebooks/notebook62f7bf13ad_reference .ipynb",
+      "original_sha256": "dccece4af599b4dd008e604d26efadfcb908cf436ecd0da57c8e55b17fba9b12",
+      "published_sha256": "4140a10a5013ea0496f0f1e8e857b7154a2c481e9eeaf44630493e047fd0058f",
+      "published_bytes": 63769,
+      "removed_rich_mime_entries": 1
+    },
+    {
+      "path": "archive/notebooks/notebookd84987e9c1_base_cot.ipynb",
+      "original_sha256": "e7074b3de6edf0b417e5983640de4533066036bbe1584445eac1bd688f373026",
+      "published_sha256": "1f54e7e3eaff5325d37e6981594d0e05c2e2dbce42ce96a29c33ec6443b55f4b",
+      "published_bytes": 172683,
+      "removed_rich_mime_entries": 1
+    },
+    {
+      "path": "archive/notebooks/notebookd84987e9c1_merged_cot.ipynb",
+      "original_sha256": "e17597d25667b530fd84f309e320c97762195d2ae77c40549bc891d9dbdb65dc",
+      "published_sha256": "ec32c04966b476585e5fd5b2555c8bbfd29d558d9ab9239911770f2664a7c61a",
+      "published_bytes": 163807,
+      "removed_rich_mime_entries": 1
+    },
+    {
+      "path": "archive/notebooks/qwen4b-train-code-100920859-279441290..ipynb",
+      "original_sha256": "3790e0e38706dc4bb3ea04c3e9178505f6437a0f6b384ba97f11183ab5463f10",
+      "published_sha256": "44d6215a9541741562b09f2e5090b65c7b48ef2463b9b679a9b12c24831dfc90",
+      "published_bytes": 90774,
+      "removed_rich_mime_entries": 4
+    },
+    {
+      "path": "archive/notebooks/Qwen3_(4B)_SFFT_code_0811(2).ipynb",
+      "original_sha256": "42cef8097628bb2d09f1fc6c51a6aa7bb1d20c462e2f56fbda44236807b14aa9",
+      "published_sha256": "02e4665981e958352a2094b4df01af7af50ba2c71d23ed267700bc2846069049",
+      "published_bytes": 42448,
+      "removed_rich_mime_entries": 4
+    }
+  ],
+  "unsanitized_notebook_originals_uploaded": false
+}

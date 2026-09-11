@@ -1,0 +1,31 @@
+{
+  "review_date": "2026-09-11",
+  "python_version": "3.12.14",
+  "platform": "Linux x86_64",
+  "commands_passed": [
+    "python scripts/audit_artifacts.py --output reports/artifact_audit.json",
+    "python scripts/audit_data.py",
+    "python scripts/recover_historical_evaluation.py",
+    "python -m py_compile scripts/audit_artifacts.py scripts/audit_data.py scripts/recover_historical_evaluation.py"
+  ],
+  "verified_originals": 13,
+  "notebooks": 7,
+  "notebook_cells": 203,
+  "parsed_data_records": 509,
+  "historical_evaluation_records_recovered": 40,
+  "historical_question_pairs": 20,
+  "historical_base_correct": 12,
+  "historical_merged_correct": 15,
+  "teacher_generation_run": false,
+  "model_training_run": false,
+  "model_merge_run": false,
+  "model_inference_run": false,
+  "arbitrary_generated_python_executed": false,
+  "blockers": [
+    "results_v3.jsonl missing",
+    "original merged/adapter weights and tokenizer absent",
+    "original arithmetic paired predictions absent",
+    "GPU unavailable in this review environment"
+  ],
+  "scope": "Passed commands check artifacts and recover historical evidence. They do not establish end-to-end model reproducibility."
+}

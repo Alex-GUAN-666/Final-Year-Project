@@ -1,0 +1,164 @@
+[
+  {
+    "file": "Group14_ Research and application of the language models.pdf",
+    "bytes": 1239645,
+    "sha256": "2919c3a5ec34e1e32943b30938583be49b3477fcd856e727fce1effdd78c43a1",
+    "repository_path": null,
+    "disposition": "original paper retained separately; not bundled because it includes student IDs/signatures"
+  },
+  {
+    "file": "Group14_GRPO-A Resource-Efficient Framework for Structured Mathematical Reasoning and its Role in Hybrid LLM Architectures.docx",
+    "bytes": 4533854,
+    "sha256": "fac27c2d9e8b15af0cff4dba5f1e60b87568b153e850ee6827022394bf8256d7",
+    "repository_path": null,
+    "disposition": "original paper retained separately; not bundled because it includes student IDs/signatures"
+  },
+  {
+    "file": "Qwen3_(4B)_SFFT_code_0811.ipynb",
+    "bytes": 359790,
+    "sha256": "42cef8097628bb2d09f1fc6c51a6aa7bb1d20c462e2f56fbda44236807b14aa9",
+    "repository_path": "archive/notebooks/Qwen3_(4B)_SFFT_code_0811.ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 42448,
+    "published_sha256": "02e4665981e958352a2094b4df01af7af50ba2c71d23ed267700bc2846069049"
+  },
+  {
+    "file": "Qwen3_(4B)_SFTT_inference_exec_0816.ipynb",
+    "bytes": 50960,
+    "sha256": "398b0da394b4fec7ba2d779e17cb03af3cb3853c945368ba98c02923a16b44e4",
+    "repository_path": "archive/notebooks/Qwen3_(4B)_SFTT_inference_exec_0816.ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 38765,
+    "published_sha256": "fbba93e8195583d0dd6f0c26b200172cdd2200dfa2a1cd119bbf64b732c3cd7a"
+  },
+  {
+    "file": "Qwen3_4B_GRPO_V1.ipynb",
+    "bytes": 613854,
+    "sha256": "97eed699f0e913c01b7e5665b18a6618b0ba22fec16651b51ed30c511f8667b3",
+    "repository_path": "archive/notebooks/Qwen3_4B_GRPO_V1.ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 206623,
+    "published_sha256": "b494845e00d1c067ce39011a21e25d0715bae3ccff83bc6eca54d4dd9f604cc1"
+  },
+  {
+    "file": "add_more_data.py",
+    "bytes": 3897,
+    "sha256": "3f3665a5f57ef90d86e7405d377f2853d95b8ad8258fec81a4923b79f87ff47a",
+    "repository_path": "archive/scripts/add_more_data.py",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 3905,
+    "published_sha256": "6f4880c44e930c114e0ff6fed91d7b97d7feb7d3f6782527ce5f8d96d0ab9b29"
+  },
+  {
+    "file": "arithmetic_logic_data_revised_v2.jsonl",
+    "bytes": 108308,
+    "sha256": "f371ac9f40f3367daa4e31f651cb8a37b8324bff25007a8e419bdbbebac4ce20",
+    "repository_path": "data/raw/arithmetic_logic_data_revised_v2.jsonl",
+    "disposition": "preserved byte-for-byte; historical source, not a clean runnable entrypoint"
+  },
+  {
+    "file": "arithmetic_problems_v3.csv",
+    "bytes": 16139,
+    "sha256": "f381ff8704f8d609c6671f846149b94d13a921d1897efc6b2e3d0ea1d63ac48f",
+    "repository_path": "data/raw/arithmetic_problems_v3.csv",
+    "disposition": "preserved byte-for-byte; historical source, not a clean runnable entrypoint"
+  },
+  {
+    "file": "batch_generate_and_verify_v3_1.py",
+    "bytes": 15696,
+    "sha256": "9c18c30b1bf841e03e8e2551f4c23b1595c7f342bb9ef4460e3240c04cca58ae",
+    "repository_path": "archive/scripts/batch_generate_and_verify_v3_1.py",
+    "disposition": "preserved byte-for-byte; historical source, not a clean runnable entrypoint"
+  },
+  {
+    "file": "generate_arithmetic_data.py",
+    "bytes": 4275,
+    "sha256": "76e8460332e5da976853cce3407ae78b1688dd45b3c49fc32185a62cdecb496d",
+    "repository_path": "archive/scripts/generate_arithmetic_data.py",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 4279,
+    "published_sha256": "8a6ccab4335fdda1b8f983b62e8d06b3a822cad96df6218bfdf04c9fb845cfb8"
+  },
+  {
+    "file": "notebook4d41ab3228 _train and reference.ipynb",
+    "bytes": 387919,
+    "sha256": "009946a653bbb35bc787c5759cd5331740c65e9a647497d0f03e6eb745cee20e",
+    "repository_path": "archive/notebooks/notebook4d41ab3228 _train and reference.ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 70752,
+    "published_sha256": "4172a3a42b76605debe5ee1daf6d94a3f20c832e78103369858dc6b3173bab2f"
+  },
+  {
+    "file": "notebook62f7bf13ad_reference .ipynb",
+    "bytes": 75914,
+    "sha256": "dccece4af599b4dd008e604d26efadfcb908cf436ecd0da57c8e55b17fba9b12",
+    "repository_path": "archive/notebooks/notebook62f7bf13ad_reference .ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 63769,
+    "published_sha256": "4140a10a5013ea0496f0f1e8e857b7154a2c481e9eeaf44630493e047fd0058f"
+  },
+  {
+    "file": "notebookd84987e9c1_base_cot.ipynb",
+    "bytes": 170911,
+    "sha256": "e7074b3de6edf0b417e5983640de4533066036bbe1584445eac1bd688f373026",
+    "repository_path": "archive/notebooks/notebookd84987e9c1_base_cot.ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 172683,
+    "published_sha256": "1f54e7e3eaff5325d37e6981594d0e05c2e2dbce42ce96a29c33ec6443b55f4b"
+  },
+  {
+    "file": "notebookd84987e9c1_merged_cot.ipynb",
+    "bytes": 162159,
+    "sha256": "e17597d25667b530fd84f309e320c97762195d2ae77c40549bc891d9dbdb65dc",
+    "repository_path": "archive/notebooks/notebookd84987e9c1_merged_cot.ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 163807,
+    "published_sha256": "ec32c04966b476585e5fd5b2555c8bbfd29d558d9ab9239911770f2664a7c61a"
+  },
+  {
+    "file": "random_samples_for_inference.csv",
+    "bytes": 550349,
+    "sha256": "5c4d32efc079a57edb64f669e5aa068c77c0ba6e919be41e2c23a600cc382b80",
+    "repository_path": "data/raw/random_samples_for_inference.csv",
+    "disposition": "preserved byte-for-byte; historical source, not a clean runnable entrypoint"
+  },
+  {
+    "file": "results_v3(1).jsonl",
+    "bytes": 12118956,
+    "sha256": "ada65f97a005ae64f86b8d514b0ff0daae80942fec0b494ca0c39578c2dea35c",
+    "repository_path": "data/raw/results_v3.jsonl",
+    "disposition": "Second upload: byte-preserved; duplicate status and provenance documented in v2 review"
+  },
+  {
+    "file": "qwen4b-train-code-100920859-279441290..ipynb",
+    "bytes": 128272,
+    "sha256": "3790e0e38706dc4bb3ea04c3e9178505f6437a0f6b384ba97f11183ab5463f10",
+    "repository_path": "archive/notebooks/qwen4b-train-code-100920859-279441290..ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 90774,
+    "published_sha256": "44d6215a9541741562b09f2e5090b65c7b48ef2463b9b679a9b12c24831dfc90"
+  },
+  {
+    "file": "Qwen3_(4B)_SFFT_code_0811(2).ipynb",
+    "bytes": 359790,
+    "sha256": "42cef8097628bb2d09f1fc6c51a6aa7bb1d20c462e2f56fbda44236807b14aa9",
+    "repository_path": "archive/notebooks/Qwen3_(4B)_SFFT_code_0811(2).ipynb",
+    "disposition": "Public derivative: generic local paths; notebook widgets and rich display payloads removed. Research source (except paths), execution counts, and plain-text historical evidence retained. Original bytes/sha256 identify the separately retained input, not this public derivative.",
+    "published_bytes": 42448,
+    "published_sha256": "02e4665981e958352a2094b4df01af7af50ba2c71d23ed267700bc2846069049"
+  },
+  {
+    "file": "evaluation_results_base_cot_v5(1).csv",
+    "bytes": 136051,
+    "sha256": "a05b045035a3a2e84c2844d92ba549a48db8096061ef76b73ac9e43a5197825e",
+    "repository_path": "archive/evaluation/evaluation_results_base_cot_v5(1).csv",
+    "disposition": "Second upload: byte-preserved; duplicate status and provenance documented in v2 review"
+  },
+  {
+    "file": "evaluation_results_merged_cot_v5(1).csv",
+    "bytes": 136051,
+    "sha256": "a05b045035a3a2e84c2844d92ba549a48db8096061ef76b73ac9e43a5197825e",
+    "repository_path": "archive/evaluation/evaluation_results_merged_cot_v5(1).csv",
+    "disposition": "Second upload: byte-preserved; duplicate status and provenance documented in v2 review"
+  }
+]

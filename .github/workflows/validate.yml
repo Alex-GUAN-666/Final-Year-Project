@@ -1,0 +1,213 @@
+name: Validate reconstruction
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Source integrity and standard-library tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: One-command independent reviewer check
+        run: python scripts/verify_reconstruction.py --report "$RUNNER_TEMP/reviewer_check.json"
+
+      - name: Verify original/public-derivative hashes and parse source files
+        run: python scripts/audit_artifacts.py --output "$RUNNER_TEMP/artifact_audit.json"
+
+      - name: Audit source data and reconcile saved results
+        run: |
+          python scripts/audit_data.py
+          python scripts/audit_recovered_distillation.py
+          python scripts/reconcile_evaluation_files.py
+
+      - name: Run standard-library unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Regenerate and verify prepared data
+        run: |
+          python -m fyp.prepare --output-dir "$RUNNER_TEMP/fyp-prepared"
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+
+          committed = Path("data/prepared/question_disjoint_v1")
+          regenerated = Path(os.environ["RUNNER_TEMP"]) / "fyp-prepared"
+          manifest = json.loads((committed / "manifest.json").read_text(encoding="utf-8"))
+          expected_names = {
+              "train_candidates.jsonl",
+              "eval_questions.jsonl",
+              "source_dispositions.jsonl",
+          }
+          if set(manifest["prepared_hashes"]) != expected_names:
+              raise SystemExit("Prepared manifest does not cover all expected data files")
+          for name in sorted(expected_names | {"manifest.json"}):
+              original = (committed / name).read_bytes()
+              rebuilt = (regenerated / name).read_bytes()
+              if original != rebuilt:
+                  raise SystemExit(f"Prepared data is not reproducible: {name}")
+              if name in expected_names:
+                  actual_hash = hashlib.sha256(original).hexdigest()
+                  if actual_hash != manifest["prepared_hashes"][name]:
+                      raise SystemExit(f"Prepared file hash mismatch: {name}")
+          if manifest["train_eval_normalized_question_overlap"] != 0:
+              raise SystemExit("Prepared training and evaluation questions overlap")
+          print("Prepared files reproduce byte for byte; all three hashes match; question overlap is zero.")
+          PY
+
+      - name: Save source verification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: source-verification
+          path: |
+            ${{ runner.temp }}/reviewer_check.json
+            ${{ runner.temp }}/artifact_audit.json
+          if-no-files-found: error
+          retention-days: 90
+
+  tiny-ml:
+    name: Real tiny Qwen3 CPU training, merge and inference
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONUTF8: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      TOKENIZERS_PARALLELISM: "false"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned CPU model dependencies
+        run: |
+          python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -r requirements-model.txt
+          python -m pip check
+
+      - name: Train, merge, reload and generate using a random tiny Qwen3
+        run: python tests/smoke_tiny_model.py --report "$RUNNER_TEMP/tiny_model_smoke.json"
+
+      - name: Publish integration evidence in the run summary
+        if: success()
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          report = (Path(os.environ["RUNNER_TEMP"]) / "tiny_model_smoke.json").read_text(encoding="utf-8")
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as handle:
+              handle.write("### Tiny model CPU integration\n\n")
+              handle.write("This tests real training, adapter merging and inference on a random tiny Qwen3. ")
+              handle.write("It does not train the 4B model or measure mathematical benchmark accuracy.\n\n")
+              handle.write("```json\n" + report + "```\n")
+          PY
+
+      - name: Save tiny model integration evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: tiny-model-integration
+          path: ${{ runner.temp }}/tiny_model_smoke.json
+          if-no-files-found: error
+          retention-days: 90
+
+  docker-integration:
+    name: Real isolated Docker scoring and paired comparison
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PYTHONUTF8: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Build the evaluation image
+        run: docker build --tag fyp-eval:ci --file docker/Dockerfile.eval .
+
+      - name: Exercise execution limits, deferred scoring and comparison
+        run: python tests/smoke_docker.py --image fyp-eval:ci --report "$RUNNER_TEMP/docker_smoke.json"
+
+      - name: Publish Docker integration evidence in the run summary
+        if: success()
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          report = (Path(os.environ["RUNNER_TEMP"]) / "docker_smoke.json").read_text(encoding="utf-8")
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as handle:
+              handle.write("### Docker evaluation integration\n\n")
+              handle.write("Only synthetic test programs and manually specified fixture responses were scored. ")
+              handle.write("These checks establish software behavior, not model accuracy.\n\n")
+              handle.write("```json\n" + report + "```\n")
+          PY
+
+      - name: Replay saved historical programs and compare recorded outcomes
+        run: python scripts/replay_historical_programs.py --image fyp-eval:ci --report "$RUNNER_TEMP/historical_replay.json"
+
+      - name: Publish historical replay evidence
+        if: always()
+        run: |
+          python - <<'PYTHON'
+          import os
+          from pathlib import Path
+          path = Path(os.environ['RUNNER_TEMP']) / 'historical_replay.json'
+          if path.exists():
+              with Path(os.environ['GITHUB_STEP_SUMMARY']).open('a', encoding='utf-8') as handle:
+                  handle.write('### Historical program replay\n\nSaved responses were replayed; no original model inference was performed.\n\n```json\n' + path.read_text() + '```\n')
+          PYTHON
+
+      - name: Save Docker and historical replay evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: docker-and-historical-replay
+          path: |
+            ${{ runner.temp }}/docker_smoke.json
+            ${{ runner.temp }}/historical_replay.json
+          if-no-files-found: error
+          retention-days: 90

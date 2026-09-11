@@ -1,0 +1,1268 @@
+{
+  "official_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "model_last_modified": "2025-07-26T03:45:37.000Z",
+  "tokenizer_json_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "eos_token": "<|im_end|>",
+  "eos_token_id": 151645,
+  "candidate_distilled": 251,
+  "retained_distilled": 143,
+  "arithmetic_retained": 309,
+  "lengths": [
+    {
+      "line": 1,
+      "tokens": 1945,
+      "retained": true
+    },
+    {
+      "line": 8,
+      "tokens": 1904,
+      "retained": true
+    },
+    {
+      "line": 10,
+      "tokens": 2755,
+      "retained": false
+    },
+    {
+      "line": 16,
+      "tokens": 2156,
+      "retained": false
+    },
+    {
+      "line": 22,
+      "tokens": 12354,
+      "retained": false
+    },
+    {
+      "line": 23,
+      "tokens": 2655,
+      "retained": false
+    },
+    {
+      "line": 27,
+      "tokens": 3216,
+      "retained": false
+    },
+    {
+      "line": 39,
+      "tokens": 3786,
+      "retained": false
+    },
+    {
+      "line": 47,
+      "tokens": 3324,
+      "retained": false
+    },
+    {
+      "line": 49,
+      "tokens": 2735,
+      "retained": false
+    },
+    {
+      "line": 56,
+      "tokens": 3761,
+      "retained": false
+    },
+    {
+      "line": 57,
+      "tokens": 2015,
+      "retained": true
+    },
+    {
+      "line": 61,
+      "tokens": 2301,
+      "retained": false
+    },
+    {
+      "line": 66,
+      "tokens": 3478,
+      "retained": false
+    },
+    {
+      "line": 75,
+      "tokens": 3624,
+      "retained": false
+    },
+    {
+      "line": 77,
+      "tokens": 1812,
+      "retained": true
+    },
+    {
+      "line": 81,
+      "tokens": 2239,
+      "retained": false
+    },
+    {
+      "line": 96,
+      "tokens": 2844,
+      "retained": false
+    },
+    {
+      "line": 105,
+      "tokens": 2440,
+      "retained": false
+    },
+    {
+      "line": 109,
+      "tokens": 2351,
+      "retained": false
+    },
+    {
+      "line": 119,
+      "tokens": 1430,
+      "retained": true
+    },
+    {
+      "line": 127,
+      "tokens": 2720,
+      "retained": false
+    },
+    {
+      "line": 128,
+      "tokens": 4149,
+      "retained": false
+    },
+    {
+      "line": 129,
+      "tokens": 3252,
+      "retained": false
+    },
+    {
+      "line": 132,
+      "tokens": 2307,
+      "retained": false
+    },
+    {
+      "line": 133,
+      "tokens": 3984,
+      "retained": false
+    },
+    {
+      "line": 135,
+      "tokens": 3114,
+      "retained": false
+    },
+    {
+      "line": 139,
+      "tokens": 3657,
+      "retained": false
+    },
+    {
+      "line": 142,
+      "tokens": 2665,
+      "retained": false
+    },
+    {
+      "line": 159,
+      "tokens": 1646,
+      "retained": true
+    },
+    {
+      "line": 160,
+      "tokens": 1531,
+      "retained": true
+    },
+    {
+      "line": 165,
+      "tokens": 3590,
+      "retained": false
+    },
+    {
+      "line": 167,
+      "tokens": 2146,
+      "retained": false
+    },
+    {
+      "line": 169,
+      "tokens": 1985,
+      "retained": true
+    },
+    {
+      "line": 171,
+      "tokens": 2293,
+      "retained": false
+    },
+    {
+      "line": 176,
+      "tokens": 1748,
+      "retained": true
+    },
+    {
+      "line": 180,
+      "tokens": 2383,
+      "retained": false
+    },
+    {
+      "line": 182,
+      "tokens": 2963,
+      "retained": false
+    },
+    {
+      "line": 186,
+      "tokens": 1572,
+      "retained": true
+    },
+    {
+      "line": 206,
+      "tokens": 3986,
+      "retained": false
+    },
+    {
+      "line": 209,
+      "tokens": 1721,
+      "retained": true
+    },
+    {
+      "line": 217,
+      "tokens": 1513,
+      "retained": true
+    },
+    {
+      "line": 227,
+      "tokens": 3640,
+      "retained": false
+    },
+    {
+      "line": 228,
+      "tokens": 1830,
+      "retained": true
+    },
+    {
+      "line": 232,
+      "tokens": 2947,
+      "retained": false
+    },
+    {
+      "line": 234,
+      "tokens": 1964,
+      "retained": true
+    },
+    {
+      "line": 249,
+      "tokens": 1290,
+      "retained": true
+    },
+    {
+      "line": 250,
+      "tokens": 3089,
+      "retained": false
+    },
+    {
+      "line": 263,
+      "tokens": 2459,
+      "retained": false
+    },
+    {
+      "line": 265,
+      "tokens": 2984,
+      "retained": false
+    },
+    {
+      "line": 269,
+      "tokens": 1207,
+      "retained": true
+    },
+    {
+      "line": 272,
+      "tokens": 2757,
+      "retained": false
+    },
+    {
+      "line": 277,
+      "tokens": 2070,
+      "retained": false
+    },
+    {
+      "line": 283,
+      "tokens": 1979,
+      "retained": true
+    },
+    {
+      "line": 306,
+      "tokens": 1271,
+      "retained": true
+    },
+    {
+      "line": 312,
+      "tokens": 3122,
+      "retained": false
+    },
+    {
+      "line": 321,
+      "tokens": 2731,
+      "retained": false
+    },
+    {
+      "line": 330,
+      "tokens": 3091,
+      "retained": false
+    },
+    {
+      "line": 332,
+      "tokens": 3393,
+      "retained": false
+    },
+    {
+      "line": 335,
+      "tokens": 1489,
+      "retained": true
+    },
+    {
+      "line": 346,
+      "tokens": 1231,
+      "retained": true
+    },
+    {
+      "line": 350,
+      "tokens": 2262,
+      "retained": false
+    },
+    {
+      "line": 351,
+      "tokens": 2139,
+      "retained": false
+    },
+    {
+      "line": 354,
+      "tokens": 2478,
+      "retained": false
+    },
+    {
+      "line": 361,
+      "tokens": 2522,
+      "retained": false
+    },
+    {
+      "line": 365,
+      "tokens": 1770,
+      "retained": true
+    },
+    {
+      "line": 369,
+      "tokens": 2661,
+      "retained": false
+    },
+    {
+      "line": 386,
+      "tokens": 2571,
+      "retained": false
+    },
+    {
+      "line": 404,
+      "tokens": 4372,
+      "retained": false
+    },
+    {
+      "line": 420,
+      "tokens": 2321,
+      "retained": false
+    },
+    {
+      "line": 421,
+      "tokens": 3106,
+      "retained": false
+    },
+    {
+      "line": 427,
+      "tokens": 2443,
+      "retained": false
+    },
+    {
+      "line": 428,
+      "tokens": 2396,
+      "retained": false
+    },
+    {
+      "line": 431,
+      "tokens": 2157,
+      "retained": false
+    },
+    {
+      "line": 441,
+      "tokens": 3858,
+      "retained": false
+    },
+    {
+      "line": 450,
+      "tokens": 2337,
+      "retained": false
+    },
+    {
+      "line": 464,
+      "tokens": 3266,
+      "retained": false
+    },
+    {
+      "line": 466,
+      "tokens": 4098,
+      "retained": false
+    },
+    {
+      "line": 468,
+      "tokens": 3376,
+      "retained": false
+    },
+    {
+      "line": 480,
+      "tokens": 3164,
+      "retained": false
+    },
+    {
+      "line": 481,
+      "tokens": 2633,
+      "retained": false
+    },
+    {
+      "line": 483,
+      "tokens": 1533,
+      "retained": true
+    },
+    {
+      "line": 484,
+      "tokens": 4275,
+      "retained": false
+    },
+    {
+      "line": 494,
+      "tokens": 1803,
+      "retained": true
+    },
+    {
+      "line": 501,
+      "tokens": 2641,
+      "retained": false
+    },
+    {
+      "line": 506,
+      "tokens": 2249,
+      "retained": false
+    },
+    {
+      "line": 507,
+      "tokens": 2232,
+      "retained": false
+    },
+    {
+      "line": 513,
+      "tokens": 10385,
+      "retained": false
+    },
+    {
+      "line": 519,
+      "tokens": 2358,
+      "retained": false
+    },
+    {
+      "line": 535,
+      "tokens": 1731,
+      "retained": true
+    },
+    {
+      "line": 539,
+      "tokens": 5385,
+      "retained": false
+    },
+    {
+      "line": 540,
+      "tokens": 2000,
+      "retained": true
+    },
+    {
+      "line": 543,
+      "tokens": 1592,
+      "retained": true
+    },
+    {
+      "line": 549,
+      "tokens": 1730,
+      "retained": true
+    },
+    {
+      "line": 565,
+      "tokens": 3983,
+      "retained": false
+    },
+    {
+      "line": 572,
+      "tokens": 4130,
+      "retained": false
+    },
+    {
+      "line": 581,
+      "tokens": 1396,
+      "retained": true
+    },
+    {
+      "line": 584,
+      "tokens": 3076,
+      "retained": false
+    },
+    {
+      "line": 591,
+      "tokens": 2404,
+      "retained": false
+    },
+    {
+      "line": 600,
+      "tokens": 2221,
+      "retained": false
+    },
+    {
+      "line": 601,
+      "tokens": 2337,
+      "retained": false
+    },
+    {
+      "line": 611,
+      "tokens": 5300,
+      "retained": false
+    },
+    {
+      "line": 612,
+      "tokens": 3339,
+      "retained": false
+    },
+    {
+      "line": 613,
+      "tokens": 1597,
+      "retained": true
+    },
+    {
+      "line": 616,
+      "tokens": 3739,
+      "retained": false
+    },
+    {
+      "line": 619,
+      "tokens": 1452,
+      "retained": true
+    },
+    {
+      "line": 624,
+      "tokens": 1769,
+      "retained": true
+    },
+    {
+      "line": 635,
+      "tokens": 2599,
+      "retained": false
+    },
+    {
+      "line": 641,
+      "tokens": 2596,
+      "retained": false
+    },
+    {
+      "line": 657,
+      "tokens": 2530,
+      "retained": false
+    },
+    {
+      "line": 679,
+      "tokens": 2800,
+      "retained": false
+    },
+    {
+      "line": 681,
+      "tokens": 1773,
+      "retained": true
+    },
+    {
+      "line": 683,
+      "tokens": 3043,
+      "retained": false
+    },
+    {
+      "line": 690,
+      "tokens": 2762,
+      "retained": false
+    },
+    {
+      "line": 707,
+      "tokens": 3308,
+      "retained": false
+    },
+    {
+      "line": 715,
+      "tokens": 2206,
+      "retained": false
+    },
+    {
+      "line": 716,
+      "tokens": 2303,
+      "retained": false
+    },
+    {
+      "line": 723,
+      "tokens": 3558,
+      "retained": false
+    },
+    {
+      "line": 732,
+      "tokens": 2182,
+      "retained": false
+    },
+    {
+      "line": 735,
+      "tokens": 1927,
+      "retained": true
+    },
+    {
+      "line": 741,
+      "tokens": 1602,
+      "retained": true
+    },
+    {
+      "line": 746,
+      "tokens": 3405,
+      "retained": false
+    },
+    {
+      "line": 749,
+      "tokens": 6745,
+      "retained": false
+    },
+    {
+      "line": 752,
+      "tokens": 3191,
+      "retained": false
+    },
+    {
+      "line": 753,
+      "tokens": 2124,
+      "retained": false
+    },
+    {
+      "line": 755,
+      "tokens": 3265,
+      "retained": false
+    },
+    {
+      "line": 756,
+      "tokens": 2698,
+      "retained": false
+    },
+    {
+      "line": 757,
+      "tokens": 2282,
+      "retained": false
+    },
+    {
+      "line": 759,
+      "tokens": 3155,
+      "retained": false
+    },
+    {
+      "line": 762,
+      "tokens": 2338,
+      "retained": false
+    },
+    {
+      "line": 764,
+      "tokens": 1064,
+      "retained": true
+    },
+    {
+      "line": 790,
+      "tokens": 4162,
+      "retained": false
+    },
+    {
+      "line": 791,
+      "tokens": 3456,
+      "retained": false
+    },
+    {
+      "line": 794,
+      "tokens": 3275,
+      "retained": false
+    },
+    {
+      "line": 797,
+      "tokens": 2406,
+      "retained": false
+    },
+    {
+      "line": 799,
+      "tokens": 3291,
+      "retained": false
+    },
+    {
+      "line": 803,
+      "tokens": 2854,
+      "retained": false
+    },
+    {
+      "line": 808,
+      "tokens": 2886,
+      "retained": false
+    },
+    {
+      "line": 810,
+      "tokens": 1867,
+      "retained": true
+    },
+    {
+      "line": 811,
+      "tokens": 2910,
+      "retained": false
+    },
+    {
+      "line": 814,
+      "tokens": 2986,
+      "retained": false
+    },
+    {
+      "line": 816,
+      "tokens": 2593,
+      "retained": false
+    },
+    {
+      "line": 824,
+      "tokens": 3026,
+      "retained": false
+    },
+    {
+      "line": 825,
+      "tokens": 1962,
+      "retained": true
+    },
+    {
+      "line": 827,
+      "tokens": 3408,
+      "retained": false
+    },
+    {
+      "line": 835,
+      "tokens": 1819,
+      "retained": true
+    },
+    {
+      "line": 839,
+      "tokens": 1778,
+      "retained": true
+    },
+    {
+      "line": 844,
+      "tokens": 1491,
+      "retained": true
+    },
+    {
+      "line": 845,
+      "tokens": 1175,
+      "retained": true
+    },
+    {
+      "line": 848,
+      "tokens": 1430,
+      "retained": true
+    },
+    {
+      "line": 850,
+      "tokens": 1528,
+      "retained": true
+    },
+    {
+      "line": 852,
+      "tokens": 1397,
+      "retained": true
+    },
+    {
+      "line": 853,
+      "tokens": 1423,
+      "retained": true
+    },
+    {
+      "line": 855,
+      "tokens": 1221,
+      "retained": true
+    },
+    {
+      "line": 856,
+      "tokens": 1007,
+      "retained": true
+    },
+    {
+      "line": 857,
+      "tokens": 1076,
+      "retained": true
+    },
+    {
+      "line": 860,
+      "tokens": 1351,
+      "retained": true
+    },
+    {
+      "line": 862,
+      "tokens": 1347,
+      "retained": true
+    },
+    {
+      "line": 864,
+      "tokens": 1438,
+      "retained": true
+    },
+    {
+      "line": 869,
+      "tokens": 1572,
+      "retained": true
+    },
+    {
+      "line": 871,
+      "tokens": 1333,
+      "retained": true
+    },
+    {
+      "line": 872,
+      "tokens": 1446,
+      "retained": true
+    },
+    {
+      "line": 874,
+      "tokens": 1287,
+      "retained": true
+    },
+    {
+      "line": 876,
+      "tokens": 1091,
+      "retained": true
+    },
+    {
+      "line": 878,
+      "tokens": 1295,
+      "retained": true
+    },
+    {
+      "line": 885,
+      "tokens": 1425,
+      "retained": true
+    },
+    {
+      "line": 887,
+      "tokens": 983,
+      "retained": true
+    },
+    {
+      "line": 889,
+      "tokens": 883,
+      "retained": true
+    },
+    {
+      "line": 890,
+      "tokens": 1416,
+      "retained": true
+    },
+    {
+      "line": 894,
+      "tokens": 1133,
+      "retained": true
+    },
+    {
+      "line": 895,
+      "tokens": 1269,
+      "retained": true
+    },
+    {
+      "line": 897,
+      "tokens": 1173,
+      "retained": true
+    },
+    {
+      "line": 898,
+      "tokens": 1253,
+      "retained": true
+    },
+    {
+      "line": 905,
+      "tokens": 1202,
+      "retained": true
+    },
+    {
+      "line": 907,
+      "tokens": 1117,
+      "retained": true
+    },
+    {
+      "line": 910,
+      "tokens": 1063,
+      "retained": true
+    },
+    {
+      "line": 915,
+      "tokens": 1561,
+      "retained": true
+    },
+    {
+      "line": 919,
+      "tokens": 1337,
+      "retained": true
+    },
+    {
+      "line": 923,
+      "tokens": 1291,
+      "retained": true
+    },
+    {
+      "line": 924,
+      "tokens": 1087,
+      "retained": true
+    },
+    {
+      "line": 926,
+      "tokens": 1094,
+      "retained": true
+    },
+    {
+      "line": 931,
+      "tokens": 1127,
+      "retained": true
+    },
+    {
+      "line": 932,
+      "tokens": 1487,
+      "retained": true
+    },
+    {
+      "line": 933,
+      "tokens": 954,
+      "retained": true
+    },
+    {
+      "line": 934,
+      "tokens": 1197,
+      "retained": true
+    },
+    {
+      "line": 938,
+      "tokens": 1154,
+      "retained": true
+    },
+    {
+      "line": 939,
+      "tokens": 1105,
+      "retained": true
+    },
+    {
+      "line": 942,
+      "tokens": 1279,
+      "retained": true
+    },
+    {
+      "line": 945,
+      "tokens": 1621,
+      "retained": true
+    },
+    {
+      "line": 949,
+      "tokens": 1133,
+      "retained": true
+    },
+    {
+      "line": 952,
+      "tokens": 1109,
+      "retained": true
+    },
+    {
+      "line": 953,
+      "tokens": 1010,
+      "retained": true
+    },
+    {
+      "line": 960,
+      "tokens": 1256,
+      "retained": true
+    },
+    {
+      "line": 961,
+      "tokens": 984,
+      "retained": true
+    },
+    {
+      "line": 964,
+      "tokens": 1314,
+      "retained": true
+    },
+    {
+      "line": 965,
+      "tokens": 1085,
+      "retained": true
+    },
+    {
+      "line": 967,
+      "tokens": 1281,
+      "retained": true
+    },
+    {
+      "line": 970,
+      "tokens": 1524,
+      "retained": true
+    },
+    {
+      "line": 975,
+      "tokens": 1712,
+      "retained": true
+    },
+    {
+      "line": 985,
+      "tokens": 1234,
+      "retained": true
+    },
+    {
+      "line": 988,
+      "tokens": 1207,
+      "retained": true
+    },
+    {
+      "line": 990,
+      "tokens": 1037,
+      "retained": true
+    },
+    {
+      "line": 994,
+      "tokens": 1228,
+      "retained": true
+    },
+    {
+      "line": 997,
+      "tokens": 1464,
+      "retained": true
+    },
+    {
+      "line": 999,
+      "tokens": 1108,
+      "retained": true
+    },
+    {
+      "line": 1005,
+      "tokens": 1624,
+      "retained": true
+    },
+    {
+      "line": 1006,
+      "tokens": 977,
+      "retained": true
+    },
+    {
+      "line": 1007,
+      "tokens": 1209,
+      "retained": true
+    },
+    {
+      "line": 1010,
+      "tokens": 1081,
+      "retained": true
+    },
+    {
+      "line": 1015,
+      "tokens": 1227,
+      "retained": true
+    },
+    {
+      "line": 1017,
+      "tokens": 1301,
+      "retained": true
+    },
+    {
+      "line": 1018,
+      "tokens": 1386,
+      "retained": true
+    },
+    {
+      "line": 1019,
+      "tokens": 1327,
+      "retained": true
+    },
+    {
+      "line": 1021,
+      "tokens": 1298,
+      "retained": true
+    },
+    {
+      "line": 1023,
+      "tokens": 1203,
+      "retained": true
+    },
+    {
+      "line": 1024,
+      "tokens": 865,
+      "retained": true
+    },
+    {
+      "line": 1026,
+      "tokens": 1229,
+      "retained": true
+    },
+    {
+      "line": 1029,
+      "tokens": 1404,
+      "retained": true
+    },
+    {
+      "line": 1031,
+      "tokens": 1508,
+      "retained": true
+    },
+    {
+      "line": 1034,
+      "tokens": 1272,
+      "retained": true
+    },
+    {
+      "line": 1036,
+      "tokens": 1015,
+      "retained": true
+    },
+    {
+      "line": 1037,
+      "tokens": 1271,
+      "retained": true
+    },
+    {
+      "line": 1038,
+      "tokens": 1190,
+      "retained": true
+    },
+    {
+      "line": 1042,
+      "tokens": 1221,
+      "retained": true
+    },
+    {
+      "line": 1043,
+      "tokens": 1584,
+      "retained": true
+    },
+    {
+      "line": 1045,
+      "tokens": 1269,
+      "retained": true
+    },
+    {
+      "line": 1048,
+      "tokens": 1522,
+      "retained": true
+    },
+    {
+      "line": 1049,
+      "tokens": 963,
+      "retained": true
+    },
+    {
+      "line": 1050,
+      "tokens": 1324,
+      "retained": true
+    },
+    {
+      "line": 1054,
+      "tokens": 1450,
+      "retained": true
+    },
+    {
+      "line": 1055,
+      "tokens": 1253,
+      "retained": true
+    },
+    {
+      "line": 1058,
+      "tokens": 1143,
+      "retained": true
+    },
+    {
+      "line": 1067,
+      "tokens": 1258,
+      "retained": true
+    },
+    {
+      "line": 1070,
+      "tokens": 1378,
+      "retained": true
+    },
+    {
+      "line": 1071,
+      "tokens": 1085,
+      "retained": true
+    },
+    {
+      "line": 1072,
+      "tokens": 1471,
+      "retained": true
+    },
+    {
+      "line": 1074,
+      "tokens": 981,
+      "retained": true
+    },
+    {
+      "line": 1076,
+      "tokens": 1219,
+      "retained": true
+    },
+    {
+      "line": 1080,
+      "tokens": 949,
+      "retained": true
+    },
+    {
+      "line": 1081,
+      "tokens": 895,
+      "retained": true
+    },
+    {
+      "line": 1082,
+      "tokens": 884,
+      "retained": true
+    },
+    {
+      "line": 1083,
+      "tokens": 1641,
+      "retained": true
+    },
+    {
+      "line": 1086,
+      "tokens": 938,
+      "retained": true
+    },
+    {
+      "line": 1088,
+      "tokens": 1208,
+      "retained": true
+    },
+    {
+      "line": 1091,
+      "tokens": 1154,
+      "retained": true
+    },
+    {
+      "line": 1093,
+      "tokens": 782,
+      "retained": true
+    },
+    {
+      "line": 1099,
+      "tokens": 1270,
+      "retained": true
+    },
+    {
+      "line": 1104,
+      "tokens": 1285,
+      "retained": true
+    },
+    {
+      "line": 1111,
+      "tokens": 1119,
+      "retained": true
+    },
+    {
+      "line": 1114,
+      "tokens": 1089,
+      "retained": true
+    },
+    {
+      "line": 1124,
+      "tokens": 1223,
+      "retained": true
+    }
+  ],
+  "method": "Reconstructed token filter using official frozen public tokenizer, historical exact prompt/template and observed EOS. Original Kaggle tokenizer artifact absent."
+}

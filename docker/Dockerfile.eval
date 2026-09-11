@@ -1,0 +1,7 @@
+# Proposed evaluator image; Docker was unavailable in the review environment.
+# The runner resolves the built image to its immutable local image ID.
+FROM python:3.11-slim
+RUN pip install --no-cache-dir numpy==2.2.6 scipy==1.15.3 sympy==1.13.1
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+ENV OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+USER 65534:65534

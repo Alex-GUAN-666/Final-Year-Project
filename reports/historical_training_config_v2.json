@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "notebook": "upload/qwen4b-train-code-100920859-279441290..ipynb",
+    "notebook_sha256": "3790e0e38706dc4bb3ea04c3e9178505f6437a0f6b384ba97f11183ab5463f10",
+    "run_start": "2025-11-18T08:03:03.356212",
+    "run_end": "2025-11-18T08:26:38.956392",
+    "papermill_exception": null,
+    "total_duration_seconds": 1415.60018
+  },
+  "model": {
+    "model_name": "/kaggle/input/qwen-3/transformers/4b-base/1",
+    "max_seq_length": 2048,
+    "load_in_4bit": false,
+    "torch_dtype": "torch.float16",
+    "max_lora_rank": 32,
+    "gpu_memory_utilization": 0.9,
+    "fast_inference_explicitly_set": false
+  },
+  "peft": {
+    "r": 32,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "lora_alpha": 64,
+    "use_gradient_checkpointing": "unsloth",
+    "random_state": 3407
+  },
+  "sft_explicit_args": {
+    "dataset_text_field": "text",
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "max_grad_norm": 1.0,
+    "warmup_steps": 10,
+    "num_train_epochs": 2,
+    "learning_rate": 3e-05,
+    "logging_steps": 5,
+    "optim": "adamw_8bit",
+    "weight_decay": 0.01,
+    "lr_scheduler_type": "linear",
+    "seed": 3407,
+    "report_to": "none"
+  },
+  "unspecified_sft_settings": [
+    "max_length",
+    "max_seq_length",
+    "fp16",
+    "bf16",
+    "packing",
+    "eval_dataset",
+    "assistant_only_loss",
+    "completion_only_loss",
+    "save_strategy",
+    "output_dir"
+  ],
+  "data": {
+    "distilled_path": "/kaggle/input/train-data/results_v3.jsonl",
+    "arithmetic_path": "/kaggle/input/train-data/arithmetic_logic_data_revised_v2.jsonl",
+    "distilled_rows": 1125,
+    "distilled_truthy_accepted": 251,
+    "arithmetic_input_rows": 309,
+    "arithmetic_correctness_filter": false,
+    "rendered_max_tokens_filter": 2048,
+    "arithmetic_after_filter": 309,
+    "cot_code_after_filter": 143,
+    "training_rows": 452,
+    "dataset_shuffle_seed": 42,
+    "full_text_training": true
+  },
+  "observed_training": {
+    "num_gpus_used": 1,
+    "gpus_detected": 2,
+    "total_steps": 114,
+    "total_batch_size": 8,
+    "epochs": 2,
+    "trainable_parameters": 66060288,
+    "parameters_including_adapters": 4088528384,
+    "training_ui_elapsed": "17:30",
+    "training_cell_duration_seconds": 1074.11744,
+    "completed": true
+  },
+  "save": {
+    "method": "model.merge_and_unload() then merged_model.save_pretrained(safe_serialization=True) and tokenizer.save_pretrained()",
+    "path": "/kaggle/working/Qwen3-4B-SFFT-merged",
+    "success_message_present": true,
+    "weights_attached": false,
+    "checkpoint_fingerprints_present": false
+  },
+  "demo": {
+    "question_index": 12,
+    "max_new_tokens": 1024,
+    "use_cache": true,
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "explicit_generation_seed": null,
+    "generation_object": "model",
+    "reloaded_merged_checkpoint": false,
+    "walltime_seconds": 55.0636522769928,
+    "code_output": "4.272001872658765",
+    "formal_evaluation": false
+  },
+  "historical_environment": {
+    "python": "3.11.13",
+    "unsloth": "2025.11.3",
+    "transformers": "4.53.2",
+    "vllm": "0.8.5.post1",
+    "torch": "2.6.0+cu124",
+    "cuda_toolkit": "12.4",
+    "gpu_compute_capability": "7.5",
+    "triton": "3.2.0",
+    "xformers": "0.0.29.post3",
+    "datasets": "3.6.0",
+    "dill": "0.3.8",
+    "fsspec": "2025.3.0",
+    "trl_requested": "0.22.2",
+    "gpu": "Tesla T4",
+    "max_memory_GB": 14.741,
+    "flash_attention_2": false,
+    "bf16_supported": false
+  },
+  "environment_missing_exact_versions": [
+    "bitsandbytes",
+    "peft",
+    "unsloth_zoo",
+    "huggingface_hub",
+    "numpy",
+    "pandas",
+    "pillow",
+    "torchvision"
+  ],
+  "effective_trainer_truncation_note": "2048 is loader/filter limit. Actual trainer max_length not explicitly configured; recover installed patched trainer defaults before claiming 2048-token training."
+}

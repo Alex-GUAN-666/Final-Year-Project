@@ -1,0 +1,3 @@
+# Source and prepared-file checksums require identical bytes on every platform.
+# In particular, do not apply core.autocrlf conversions to archived artifacts.
+* -text

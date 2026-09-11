@@ -1,0 +1,23 @@
+run_date,step,training_loss,evidence
+2025-11-18,5,0.985000,saved notebook output; not rerun
+2025-11-18,10,1.305100,saved notebook output; not rerun
+2025-11-18,15,1.116900,saved notebook output; not rerun
+2025-11-18,20,0.759300,saved notebook output; not rerun
+2025-11-18,25,0.575300,saved notebook output; not rerun
+2025-11-18,30,0.506100,saved notebook output; not rerun
+2025-11-18,35,0.437100,saved notebook output; not rerun
+2025-11-18,40,0.403600,saved notebook output; not rerun
+2025-11-18,45,0.391600,saved notebook output; not rerun
+2025-11-18,50,0.403900,saved notebook output; not rerun
+2025-11-18,55,0.368700,saved notebook output; not rerun
+2025-11-18,60,0.406200,saved notebook output; not rerun
+2025-11-18,65,0.373400,saved notebook output; not rerun
+2025-11-18,70,0.329800,saved notebook output; not rerun
+2025-11-18,75,0.335400,saved notebook output; not rerun
+2025-11-18,80,0.382000,saved notebook output; not rerun
+2025-11-18,85,0.321400,saved notebook output; not rerun
+2025-11-18,90,0.336300,saved notebook output; not rerun
+2025-11-18,95,0.329400,saved notebook output; not rerun
+2025-11-18,100,0.319500,saved notebook output; not rerun
+2025-11-18,105,0.331900,saved notebook output; not rerun
+2025-11-18,110,0.349400,saved notebook output; not rerun

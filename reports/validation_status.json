@@ -1,0 +1,61 @@
+{
+  "updated_date": "2026-09-11",
+  "scope": "supplemental recovery and new reconstruction pipeline; no full 4B result",
+  "supplied_files": 20,
+  "distinct_source_payloads": 18,
+  "bundled_code_data_files": 18,
+  "bundled_original_sha256_checks_passed": 7,
+  "notebook_files": 9,
+  "notebook_cells": 266,
+  "raw_data_and_result_records_including_duplicate_files": 1674,
+  "source_audits_passed": true,
+  "unit_test_framework": "unittest",
+  "unit_tests_passed": 27,
+  "real_cpu_tiny_qwen3_train_merge_inference_passed": true,
+  "tiny_model_report": "reports/tiny_model_smoke.json",
+  "official_tokenizer_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "historical_reconstructed_training": {
+    "arithmetic": 309,
+    "reasoning_code": 143,
+    "total": 452,
+    "evaluated_question_overlap": 5,
+    "evaluation_total": 20,
+    "original_kaggle_tokenizer_authenticated": false
+  },
+  "new_question_disjoint_protocol": {
+    "candidates": 436,
+    "retained": 372,
+    "evaluation": 187,
+    "normalized_question_overlap": 0,
+    "references_all_mathematically_verified": false
+  },
+  "new_evaluation_prompt_length_check": {
+    "rows": 187,
+    "longest_tokens": 252,
+    "max_total_tokens": 2048,
+    "max_new_tokens": 1024,
+    "all_pass": true
+  },
+  "full_4b_training_executed": false,
+  "full_4b_inference_executed": false,
+  "historical_model_weights_recovered": false,
+  "docker_execution_tested": false,
+  "gpu_optimizer_tested": false,
+  "four_bit_branch_tested": false,
+  "new_4b_benchmark_accuracy": null,
+  "github_published": false,
+  "limitations": [
+    "Actual GPU training and Docker scoring remain to be run.",
+    "New split does not certify absence of semantic or pretraining contamination.",
+    "Historical arithmetic paired prediction records remain unavailable.",
+    "Historical reasoning score is numeric output accuracy with reconstructed training overlap."
+  ],
+  "github_repository": "https://github.com/Alex-GUAN-666/Final-Year-Project",
+  "github_ci_status": "not_started_upload_blocked_by_automatic_review_context_limit",
+  "bundled_publication_sha256_checks_passed": 18,
+  "sanitized_source_derivatives": 11,
+  "publication_sanitization_report": "reports/publication_sanitization.json",
+  "local_validation_date": "2026-09-11",
+  "prepared_manifest_checksum_required": true,
+  "github_publication_status": "User explicitly authorized full public main upload; automatic approval review rejected tree creation because its model context window was exhausted. Remote main remains initial commit e275d372e597ff7e7af282ef344a18c232ad9a29."
+}

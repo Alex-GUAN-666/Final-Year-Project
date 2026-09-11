@@ -1,0 +1,3944 @@
+{
+  "protocol": "question_disjoint_v1",
+  "tokenizer": "Qwen/Qwen3-4B-Base",
+  "revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "tokenizer_vocab_sha256": "3ec3c124e02b7ace235364350c04b8fc38d34b182aad914fc45430fa925c0f3f",
+  "template_sha256": "29182b952267775d40578652f19b0289ee629a4639feb2fcad52a930737d5f76",
+  "eos_token": "<|im_end|>",
+  "data_sha256": "e1d2207ed1b415ccb6f253732242bbd073d2ecb98058a779244711fd1ce83083",
+  "max_seq_length": 2048,
+  "candidates": 436,
+  "retained": 372,
+  "retained_by_category": {
+    "arithmetic_only": 309,
+    "cot_and_code": 63
+  },
+  "rows": [
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:1",
+      "question_id": "cd9391b67007f5afa9724b3c3e95538b7ece0d3504ae54a6054cbe7c39edcdb5",
+      "source_row": 1,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:2",
+      "question_id": "da3bc69ef8ac0d10c6419bdd7f730e9948183e32b8217e1d72f5617d15787493",
+      "source_row": 2,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:3",
+      "question_id": "92d655be30c6ed8c041cfb67f1f217ee14433ba70cffc8d09078c73c9a4e1c96",
+      "source_row": 3,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 325,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:4",
+      "question_id": "8c077c2682c0d0899d2869b064abae883322c1899c68b03aef3ef636fe9ea328",
+      "source_row": 4,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:5",
+      "question_id": "1216179cc424ae7476e3691ff5933cc12800f031a54178cc95f62c6731767dd8",
+      "source_row": 5,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 355,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:6",
+      "question_id": "3a691fc8e72c33c774b1d79099bf82ce279e20e657cc3fba399d68a6c75b1e56",
+      "source_row": 6,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:7",
+      "question_id": "291d005722027e96a844ac6b547416160207123951336b8ad97a6592585dd23f",
+      "source_row": 7,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:8",
+      "question_id": "b705990a638dda379d9ce030060962a54fba6f1bdc0c7b0b3f8a34255c82998b",
+      "source_row": 8,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:9",
+      "question_id": "1489a73226fe4511b06b971545b8ea1436d9abe7c3d12567b6a266745e6b3e8b",
+      "source_row": 9,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:10",
+      "question_id": "98014707233c942351a25f02bf4ccf2b27be66f13e85afbe21cf7df56f125bb8",
+      "source_row": 10,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:11",
+      "question_id": "36a9305c7202b49f0df67bddf96ca862a67a76da2ea9e1d3b8550c8a27174818",
+      "source_row": 11,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 265,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:12",
+      "question_id": "b335092b1568e2147ea5cfd5e04c076857d902c69eb03e1877077e98c2051fd6",
+      "source_row": 12,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 265,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:13",
+      "question_id": "45c7b08e7744a42e679e9e373d243b6571bbbcd64faff849cd3dbea37a562b11",
+      "source_row": 13,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 323,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:14",
+      "question_id": "180e3c2121522084889bc7768e04a513021a2a601a0dcaba9fa44e022d4e5185",
+      "source_row": 14,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 355,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:15",
+      "question_id": "01230bc0d475571284f261da575396d63a590b38fe233d0e43cbce566aa87215",
+      "source_row": 15,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:16",
+      "question_id": "fa12dfab0d6d5322de8781fb22d603da9810920311dc71293c87b5220c52cefe",
+      "source_row": 16,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:17",
+      "question_id": "5ca65a2410ee8cf466e1150ea3d4044c1b6cbfc5889dd72f83d5b4756f793024",
+      "source_row": 17,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:18",
+      "question_id": "381709d6480c365c59ed5b89e6a900e2e3e4828e74857e0d3f2fbc515303ba53",
+      "source_row": 18,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:19",
+      "question_id": "85c0a35eb3efe0de349638bd4658e3a258e684ab627bd91daaa90bef2feaf7c7",
+      "source_row": 19,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:20",
+      "question_id": "7f9e9616a7d93adb2b2329b63a0b3ca3c034a134ca6fbf070e73ccbc12ce2222",
+      "source_row": 20,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:21",
+      "question_id": "0e199796bcac71a4ce214552cff516e9a9a936ab1a515a87d0e9857e72e921a3",
+      "source_row": 21,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 325,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:22",
+      "question_id": "d9327d0d8349852a5fb9927fd1a8dd66481c9621eb90d11db2aae5a43b82e9fa",
+      "source_row": 22,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:23",
+      "question_id": "1a0a1f9df6c9786b24aaab3db89ff022bb95c653dd9d9bb48304ed0e86302cba",
+      "source_row": 23,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:24",
+      "question_id": "321e62f6b88a25e95420b1b5b92e83eabd69e63e372212e7c9b5730d46734042",
+      "source_row": 24,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:25",
+      "question_id": "6152327933d6d52a5b04c74a6cf4cc1a53bcfbc401ebc976f273c6036e82ab09",
+      "source_row": 25,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 325,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:26",
+      "question_id": "6fff440e1cac57a7fc08eeff3872bf66f5494f37b56160857330e240cc023318",
+      "source_row": 26,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:27",
+      "question_id": "46cd2a8641d66eed08843aae621b2a9d298aa3c6f6009129b3a027c42dd12e6c",
+      "source_row": 27,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:28",
+      "question_id": "05d28ddc373d7d40992ab9c86d860dc8644abd7cb5e1801e14e091fb0b54e9c8",
+      "source_row": 28,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:29",
+      "question_id": "11cf0bc114f4cd7f313f7e05248209b915755578eae4af60aa58f71d399dbed9",
+      "source_row": 29,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:30",
+      "question_id": "8c30971d74600ccb72615d5fc56c69c198af0829b8f95c36689a9e4017b09f24",
+      "source_row": 30,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 355,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:31",
+      "question_id": "13c03581ce9d8cad6a21453980061b99f011d4fdbefefd0cdf56ac096aec33de",
+      "source_row": 31,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:32",
+      "question_id": "2ccd8a256762d9166f0a8f310f25ac500ceb6af5eaf4e620b0c944a1b61de675",
+      "source_row": 32,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 355,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:33",
+      "question_id": "20ae4730aa4fe64a415b09b620ce6e187f949dcbe026af04efc4aefa7237dc71",
+      "source_row": 33,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:34",
+      "question_id": "9cf9de81c757bb91bd1179114604e17e0f18bcd3fa18bf7e8acf493aa1092ca9",
+      "source_row": 34,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 355,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:35",
+      "question_id": "47d0b50c6b7c7498595d65b7e907a95d0851fd4af07ff7e3cf86ed579ddfc808",
+      "source_row": 35,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:36",
+      "question_id": "2295e92680b972f17ec1330a635aaf419609e96efa9005385d244e5010bba5e8",
+      "source_row": 36,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 325,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:37",
+      "question_id": "56b4edbe4e5bf143258c57f4d64a20686561a6c900b56037cdb903ef87eba11a",
+      "source_row": 37,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:38",
+      "question_id": "c61e0babe3a647aa355af9cd83ded48037130d2d9f57477e50730ec04e3e43d8",
+      "source_row": 38,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:39",
+      "question_id": "703d9c56ee61a70e70b42656e5f87cc7eab216a3fd696f64c7f35bfb4ae80617",
+      "source_row": 39,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:40",
+      "question_id": "df4514628b8463953934dd0e555136a4a27d0077bae2900511b7ccf0a97582bc",
+      "source_row": 40,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 325,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:41",
+      "question_id": "d2873def97748bf2c139cb4eab808e6e76b425ac1321f39a2e429686431a3ba2",
+      "source_row": 41,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 265,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:42",
+      "question_id": "a2f06625d7864ed4711d3dfcb3be71f683d11278d87ca0cf7438c6c5f59da8f9",
+      "source_row": 42,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:43",
+      "question_id": "d8110fb42e4cb1385bc7ef6ce97b9b6170f3dfd325ff17dc6b0ed6d85c3521d1",
+      "source_row": 43,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 264,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:44",
+      "question_id": "0ffbc92e26eaa4a95fe220a1e61930bea5003833cbbe8af28a25f70a9d2bd438",
+      "source_row": 44,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:45",
+      "question_id": "73a5975de827abea557ac90ca4d1a975a9d149af9024484ef24d4d1c7ad56ce0",
+      "source_row": 45,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 308,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:46",
+      "question_id": "60208d487d79ccc91e701f98457c0a517c6601a650bed29ad2c966a009b4857d",
+      "source_row": 46,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 295,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:47",
+      "question_id": "c2bc43ac9c1ccd68e2f655e31591b4c5c9af145e1ce370f6cf69979458c05c7c",
+      "source_row": 47,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:48",
+      "question_id": "d59a46a3251d89a56afaaf8fdbb34864127a851d1addcfba689ea5b94ddd06a3",
+      "source_row": 48,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:49",
+      "question_id": "903ee6b20dc6c5a1b722a61d8d9b41f60205b1cf69b3d347bf156df372f4dd50",
+      "source_row": 49,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:50",
+      "question_id": "6ff2be8132dd2dd9b75de32c85d77b02b8ce3dc0286153b9e9179fe105de351a",
+      "source_row": 50,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:51",
+      "question_id": "9af830eae17498b1f062c752efe8d060674b133f22a8f5329d1c05cd574a9599",
+      "source_row": 51,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:52",
+      "question_id": "8bbe277a611798d6204ac5ef1bc4f38afcf728b785a67cc864713c15335ce93b",
+      "source_row": 52,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:53",
+      "question_id": "b08fd84cf8c64f3322cc5a68e50d6bf0be0150e9234c7f28a971819b248509d5",
+      "source_row": 53,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:54",
+      "question_id": "d8756934f2438f6d2364a74a736c0fe185dba4c6db57365b9e4501139aa8b126",
+      "source_row": 54,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:55",
+      "question_id": "a86f3208fcaa7d3525e318f1fabfd079ced3bed8a5146e191ff88352c84d2f03",
+      "source_row": 55,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:56",
+      "question_id": "07f0ecade4600f7772f847f124555ea78c16949e616a52637defb7bcfdfb39d1",
+      "source_row": 56,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:57",
+      "question_id": "8e07da456b4a0342a26e38bd82b3ae6b2f2c456134f72a8f9ab5020dbb769815",
+      "source_row": 57,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:58",
+      "question_id": "ca9c15af49ccace454767c9018317c2e362518813010a9f65f8cd962c4808765",
+      "source_row": 58,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:59",
+      "question_id": "7583a01ca66a05d0994a254d6ac714682db4a6d48b88a70b350c6f0799bcb973",
+      "source_row": 59,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:60",
+      "question_id": "0a53715628850af80daf3ae755e9b76e90c51954b8318623c81480546296c585",
+      "source_row": 60,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 278,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:61",
+      "question_id": "f903236074c370a0b86842af128d1a3ad649f473151a967da5a0b9f240b3e6a1",
+      "source_row": 61,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:62",
+      "question_id": "63ba4be2fed1eecad328f88b85f65dabaf42c9e6354538366ddc749b829ceb43",
+      "source_row": 62,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:63",
+      "question_id": "f47e75c8f359c558f9bfeccc27a2c3ddd7feed941b9661e39f44cb6448a02862",
+      "source_row": 63,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:64",
+      "question_id": "9793e4c5d291019c6239108fc41f7af806f212ddc4a039fd6ccb0a32158216d7",
+      "source_row": 64,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:65",
+      "question_id": "8969e39a09a9b01b1a72a528f2e7c421d36052a9344b724a694522367fd2fe11",
+      "source_row": 65,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:66",
+      "question_id": "5c612ce34d23d740181122233f9196c7147fbc2f4e87eeaee7d2f92044e66be1",
+      "source_row": 66,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:67",
+      "question_id": "3f41461e0a35a976c1e8dda67274ab4a6fdccda183c10cb40b58820afa8eb271",
+      "source_row": 67,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:68",
+      "question_id": "b66369c856072276ad8bd9ed15892f5fd073b54ecfbe86ccefd805317968712b",
+      "source_row": 68,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 278,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:69",
+      "question_id": "230165126a672eeb8c01ef4ea04ee90b1d1ab04e610ac14fc035c48f392f6026",
+      "source_row": 69,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:70",
+      "question_id": "dd0d5b8e9b463f559d52ac25a1955cdca1237b1a34b9ffa4c4becc110feb11c0",
+      "source_row": 70,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:71",
+      "question_id": "a0ce6736e69835920a7b3c74d1415c2eb6d5c39fa1fc6888b680209afd10a521",
+      "source_row": 71,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:72",
+      "question_id": "2c0c61607855235b49be2b337e5191d98025e337c336cb24c8288983e16ffb29",
+      "source_row": 72,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:73",
+      "question_id": "6579841b5a6871b3e420099ca23523dacea0d51b4332687de105be8617319a5e",
+      "source_row": 73,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:74",
+      "question_id": "964f69fc9e2ba83282dc26d175f47463edb68e18debc3755e481e8a8f2c18dca",
+      "source_row": 74,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:75",
+      "question_id": "fb46330f43b0c8585dffb3b1c9670876308eca5acba4a06ca22b2d08498f6f33",
+      "source_row": 75,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:76",
+      "question_id": "616cc97dd5c0fbd80fe9fda0d8c7e9b324b65bc9b9c62b1e410c26f104ae75ff",
+      "source_row": 76,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:77",
+      "question_id": "a3b626da2f59d15103ee3a7c83de9ecfc91608d71cbbb065be50d6959f28b898",
+      "source_row": 77,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:78",
+      "question_id": "0b988f6bed0b23eccfaa6be7b931d87b0c51f8219c237d6c6c7647468567b79b",
+      "source_row": 78,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:79",
+      "question_id": "bcd11c5c909ccf069120f1a97ccee32d84bf62e551f794e09aab440ad513f178",
+      "source_row": 79,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:80",
+      "question_id": "1ce9339b3a9a35a97468083d740bcedb5779de57bd2155918da5dbd579bea34b",
+      "source_row": 80,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:81",
+      "question_id": "be6d408b9f707ab8e111a1b2cd450199b1d5f7853a33cade7bdc886c1b5421b2",
+      "source_row": 81,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:82",
+      "question_id": "e808e5f3bd1a6ea432fe1a41bfdc20bdd848773ff3f298b79612ebfb16e3b906",
+      "source_row": 82,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:83",
+      "question_id": "d8f5a8b6ea67142c8c2212ab51ab00af997449a998f7aa5bd2f88de139d73a8d",
+      "source_row": 83,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:84",
+      "question_id": "e8a29ec02b1a39fcd8158164e68bc6c6f9052fa6424991c8b5180371ee8e7ab7",
+      "source_row": 84,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:85",
+      "question_id": "365c8be54c765ce1dd8bec4cd35a464f1facfd88b647b11ec568e33d7941d8b2",
+      "source_row": 85,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:86",
+      "question_id": "38036c03d50850eacec19a06e0426a86319fca10a13b1123ece9ac523d81e8b4",
+      "source_row": 86,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:87",
+      "question_id": "67e6330c686f1a19beceadb0749f9e45f550fa008591a9f6d0beb8aafb998230",
+      "source_row": 87,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:88",
+      "question_id": "312182b14227367644387c770635cfe091847597c0349afa594d8591d8aad841",
+      "source_row": 88,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:89",
+      "question_id": "3657c31c9a2e835014591980a223e7a56fb864e43b09a3f8292e1f51dcdb7775",
+      "source_row": 89,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:90",
+      "question_id": "98639616c4ab98da19bc927ead04d7129f414f49e54fc1004e50472179344004",
+      "source_row": 90,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:91",
+      "question_id": "a431aaefe844ab5e3effc03433b0c9158bd78e961c071c0c6cd9afae2089351b",
+      "source_row": 91,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:92",
+      "question_id": "45f637ff161ec659d5d3897f1084edcea30530bbb80bb2be7930a141bb2d1d10",
+      "source_row": 92,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:93",
+      "question_id": "ca3fcdddef90d8215a835dec9e1e65bb92649d0fd373ff5339d956d1f6d2386c",
+      "source_row": 93,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:94",
+      "question_id": "562f1baeeeca76b4013efe332a85288ba125c408a6fe6964bbe2eca8f5d87f95",
+      "source_row": 94,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:95",
+      "question_id": "8cffaa1edd6fd8f401094a2aa69f8e7c6f99ef0575b644dd07826839253daf76",
+      "source_row": 95,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:96",
+      "question_id": "7d26bba4a03425e6e274aa7be76c0acce5e3d51ac81503485fc8bae38459bd6a",
+      "source_row": 96,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 308,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:97",
+      "question_id": "6a9392c5e9c4ca83167cfd00253079aa438b7207644dc1beee0f09023e19fa1c",
+      "source_row": 97,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:98",
+      "question_id": "7b2e48d9dc0f0b7d6d969df9ac9e28dc959cb5b4d9832f7023605f6f0a81c6eb",
+      "source_row": 98,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:99",
+      "question_id": "6f0943589fe2c6abd30859425947415f735fe31afb5a1ffe3c15deb78a6b7774",
+      "source_row": 99,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:100",
+      "question_id": "1ea7de8da7aedef23969232a3703cdc7154679ee5c81872fd5a00b8e37a8d5d6",
+      "source_row": 100,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:101",
+      "question_id": "604f81f9b60547e86e0923eb36ed5166119b46a4406c082736df8c28c8df41a9",
+      "source_row": 101,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:102",
+      "question_id": "0219c9ed5fb8ef13f308e42e6c8029b4318293463d1c9ad35c82de0607a36b7f",
+      "source_row": 102,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:103",
+      "question_id": "0934c4134d9a9d869d6469f1d01540aec9aa0b72bbd534d1aa78a0bc6916bde9",
+      "source_row": 103,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:104",
+      "question_id": "74d925e95071377f5ce6971840797fb459540ef0dad57b642e25688c6365bf41",
+      "source_row": 104,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 308,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:105",
+      "question_id": "f50f48a9e58118ac50ba19d7f52d91fab9dc7ff135eaad457aa2f44dbccd27df",
+      "source_row": 105,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:106",
+      "question_id": "c86b9bd771ad420301122904998d055371b602a4ffb1d7e79fd8c4cc68fa3a88",
+      "source_row": 106,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:107",
+      "question_id": "1c03163a6c75206f0cf3c131ca9fe8a34fcbff4c1eed9d85848672daee4b7f13",
+      "source_row": 107,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:108",
+      "question_id": "6fcc71febd129d5e8ad9fe7f4d18343349c8e1c8dc4786f308cea89c7fd52dc0",
+      "source_row": 108,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:109",
+      "question_id": "7989c4b2a4833470684e39971627945e4ba23c5ba6e8a696384a219928f915fa",
+      "source_row": 109,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:110",
+      "question_id": "60973ed401e50410379184774eb0d41b1d88d6168701ddeef2a47cd71b7b3b0b",
+      "source_row": 110,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:111",
+      "question_id": "efacb7c78e4488fd6b39aff152304eb56e9635f14a4545b5d1aab78114a71dc9",
+      "source_row": 111,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:112",
+      "question_id": "64d84c5bab83ee4bed7a4b241459b578dab5854fcd4a97f9276be3e38621a664",
+      "source_row": 112,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:113",
+      "question_id": "5b28dd56090989096d9a0fdb011e5b72abcd1b7194ef6819dca963c4c797d6f1",
+      "source_row": 113,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:114",
+      "question_id": "5e93ca04c6d541abc607d0d7d00e0ba31a4e56d868a0a6bcf67f6de8bce684ad",
+      "source_row": 114,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:115",
+      "question_id": "40d037b0dffe308facbbb21be27329c394c1b34bba9bb5f2046b49771a237d25",
+      "source_row": 115,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:116",
+      "question_id": "ea5414258b132592170d829de9e9a082af8acb8c5c17c88dfc2b087d45d9a831",
+      "source_row": 116,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:117",
+      "question_id": "82c4c7b0ae312cce43a5e1461647b6d8ac8d27dc0c133609200f579b9a2ae7e8",
+      "source_row": 117,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 291,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:118",
+      "question_id": "f2e339df1226a1009d118dab98ecda991f0e5e3cf3a192768fe923c2524b2b27",
+      "source_row": 118,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:119",
+      "question_id": "c40d4fd1ce5ca2f8b5f655ad65027e85de2c4abc663f4ea92f522ad7b8dacb86",
+      "source_row": 119,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:120",
+      "question_id": "5105f6d390775b10a8fbc6094b0dc147bb5e524d82526f62f44e1765f16eb09f",
+      "source_row": 120,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:121",
+      "question_id": "966683db36136da1101bd9938a33a5dcaa39074593f38a9726c73377a3e788c0",
+      "source_row": 121,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:122",
+      "question_id": "db421f767989c919b7607030bf47dd78b62f8eea58f0b2c2ab1fea04e76e38c5",
+      "source_row": 122,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:123",
+      "question_id": "87946617388b2584ccbb9fc0f488c00b5fb54c4de677efd09fbee84e62dccbce",
+      "source_row": 123,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:124",
+      "question_id": "a707ed6ef5d436e25fcd7ba06031b60b6e9a769fc24f8d767e3c9a73f23f84a0",
+      "source_row": 124,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:125",
+      "question_id": "ce59e366ba385c8ea05c6dff195d741b38c0ff70c0514a8140546c2ae303a01b",
+      "source_row": 125,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:126",
+      "question_id": "933993f2b22a68e1a406ff1f67a8c7a242a660bf4c0a3da7ce3571cefd0ed100",
+      "source_row": 126,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:127",
+      "question_id": "2ecd679a3892c898a3989cbb04fbd08deb75c67b27adf57ed2eb58ef47635cea",
+      "source_row": 127,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 291,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:128",
+      "question_id": "4625f179feae1f4b1932a62574dc48a617b99932fae1373cc1ba7bac9b0b0615",
+      "source_row": 128,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:129",
+      "question_id": "ccefc417696d6ea63b8170099b18113777af48c07a6141c30927507e81bb2489",
+      "source_row": 129,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:130",
+      "question_id": "57234a0d4391770a4aabf7819026de890ffd1eca205a893fb7aadde767d9a022",
+      "source_row": 130,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:131",
+      "question_id": "e91f8c6aabd597671c092b11bd6e97424b4acbca6d66d1bc457d396c9d469a44",
+      "source_row": 131,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:132",
+      "question_id": "83ee5cfcbb711ee2bf1326c907b026c400ad1a362eb6a09148cc4c086b769e56",
+      "source_row": 132,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:133",
+      "question_id": "da4af1e80419b3a7c49031f683dd3941a5cf9a72572810111f7d768511e1d921",
+      "source_row": 133,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:134",
+      "question_id": "e6dab8fcab6a97cd426803a64ebaa20c21a9fb1f655f4d426fa1f1ee409b705d",
+      "source_row": 134,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:135",
+      "question_id": "caea456ec5c12ec5173bb5a688a79178493668d5845c37dcf7ba652b794cc32f",
+      "source_row": 135,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:136",
+      "question_id": "657f377f508b78fac5c3bdd2ae1e0dc82af6aa297da4dcfc83a4a7d7b0b08e17",
+      "source_row": 136,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:137",
+      "question_id": "110e54d5aff44348565c1e87705265b8cac1a19ded66af13ca9d1e0d4881e5d8",
+      "source_row": 137,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:138",
+      "question_id": "fd900783929824f547271232cac1af95916127af45781d7c607c3e204f8b5007",
+      "source_row": 138,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:139",
+      "question_id": "b01426bbcfc0d918cb12efbe3e8805e99cdb16ad1a79a6aba302aba2169556fa",
+      "source_row": 139,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:140",
+      "question_id": "b9448b1019446294150c37fc73a39298144f610b643337618eb0b119c736c6bf",
+      "source_row": 140,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:141",
+      "question_id": "d3e9a4e7ec26b6a4b63398af4c5c191d9f2a0c68bf1a61a4a2ae9ad832ef2be8",
+      "source_row": 141,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:142",
+      "question_id": "ffa0ad240064c4c0ec3b8972e507e24f43b5f055fcf631e3a1cfe1e15f90e8c2",
+      "source_row": 142,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:143",
+      "question_id": "9eb34b33629d66e91da6ce0bf45553e237e18193104abb2114d24486c3d86a22",
+      "source_row": 143,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:144",
+      "question_id": "d66c35f03c852cef9948876a3ee600a7b34407c345bcc5506b237b63577847ab",
+      "source_row": 144,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:145",
+      "question_id": "733a0e44be6314d574607b36dbbc0248a5c43f32c2a11f3e00e8a2d760a767ec",
+      "source_row": 145,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:146",
+      "question_id": "6618623811d160f0424a741e6c1dc6c147e50f6fe316e871f15f3668f3f2d166",
+      "source_row": 146,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:147",
+      "question_id": "9cd6999036132e17fb90220d9ebb65bd9444c98a80b270a8899fbadf2473b1da",
+      "source_row": 147,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:148",
+      "question_id": "05051832e7fd832869ab97f2048a490a39428611aa664fdb2e9dadf27ae77cb4",
+      "source_row": 148,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:149",
+      "question_id": "aaa10491792e4473c6be5e663dcdbbe28247136525027270ba33837fa4b1c8e8",
+      "source_row": 149,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:150",
+      "question_id": "42757b17cdbb6bb4c216e6ba6be454cf17bd042db8638ef1ed938c88426175b1",
+      "source_row": 150,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:151",
+      "question_id": "3410f5af3e46b8d8502d6ace6cbb9caaf86a72c5cc966eeae736c475f081e2cd",
+      "source_row": 151,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:152",
+      "question_id": "4ab7a44deba5cc1946992a1286b99ff960c7f380220a3db6c5aa5a11ffcc309c",
+      "source_row": 152,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:153",
+      "question_id": "c4761865af5768190e4b8461e419dc2f0691c193e69976b25e5a96dd16ed2503",
+      "source_row": 153,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:154",
+      "question_id": "ea559b57b14a68dbf355854caebb690a2b6dbf2528b4b9558c43ba176cdf6643",
+      "source_row": 154,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:155",
+      "question_id": "daebed4693ca653301ed16517014dd068f0d1c568d2d78aa17fc8f3f155c42b2",
+      "source_row": 155,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:156",
+      "question_id": "0a719b81fcdb8b217d3c1387fdb2011b0125b1b955d5055d5596f661d4bfa533",
+      "source_row": 156,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:157",
+      "question_id": "76de0f69ccb3c49c74e2c83d7d04caff7943e52deada82639619a1d17ae7e18e",
+      "source_row": 157,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:158",
+      "question_id": "c6f0079815ad33d946bf1f1b2a4fb91b8fdd87c5c7c8634043e96aa081f67dce",
+      "source_row": 158,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:159",
+      "question_id": "89650c416fae12d242ff4af5dbc6020fbdb997f3dc96aacc7f6d8d2eb7f149ef",
+      "source_row": 159,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:160",
+      "question_id": "ac873aa0abdb7df93db32a7f79eff6e2d70cb775749b6d86a54f9f4df38da0c3",
+      "source_row": 160,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:161",
+      "question_id": "778ddfa3908f816579fd3c6135e8932ec8c8f0964fd89e709251cd160ffd54aa",
+      "source_row": 161,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:162",
+      "question_id": "72ebe8b9290746a47e7291890c00427594523e9835b891c5a1248d15cc4b6541",
+      "source_row": 162,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:163",
+      "question_id": "7c383297bf460ab8a47de4dc436b132b7bb87f60cf863ec64ec958a3a690c925",
+      "source_row": 163,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:164",
+      "question_id": "15d33affcd5b0d13f8af38ffb529f37378cea84d4a111426a2b612a73fd01051",
+      "source_row": 164,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:165",
+      "question_id": "ad8d22c4d73e22593240c63989d87d0b5a6b9c2d6b315f56ae666dcb0360b81f",
+      "source_row": 165,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:166",
+      "question_id": "148af44c038ec4eb6a74ac251d736ae96ddbb92c8283eb6b62ee854ac831a0ad",
+      "source_row": 166,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:167",
+      "question_id": "283b5e559a359bdd51fe6d01fc7f9c7c1bb9b3e823ac4e13cac769bd176b1650",
+      "source_row": 167,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:168",
+      "question_id": "e2dab007be62a54f1f297fd7d847edf9bbead58a12d62ce8c7c8a776c2917a52",
+      "source_row": 168,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:169",
+      "question_id": "4b7ea2864dc3cf6a15997d61299337b6bb84dfca3539a0c26ea68ee67c5b5ebe",
+      "source_row": 169,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:170",
+      "question_id": "3b90bc10f3099666691b6b436e0f74e3d61db66e4faae2b8bf88b995eda430a8",
+      "source_row": 170,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:171",
+      "question_id": "61edb49d05d37c5b0c783855f4f558569e8cab720e8c7a59705aa2573de104e8",
+      "source_row": 171,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:172",
+      "question_id": "5f3e1c2109645174f9e0a73521b101c7fa6bd1c87dd0aeb8f9be4cb31a2e6489",
+      "source_row": 172,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:173",
+      "question_id": "78a43326fd50a8de159a91162863f3c19a7abc3fd899c3c4c0c7c25b3ffed998",
+      "source_row": 173,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:174",
+      "question_id": "de67bb059b22dab2e9582df86b8ffd9f2b81b08f82800734ab2e06d1bce0bed9",
+      "source_row": 174,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 308,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:175",
+      "question_id": "7881b67ebc02169d83425a4178b2ef010cd2d4a4b8693d95f0f5f28cb7165f30",
+      "source_row": 175,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:176",
+      "question_id": "fd7068cfbb1f5fcb3a8ca8617df4587a401224a244834cef2736ed5aa26987d4",
+      "source_row": 176,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:177",
+      "question_id": "a5d1c9423cacabf9510991c3925313b4e55729c22a9bac65f60a0b0c2722ac34",
+      "source_row": 177,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:178",
+      "question_id": "33784883a8c6e6b23dc44938636427008425f58e55a68f636fdfe7fa65c0de63",
+      "source_row": 178,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 278,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:179",
+      "question_id": "865853b8ee5555b0437c0efb02a5ab61cbc3e41b018b29b2527e50cd3d499924",
+      "source_row": 179,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 308,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:180",
+      "question_id": "69c23ed834a15b42d2e183c534bd000d4b8973001f91d8a22e3c6fff32f8627c",
+      "source_row": 180,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:181",
+      "question_id": "550cc19f006a857bef012db2cb35db720e11fc2df70b4f1275de997fd94b1fb9",
+      "source_row": 181,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:182",
+      "question_id": "7612983e277a4e9b3bbd2f1e73edce5fdf35a64506506845c7d69ecc807ec43c",
+      "source_row": 182,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:183",
+      "question_id": "c7aa2b7ac4ebe0b095544f3259537a6e6e2800bcfafce0fd28f2fdb8358a6ec3",
+      "source_row": 183,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:184",
+      "question_id": "f7d2e80c5f497b5cf1d2c0ea755c9fcdd899270242500c27c7e02dded2420f2d",
+      "source_row": 184,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:185",
+      "question_id": "57f77dc74edd92e65991c007fba5d79cfe4188ff08524210815e9a54ed8874e0",
+      "source_row": 185,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:186",
+      "question_id": "efa4064ce1e1e150d53efa9c3314f90deab2a75f8cba7033d6f7c998f8d36839",
+      "source_row": 186,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:187",
+      "question_id": "8f8158c3862aa6354f380830e7459b6c17bcd24847afdb2d4f63ac92f078e7dc",
+      "source_row": 187,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:188",
+      "question_id": "508f18bee968ac98c2a072a65093dd15af2015f87f8290e05087aca9ea8a7ea3",
+      "source_row": 188,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:189",
+      "question_id": "735e7f7356ea3f2a28b3557c4dd868af002d8bef685d79dc3b5f2f451acdaf97",
+      "source_row": 189,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:190",
+      "question_id": "79be6b03257cf48a9781fc79edcb49fcd317ae8653c0774138cd0c15d49770e8",
+      "source_row": 190,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 293,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:191",
+      "question_id": "517ce9a0bb2882ae0c1c186f44269a7a1bb2b31d579fd3b3cf51040322e02429",
+      "source_row": 191,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:192",
+      "question_id": "96e2a9016f26d17982210e8738359a8dd58aeaa649c798119188a1f8fbef765a",
+      "source_row": 192,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:193",
+      "question_id": "cc978ca2b48c62a76e19c3edd4d083626814b0c2d80418baee3fca32d8eadf16",
+      "source_row": 193,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 272,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:194",
+      "question_id": "ae699d4284a78f2d8a1b9a9815852d407b98e58fbe418240528357206f1b37b5",
+      "source_row": 194,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 264,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:195",
+      "question_id": "e5c78814e5dc42dd8d31b6653f9654e81340e663b78b3ac7a174a0207fe5b4a1",
+      "source_row": 195,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:196",
+      "question_id": "be7bf7b7f549ea0a3c5e35bf2d864df56a5e3b809b2ced9ecd15f25b85303736",
+      "source_row": 196,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 274,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:197",
+      "question_id": "e9cdc8612c80184868742380e8adfbf21327918e1626d6bf82bd5e8b33dcf294",
+      "source_row": 197,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:198",
+      "question_id": "1e634e8e640d0d1706cf31e633b3ee6ed6651266fa52728d2394ce4ef793a655",
+      "source_row": 198,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:199",
+      "question_id": "31f500e75cf2f4212d6fb3af00b327251d1ee861ed58640d2c9f2a47ea9e71ff",
+      "source_row": 199,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 310,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:200",
+      "question_id": "17ada707b031b6fc2ee2e31dbbc622a4dddb75bd17d473ba8122d0dd3d37aa0d",
+      "source_row": 200,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 280,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:201",
+      "question_id": "52d6c4a631703e34c075dbf67ef6b8b5fce16069d95c6bc0243cbffb22ff171d",
+      "source_row": 201,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 210,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:202",
+      "question_id": "bf3db2d3d7f2e5a92d37e0d41b573115d581372249f9d8cebe350f4dbffdc46f",
+      "source_row": 202,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 208,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:203",
+      "question_id": "48ee4e943a1d4adc1dc8d0086569e5e824901e0c57da863df1451481eb606b6f",
+      "source_row": 203,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 216,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:204",
+      "question_id": "5a85bb76448a013ee3c33e99f297e0caaa54e1fa1cfd139e3fa89ecc964dfca8",
+      "source_row": 204,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 220,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:205",
+      "question_id": "a5ed60f1ede41a334aa639fabc65b1f99eac9d12198e17c268221e1dc1357425",
+      "source_row": 205,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 230,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:206",
+      "question_id": "365775eb57dce066e238cbf384eb3aadbfc4c32e7def83da6e6f3bd0ae898c83",
+      "source_row": 206,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:207",
+      "question_id": "96025c5fea0e12324dbd3ed81cbf5d75829592341fd7a764ec0c996b55666688",
+      "source_row": 207,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 230,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:208",
+      "question_id": "8ed51c225682d5f76ef0922beb52dd6ed026b774633de9d8393b38f6bdae897d",
+      "source_row": 208,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:209",
+      "question_id": "ea16ffdc893d0a3d5352d96655fca9ded6c1394d807c8f780d2bcf521e054d18",
+      "source_row": 209,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 254,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:210",
+      "question_id": "494feeb9f136f328bf6ef37272cd79ef41ee830ba2b6a4721c4f07da0acc29da",
+      "source_row": 210,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 268,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:211",
+      "question_id": "95a05f5e11fb94bee85bf21b73e799815ef2cefaaa283f6146e01c62e9db3a7c",
+      "source_row": 211,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 277,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:212",
+      "question_id": "db69df9d79264f296dc4ab98ac7c69470bd3dd5a63618d1d1676fd4d4b87f4df",
+      "source_row": 212,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 281,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:213",
+      "question_id": "07fa9a53592c8bc603dae580c0283378e0aac366f95df75f66370b414c2dd61f",
+      "source_row": 213,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 220,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:214",
+      "question_id": "9242f06e6d90e267d81b983dd6d4ee0f79d5dd5e9256c035705420b79720c6a9",
+      "source_row": 214,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 220,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:215",
+      "question_id": "3ddc17d92faa9a55921b499989b51d6b0eb3f1438685ff9cb9ac54b39b8a3456",
+      "source_row": 215,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:216",
+      "question_id": "3576eeb11837090c6744df137affe321f06efbbf10b29a854bd3a7fca92bb56f",
+      "source_row": 216,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 223,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:217",
+      "question_id": "7e0db1c1b80ce9f50db508b81e1f8b3f8e3eac0b9d40a6081078322b1dee9e76",
+      "source_row": 217,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 223,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:218",
+      "question_id": "e2156deca5cfe8b7161987701398db99921f286aeacbbafc5fb6181eb994f97e",
+      "source_row": 218,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 219,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:219",
+      "question_id": "7f8cfcd372509cbe1caf755820d7603e76f6a37405d28acdb4714144d5793355",
+      "source_row": 219,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:220",
+      "question_id": "facd13a597d20842cc78da11954c11628e72fc5071340c149d1fa7d577a75834",
+      "source_row": 220,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 231,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:221",
+      "question_id": "ebb630c02f98bcb19c26d894a055a26c7fc7ae3dba5ff04e4f2f7aa51b9cdf02",
+      "source_row": 221,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 231,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:222",
+      "question_id": "57f75c9df0c8eb0a00795403f6f520add5a52963f9fb6f990cf155b1b1811d88",
+      "source_row": 222,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:223",
+      "question_id": "fb91432b374d883d6ff7c8255069a81ecac93860e068e5fd6f3bc9981c099411",
+      "source_row": 223,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:224",
+      "question_id": "7646e638679f6654af03c474b73dcaa90425978d01b7c3d001c46f81edda34a0",
+      "source_row": 224,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 229,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:225",
+      "question_id": "7e9ee4613dfcbf1a50b35062069941481a949bd91a2513557e34f685358494d9",
+      "source_row": 225,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:226",
+      "question_id": "be11b99cd5957fc9168fc856f26ce5949682a3c3f0f172195a72af24aaf10c9c",
+      "source_row": 226,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 231,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:227",
+      "question_id": "aafec09d1c0506d64e449c5067e34ba3fa7ad63574eb5c52cc3f3c8ec28fc9e0",
+      "source_row": 227,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 265,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:228",
+      "question_id": "042f898da05dc1b06e8638a2186b3d1d3f6f0385b146eccf7092a96843a54d37",
+      "source_row": 228,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 268,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:229",
+      "question_id": "9234ed006ffcb4fabe67e259df777b861251b44b42961f8147f470e04bc64234",
+      "source_row": 229,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 268,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:230",
+      "question_id": "c66346ee6b9b5d1caa9e1c0f6b7ba32aa8e729aaabd98a6ee68e73e5cb73463d",
+      "source_row": 230,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 264,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:231",
+      "question_id": "41a354446463b312c90063e418364ac62a918fe7aef826c274724d24b8b1f436",
+      "source_row": 231,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 234,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:232",
+      "question_id": "d8ff8a6a4b9fc3a1c272368091f0186cfa25e194fb2e38ef47c2b75e0197e98f",
+      "source_row": 232,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:233",
+      "question_id": "10928db7f3eb451f2eeb2de18022a5502c8a562463b69b70563bc5f6dd561265",
+      "source_row": 233,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:234",
+      "question_id": "9b0b0b2b3ca4010b8b0ac684421813536110e224787e87a43fa7658d26dc8032",
+      "source_row": 234,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:235",
+      "question_id": "8916e50d07d90800644c2030033af668b0bda8eb13fce26c9827ddc5f0ba8cdc",
+      "source_row": 235,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 236,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:236",
+      "question_id": "8966916fbbc9da210aebb1f1078bd7e9acddf546a39ef6017159e1f4f1610478",
+      "source_row": 236,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 234,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:237",
+      "question_id": "9a0c3e184c1d7190471fbc99b312090429907c3fe60d7cc4c042695c352dc8a8",
+      "source_row": 237,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:238",
+      "question_id": "6e516da60e81e878568044429dc8fed0cedd2b80aeebcc37e21efa7f1d8f5332",
+      "source_row": 238,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 262,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:239",
+      "question_id": "c7b55908090c188e08ef06a2958a41fb341e12cf83a934984118ee8759ebade8",
+      "source_row": 239,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 282,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:240",
+      "question_id": "c963116937276e94026ec5479fb056e90a5c7ad533dd52dfd8245aa8be20a52f",
+      "source_row": 240,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 251,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:241",
+      "question_id": "39661ff6b55e34037f109d98b7e24962beb760dec4fbb333a467c732e9c20bb8",
+      "source_row": 241,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:242",
+      "question_id": "5b274fcb230fe25d66c710a6b0f180340d34fb53f0f26c0b9253e454fe268c33",
+      "source_row": 242,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:243",
+      "question_id": "234c4f84cb2a5757989dae446b071d3883b572412f9b08110e69d53cbb22c030",
+      "source_row": 243,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 269,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:244",
+      "question_id": "c1d541b0d16b771dd2e70b3cc78671ea3b89ee963c4974d0dc6ee75825fadcc5",
+      "source_row": 244,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:245",
+      "question_id": "716726bd708500ff5c886425eaeff7655236ce855fad5c16c79da17069e7b3fb",
+      "source_row": 245,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:246",
+      "question_id": "56019ea096ec15ca7a85c0b2a89e46f8fc087734e4397c31e8a9cea275c88c00",
+      "source_row": 246,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:247",
+      "question_id": "f3379d60835fe65abd5b9c6a9bee89aac3a0e11536c553ef52bb7e6e0c3068b9",
+      "source_row": 247,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 262,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:248",
+      "question_id": "52e94d859486fbfff431b9c8fd87dbc37b60c7d6865d15805c612c2cbee48691",
+      "source_row": 248,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 254,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:249",
+      "question_id": "e7c1c7e0a803daee3d6d2d0dfc65da3a8140003b32012f572f42c4f1c2f70afe",
+      "source_row": 249,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 283,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:250",
+      "question_id": "d026ae463bce9b593e6dee747726ad010d6fcc032cdfb90f951c52616f15f8bc",
+      "source_row": 250,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:251",
+      "question_id": "2df5810ab96f98e6c27f1e2f46567e43616f8a3ac7273203b4d729e8e99c151e",
+      "source_row": 251,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 265,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:252",
+      "question_id": "af28884b69ce1c8cfb30f50068ed6a499aaec7d853d28ee6f9b39962ed4638d1",
+      "source_row": 252,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 249,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:253",
+      "question_id": "759e7d48abd2c09dc7168f53647588ee53ba5c4a204d874a172e66887a42ab81",
+      "source_row": 253,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 287,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:254",
+      "question_id": "92d7e70674a9f553492c3e383636f05cf4960c0f7f6afffc96113e388b7bd684",
+      "source_row": 254,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:255",
+      "question_id": "728e900f0db43e69f324cca9294c1b156b812b9b2278e162939f9ca9536a56de",
+      "source_row": 255,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 283,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:256",
+      "question_id": "92dfd8488b450dacfa33abe422b24c73d58db78e6a16a2a5ba9e7c5646aa5064",
+      "source_row": 256,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 261,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:257",
+      "question_id": "ba70e8d4bd7bcc839099d1cad2d5f57975e237664dafae8bfb8473a3d704de9e",
+      "source_row": 257,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 254,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:258",
+      "question_id": "f3892a5474975577de06d851203eabaf5e7cca0768df706190520de990b16181",
+      "source_row": 258,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 286,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:259",
+      "question_id": "94aec426182f43252de3ce6ed5aa4fd5e4d6dce2124b5264398d10f77eae35e6",
+      "source_row": 259,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:260",
+      "question_id": "d337770243bae2c3212d4ec709fb8214a3b0775018fbf1a69e3a03f84d28eb8b",
+      "source_row": 260,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:261",
+      "question_id": "f62423090640e91db7cd3f88295beaa10d1c4f9248ddc9aba7b516a53742aeeb",
+      "source_row": 261,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 267,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:262",
+      "question_id": "062fd327dee753ed4d40fc11c8b3b1f4ea41f00114b8e0b4539068072afdbb15",
+      "source_row": 262,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:263",
+      "question_id": "3c2c994dcc7405a8182c53bf8d823b27a0100067ebcf9a63824586aef005bf5c",
+      "source_row": 263,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 275,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:264",
+      "question_id": "d32f5a0bbb39cea3feccf1c118f3610e3ca162a71568fce605255f95521c7fe3",
+      "source_row": 264,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 268,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:265",
+      "question_id": "856878e7449b75df6f127e983110301efdeeaf8db94ae3dc34bb1e05a9447a84",
+      "source_row": 265,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 277,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:266",
+      "question_id": "163aacfc593ad227356e8836560c1c86cddd58fa689e0be2774d89fb132b38aa",
+      "source_row": 266,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 266,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:267",
+      "question_id": "15d2d745d8c6afbe4af3779869a6f7c7a286351c6c70f140ea6380decccee90e",
+      "source_row": 267,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:268",
+      "question_id": "8b398faa2c28d57ba4b8e6052862280fac7e152dd96eb42d382bbcba3b8435b7",
+      "source_row": 268,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 281,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:269",
+      "question_id": "af805ae82444e5b114fabea93b896dc604ccb61391bda01e964acbe9606afe49",
+      "source_row": 269,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 275,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:270",
+      "question_id": "321c2b221729d720de137c4ab6ae1f384f8f736a4dfb0cd300b1fc0b909944bc",
+      "source_row": 270,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 254,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:271",
+      "question_id": "fe372d5869882998a09fb628299d6068663deb8bad41923884189647176018c6",
+      "source_row": 271,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 258,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:272",
+      "question_id": "d4fe448d91c776809200538399d46612204a449a55800395cce314bfaeb8498e",
+      "source_row": 272,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 262,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:273",
+      "question_id": "85a4f4e26081ac01479a695370bb1ce54ae6ad7fde2a0aa609829b5ac97a05c2",
+      "source_row": 273,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 256,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:274",
+      "question_id": "01753d8ee1f4b525ba082637b39832c5486281090f3387bb12a90566ddcade54",
+      "source_row": 274,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 252,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:275",
+      "question_id": "1773cceac879c58123fee0d0a84672252d66567c8d10f7317d504cb38fa2a319",
+      "source_row": 275,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 250,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:276",
+      "question_id": "bb33d220bef1aac5d924ffeba8cddc1542c50cc6b70457895dd4ed8e17f04e79",
+      "source_row": 276,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 267,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:277",
+      "question_id": "0f049c5d30f8fdbf9b812dc9fe91e15809d6469584f267284c47dcc1af87ceab",
+      "source_row": 277,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 214,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:278",
+      "question_id": "1685bd256997b85c4ffd9f1d4f76b6bf127b719c31d2b4e4f66f2f1121f4a9bf",
+      "source_row": 278,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 213,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:279",
+      "question_id": "78a189de47d2ef8011a8a1f9dfd0bf5640b1cb138aa983599a76611346adf0c5",
+      "source_row": 279,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 210,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:280",
+      "question_id": "2ed188e6317e9545cd8df7db8f54fb522da0ce1c6fac71e88aea1ba7cfff7317",
+      "source_row": 280,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:281",
+      "question_id": "ccecd29efa6a95749f7c3f521f5d61fd7953725f6731aeca0b348cb81827bd37",
+      "source_row": 281,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 219,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:282",
+      "question_id": "578de6821d4aee617530ea1f29aff05d1d9be572bca8a2057cae9c9f2b30b61b",
+      "source_row": 282,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 225,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:283",
+      "question_id": "396f5c0f8e3998a47cb813dc1b6ca8f836f341826e3b475d6a6e275d51a5bdc3",
+      "source_row": 283,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:284",
+      "question_id": "475bde9c0bd97396125a044e34987a6b43378437f478fbd59a01de32c0230baa",
+      "source_row": 284,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 213,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:285",
+      "question_id": "1d8c9eacabb40437b89aeca205d358955c4beea65ed9d643a8fc7ef37c012c20",
+      "source_row": 285,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:286",
+      "question_id": "9dacb9978438b1ce7e555cbc1569ea63431ccd7f61a1bcd687026533871835ba",
+      "source_row": 286,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 223,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:287",
+      "question_id": "5a5301f34a6cc8d339d6fde51e2d65628d2d99016accbd0ec7403e26add97c51",
+      "source_row": 287,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 219,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:288",
+      "question_id": "a8f49e6d8692268fa64c8462fbcf17e8f6da82690f4f1961c27689b6b82191d2",
+      "source_row": 288,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 223,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:289",
+      "question_id": "2f4943ff52b692f5742940d7b96acc62c15eaf9259f785968c7acd0a0b0003c7",
+      "source_row": 289,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 213,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:290",
+      "question_id": "a783abb1505bbc80bf8451c59d94c1981f08cdc3aeaeaae3c85cd7b3ece668a8",
+      "source_row": 290,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 216,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:291",
+      "question_id": "7484bb07f5625128100b037a3443695a60de0a2f2e56791a13c0421de3deaa8f",
+      "source_row": 291,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 212,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:292",
+      "question_id": "d1aa5c597098cc5ab0f958ce6555d3d79f22956ac13e1fd88b1d88888a7eb09e",
+      "source_row": 292,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 213,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:293",
+      "question_id": "8f01772baf363aef3711c5471d3b1282d4db0276a3898c41c8a189f128ac2805",
+      "source_row": 293,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 216,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:294",
+      "question_id": "b750af25d882ad17809cb11302e1fb81ba256cf3e7ef6293f5cfcb19bcc42041",
+      "source_row": 294,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 212,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:295",
+      "question_id": "a4a716c61e9caa564f413981004130315a68a2f44237e9240c32901a85cca97f",
+      "source_row": 295,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:296",
+      "question_id": "1f65c1d5be3cad53ec27e3fab68101aa3d4abc5ee09c8bf82f02307923fb857a",
+      "source_row": 296,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 214,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:297",
+      "question_id": "ed9ac656f8f24e818486081cb96e1a4a2e9bf6ef7457dcab8bff1b50e1d0732e",
+      "source_row": 297,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 214,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:298",
+      "question_id": "1ed31f9890b61ff11b78747058ddf6334c9151c093748ef3c711596365030855",
+      "source_row": 298,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 214,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:299",
+      "question_id": "51596a05410e4740002f560b33a0fc234965c803935997683b25aad2bbf525a2",
+      "source_row": 299,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 216,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:300",
+      "question_id": "cb81b3d157fa500360a5ce58a9d9b9605bf5e92d5c7a47b90039c790fd33d89c",
+      "source_row": 300,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 216,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:301",
+      "question_id": "d015e51d8ea4f12173bd6f1ba15267db2f0b63e71b38563736d6d0b8165c8d08",
+      "source_row": 301,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 213,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:302",
+      "question_id": "b9df95958a18923a657b591d02dd4ec4433506496b5ae19b7a7300b2bf27c5c3",
+      "source_row": 302,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:303",
+      "question_id": "b5d9e9aeb5ddd15d277b0cb4197afc001864ffe8bbbca1bba2db14356ad1b217",
+      "source_row": 303,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 214,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:304",
+      "question_id": "de3861289d37afd00637bbefa12fc59816e33672d758d47cfbf2092b8624b3f4",
+      "source_row": 304,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:305",
+      "question_id": "f8485c7f4bff6cbbe549488352260eb9c6f5ace1c63c074d662b2abcf63fcdb9",
+      "source_row": 305,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 215,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:306",
+      "question_id": "c744337974f5b3a4cb6139e622b698fdcce1526756f8cca21d8718a2ae65b5a6",
+      "source_row": 306,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 217,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:307",
+      "question_id": "a76b914afcd3801090f2fcd50c503f32d03786fd4000cf2413c63443be61e1e4",
+      "source_row": 307,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 231,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:308",
+      "question_id": "d945cc12dd602ed92ae6334189b4fa8c392104a6b9a7da85d9925c6ddcc3d97d",
+      "source_row": 308,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 224,
+      "retained": true
+    },
+    {
+      "id": "arithmetic_logic_data_revised_v2.jsonl:309",
+      "question_id": "9cfbf0cb59facf3581e903ab8ef2754a1f4914f2fd1ba0235bc43a7067fc87f0",
+      "source_row": 309,
+      "source_file": "arithmetic_logic_data_revised_v2.jsonl",
+      "category": "arithmetic_only",
+      "tokens": 227,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:8",
+      "question_id": "b493e360339c72a230c63a0f784951ce14b0b667fd98bccf27ccb7fdb2fcba04",
+      "source_row": 8,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1904,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:10",
+      "question_id": "fbf719f081abf79cbf6675035b85d254f54adb2c83898ad8f9680d106e4da7d0",
+      "source_row": 10,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2755,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:16",
+      "question_id": "a220fc7b4e5b0881e8680e566e3d9f23aba134db649d4de2324bcdefb9aa31f5",
+      "source_row": 16,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2156,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:22",
+      "question_id": "0c436c0ccbef34ad46a881a3080495a9bac39707267951cb1f8c1c54ea862906",
+      "source_row": 22,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 12354,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:47",
+      "question_id": "ef494efdee50c113ab171c014d7c6060b994ad5354e4e4183c1e839409452702",
+      "source_row": 47,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3324,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:49",
+      "question_id": "8b159b50463e2513a46126b34fef8cde26900384c0510557f8a17ea27bae82d4",
+      "source_row": 49,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2735,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:56",
+      "question_id": "afdbd50758ce065c0962d713ee391ea0f451098f6897c2128856eb90d99a817a",
+      "source_row": 56,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3761,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:57",
+      "question_id": "f8acbf0364161632e1d78cfbeaa30183b2a831f7b639e52af710d57dd94d06c1",
+      "source_row": 57,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2015,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:61",
+      "question_id": "ff381ffa0ff05b263ca918b762f5356ea855ba0bda6c384430c3be7cfb6e3531",
+      "source_row": 61,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2301,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:77",
+      "question_id": "76c4c7f4b07db72bf5e94d5f033ddbe61a61a163263d172ee1aa6636fa30d03a",
+      "source_row": 77,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1812,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:81",
+      "question_id": "8fa28e6bbb61d11f543e17c10a209ef3c6d8b92762cbd0e5bc9bab8d84c790c7",
+      "source_row": 81,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2239,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:105",
+      "question_id": "0682a52a19ee794464df7d0f740a21860adc61a5c7f44deb8432c07c2c3e13b6",
+      "source_row": 105,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2440,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:109",
+      "question_id": "e263fd09823ae54a73e31dca8b9d941fcd9b282e6da01bf83a8958afd6617722",
+      "source_row": 109,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2351,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:119",
+      "question_id": "aa0463ae70f19807f581bd792e13ffb422a832f1070c1ba87aa9aa2b8c4c8a6c",
+      "source_row": 119,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1430,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:128",
+      "question_id": "b4dc97fb92390b87b7999248b3e3e23f36f4906dae7fd69667308d2e79b2e211",
+      "source_row": 128,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 4149,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:129",
+      "question_id": "d3290b3fb907d641451fb5646fe37e63ab5748668f78512ffb78b5d5d6a9df05",
+      "source_row": 129,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3252,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:132",
+      "question_id": "a874fc7ff229cf5b26649eb3ad5980e98cc301834566fcdfefa422a133b4ec54",
+      "source_row": 132,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2307,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:133",
+      "question_id": "124a4b23b77f69ab2aba544a558e2da006e0f3b9ecbf4c3c0f80f7e1eeb60c6d",
+      "source_row": 133,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3984,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:139",
+      "question_id": "d32737a3525f028c9376ae11bf0396e011fc080e45557ae14b1d630e13743045",
+      "source_row": 139,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3657,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:142",
+      "question_id": "c9fb71b465c41d374e77ec2b146e2497935e9f204c8d90a2b91fdd60b7877aef",
+      "source_row": 142,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2665,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:159",
+      "question_id": "5ff65ef3698d31a392cbc7e5bce25712f79e4a209cef32de9825d0d620d76bae",
+      "source_row": 159,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1646,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:165",
+      "question_id": "12e84efd1a73e5d6851d6669a69a3008042fe54a9240cf0039a53cb94a246d71",
+      "source_row": 165,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3590,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:167",
+      "question_id": "e113d9787e225d147227b8fdfd3459985bf895e783f2b5e87a10af62c0b7618e",
+      "source_row": 167,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2146,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:171",
+      "question_id": "55f05c8a67f90157f377e06c60e9fd177a2338152152427cfe7426a1b4d49483",
+      "source_row": 171,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2293,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:180",
+      "question_id": "dd537d2780280b5459dbca33db2cd62fe6f0ae47815cef52b623990bf7be7dd3",
+      "source_row": 180,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2383,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:182",
+      "question_id": "8548f1bc50c0c603f16a382ff24e08267a4cae4803880f06b4307b6b33f6ce8c",
+      "source_row": 182,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2963,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:186",
+      "question_id": "9d961a74f52c009959867faab093f206a203c65a195bb349433436ad8a79f88c",
+      "source_row": 186,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1572,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:228",
+      "question_id": "adee9bdd453da6e5024c650a388d02752da882a621af5ad7c9eb2515dac37529",
+      "source_row": 228,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1830,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:232",
+      "question_id": "810b77178af37c76eeaf193d474a3a4624cc3f43f73883f5216c8fce6202c71f",
+      "source_row": 232,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2947,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:234",
+      "question_id": "7170dedde59b2d82d46e9c859e7c767d48e438e4cd54e7da5bfa111b2f20bcdd",
+      "source_row": 234,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1964,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:249",
+      "question_id": "97c69985e39fb047239a90bc9a80678b4552eb28277b4d12faaaf6b2cacb3eb0",
+      "source_row": 249,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1290,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:250",
+      "question_id": "1603d02a6cea2867ad773245c7c0ad8be6258b2341577c171c0a2c90e29a7f42",
+      "source_row": 250,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3089,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:263",
+      "question_id": "5e1dff7b6355097088da9832b4d5d12824917410736db6f8eaa13cda66bc24e9",
+      "source_row": 263,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2459,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:269",
+      "question_id": "a980be1dd16888112beae472cdbe17ee82e167a95af442e8c17b8f524471d6bb",
+      "source_row": 269,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1207,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:272",
+      "question_id": "667b773f1d682e572acdcfd0e7d0d9089549647b7044478aa92f794512b46e72",
+      "source_row": 272,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2757,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:277",
+      "question_id": "06eb3404c95961a59b016703717d8405ad6edb8f32cf8e18becb3032dce95e52",
+      "source_row": 277,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2070,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:306",
+      "question_id": "d93b3c4d3f9a6294759b3d55d71b6eb63c0944e8451057e84e2f2538c20f5b6c",
+      "source_row": 306,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1271,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:312",
+      "question_id": "76cfe6e9a2ae2726acd33799213c272b5b4561ed8ee027392205b47bab68c139",
+      "source_row": 312,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3122,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:330",
+      "question_id": "4fb85b24f27ada8038df7f7566539bca5223d552472508a739cf4ad59fae3338",
+      "source_row": 330,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3091,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:335",
+      "question_id": "9b52416bd8801f92d13c274f447d8137f1e606941daaac18b5a8e188804f799d",
+      "source_row": 335,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1489,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:350",
+      "question_id": "7874564b5f9a42f8491a708d49654adb70b8f4f29d2e848395a0b99dc4d24db3",
+      "source_row": 350,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2262,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:351",
+      "question_id": "ce83bc4e46ce5ae6becc59a6fc5a17258720b9e068a6bca3ca5991879bca2ab4",
+      "source_row": 351,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2139,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:365",
+      "question_id": "2ef0d950cfbb8b6d95dcbe748d57317f8d39cc6438a92d2662dabfd6e1160cbd",
+      "source_row": 365,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1770,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:404",
+      "question_id": "5763acb37abf69179142cc66a50a0e992c2a48294e652c7d5ae35049da0e8d67",
+      "source_row": 404,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 4372,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:428",
+      "question_id": "c5b60bd017a573aa505e21abb7819be352bab57229bfc3f73fba8524ff070c47",
+      "source_row": 428,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2396,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:431",
+      "question_id": "9492aac8bbfdc8dd9bb687b2a3b67a1bc7fa1e1c93ac4e89ea5a8ff8bbacb56a",
+      "source_row": 431,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2157,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:441",
+      "question_id": "4aeb23298eb0cdeb9e04352828612463148c58e0743ca007bdc83b68c1a73428",
+      "source_row": 441,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3858,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:480",
+      "question_id": "a6927ca334f72bf39613ee14ff0b7b8e6fbac4bc6d291aa63c84f2123b78655b",
+      "source_row": 480,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3164,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:481",
+      "question_id": "1a80029540bc7a8fcb2bd6a575f4c0137a82be587613634964514c85aff3e5d2",
+      "source_row": 481,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2633,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:484",
+      "question_id": "593f48c12975abf80d9efef002388b48151e85bae0ea2db86d093e74bf98e3fe",
+      "source_row": 484,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 4275,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:506",
+      "question_id": "3c9380dc97a82748bcae9a73318180eb2fdb76643154553bf1aa1e8c29a72cd7",
+      "source_row": 506,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2249,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:507",
+      "question_id": "6fb35e58ccc3d636b059c36684a89497af52385f6cbb8161e739830a89321749",
+      "source_row": 507,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2232,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:539",
+      "question_id": "e7b2d15da33b9b0c874505b7dd3aa0483dfd6e17b3b95e001b8bdaff70417bba",
+      "source_row": 539,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 5385,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:543",
+      "question_id": "1b6130b57222dfebb164bf635904217d4c278d06f921f9228fb8d397bf7a7129",
+      "source_row": 543,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1592,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:565",
+      "question_id": "f553d164b79c253e57882b334ef8dd398a43fed2de5fc8c44ec1d36c2bcfe583",
+      "source_row": 565,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3983,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:572",
+      "question_id": "1db314b666466bb4b5ae5a5f46f9f6dde3e8301b2833bc21689e6dc4cf8778e2",
+      "source_row": 572,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 4130,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:584",
+      "question_id": "0d37c2e867217726990cd83613d8707a1d758b878401249074c4af58369b54aa",
+      "source_row": 584,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3076,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:600",
+      "question_id": "de717941e1579f3e4fba99e6c3581ee518b3869d34db8b90c7a6af811b3df6b6",
+      "source_row": 600,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2221,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:601",
+      "question_id": "600198ab1ce77aebe8f54c0d09a1037a500f3ccea43aad9581a048c2afab5ac0",
+      "source_row": 601,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2337,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:611",
+      "question_id": "90f13b2ad0b131c84dd7371af6d6999b20cd2d77fdab0ed56ca9d412cc5e787b",
+      "source_row": 611,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 5300,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:613",
+      "question_id": "3521fe83a580b8d8a80f309b4c0440278a4040be3d198f306de07af307faf0a5",
+      "source_row": 613,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1597,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:624",
+      "question_id": "9304c271924a294b01002c693ac5987f2708d43845d0c40dc11b035b08732ce1",
+      "source_row": 624,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1769,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:635",
+      "question_id": "3deabf81403f3b83c535a611c2ffc01ad57490428a12ec0a5563fddc3609d69c",
+      "source_row": 635,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2599,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:641",
+      "question_id": "3686aa4cc6a5f6fa5dcd4c2f452c91670dd7fa569d222b85aa78310f1d50b88a",
+      "source_row": 641,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2596,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:657",
+      "question_id": "9fbfac9011429686d983b9a65feeca8bdd854597d430f72cc1fbdb7c32e036c8",
+      "source_row": 657,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2530,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:679",
+      "question_id": "59c06e8e9684c32a3efa5fd1f0ee0ad8eeddcf8230cc870c9778b13dd01dd7aa",
+      "source_row": 679,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2800,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:681",
+      "question_id": "ff28d14d7338e80d3046705493b8e54dac0348c1f433308ef56625aa349c8650",
+      "source_row": 681,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1773,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:683",
+      "question_id": "a1ca09938b86cf4827c097b571376481e9dc534a13d889a05c8287c52ab4cc79",
+      "source_row": 683,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3043,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:690",
+      "question_id": "220cce9185548d16acdc9ae64e552e8c1701ea22a6af6a9e44a84cf85613e75e",
+      "source_row": 690,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2762,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:741",
+      "question_id": "d514d932cbafe8503e46b6d8421115c27d2caeb16b5a6685b67ee862794df42c",
+      "source_row": 741,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1602,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:746",
+      "question_id": "eb8c9fbb2015d7bd29aeac3bf2a24a5f54510f4cedf475d318b2afaa6ed04cd5",
+      "source_row": 746,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3405,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:749",
+      "question_id": "4624cd12b5659dfc8f836ee4d19d7d4f62c483745b361d86b88b70f946a62300",
+      "source_row": 749,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 6745,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:752",
+      "question_id": "fd322c581b1325f16244a75182a05dfebe1566ec08a51ea4ce8129c9e01c703f",
+      "source_row": 752,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3191,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:755",
+      "question_id": "fb83c89bb2f862ce567825558637ffe7acaaae5fda5872765b85a29333f418db",
+      "source_row": 755,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3265,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:757",
+      "question_id": "3ba73e5d472ccd70b11daa506a3dfdb717bf0356ae831c620b1bb0943f4c2869",
+      "source_row": 757,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2282,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:759",
+      "question_id": "37e0f976b62c2d1277383e5e1571162153b2ee063ab7ffa4a6927516b213d539",
+      "source_row": 759,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3155,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:790",
+      "question_id": "39b2cc8d639d712321419273319af92bb95852b7f39c22570af02cf69fbe30b7",
+      "source_row": 790,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 4162,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:799",
+      "question_id": "f52d96423200f0dfdc4cc5c7a5d1c58c79ba32de2c6b849f01b01063e19f6be7",
+      "source_row": 799,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3291,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:810",
+      "question_id": "f052f31b4248225337f0375cf5e32eb3dbd2e6f72d008704cfb5de8811475eb9",
+      "source_row": 810,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1867,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:811",
+      "question_id": "c7295075056bd0bdab10954960531cbd9de071d945058e238a56419f24e297ce",
+      "source_row": 811,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2910,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:814",
+      "question_id": "9b4357a1bb9982ae2391a89a7a883a25395e1901fd7531884d40d4edfb00fab1",
+      "source_row": 814,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2986,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:816",
+      "question_id": "d1089f7e36c917d6185c822f030aa2c864df5c3f894ddd4b5a0f1bc9065f92b6",
+      "source_row": 816,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 2593,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:824",
+      "question_id": "ff5a2b77d35ccc381839bb504d6bff9b016846297a62c6ed363f159e5ad72de7",
+      "source_row": 824,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 3026,
+      "retained": false
+    },
+    {
+      "id": "results_v3.jsonl:825",
+      "question_id": "62843e8e6d81918d52403f3e960950e2fe637cce162b888b8bc9bb9b1bb1f694",
+      "source_row": 825,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1962,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:835",
+      "question_id": "bc49962dbffb2bc17304fd5139a2f8c131d3b0c06db6781c86becb2267e11d29",
+      "source_row": 835,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1819,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:839",
+      "question_id": "5dd333cf07725bb67fd351f2e0f28d19fb0ea0a306a20d3f1a2b2d37c4a4469f",
+      "source_row": 839,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1778,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:848",
+      "question_id": "fd3c4b5aefcd124db66ae99f3ce7da870edf0bf3c8d80df763e34bc7bf9b1173",
+      "source_row": 848,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1430,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:856",
+      "question_id": "588721d2d64ff937a91f2769ad5d2a1f91da3e262d7f3a47ce88bf9eb222d0a3",
+      "source_row": 856,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1007,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:857",
+      "question_id": "e8d242aa06ee46240f6716a54af103ad86ad185c0be00f67565e81325b968c52",
+      "source_row": 857,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1076,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:860",
+      "question_id": "968492b53dc728806b6803bb9f4bcd2f038fd237627f4173485811e3d8a4c4e3",
+      "source_row": 860,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1351,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:864",
+      "question_id": "49341bbfecc82826a6fc8b6cafb2e829fb56894a2ba2d170bee0f99fdd54a6f0",
+      "source_row": 864,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1438,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:871",
+      "question_id": "e0ebbc54dca332ec6a28221daebc4a8925b97ae8ba4b03c0b9eb8d7069d3272f",
+      "source_row": 871,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1333,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:872",
+      "question_id": "ebb3c80c260f1822109e8d1c6fae74204e0a725c2c1c256d61127ed5c2807e59",
+      "source_row": 872,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1446,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:878",
+      "question_id": "756efbfd6bbc3e6ec82691af35acd8033f84ce23efd28838177b895e47d01ff9",
+      "source_row": 878,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1295,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:889",
+      "question_id": "67a0abcd6069a95f307b70902f3f9c99bc426e821ae05b47bca2ea4667051611",
+      "source_row": 889,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 883,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:894",
+      "question_id": "078cc5c572facfe115f427362de10bf9cce123eb5fff34065a348bcef19226d6",
+      "source_row": 894,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1133,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:895",
+      "question_id": "fe14e65aef021e1d8f9cce6424841a42bccd50cda7208aebc4d11258b8040721",
+      "source_row": 895,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1269,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:905",
+      "question_id": "32774fa7780dcb4494b694b02a6ee328922215f7bb2a2d7ad09550b575657892",
+      "source_row": 905,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1202,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:910",
+      "question_id": "73f4f29ea16d76d1267a4bc0593fe97da67dcd0a05f04631b6c05ba65b6dfee9",
+      "source_row": 910,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1063,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:919",
+      "question_id": "d234f51e8d3ada55c48f032d0926484d91f7b315c5378a654150b1e600490f51",
+      "source_row": 919,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1337,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:924",
+      "question_id": "aa216e379f88380b8feb8ab7a7532810992664b53dce2a30aa09c95fccd518f2",
+      "source_row": 924,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1087,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:932",
+      "question_id": "6e7da2642c60497ebf5455f7e5444b9294a0331fda1aabf375c0b9a3b8eec736",
+      "source_row": 932,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1487,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:934",
+      "question_id": "61877274f04a16f45c7a56b86253dad68ffee5526ad2ff54df94e3eabafb9526",
+      "source_row": 934,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1197,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:938",
+      "question_id": "ee56569b3474979b8b1e9ec8131d38f94a78318ad55206870371a4154505f0cd",
+      "source_row": 938,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1154,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:945",
+      "question_id": "264b53689a4426d7c5d0ebaa7329c05231ac18c10978adca9ef151aa887ae929",
+      "source_row": 945,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1621,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:949",
+      "question_id": "5f0fa6de01193e352732a98dcaa514fe8eb220358416a37fd36c8f01bf8651c8",
+      "source_row": 949,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1133,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:953",
+      "question_id": "5db985fbf0533b033bdd6deb7595b220fbc7770f468f571a252da061c9208613",
+      "source_row": 953,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1010,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:965",
+      "question_id": "764f3afab00df772298223b3f89e37fcf5b6173c5fe4abf1a572482915f53fb5",
+      "source_row": 965,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1085,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:967",
+      "question_id": "787c393c01880c2688874fc93346f0a0a2abcbe4c77baa1427c6dc5fb816ff1e",
+      "source_row": 967,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1281,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:990",
+      "question_id": "92750914740bc899bc420355125b0fd7ee1148c63b2aa4a93bf1ff4a977fed58",
+      "source_row": 990,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1037,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:997",
+      "question_id": "7cebba8ae2de5e693c58c84f5bc1d83861c460035c917aaaf5fdb2410111ba23",
+      "source_row": 997,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1464,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1005",
+      "question_id": "b724c2544a7c8b14fbb8bbafc461707e1b3a8bcc1986cc11338cb4e04b8a7322",
+      "source_row": 1005,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1624,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1007",
+      "question_id": "2635106d359757d9ba64476716cfbdc8695a50c8ac1816c50e32942f2dca8bab",
+      "source_row": 1007,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1209,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1019",
+      "question_id": "bedf7a75156c3515f51b3bed1f7333a033241fa1ae3b5d66d99f6a09e2dc85cc",
+      "source_row": 1019,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1327,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1024",
+      "question_id": "5cde2518990904569ac23005e8aa039b03e3af0d923e1f87b995ff0b569a7d81",
+      "source_row": 1024,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 865,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1034",
+      "question_id": "f4fa71b287dd8c2d56ccf49b1bb2733e76632000dd4c9da11f1d4b5546db3366",
+      "source_row": 1034,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1272,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1037",
+      "question_id": "2fdc55b413d803013b81244a1b06f61c67aeefab04e12135638f8a459ee320ea",
+      "source_row": 1037,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1271,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1058",
+      "question_id": "e0663a6f022c3a5f62bb33dd6284cec9a1d63061292c64038d67780d965ed6ad",
+      "source_row": 1058,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1143,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1072",
+      "question_id": "6cbcedd41ab8c48aff6a165669825e5439aa268e1735ee9a1c28c8be445b3f21",
+      "source_row": 1072,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1471,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1076",
+      "question_id": "415abdef8bb5e8cc1f701f8ee35228d4d0e097ab32b07665b3d7091729815a75",
+      "source_row": 1076,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1219,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1086",
+      "question_id": "943b32ed675d708795f0cf9d541ec2ee2d6bc94fa9d775bf829488228a30f3cc",
+      "source_row": 1086,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 938,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1088",
+      "question_id": "09691d908485067c40170e1b4f3760f72ee403abd1953b833210c234b04c512a",
+      "source_row": 1088,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1208,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1091",
+      "question_id": "9412b53408659e17f977d4896cc10836ad3d134f530505a47690d8086d7c5cbf",
+      "source_row": 1091,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1154,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1099",
+      "question_id": "280c40c0f53675afc4c7b1be98a1457af5a8e1b041e62e1ceb3c593d621ca390",
+      "source_row": 1099,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1270,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1104",
+      "question_id": "527872795591a42a2afdc8288cc48843d73a49bfcb3d20a63224cb38776e5ba1",
+      "source_row": 1104,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1285,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1114",
+      "question_id": "b86aa7d96ebf892101aa58426747ec0aae8695ba57e5588510790b4ca78a8f33",
+      "source_row": 1114,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1089,
+      "retained": true
+    },
+    {
+      "id": "results_v3.jsonl:1124",
+      "question_id": "9db78e6a0347827df18f73ebee81e0ca28b59fbab9618fb2e76c750442476f06",
+      "source_row": 1124,
+      "source_file": "results_v3.jsonl",
+      "category": "cot_and_code",
+      "tokens": 1223,
+      "retained": true
+    }
+  ],
+  "model_weights_loaded": false,
+  "original_kaggle_tokenizer_authenticated": false
+}

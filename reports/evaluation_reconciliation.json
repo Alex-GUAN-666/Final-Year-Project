@@ -1,0 +1,1996 @@
+{
+  "audit_scope": "All six fields of every row of both uploaded CSVs; exact raw text matches against direct original notebook extraction and the prior recovered JSON; static syntax inspection only.",
+  "generated_code_executed": false,
+  "model_inference_performed": false,
+  "training_evaluation_overlap": {
+    "status": "exact_question_overlap_with_reconstructed_training_subset",
+    "official_tokenizer_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+    "token_filter_manifest": "historical_token_filter.json",
+    "token_filter_manifest_sha256": "8fb016cf4ff88aee8b278b206a1709fde4c2cce2b265733e03aa375ea324ca69",
+    "distilled_file_sha256": "ada65f97a005ae64f86b8d514b0ff0daae80942fec0b494ca0c39578c2dea35c",
+    "retained_distilled_count": 143,
+    "evaluation_count": 20,
+    "overlap_count": 5,
+    "overlapping_question_numbers": [
+      5,
+      12,
+      13,
+      14,
+      20
+    ],
+    "mappings": [
+      {
+        "question_number": 1,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 2,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 3,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 4,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 5,
+        "retained_distilled_source_lines": [
+          897
+        ]
+      },
+      {
+        "question_number": 6,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 7,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 8,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 9,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 10,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 11,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 12,
+        "retained_distilled_source_lines": [
+          764,
+          876,
+          999
+        ]
+      },
+      {
+        "question_number": 13,
+        "retained_distilled_source_lines": [
+          988,
+          994
+        ]
+      },
+      {
+        "question_number": 14,
+        "retained_distilled_source_lines": [
+          581
+        ]
+      },
+      {
+        "question_number": 15,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 16,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 17,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 18,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 19,
+        "retained_distilled_source_lines": []
+      },
+      {
+        "question_number": 20,
+        "retained_distilled_source_lines": [
+          209
+        ]
+      }
+    ],
+    "interpretation": "The official-tokenizer reconstruction retains 143 distilled training rows; 5/20 historical evaluation questions are exact matches to those retained rows (evaluation rows 5, 12, 13, 14, 20). These historical scores do not establish an independent held-out generalization gain. The original training-tokenizer revision and exact merged checkpoint remain unverified."
+  },
+  "csvs_identical_bytes": true,
+  "unique_csv_payloads": 1,
+  "prior_json_matches_direct_notebook_extraction": {
+    "base": true,
+    "merged": true
+  },
+  "reference_csv": {
+    "filename": "random_samples_for_inference.csv",
+    "sha256": "5c4d32efc079a57edb64f669e5aa068c77c0ba6e919be41e2c23a600cc382b80",
+    "rows": 100
+  },
+  "files": {
+    "named_base": {
+      "filename": "evaluation_results_base_cot_v5(1).csv",
+      "sha256": "a05b045035a3a2e84c2844d92ba549a48db8096061ef76b73ac9e43a5197825e",
+      "bytes": 136051,
+      "row_count": 20,
+      "field_count": 6,
+      "all_field_characters_read": 134580,
+      "identified_historical_roles": [
+        "base"
+      ],
+      "comparisons": {
+        "base": {
+          "row_count_matches": true,
+          "counts": {
+            "question_exact_compared": 20,
+            "question_exact_matched": 20,
+            "response_exact_compared": 20,
+            "response_exact_matched": 20,
+            "code_exact_compared": 20,
+            "code_exact_matched": 20,
+            "correctness_flag_exact_compared": 20,
+            "correctness_flag_exact_matched": 20,
+            "reference_question_exact_compared": 20,
+            "reference_question_exact_matched": 20,
+            "reference_gold_numeric_equal_compared": 20,
+            "reference_gold_numeric_equal_matched": 20,
+            "observed_execution_result_exact_compared": 8,
+            "observed_execution_result_exact_matched": 8,
+            "observed_ground_truth_numeric_equal_compared": 8,
+            "observed_ground_truth_numeric_equal_matched": 8
+          },
+          "complete_observable_match": true,
+          "mismatches": []
+        },
+        "merged": {
+          "row_count_matches": true,
+          "counts": {
+            "question_exact_compared": 20,
+            "question_exact_matched": 20,
+            "response_exact_compared": 20,
+            "response_exact_matched": 0,
+            "code_exact_compared": 20,
+            "code_exact_matched": 0,
+            "correctness_flag_exact_compared": 20,
+            "correctness_flag_exact_matched": 11,
+            "reference_question_exact_compared": 20,
+            "reference_question_exact_matched": 20,
+            "reference_gold_numeric_equal_compared": 20,
+            "reference_gold_numeric_equal_matched": 20,
+            "observed_execution_result_exact_compared": 5,
+            "observed_execution_result_exact_matched": 0,
+            "observed_ground_truth_numeric_equal_compared": 5,
+            "observed_ground_truth_numeric_equal_matched": 5
+          },
+          "complete_observable_match": false,
+          "mismatches": [
+            {
+              "question_number": 1,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 2,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 3,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 4,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 5,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 6,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 7,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 8,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 9,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 10,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 11,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 12,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 13,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 14,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 15,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 16,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 17,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 18,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 19,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 20,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            }
+          ]
+        }
+      },
+      "recorded_correct": 12,
+      "rescored_correct": 12,
+      "labels_inconsistent_with_saved_stdout": [],
+      "categories": {
+        "correct_numeric_stdout": 12,
+        "recorded_execution_error": 2,
+        "no_matching_code_block": 3,
+        "non_numeric_stdout": 1,
+        "wrong_numeric_stdout": 2
+      },
+      "row_audits": [
+        {
+          "question_number": 1,
+          "question": "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+          "ground_truth": "4.0",
+          "execution_result": "4",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 23,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "af3660c8c89d36e37dbdca1190307d60666ec322185a79c128829adfcfaf5955",
+            "ground_truth": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+            "llm_response": "89dfc44d144a54527ef6cfd65e2c9a4079af044b4a426c9d026e03798d23fcbd",
+            "extracted_code": "6e3ba9cdb3afe3613f6e604b5eff7b87fb55c9fcbe07edbddb4503b39aa1d358",
+            "execution_result": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 134,
+            "ground_truth": 3,
+            "llm_response": 6857,
+            "extracted_code": 75,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Numeric 4 matches gold. The prose sufficiency check incorrectly simplifies 2y + 2sqrt((x+y)y) >= 4y to a right side of 3y; output scoring does not verify the proof."
+        },
+        {
+          "question_number": 2,
+          "question": "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+          "ground_truth": "46.0",
+          "execution_result": "Error: list indices must be integers or slices, not Symbol",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "recorded_execution_error",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 26,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "a9888b635d535049ad4065d045adf84b82182570861397277f0c866b539523b2",
+            "ground_truth": "0729c13ebd725201c1445a00c825237d305ff650cd72f50e45259bd942a75ef4",
+            "llm_response": "4b382eb279d8e228f3d600d165931660efe068fe009e9396630a34e7f1efa85c",
+            "extracted_code": "7c4cc6c539fe2451d7ef5ce112f850313b9cc939aec4352dcb47582ad0d83440",
+            "execution_result": "05fe1997f0cc9992dd333e42cd04e3057b248d30489001a166467040470977c5",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 279,
+            "ground_truth": 4,
+            "llm_response": 6946,
+            "extracted_code": 350,
+            "execution_result": 58,
+            "is_correct": 5
+          },
+          "manual_review": "SymPy solve output is indexed by a Symbol as though a dictionary; recorded execution error. Prose equations do not correctly use the two step counts."
+        },
+        {
+          "question_number": 3,
+          "question": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+          "ground_truth": "64.0",
+          "execution_result": "",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "no_matching_code_block",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 0,
+          "static_code": {
+            "has_code": false,
+            "syntax_error": null,
+            "last_ast_node": null
+          },
+          "full_field_sha256": {
+            "question": "314b323b830c1c43889a602d16ca0d26d8c19f7d43da180aeba561e33b0de9c6",
+            "ground_truth": "f81b732a59389bd6838affaf36f9a3b6d9fe736b4e99f146571a5b1b935283e9",
+            "llm_response": "cd3d3ad63ce85269673a883d7f8f23efb15eee1166749d7876574c811f3a68b1",
+            "extracted_code": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "execution_result": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 298,
+            "ground_truth": 4,
+            "llm_response": 6698,
+            "extracted_code": 0,
+            "execution_result": 0,
+            "is_correct": 5
+          },
+          "manual_review": "Prose gives 64 but no matching Python block. Fails the recorded execution metric despite the textual answer."
+        },
+        {
+          "question_number": 4,
+          "question": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+          "ground_truth": "12.0",
+          "execution_result": "12.0",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 17,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "69e3a27a62a3e1bf29cf3cb9c8614a34b632a7660564eb4cbc285621e109dce3",
+            "ground_truth": "77c52f3feed5acdd119b1f8449d5ccc2d39be94bd0314d5b7302f36e20b6cea9",
+            "llm_response": "a90ae4170a50d736da4a1934e6d35f09d6de787e7277f13716494d566353c453",
+            "extracted_code": "f570c1bba2ff3fa7c705c9262feccc3c4272be36732bcbb03045c06caff2ec72",
+            "execution_result": "77c52f3feed5acdd119b1f8449d5ccc2d39be94bd0314d5b7302f36e20b6cea9",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 190,
+            "ground_truth": 4,
+            "llm_response": 4558,
+            "extracted_code": 545,
+            "execution_result": 4,
+            "is_correct": 4
+          },
+          "manual_review": "Vieta and cube-sum calculation return recorded stdout 12.0, equivalent to gold 12."
+        },
+        {
+          "question_number": 5,
+          "question": "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+          "ground_truth": "66.0",
+          "execution_result": "",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "no_matching_code_block",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 0,
+          "static_code": {
+            "has_code": false,
+            "syntax_error": null,
+            "last_ast_node": null
+          },
+          "full_field_sha256": {
+            "question": "3944311d15425446465b2910645463dde24f2f9e625048cc5ecd19df33966b23",
+            "ground_truth": "21abb7c83b003f8abe7bf105e342c1615b6cd1e773ca5997c8e6ac1aa7ab2e8e",
+            "llm_response": "d3f35731771986a770bebeda276075a75bbaec3e0367ef1d9227d645a7229029",
+            "extracted_code": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "execution_result": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 82,
+            "ground_truth": 4,
+            "llm_response": 4127,
+            "extracted_code": 0,
+            "execution_result": 0,
+            "is_correct": 5
+          },
+          "manual_review": "Prose states 66, then repeats tokens. No matching Python block."
+        },
+        {
+          "question_number": 6,
+          "question": "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+          "ground_truth": "28.0",
+          "execution_result": "[-14 - 2*sqrt(15) - (-128 + (-7 - sqrt(15))**2)*(-7 - sqrt(15))/17, -(-128 + (-7 + sqrt(15))**2)*(-7 + sqrt(15))/17 - 14 + 2*sqrt(15), -2*sqrt(15) + 14 - (-128 + (7 - sqrt(15))**2)*(7 - sqrt(15))/17, -(-128 + (sqrt(15) + 7)**2)*(sqrt(15) + 7)/17 + 2*sqrt(15) + 14]",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "non_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 9,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "f22646164113944c087923fd931f8aeb9fa69655c98f4abe3c6a4f4a2adfdef3",
+            "ground_truth": "3884d73b84f2e88d36a540aa9587c500a76922cf48463d3c130917896b5fcac4",
+            "llm_response": "29dda32b594805b5c32ed6a57ef326fdd2b59e545492a69526040decc9246350",
+            "extracted_code": "2eff217b6a1e8f98294bc4103eec0b174a2da7a12c73c5baa888c8ea612271c9",
+            "execution_result": "84193aa1fd4a1692f666c41457412aab05abce766c9fb1d27d1c8030e9f96509",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 133,
+            "ground_truth": 4,
+            "llm_response": 6902,
+            "extracted_code": 363,
+            "execution_result": 264,
+            "is_correct": 5
+          },
+          "manual_review": "Code prints a list of symbolic perimeter expressions, including nonphysical branches. Full stdout is not a scalar decimal and is rejected."
+        },
+        {
+          "question_number": 7,
+          "question": "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+          "ground_truth": "2.0",
+          "execution_result": "Error: list indices must be integers or slices, not Symbol",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "recorded_execution_error",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 2,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "80701b002ea01a465343d064bd4be4f9d731a8d4252ea5cd1382d44632883082",
+            "ground_truth": "d84bdb34d4eeef4034d77e5403f850e35bc4a51b1143e3a83510e1aaad839748",
+            "llm_response": "e031714a51a128e8b80d4dae212627f635d01aedaa228db9b0c944b56027aae5",
+            "extracted_code": "00998fcde4df8c6a6bc253b45dab19ac2a6564d2cbcf3fdc7709b3f5f5f08114",
+            "execution_result": "05fe1997f0cc9992dd333e42cd04e3057b248d30489001a166467040470977c5",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 269,
+            "ground_truth": 3,
+            "llm_response": 8516,
+            "extracted_code": 406,
+            "execution_result": 58,
+            "is_correct": 5
+          },
+          "manual_review": "SymPy solve output is incorrectly indexed with a Symbol; recorded execution error. Prose additionally claims an unsupported speed of 3."
+        },
+        {
+          "question_number": 8,
+          "question": "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+          "ground_truth": "1.0",
+          "execution_result": "1",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 17,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "dae3aae0a0421306138f1002a62b8b28d3abf340152ed1f1090d8a7531c0680f",
+            "ground_truth": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+            "llm_response": "c0dfbedf711a2a35a19d58b1621af11ddc338da0e40b69543d2ae0fe4ba7683c",
+            "extracted_code": "a1747678be1048e5c92ddb9bf8a7db1b9bdf80851242c46be2f1b9ebf5b310e5",
+            "execution_result": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 150,
+            "ground_truth": 3,
+            "llm_response": 6901,
+            "extracted_code": 172,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Recorded stdout 1 matches gold; executable code tests p=5 only. The general argument is in prose and is not scored for validity."
+        },
+        {
+          "question_number": 9,
+          "question": "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+          "ground_truth": "36.0",
+          "execution_result": "0",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "wrong_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "f5a60653bc0db3ba2ea5d968dd0b5d05609c85bf6e9462f7b3ab37f34c743e78",
+            "ground_truth": "f85f0b0b202527348d18a78706e3ff04eddb2022895655cb63039afb9b99a3cd",
+            "llm_response": "a5c039e36cb00bbefd660e7db2d4c3395f60029edcfa47629e38462ce4e127ea",
+            "extracted_code": "e8356abe6d4119482835c484b05627374e9193ab0318355976e8f0567416a882",
+            "execution_result": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 133,
+            "ground_truth": 4,
+            "llm_response": 4866,
+            "extracted_code": 321,
+            "execution_result": 1,
+            "is_correct": 5
+          },
+          "manual_review": "Prose gives 36 but code uses the first two roots without requiring positive lengths; recorded stdout is 0."
+        },
+        {
+          "question_number": 10,
+          "question": "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+          "ground_truth": "233.0",
+          "execution_result": "233",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "bcd85a49423bfd17d4d3c20dbe34c416ee236986d7ba13be5b5df4fbac030233",
+            "ground_truth": "ae91a5e5e7e0ba8c60f0329379ca215b19e1f5e9c7e9426ef2e6501e2bb797c3",
+            "llm_response": "4aeee9c28e49b28191146b8d200063cf0cb83e8183fe3eab781810c8c9bbc73d",
+            "extracted_code": "7bcc4ae471903a3c5e1b52c1a500a6795bb99b40a4ccb94102d08d898ee99a69",
+            "execution_result": "c0509a487a18b003ba05e505419ebb63e57a29158073e381f57160b5c5b86426",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 187,
+            "ground_truth": 5,
+            "llm_response": 6710,
+            "extracted_code": 603,
+            "execution_result": 3,
+            "is_correct": 4
+          },
+          "manual_review": "Enumeration of digit strings returns recorded stdout 233. A prose statement about maximum length is imprecise but code counts lengths 1 through 12."
+        },
+        {
+          "question_number": 11,
+          "question": "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+          "ground_truth": "148.0",
+          "execution_result": "148148148",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "wrong_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 2,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "45a53a92f1d82c5805954ffe1a8fcedfde64bc2e6e450d32ecb459327c5fae07",
+            "ground_truth": "ab4290bd1287b0045412d99212361598472580cda03cad053d6eda41d0519c21",
+            "llm_response": "1a9b79b97791c897cf45c5412427d94f5cc2bd32f80e96f205e53e06f474590c",
+            "extracted_code": "aea81500008da5df4b2f4ad42aec2e509260bf59bdbc39d00f1d0da08efe3cc4",
+            "execution_result": "ba6078daa8046061d94b40329622907fe94e249920e846ac5fdf537e7049ae46",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 118,
+            "ground_truth": 5,
+            "llm_response": 6013,
+            "extracted_code": 66,
+            "execution_result": 9,
+            "is_correct": 5
+          },
+          "manual_review": "Code uses 2222222220 rather than the smallest valid number 2220; recorded quotient 148148148 differs from gold 148."
+        },
+        {
+          "question_number": 12,
+          "question": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+          "ground_truth": "4.0",
+          "execution_result": "4.0",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 16,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "5e876c69c1861d8cf5264e04da34ab45b42d6ce15844b3e3262b22d13d40c102",
+            "ground_truth": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+            "llm_response": "7ae6b2d4e83d424812fa79a044de744b707730416dab83d6da72d26a4ec308b5",
+            "extracted_code": "04644178e4d36713521b06fd8daa54777c3efbb82a23117c5f1242ae0d8e48a6",
+            "execution_result": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 130,
+            "ground_truth": 3,
+            "llm_response": 7387,
+            "extracted_code": 197,
+            "execution_result": 3,
+            "is_correct": 4
+          },
+          "manual_review": "Five widths sum to 20; recorded stdout 4.0 is equivalent to gold 4."
+        },
+        {
+          "question_number": 13,
+          "question": "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+          "ground_truth": "105.0",
+          "execution_result": "105",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 5,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "4a599236db36a7bb3c1b74d216df311b22b8a2d482ca4292356f6d72a273d255",
+            "ground_truth": "11a86311d39aaaf9c4d289b5b616d72150b83042889b92e1cd330a32d763995f",
+            "llm_response": "1a33b77807d044c66032c5e9c8adf940d61eba43e42674ac35b6206f7eac15f8",
+            "extracted_code": "6440955e55f2578863df16e2b192fe948406dc5a052838399265a8285b0a62b6",
+            "execution_result": "1253e9373e781b7500266caa55150e08e210bc8cd8cc70d89985e3600155e860",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 128,
+            "ground_truth": 5,
+            "llm_response": 6362,
+            "extracted_code": 270,
+            "execution_result": 3,
+            "is_correct": 4
+          },
+          "manual_review": "Choosing two unordered co-presidents gives 105. Irrelevant trailing tokens do not affect the first extracted code block."
+        },
+        {
+          "question_number": 14,
+          "question": "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+          "ground_truth": "28.0",
+          "execution_result": "28",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 4,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "d49ec0d641f0319288717736c273a0ea2894ac61785e7804480a66aac6ad152e",
+            "ground_truth": "3884d73b84f2e88d36a540aa9587c500a76922cf48463d3c130917896b5fcac4",
+            "llm_response": "58280c46027b5603bf18b4faac132393ebcc4e47378d2cd5163adfa694c666d9",
+            "extracted_code": "640dd173f4759f8e48d5148338752d92d3b806516affc4582e76cb818fd6df9e",
+            "execution_result": "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 180,
+            "ground_truth": 4,
+            "llm_response": 6332,
+            "extracted_code": 669,
+            "execution_result": 2,
+            "is_correct": 4
+          },
+          "manual_review": "Numeric result 28 matches gold; code returns the literal after the preceding derivation."
+        },
+        {
+          "question_number": 15,
+          "question": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+          "ground_truth": "59.0",
+          "execution_result": "59",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "0c91f7391411119c09f7b52472f29322a5b467f7c351e2655beeb0a98d9982df",
+            "ground_truth": "4bf4f525504cc0a2c514f8cfd5d73ea65c50af4bbcd047c0f01fd331ed3ef051",
+            "llm_response": "dbda638d25df1e54a412bd3bc534d4b509c3835d13dcb0acec805b18aea2a1c3",
+            "extracted_code": "257219f1874e908e3eb747ecd3939c77b6c56319e05f38ce9ebcf674f895aa82",
+            "execution_result": "3e1e967e9b793e908f8eae83c74dba9bcccce6a5535b4b462bd9994537bfe15c",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 360,
+            "ground_truth": 4,
+            "llm_response": 6613,
+            "extracted_code": 273,
+            "execution_result": 2,
+            "is_correct": 4
+          },
+          "manual_review": "Gold 59 is correct for the standard remainder puzzle, but contradicts the supplied even-number-per-line clause. Recorded pass is retained and dataset defect is flagged separately."
+        },
+        {
+          "question_number": 16,
+          "question": "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+          "ground_truth": "2.0",
+          "execution_result": "2",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "85d963aadc14b17a026d1689f573e31f161550ed8db1c5fa3cac04406d412204",
+            "ground_truth": "d84bdb34d4eeef4034d77e5403f850e35bc4a51b1143e3a83510e1aaad839748",
+            "llm_response": "908ad2b7a1f7d8846f997232a91d39e9e069bff16447eb7c1cdc49e36016ad4f",
+            "extracted_code": "7a3bc1d674aaaac5037402b8c152fbaee33306bb07d9f6465a7e938acaf35b01",
+            "execution_result": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 182,
+            "ground_truth": 3,
+            "llm_response": 6521,
+            "extracted_code": 633,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Code tests a=15,b=77 and returns 2. Prose incorrectly restricts a/3 and b/7 and does not prove the universal result; both a,b being odd would establish it."
+        },
+        {
+          "question_number": 17,
+          "question": "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+          "ground_truth": "28.0",
+          "execution_result": "28",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 6,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "cf81d7dc83af5d0e26bbef6172aef55d33f1e5fd6db22a15d9cb975bd4cd5298",
+            "ground_truth": "3884d73b84f2e88d36a540aa9587c500a76922cf48463d3c130917896b5fcac4",
+            "llm_response": "431c1cf8e333adbff34d68407e0124ccf1fe9000de492edda954ce21ec98d5ba",
+            "extracted_code": "1d9618e314718bbccf2612fd3e8ab5321d1daed03d7e7c1a41c313e29327c014",
+            "execution_result": "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 105,
+            "ground_truth": 4,
+            "llm_response": 5073,
+            "extracted_code": 208,
+            "execution_result": 2,
+            "is_correct": 4
+          },
+          "manual_review": "Recurrence is evaluated at 21 and recorded stdout is 28."
+        },
+        {
+          "question_number": 18,
+          "question": "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+          "ground_truth": "15.0",
+          "execution_result": "15.0",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 2,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "49bb80535681893f3e9ee2c7ae1162df65ecaa90ec40ca892848c4ebdde9d00f",
+            "ground_truth": "c72ae9676454d7cc0014583a9d0a2e28553d5c62f087c7562b5307ebd1cc84c8",
+            "llm_response": "5b3290cb28e4157e4805d0bab156abb3856bc08ba746eac0cfa3596461f232e7",
+            "extracted_code": "949c3b35760913e4b2a9c00145549c27318dc618e32f54907a85b4ce598d98bb",
+            "execution_result": "c72ae9676454d7cc0014583a9d0a2e28553d5c62f087c7562b5307ebd1cc84c8",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 136,
+            "ground_truth": 4,
+            "llm_response": 5504,
+            "extracted_code": 202,
+            "execution_result": 4,
+            "is_correct": 4
+          },
+          "manual_review": "Recorded stdout 15.0 matches gold. Code checks endpoints for the example p=7.5, while prose gives the general piecewise-linear endpoint argument."
+        },
+        {
+          "question_number": 19,
+          "question": "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+          "ground_truth": "6.0",
+          "execution_result": "6",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 7,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "1d1d9ee8c12f8646964e6f61366f31fc1d02b41a2f30afbee6e489dd822a6de1",
+            "ground_truth": "8ab31b5afaea56114427e1f01b81d001b079a0f59539f6db3f099816ca794055",
+            "llm_response": "505ebfdeb714f3e072fe1eae565378a2a1944c93b1c9eff041e5bfd6d04b7e8e",
+            "extracted_code": "bebd32aa90da9172ef8791689a30112cb9835a7adbc0b5b679dcf03f3f16f171",
+            "execution_result": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 114,
+            "ground_truth": 3,
+            "llm_response": 5343,
+            "extracted_code": 209,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Six-term AM-GM and equality point (1,2,3) give numeric 6, consistent with recorded stdout."
+        },
+        {
+          "question_number": 20,
+          "question": "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+          "ground_truth": "4851.0",
+          "execution_result": "",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "no_matching_code_block",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 0,
+          "static_code": {
+            "has_code": false,
+            "syntax_error": null,
+            "last_ast_node": null
+          },
+          "full_field_sha256": {
+            "question": "4a98817c204d52d3416ee72d1d20071373facdd4c4ff1e1181f6533bed8c4137",
+            "ground_truth": "611eaeead750beb6923f4f21b939816ced83a0c651242ca126e8f6c7fc3280c2",
+            "llm_response": "0af5414282c9b47d803ba199430a53e0d01882e39e36c4e674d8b19ad8e8501b",
+            "extracted_code": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "execution_result": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 92,
+            "ground_truth": 6,
+            "llm_response": 6805,
+            "extracted_code": 0,
+            "execution_result": 0,
+            "is_correct": 5
+          },
+          "manual_review": "Prose falsely claims infinitely many positive integer solutions and emits no matching code block. Gold is C(99,2)=4851."
+        }
+      ]
+    },
+    "named_merged": {
+      "filename": "evaluation_results_merged_cot_v5(1).csv",
+      "sha256": "a05b045035a3a2e84c2844d92ba549a48db8096061ef76b73ac9e43a5197825e",
+      "bytes": 136051,
+      "row_count": 20,
+      "field_count": 6,
+      "all_field_characters_read": 134580,
+      "identified_historical_roles": [
+        "base"
+      ],
+      "comparisons": {
+        "base": {
+          "row_count_matches": true,
+          "counts": {
+            "question_exact_compared": 20,
+            "question_exact_matched": 20,
+            "response_exact_compared": 20,
+            "response_exact_matched": 20,
+            "code_exact_compared": 20,
+            "code_exact_matched": 20,
+            "correctness_flag_exact_compared": 20,
+            "correctness_flag_exact_matched": 20,
+            "reference_question_exact_compared": 20,
+            "reference_question_exact_matched": 20,
+            "reference_gold_numeric_equal_compared": 20,
+            "reference_gold_numeric_equal_matched": 20,
+            "observed_execution_result_exact_compared": 8,
+            "observed_execution_result_exact_matched": 8,
+            "observed_ground_truth_numeric_equal_compared": 8,
+            "observed_ground_truth_numeric_equal_matched": 8
+          },
+          "complete_observable_match": true,
+          "mismatches": []
+        },
+        "merged": {
+          "row_count_matches": true,
+          "counts": {
+            "question_exact_compared": 20,
+            "question_exact_matched": 20,
+            "response_exact_compared": 20,
+            "response_exact_matched": 0,
+            "code_exact_compared": 20,
+            "code_exact_matched": 0,
+            "correctness_flag_exact_compared": 20,
+            "correctness_flag_exact_matched": 11,
+            "reference_question_exact_compared": 20,
+            "reference_question_exact_matched": 20,
+            "reference_gold_numeric_equal_compared": 20,
+            "reference_gold_numeric_equal_matched": 20,
+            "observed_execution_result_exact_compared": 5,
+            "observed_execution_result_exact_matched": 0,
+            "observed_ground_truth_numeric_equal_compared": 5,
+            "observed_ground_truth_numeric_equal_matched": 5
+          },
+          "complete_observable_match": false,
+          "mismatches": [
+            {
+              "question_number": 1,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 2,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 3,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 4,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 5,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 6,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 7,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 8,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 9,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            },
+            {
+              "question_number": 10,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 11,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 12,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 13,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 14,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 15,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 16,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 17,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 18,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact",
+                "observed_execution_result_exact"
+              ]
+            },
+            {
+              "question_number": 19,
+              "fields": [
+                "response_exact",
+                "code_exact"
+              ]
+            },
+            {
+              "question_number": 20,
+              "fields": [
+                "response_exact",
+                "code_exact",
+                "correctness_flag_exact"
+              ]
+            }
+          ]
+        }
+      },
+      "recorded_correct": 12,
+      "rescored_correct": 12,
+      "labels_inconsistent_with_saved_stdout": [],
+      "categories": {
+        "correct_numeric_stdout": 12,
+        "recorded_execution_error": 2,
+        "no_matching_code_block": 3,
+        "non_numeric_stdout": 1,
+        "wrong_numeric_stdout": 2
+      },
+      "row_audits": [
+        {
+          "question_number": 1,
+          "question": "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+          "ground_truth": "4.0",
+          "execution_result": "4",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 23,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "af3660c8c89d36e37dbdca1190307d60666ec322185a79c128829adfcfaf5955",
+            "ground_truth": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+            "llm_response": "89dfc44d144a54527ef6cfd65e2c9a4079af044b4a426c9d026e03798d23fcbd",
+            "extracted_code": "6e3ba9cdb3afe3613f6e604b5eff7b87fb55c9fcbe07edbddb4503b39aa1d358",
+            "execution_result": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 134,
+            "ground_truth": 3,
+            "llm_response": 6857,
+            "extracted_code": 75,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Numeric 4 matches gold. The prose sufficiency check incorrectly simplifies 2y + 2sqrt((x+y)y) >= 4y to a right side of 3y; output scoring does not verify the proof."
+        },
+        {
+          "question_number": 2,
+          "question": "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+          "ground_truth": "46.0",
+          "execution_result": "Error: list indices must be integers or slices, not Symbol",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "recorded_execution_error",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 26,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "a9888b635d535049ad4065d045adf84b82182570861397277f0c866b539523b2",
+            "ground_truth": "0729c13ebd725201c1445a00c825237d305ff650cd72f50e45259bd942a75ef4",
+            "llm_response": "4b382eb279d8e228f3d600d165931660efe068fe009e9396630a34e7f1efa85c",
+            "extracted_code": "7c4cc6c539fe2451d7ef5ce112f850313b9cc939aec4352dcb47582ad0d83440",
+            "execution_result": "05fe1997f0cc9992dd333e42cd04e3057b248d30489001a166467040470977c5",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 279,
+            "ground_truth": 4,
+            "llm_response": 6946,
+            "extracted_code": 350,
+            "execution_result": 58,
+            "is_correct": 5
+          },
+          "manual_review": "SymPy solve output is indexed by a Symbol as though a dictionary; recorded execution error. Prose equations do not correctly use the two step counts."
+        },
+        {
+          "question_number": 3,
+          "question": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+          "ground_truth": "64.0",
+          "execution_result": "",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "no_matching_code_block",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 0,
+          "static_code": {
+            "has_code": false,
+            "syntax_error": null,
+            "last_ast_node": null
+          },
+          "full_field_sha256": {
+            "question": "314b323b830c1c43889a602d16ca0d26d8c19f7d43da180aeba561e33b0de9c6",
+            "ground_truth": "f81b732a59389bd6838affaf36f9a3b6d9fe736b4e99f146571a5b1b935283e9",
+            "llm_response": "cd3d3ad63ce85269673a883d7f8f23efb15eee1166749d7876574c811f3a68b1",
+            "extracted_code": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "execution_result": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 298,
+            "ground_truth": 4,
+            "llm_response": 6698,
+            "extracted_code": 0,
+            "execution_result": 0,
+            "is_correct": 5
+          },
+          "manual_review": "Prose gives 64 but no matching Python block. Fails the recorded execution metric despite the textual answer."
+        },
+        {
+          "question_number": 4,
+          "question": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+          "ground_truth": "12.0",
+          "execution_result": "12.0",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 17,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "69e3a27a62a3e1bf29cf3cb9c8614a34b632a7660564eb4cbc285621e109dce3",
+            "ground_truth": "77c52f3feed5acdd119b1f8449d5ccc2d39be94bd0314d5b7302f36e20b6cea9",
+            "llm_response": "a90ae4170a50d736da4a1934e6d35f09d6de787e7277f13716494d566353c453",
+            "extracted_code": "f570c1bba2ff3fa7c705c9262feccc3c4272be36732bcbb03045c06caff2ec72",
+            "execution_result": "77c52f3feed5acdd119b1f8449d5ccc2d39be94bd0314d5b7302f36e20b6cea9",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 190,
+            "ground_truth": 4,
+            "llm_response": 4558,
+            "extracted_code": 545,
+            "execution_result": 4,
+            "is_correct": 4
+          },
+          "manual_review": "Vieta and cube-sum calculation return recorded stdout 12.0, equivalent to gold 12."
+        },
+        {
+          "question_number": 5,
+          "question": "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+          "ground_truth": "66.0",
+          "execution_result": "",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "no_matching_code_block",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 0,
+          "static_code": {
+            "has_code": false,
+            "syntax_error": null,
+            "last_ast_node": null
+          },
+          "full_field_sha256": {
+            "question": "3944311d15425446465b2910645463dde24f2f9e625048cc5ecd19df33966b23",
+            "ground_truth": "21abb7c83b003f8abe7bf105e342c1615b6cd1e773ca5997c8e6ac1aa7ab2e8e",
+            "llm_response": "d3f35731771986a770bebeda276075a75bbaec3e0367ef1d9227d645a7229029",
+            "extracted_code": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "execution_result": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 82,
+            "ground_truth": 4,
+            "llm_response": 4127,
+            "extracted_code": 0,
+            "execution_result": 0,
+            "is_correct": 5
+          },
+          "manual_review": "Prose states 66, then repeats tokens. No matching Python block."
+        },
+        {
+          "question_number": 6,
+          "question": "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+          "ground_truth": "28.0",
+          "execution_result": "[-14 - 2*sqrt(15) - (-128 + (-7 - sqrt(15))**2)*(-7 - sqrt(15))/17, -(-128 + (-7 + sqrt(15))**2)*(-7 + sqrt(15))/17 - 14 + 2*sqrt(15), -2*sqrt(15) + 14 - (-128 + (7 - sqrt(15))**2)*(7 - sqrt(15))/17, -(-128 + (sqrt(15) + 7)**2)*(sqrt(15) + 7)/17 + 2*sqrt(15) + 14]",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "non_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 9,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "f22646164113944c087923fd931f8aeb9fa69655c98f4abe3c6a4f4a2adfdef3",
+            "ground_truth": "3884d73b84f2e88d36a540aa9587c500a76922cf48463d3c130917896b5fcac4",
+            "llm_response": "29dda32b594805b5c32ed6a57ef326fdd2b59e545492a69526040decc9246350",
+            "extracted_code": "2eff217b6a1e8f98294bc4103eec0b174a2da7a12c73c5baa888c8ea612271c9",
+            "execution_result": "84193aa1fd4a1692f666c41457412aab05abce766c9fb1d27d1c8030e9f96509",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 133,
+            "ground_truth": 4,
+            "llm_response": 6902,
+            "extracted_code": 363,
+            "execution_result": 264,
+            "is_correct": 5
+          },
+          "manual_review": "Code prints a list of symbolic perimeter expressions, including nonphysical branches. Full stdout is not a scalar decimal and is rejected."
+        },
+        {
+          "question_number": 7,
+          "question": "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+          "ground_truth": "2.0",
+          "execution_result": "Error: list indices must be integers or slices, not Symbol",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "recorded_execution_error",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 2,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "80701b002ea01a465343d064bd4be4f9d731a8d4252ea5cd1382d44632883082",
+            "ground_truth": "d84bdb34d4eeef4034d77e5403f850e35bc4a51b1143e3a83510e1aaad839748",
+            "llm_response": "e031714a51a128e8b80d4dae212627f635d01aedaa228db9b0c944b56027aae5",
+            "extracted_code": "00998fcde4df8c6a6bc253b45dab19ac2a6564d2cbcf3fdc7709b3f5f5f08114",
+            "execution_result": "05fe1997f0cc9992dd333e42cd04e3057b248d30489001a166467040470977c5",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 269,
+            "ground_truth": 3,
+            "llm_response": 8516,
+            "extracted_code": 406,
+            "execution_result": 58,
+            "is_correct": 5
+          },
+          "manual_review": "SymPy solve output is incorrectly indexed with a Symbol; recorded execution error. Prose additionally claims an unsupported speed of 3."
+        },
+        {
+          "question_number": 8,
+          "question": "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+          "ground_truth": "1.0",
+          "execution_result": "1",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 17,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "dae3aae0a0421306138f1002a62b8b28d3abf340152ed1f1090d8a7531c0680f",
+            "ground_truth": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+            "llm_response": "c0dfbedf711a2a35a19d58b1621af11ddc338da0e40b69543d2ae0fe4ba7683c",
+            "extracted_code": "a1747678be1048e5c92ddb9bf8a7db1b9bdf80851242c46be2f1b9ebf5b310e5",
+            "execution_result": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 150,
+            "ground_truth": 3,
+            "llm_response": 6901,
+            "extracted_code": 172,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Recorded stdout 1 matches gold; executable code tests p=5 only. The general argument is in prose and is not scored for validity."
+        },
+        {
+          "question_number": 9,
+          "question": "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+          "ground_truth": "36.0",
+          "execution_result": "0",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "wrong_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "f5a60653bc0db3ba2ea5d968dd0b5d05609c85bf6e9462f7b3ab37f34c743e78",
+            "ground_truth": "f85f0b0b202527348d18a78706e3ff04eddb2022895655cb63039afb9b99a3cd",
+            "llm_response": "a5c039e36cb00bbefd660e7db2d4c3395f60029edcfa47629e38462ce4e127ea",
+            "extracted_code": "e8356abe6d4119482835c484b05627374e9193ab0318355976e8f0567416a882",
+            "execution_result": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 133,
+            "ground_truth": 4,
+            "llm_response": 4866,
+            "extracted_code": 321,
+            "execution_result": 1,
+            "is_correct": 5
+          },
+          "manual_review": "Prose gives 36 but code uses the first two roots without requiring positive lengths; recorded stdout is 0."
+        },
+        {
+          "question_number": 10,
+          "question": "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+          "ground_truth": "233.0",
+          "execution_result": "233",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "bcd85a49423bfd17d4d3c20dbe34c416ee236986d7ba13be5b5df4fbac030233",
+            "ground_truth": "ae91a5e5e7e0ba8c60f0329379ca215b19e1f5e9c7e9426ef2e6501e2bb797c3",
+            "llm_response": "4aeee9c28e49b28191146b8d200063cf0cb83e8183fe3eab781810c8c9bbc73d",
+            "extracted_code": "7bcc4ae471903a3c5e1b52c1a500a6795bb99b40a4ccb94102d08d898ee99a69",
+            "execution_result": "c0509a487a18b003ba05e505419ebb63e57a29158073e381f57160b5c5b86426",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 187,
+            "ground_truth": 5,
+            "llm_response": 6710,
+            "extracted_code": 603,
+            "execution_result": 3,
+            "is_correct": 4
+          },
+          "manual_review": "Enumeration of digit strings returns recorded stdout 233. A prose statement about maximum length is imprecise but code counts lengths 1 through 12."
+        },
+        {
+          "question_number": 11,
+          "question": "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+          "ground_truth": "148.0",
+          "execution_result": "148148148",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "wrong_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 2,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "45a53a92f1d82c5805954ffe1a8fcedfde64bc2e6e450d32ecb459327c5fae07",
+            "ground_truth": "ab4290bd1287b0045412d99212361598472580cda03cad053d6eda41d0519c21",
+            "llm_response": "1a9b79b97791c897cf45c5412427d94f5cc2bd32f80e96f205e53e06f474590c",
+            "extracted_code": "aea81500008da5df4b2f4ad42aec2e509260bf59bdbc39d00f1d0da08efe3cc4",
+            "execution_result": "ba6078daa8046061d94b40329622907fe94e249920e846ac5fdf537e7049ae46",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 118,
+            "ground_truth": 5,
+            "llm_response": 6013,
+            "extracted_code": 66,
+            "execution_result": 9,
+            "is_correct": 5
+          },
+          "manual_review": "Code uses 2222222220 rather than the smallest valid number 2220; recorded quotient 148148148 differs from gold 148."
+        },
+        {
+          "question_number": 12,
+          "question": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+          "ground_truth": "4.0",
+          "execution_result": "4.0",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 16,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "5e876c69c1861d8cf5264e04da34ab45b42d6ce15844b3e3262b22d13d40c102",
+            "ground_truth": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+            "llm_response": "7ae6b2d4e83d424812fa79a044de744b707730416dab83d6da72d26a4ec308b5",
+            "extracted_code": "04644178e4d36713521b06fd8daa54777c3efbb82a23117c5f1242ae0d8e48a6",
+            "execution_result": "fbd04e1aae9ce0b11a8946e2c9ac2619f7428a64d32d01eff61d809dcb70ee8e",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 130,
+            "ground_truth": 3,
+            "llm_response": 7387,
+            "extracted_code": 197,
+            "execution_result": 3,
+            "is_correct": 4
+          },
+          "manual_review": "Five widths sum to 20; recorded stdout 4.0 is equivalent to gold 4."
+        },
+        {
+          "question_number": 13,
+          "question": "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+          "ground_truth": "105.0",
+          "execution_result": "105",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 5,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "4a599236db36a7bb3c1b74d216df311b22b8a2d482ca4292356f6d72a273d255",
+            "ground_truth": "11a86311d39aaaf9c4d289b5b616d72150b83042889b92e1cd330a32d763995f",
+            "llm_response": "1a33b77807d044c66032c5e9c8adf940d61eba43e42674ac35b6206f7eac15f8",
+            "extracted_code": "6440955e55f2578863df16e2b192fe948406dc5a052838399265a8285b0a62b6",
+            "execution_result": "1253e9373e781b7500266caa55150e08e210bc8cd8cc70d89985e3600155e860",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 128,
+            "ground_truth": 5,
+            "llm_response": 6362,
+            "extracted_code": 270,
+            "execution_result": 3,
+            "is_correct": 4
+          },
+          "manual_review": "Choosing two unordered co-presidents gives 105. Irrelevant trailing tokens do not affect the first extracted code block."
+        },
+        {
+          "question_number": 14,
+          "question": "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+          "ground_truth": "28.0",
+          "execution_result": "28",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 4,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "d49ec0d641f0319288717736c273a0ea2894ac61785e7804480a66aac6ad152e",
+            "ground_truth": "3884d73b84f2e88d36a540aa9587c500a76922cf48463d3c130917896b5fcac4",
+            "llm_response": "58280c46027b5603bf18b4faac132393ebcc4e47378d2cd5163adfa694c666d9",
+            "extracted_code": "640dd173f4759f8e48d5148338752d92d3b806516affc4582e76cb818fd6df9e",
+            "execution_result": "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 180,
+            "ground_truth": 4,
+            "llm_response": 6332,
+            "extracted_code": 669,
+            "execution_result": 2,
+            "is_correct": 4
+          },
+          "manual_review": "Numeric result 28 matches gold; code returns the literal after the preceding derivation."
+        },
+        {
+          "question_number": 15,
+          "question": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+          "ground_truth": "59.0",
+          "execution_result": "59",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "0c91f7391411119c09f7b52472f29322a5b467f7c351e2655beeb0a98d9982df",
+            "ground_truth": "4bf4f525504cc0a2c514f8cfd5d73ea65c50af4bbcd047c0f01fd331ed3ef051",
+            "llm_response": "dbda638d25df1e54a412bd3bc534d4b509c3835d13dcb0acec805b18aea2a1c3",
+            "extracted_code": "257219f1874e908e3eb747ecd3939c77b6c56319e05f38ce9ebcf674f895aa82",
+            "execution_result": "3e1e967e9b793e908f8eae83c74dba9bcccce6a5535b4b462bd9994537bfe15c",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 360,
+            "ground_truth": 4,
+            "llm_response": 6613,
+            "extracted_code": 273,
+            "execution_result": 2,
+            "is_correct": 4
+          },
+          "manual_review": "Gold 59 is correct for the standard remainder puzzle, but contradicts the supplied even-number-per-line clause. Recorded pass is retained and dataset defect is flagged separately."
+        },
+        {
+          "question_number": 16,
+          "question": "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+          "ground_truth": "2.0",
+          "execution_result": "2",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 1,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "85d963aadc14b17a026d1689f573e31f161550ed8db1c5fa3cac04406d412204",
+            "ground_truth": "d84bdb34d4eeef4034d77e5403f850e35bc4a51b1143e3a83510e1aaad839748",
+            "llm_response": "908ad2b7a1f7d8846f997232a91d39e9e069bff16447eb7c1cdc49e36016ad4f",
+            "extracted_code": "7a3bc1d674aaaac5037402b8c152fbaee33306bb07d9f6465a7e938acaf35b01",
+            "execution_result": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 182,
+            "ground_truth": 3,
+            "llm_response": 6521,
+            "extracted_code": 633,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Code tests a=15,b=77 and returns 2. Prose incorrectly restricts a/3 and b/7 and does not prove the universal result; both a,b being odd would establish it."
+        },
+        {
+          "question_number": 17,
+          "question": "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+          "ground_truth": "28.0",
+          "execution_result": "28",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 6,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "cf81d7dc83af5d0e26bbef6172aef55d33f1e5fd6db22a15d9cb975bd4cd5298",
+            "ground_truth": "3884d73b84f2e88d36a540aa9587c500a76922cf48463d3c130917896b5fcac4",
+            "llm_response": "431c1cf8e333adbff34d68407e0124ccf1fe9000de492edda954ce21ec98d5ba",
+            "extracted_code": "1d9618e314718bbccf2612fd3e8ab5321d1daed03d7e7c1a41c313e29327c014",
+            "execution_result": "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 105,
+            "ground_truth": 4,
+            "llm_response": 5073,
+            "extracted_code": 208,
+            "execution_result": 2,
+            "is_correct": 4
+          },
+          "manual_review": "Recurrence is evaluated at 21 and recorded stdout is 28."
+        },
+        {
+          "question_number": 18,
+          "question": "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+          "ground_truth": "15.0",
+          "execution_result": "15.0",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 2,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "49bb80535681893f3e9ee2c7ae1162df65ecaa90ec40ca892848c4ebdde9d00f",
+            "ground_truth": "c72ae9676454d7cc0014583a9d0a2e28553d5c62f087c7562b5307ebd1cc84c8",
+            "llm_response": "5b3290cb28e4157e4805d0bab156abb3856bc08ba746eac0cfa3596461f232e7",
+            "extracted_code": "949c3b35760913e4b2a9c00145549c27318dc618e32f54907a85b4ce598d98bb",
+            "execution_result": "c72ae9676454d7cc0014583a9d0a2e28553d5c62f087c7562b5307ebd1cc84c8",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 136,
+            "ground_truth": 4,
+            "llm_response": 5504,
+            "extracted_code": 202,
+            "execution_result": 4,
+            "is_correct": 4
+          },
+          "manual_review": "Recorded stdout 15.0 matches gold. Code checks endpoints for the example p=7.5, while prose gives the general piecewise-linear endpoint argument."
+        },
+        {
+          "question_number": 19,
+          "question": "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+          "ground_truth": "6.0",
+          "execution_result": "6",
+          "recorded_is_correct": true,
+          "rescored_from_saved_stdout": true,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "correct_numeric_stdout",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 7,
+          "static_code": {
+            "has_code": true,
+            "syntax_error": null,
+            "last_ast_node": "Expr"
+          },
+          "full_field_sha256": {
+            "question": "1d1d9ee8c12f8646964e6f61366f31fc1d02b41a2f30afbee6e489dd822a6de1",
+            "ground_truth": "8ab31b5afaea56114427e1f01b81d001b079a0f59539f6db3f099816ca794055",
+            "llm_response": "505ebfdeb714f3e072fe1eae565378a2a1944c93b1c9eff041e5bfd6d04b7e8e",
+            "extracted_code": "bebd32aa90da9172ef8791689a30112cb9835a7adbc0b5b679dcf03f3f16f171",
+            "execution_result": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+            "is_correct": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+          },
+          "field_characters": {
+            "question": 114,
+            "ground_truth": 3,
+            "llm_response": 5343,
+            "extracted_code": 209,
+            "execution_result": 1,
+            "is_correct": 4
+          },
+          "manual_review": "Six-term AM-GM and equality point (1,2,3) give numeric 6, consistent with recorded stdout."
+        },
+        {
+          "question_number": 20,
+          "question": "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+          "ground_truth": "4851.0",
+          "execution_result": "",
+          "recorded_is_correct": false,
+          "rescored_from_saved_stdout": false,
+          "label_consistent_with_saved_stdout": true,
+          "failure_or_success_category": "no_matching_code_block",
+          "first_block_matches_csv_extracted_code": true,
+          "matching_fenced_block_count": 0,
+          "static_code": {
+            "has_code": false,
+            "syntax_error": null,
+            "last_ast_node": null
+          },
+          "full_field_sha256": {
+            "question": "4a98817c204d52d3416ee72d1d20071373facdd4c4ff1e1181f6533bed8c4137",
+            "ground_truth": "611eaeead750beb6923f4f21b939816ced83a0c651242ca126e8f6c7fc3280c2",
+            "llm_response": "0af5414282c9b47d803ba199430a53e0d01882e39e36c4e674d8b19ad8e8501b",
+            "extracted_code": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "execution_result": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "is_correct": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+          },
+          "field_characters": {
+            "question": 92,
+            "ground_truth": 6,
+            "llm_response": 6805,
+            "extracted_code": 0,
+            "execution_result": 0,
+            "is_correct": 5
+          },
+          "manual_review": "Prose falsely claims infinitely many positive integer solutions and emits no matching code block. Gold is C(99,2)=4851."
+        }
+      ]
+    }
+  },
+  "base_newly_observed_success_stdout_rows": [
+    1,
+    4,
+    8,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "merged_stdout_still_unknown_rows": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    15,
+    16,
+    17,
+    19,
+    20
+  ],
+  "historical_scores": {
+    "base": {
+      "correct": 12,
+      "total": 20,
+      "accuracy": 0.6
+    },
+    "merged": {
+      "correct": 15,
+      "total": 20,
+      "accuracy": 0.75
+    }
+  },
+  "public_reporting": {
+    "metric": "Historical generated-Python numeric-output accuracy on the same first20 reasoning questions; training/evaluation overlap is present",
+    "base": "12/20 (60%), supported by original notebook and two identical CSV copies of that base run",
+    "merged": "15/20 (75%), supported by the original merged notebook's per-question flags and incorrect-result summary",
+    "difference": "15 percentage points; net three additional recorded successes. This is not an independent held-out gain: five of the20 questions overlap the reconstructed training subset.",
+    "training_overlap_limit": "The official-tokenizer reconstruction retains 143 distilled training rows; 5/20 historical evaluation questions are exact matches to those retained rows (evaluation rows 5, 12, 13, 14, 20). These historical scores do not establish an independent held-out generalization gain. The original training-tokenizer revision and exact merged checkpoint remain unverified.",
+    "caveat": "The uploaded filename containing merged is a duplicate of the base results. It provides no independent merged or arithmetic benchmark result. Exact checkpoint identity is not verified by these files, and no model was rerun.",
+    "proof_claim": "Do not call these proof-validation accuracy results. Scalar-output scoring does not validate full reasoning or proofs.",
+    "data_quality": "Question15 has contradictory wording. Keep historical labels intact, flag separately, and use versioned corrected data for any future clean benchmark."
+  }
+}

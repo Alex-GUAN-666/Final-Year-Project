@@ -1,0 +1,18 @@
+{
+  "function": "f(x)=log(sqrt(x^2+1)+x)+sin(x), log=natural logarithm",
+  "equivalent_stable_form": "asinh(x)+sin(x)",
+  "method": "Bisection of independently written formula; fixed brackets [32,33] and [33,34], 60 iterations.",
+  "roots_of_f_equals_5": [
+    32.392675889797374,
+    33.645480543028654
+  ],
+  "counterexample": {
+    "a": 30.392675889797374,
+    "b": -26.645480543028654,
+    "f(a+2)": 4.999999999999999,
+    "f(b-7)": -5.0000000000000036,
+    "a_plus_b": 3.74719534676872,
+    "claimed_answer": 5
+  },
+  "derivative": "1/sqrt(x^2+1)+cos(x), which takes negative values; oddness does not imply injectivity."
+}

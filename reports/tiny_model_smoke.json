@@ -1,0 +1,24 @@
+{
+  "test": "real_cpu_tiny_random_qwen3_lora_merge_inference",
+  "passed": true,
+  "random_base_parameters": 10352,
+  "training_steps": 2,
+  "training_candidates": 4,
+  "retained_samples": 4,
+  "maximum_logit_change_after_training": 0.09346713125705719,
+  "maximum_adapter_vs_merged_logit_error": 2.9802322387695312e-08,
+  "prediction_rows": 1,
+  "predictions_graded": 0,
+  "benchmark_accuracy": null,
+  "libraries": {
+    "torch": "2.6.0+cpu",
+    "transformers": "4.53.2",
+    "peft": "0.16.0",
+    "accelerate": "1.8.1",
+    "numpy": "2.5.3",
+    "bitsandbytes": null
+  },
+  "original_4b_model_used": false,
+  "generated_python_executed": false,
+  "docker_tested": false
+}

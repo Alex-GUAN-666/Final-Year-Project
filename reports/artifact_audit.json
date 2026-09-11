@@ -1,0 +1,4356 @@
+{
+  "purpose": "Audit supplied files and recover saved evidence; not retraining or rerunning inference.",
+  "files": [
+    {
+      "name": "Group14_ Research and application of the language models.pdf",
+      "status": "paper retained outside repository",
+      "sha256": "2919c3a5ec34e1e32943b30938583be49b3477fcd856e727fce1effdd78c43a1"
+    },
+    {
+      "name": "Group14_GRPO-A Resource-Efficient Framework for Structured Mathematical Reasoning and its Role in Hybrid LLM Architectures.docx",
+      "status": "paper retained outside repository",
+      "sha256": "fac27c2d9e8b15af0cff4dba5f1e60b87568b153e850ee6827022394bf8256d7"
+    },
+    {
+      "name": "Qwen3_(4B)_SFFT_code_0811.ipynb",
+      "path": "archive/notebooks/Qwen3_(4B)_SFFT_code_0811.ipynb",
+      "bytes": 359790,
+      "sha256_verified": true
+    },
+    {
+      "name": "Qwen3_(4B)_SFTT_inference_exec_0816.ipynb",
+      "path": "archive/notebooks/Qwen3_(4B)_SFTT_inference_exec_0816.ipynb",
+      "bytes": 50960,
+      "sha256_verified": true
+    },
+    {
+      "name": "Qwen3_4B_GRPO_V1.ipynb",
+      "path": "archive/notebooks/Qwen3_4B_GRPO_V1.ipynb",
+      "bytes": 613854,
+      "sha256_verified": true
+    },
+    {
+      "name": "add_more_data.py",
+      "path": "archive/scripts/add_more_data.py",
+      "bytes": 3897,
+      "sha256_verified": true
+    },
+    {
+      "name": "arithmetic_logic_data_revised_v2.jsonl",
+      "path": "data/raw/arithmetic_logic_data_revised_v2.jsonl",
+      "bytes": 108308,
+      "sha256_verified": true
+    },
+    {
+      "name": "arithmetic_problems_v3.csv",
+      "path": "data/raw/arithmetic_problems_v3.csv",
+      "bytes": 16139,
+      "sha256_verified": true
+    },
+    {
+      "name": "batch_generate_and_verify_v3_1.py",
+      "path": "archive/scripts/batch_generate_and_verify_v3_1.py",
+      "bytes": 15696,
+      "sha256_verified": true
+    },
+    {
+      "name": "generate_arithmetic_data.py",
+      "path": "archive/scripts/generate_arithmetic_data.py",
+      "bytes": 4275,
+      "sha256_verified": true
+    },
+    {
+      "name": "notebook4d41ab3228 _train and reference.ipynb",
+      "path": "archive/notebooks/notebook4d41ab3228 _train and reference.ipynb",
+      "bytes": 387919,
+      "sha256_verified": true
+    },
+    {
+      "name": "notebook62f7bf13ad_reference .ipynb",
+      "path": "archive/notebooks/notebook62f7bf13ad_reference .ipynb",
+      "bytes": 75914,
+      "sha256_verified": true
+    },
+    {
+      "name": "notebookd84987e9c1_base_cot.ipynb",
+      "path": "archive/notebooks/notebookd84987e9c1_base_cot.ipynb",
+      "bytes": 170911,
+      "sha256_verified": true
+    },
+    {
+      "name": "notebookd84987e9c1_merged_cot.ipynb",
+      "path": "archive/notebooks/notebookd84987e9c1_merged_cot.ipynb",
+      "bytes": 162159,
+      "sha256_verified": true
+    },
+    {
+      "name": "random_samples_for_inference.csv",
+      "path": "data/raw/random_samples_for_inference.csv",
+      "bytes": 550349,
+      "sha256_verified": true
+    },
+    {
+      "name": "results_v3(1).jsonl",
+      "path": "data/raw/results_v3.jsonl",
+      "bytes": 12118956,
+      "sha256_verified": true
+    },
+    {
+      "name": "qwen4b-train-code-100920859-279441290..ipynb",
+      "path": "archive/notebooks/qwen4b-train-code-100920859-279441290..ipynb",
+      "bytes": 128272,
+      "sha256_verified": true
+    },
+    {
+      "name": "Qwen3_(4B)_SFFT_code_0811(2).ipynb",
+      "path": "archive/notebooks/Qwen3_(4B)_SFFT_code_0811(2).ipynb",
+      "bytes": 359790,
+      "sha256_verified": true
+    },
+    {
+      "name": "evaluation_results_base_cot_v5(1).csv",
+      "path": "archive/evaluation/evaluation_results_base_cot_v5(1).csv",
+      "bytes": 136051,
+      "sha256_verified": true
+    },
+    {
+      "name": "evaluation_results_merged_cot_v5(1).csv",
+      "path": "archive/evaluation/evaluation_results_merged_cot_v5(1).csv",
+      "bytes": 136051,
+      "sha256_verified": true
+    }
+  ],
+  "notebooks": {
+    "Qwen3_(4B)_SFFT_code_0811.ipynb": {
+      "cells": 27,
+      "code_cells": 18,
+      "markdown_cells": 9,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 16,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 281,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 1119,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 125,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 164,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 51,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 1048,
+          "text_output_chars": 7210,
+          "text_output_sha256": "d446c0dd6a27a0aac80ab2cf22d4c2e73483a58e4ae663dbee4c8c67b5633555",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 26,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 1661,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 32,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 1706,
+          "text_output_chars": 291,
+          "text_output_sha256": "fb262c16613639d66dc50977e2ef184209496162cc29ad74723ff1ff6294a2bb",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 1134,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 894,
+          "text_output_chars": 331,
+          "text_output_sha256": "464b1919c1cee8b27bb15fe6e9db07db91640629226e80425efc0801557acfa3",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 77,
+          "text_output_chars": 3691,
+          "text_output_sha256": "251141963fe2ac62c00b7d669c16671afa373bf840807b813009c2b430c064bf",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 278,
+          "text_output_chars": 214,
+          "text_output_sha256": "f2ff5c930f8fe6b05dd966a602bf7c93d13f536c2e9e0330a8e41032507e10ff",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 37,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 748,
+          "text_output_chars": 90,
+          "text_output_sha256": "a710588661d2d530b2f599cacfaf9fbb4ae00529095b5995f17df2102a2337ac",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 27,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 20,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 85,
+          "text_output_chars": 508,
+          "text_output_sha256": "5c46e030184804e74bedb7a6f26023597b302f3194e799d0e7fe031bbd2886cd",
+          "error_types": []
+        },
+        {
+          "cell": 21,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 43,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 22,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 437,
+          "text_output_chars": 159,
+          "text_output_sha256": "33b5386417b002ed349b73fd5cffe96afebb43edbfbed008459af95545f57aca",
+          "error_types": []
+        },
+        {
+          "cell": 23,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 132,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 24,
+          "type": "code",
+          "execution_count": 20,
+          "source_chars": 233,
+          "text_output_chars": 59,
+          "text_output_sha256": "5e3c6bd0a7bfc752ae984468c9679de19c4b093923862e2b10e2d3e18be60b2e",
+          "error_types": []
+        },
+        {
+          "cell": 25,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 126,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 26,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 11,
+          "text_output_chars": 1778,
+          "text_output_sha256": "37f864e7c5dca0b81f7c46c3c97a56b0c2f79a603563263948f0f68c99958230",
+          "error_types": []
+        },
+        {
+          "cell": 27,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": [
+        "arithmetic_logic_data_revised_v2.jsonl",
+        "results_v3.jsonl"
+      ]
+    },
+    "Qwen3_(4B)_SFTT_inference_exec_0816.ipynb": {
+      "cells": 19,
+      "code_cells": 17,
+      "markdown_cells": 2,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 122,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 282,
+          "text_output_chars": 21,
+          "text_output_sha256": "9b7823f5f95d971cc9e08f97fc221815c9592dfaf86d5232fe91f1386ace0e43",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 294,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 1267,
+          "text_output_chars": 2291,
+          "text_output_sha256": "797c95bb51de5dcbc80f2c20c828f743544438f22a288b48d6f7ee1f695243b7",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 11,
+          "source_chars": 16,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 1655,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 2527,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 4280,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": 92,
+          "source_chars": 206,
+          "text_output_chars": 805,
+          "text_output_sha256": "7155e044df51c9d4bf6742b6280ac53d646ecadd98f33562222e91bedb4e9a8f",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 93,
+          "source_chars": 1698,
+          "text_output_chars": 2693,
+          "text_output_sha256": "8622987e99bf206c92f4653b21ddc7d81be92f77aa424c7a92cebc84ad7b574b",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 352,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 401,
+          "text_output_chars": 74,
+          "text_output_sha256": "325f94019e56085c7856d59be6bca8ff643d5ca32472f0cfb41d18f3066cf769",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 2719,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 94,
+          "source_chars": 1339,
+          "text_output_chars": 3151,
+          "text_output_sha256": "7860d49bcdebad6ce15ae65e2238eed57037d4bc4ebb97e09fb0dd2b2360ceab",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 257,
+          "text_output_chars": 58,
+          "text_output_sha256": "418e7a5dfe7e62ebdfe445358aecd152eaa8bde7bdc9301870aeb5d182a9801c",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 126,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 11,
+          "text_output_chars": 1778,
+          "text_output_sha256": "66eb2dd175daa55e29e4b74bc9b22134b9721009150a9dd710650f018e20976d",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": []
+    },
+    "Qwen3_4B_GRPO_V1.ipynb": {
+      "cells": 69,
+      "code_cells": 35,
+      "markdown_cells": 34,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 16,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 166,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 11,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 198,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 897,
+          "text_output_chars": 6512,
+          "text_output_sha256": "95a68103b88668cd0c5594a70256a41873c089a7e9a5ee14e2904a9ce7052511",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 237,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 421,
+          "text_output_chars": 201,
+          "text_output_sha256": "1cb6b5dc19df232d0cadf431ed0375733f1d88412460ef6b8557b72c92709fc1",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 163,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 883,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 54,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 307,
+          "text_output_chars": 343,
+          "text_output_sha256": "1efc9eb692c050ceec88c55d387200ad95c97775993f96dea3ab6fb3197dd139",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 345,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 462,
+          "text_output_chars": 1845,
+          "text_output_sha256": "469b4a1ea9dc283a99331c220a81c1863587a9fb904d4dae73cbe0d3bf1887c0",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 66,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 735,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 26,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 71,
+          "text_output_chars": 4405,
+          "text_output_sha256": "bce34c1be675b6fd077979db71ce56d393d56ae0aed9df9f7ba0a65e806f220b",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 110,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 167,
+          "text_output_chars": 7,
+          "text_output_sha256": "d8992da4c57e26a4641dc54f180c03e7197e2bfb397514d345017abe6b174bfc",
+          "error_types": []
+        },
+        {
+          "cell": 20,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 89,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 21,
+          "type": "code",
+          "execution_count": 11,
+          "source_chars": 179,
+          "text_output_chars": 143,
+          "text_output_sha256": "449fa9922826bc86dcc27a2592941c3ca8b7b6f93f41f8fdfd0fd8469abf0ed0",
+          "error_types": []
+        },
+        {
+          "cell": 22,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 74,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 23,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 650,
+          "text_output_chars": 88,
+          "text_output_sha256": "ee4288cc79ea207c7c891a6326825a2a07820d53e44ec19e7e8f6ede790bdea4",
+          "error_types": []
+        },
+        {
+          "cell": 24,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 15,
+          "text_output_chars": 689,
+          "text_output_sha256": "4911c070df88210c8d5196fd6c578915093e50fc4b94acffaaeb943fed0d7d2b",
+          "error_types": []
+        },
+        {
+          "cell": 25,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 64,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 26,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 380,
+          "text_output_chars": 2849,
+          "text_output_sha256": "9a4957d4d6347b1676905da911298848f575df1dd4e29043c760c20669abf6ec",
+          "error_types": []
+        },
+        {
+          "cell": 27,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 85,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 28,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 59,
+          "text_output_chars": 1,
+          "text_output_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+          "error_types": []
+        },
+        {
+          "cell": 29,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 151,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 30,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 122,
+          "text_output_chars": 348,
+          "text_output_sha256": "8ca8a1e5ec164b9aec92ed39e16b3c37580e3681eb4d9434f3cb1672b1ce9976",
+          "error_types": []
+        },
+        {
+          "cell": 31,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 28,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 32,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 20,
+          "text_output_chars": 397,
+          "text_output_sha256": "973efc8c8b35813413a37c4b231d5be04d918526a6006436bb4128fb96dbb0db",
+          "error_types": []
+        },
+        {
+          "cell": 33,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 22,
+          "text_output_chars": 4,
+          "text_output_sha256": "a618c16e8c13b386e4619ce172ed7792b5c8d315af8242eb2eaf10ab66f87800",
+          "error_types": []
+        },
+        {
+          "cell": 34,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 125,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 35,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 174,
+          "text_output_chars": 4,
+          "text_output_sha256": "a618c16e8c13b386e4619ce172ed7792b5c8d315af8242eb2eaf10ab66f87800",
+          "error_types": []
+        },
+        {
+          "cell": 36,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 45,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 37,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 227,
+          "text_output_chars": 1658,
+          "text_output_sha256": "a601725b5d7d522c6ea15e5b3339e2b4f652237775be9fa4d90207e468e0bf08",
+          "error_types": []
+        },
+        {
+          "cell": 38,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 69,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 39,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 322,
+          "text_output_chars": 133,
+          "text_output_sha256": "ef9f8148877039caa5905b21e2c9a9e4d864b5ed4de95e3e0495a178f996a5ed",
+          "error_types": []
+        },
+        {
+          "cell": 40,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 19,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 41,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 96,
+          "text_output_chars": 9,
+          "text_output_sha256": "5e7d4df95ca58dfea4cf7398f39cbdc002bfa847edb76bc666a0b8a6e0045f70",
+          "error_types": []
+        },
+        {
+          "cell": 42,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 119,
+          "text_output_chars": 9,
+          "text_output_sha256": "b2a98e098bbd0169083b753ab8c851274388ad42794b5063518b90aef8867bf1",
+          "error_types": []
+        },
+        {
+          "cell": 43,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 112,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 44,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 318,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 45,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 110,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 46,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 427,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 47,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 155,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 48,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 1115,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 49,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 184,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 50,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 368,
+          "text_output_chars": 39,
+          "text_output_sha256": "9d07cbcc436618cb304acf217f6ce1123cd2301611575cbc7198612367ab6348",
+          "error_types": []
+        },
+        {
+          "cell": 51,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 201,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 52,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 1257,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 53,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 108,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 54,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 535,
+          "text_output_chars": 738,
+          "text_output_sha256": "dd955655dea7f9782b4ca2b33570cb2a4429dada05b672d2939e8e7c94d68bd5",
+          "error_types": []
+        },
+        {
+          "cell": 55,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 88,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 56,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 1076,
+          "text_output_chars": 157,
+          "text_output_sha256": "d81bea2831ef107b2d0c3bd4289268fae1f155cbfbe61de1311a7d6120bb8045",
+          "error_types": []
+        },
+        {
+          "cell": 57,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 1285,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 58,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 384,
+          "text_output_chars": 100909,
+          "text_output_sha256": "39001933d07ae4bee32210da52795215657b3c530df4d314501f5c86d2a85148",
+          "error_types": []
+        },
+        {
+          "cell": 59,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 138,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 60,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 299,
+          "text_output_chars": 2547,
+          "text_output_sha256": "b937b703faf2a78c105506c58091f254336754b54a5b28448d3cfdd0c1616434",
+          "error_types": []
+        },
+        {
+          "cell": 61,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 78,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 62,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 34,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 63,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 31,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 64,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 334,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 65,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 30,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 66,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 557,
+          "text_output_chars": 3617,
+          "text_output_sha256": "543fcb4d3778ddb49ae466ef36dd643d795d02b25eff4564701f60f8ec80a413",
+          "error_types": []
+        },
+        {
+          "cell": 67,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 179,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 68,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 203,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 69,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 624,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": [
+        "adapter_model.safetensors"
+      ]
+    },
+    "notebook4d41ab3228 _train and reference.ipynb": {
+      "cells": 36,
+      "code_cells": 27,
+      "markdown_cells": 9,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 1039,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 8,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 1031,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 53,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 763,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 166,
+          "text_output_chars": 1195,
+          "text_output_sha256": "cb2f29d147e92e5610183be959814520bbcf7f155eed326e71ce3ceff2478f81",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 227,
+          "text_output_chars": 1173,
+          "text_output_sha256": "f0b16f1c505d36f8060350de301da600991d2c99e8f304d1509b92b6ebfa85e6",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 1025,
+          "text_output_chars": 1585,
+          "text_output_sha256": "6775074f0bbdf31a2451f39663dd4d29ec1917bfdc0b31aefaf1bd974af13f63",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 30,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 1655,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 1050,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 32,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 1665,
+          "text_output_chars": 252,
+          "text_output_sha256": "1c4ab31f1563985b4b30abd44f2a82ce1827380886b64bc935b3d46d92d26139",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 23,
+          "text_output_chars": 654,
+          "text_output_sha256": "bfc3b404c29c53c8f445cf6e7d98df5b32460ec805d7a3c1e737b7cd2854f350",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 1134,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "code",
+          "execution_count": 11,
+          "source_chars": 894,
+          "text_output_chars": 331,
+          "text_output_sha256": "464b1919c1cee8b27bb15fe6e9db07db91640629226e80425efc0801557acfa3",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 77,
+          "text_output_chars": 1131,
+          "text_output_sha256": "f841dc2c785d5ac347204e0820630e057dcca639c401d0a4b801ee5b90fe8f22",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 278,
+          "text_output_chars": 211,
+          "text_output_sha256": "087db3b8f4a641a6a9f0a0eda82b9515238b7ba521fe5549294ee072d71cdc88",
+          "error_types": []
+        },
+        {
+          "cell": 20,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 37,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 21,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 748,
+          "text_output_chars": 89,
+          "text_output_sha256": "163af5caa458e1e5f2fbf20dee38c18644e09f4503e33b9295250015694cd3fd",
+          "error_types": []
+        },
+        {
+          "cell": 22,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 27,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 23,
+          "type": "code",
+          "execution_count": 15,
+          "source_chars": 85,
+          "text_output_chars": 511,
+          "text_output_sha256": "aad9c8e8fe4bdd1bc2e00a15d0241000f831a0a9283fb5bc7e4ed381a6874889",
+          "error_types": []
+        },
+        {
+          "cell": 24,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 43,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 25,
+          "type": "code",
+          "execution_count": 17,
+          "source_chars": 716,
+          "text_output_chars": 151,
+          "text_output_sha256": "fc5d6cee352235c916da3d1b5159b41562511d3fe66bc2d77dce2a828b037123",
+          "error_types": []
+        },
+        {
+          "cell": 26,
+          "type": "code",
+          "execution_count": 18,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 27,
+          "type": "code",
+          "execution_count": 19,
+          "source_chars": 282,
+          "text_output_chars": 21,
+          "text_output_sha256": "9b7823f5f95d971cc9e08f97fc221815c9592dfaf86d5232fe91f1386ace0e43",
+          "error_types": []
+        },
+        {
+          "cell": 28,
+          "type": "code",
+          "execution_count": 20,
+          "source_chars": 2527,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 29,
+          "type": "code",
+          "execution_count": 21,
+          "source_chars": 4280,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 30,
+          "type": "code",
+          "execution_count": 78,
+          "source_chars": 206,
+          "text_output_chars": 1026,
+          "text_output_sha256": "d75765de9aa572a3645a7e98652f4fa1af9b6dad5b098de2755873dcac23aed5",
+          "error_types": []
+        },
+        {
+          "cell": 31,
+          "type": "code",
+          "execution_count": 79,
+          "source_chars": 1704,
+          "text_output_chars": 2515,
+          "text_output_sha256": "ff1cdd95c4a2da02e2493dff891fc7b1ed5bfc07a0e2fefc52b1f05825644056",
+          "error_types": []
+        },
+        {
+          "cell": 32,
+          "type": "code",
+          "execution_count": 73,
+          "source_chars": 401,
+          "text_output_chars": 860,
+          "text_output_sha256": "c0d97ed2e5e5f1850e33e6ec043f670d1522e203c3d9c51716f0a3baadb9133d",
+          "error_types": []
+        },
+        {
+          "cell": 33,
+          "type": "code",
+          "execution_count": 34,
+          "source_chars": 2719,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 34,
+          "type": "code",
+          "execution_count": 74,
+          "source_chars": 1339,
+          "text_output_chars": 3876,
+          "text_output_sha256": "6972a353e517889e1e3422f4da40c022acb0414d31841d2a6aa2c2509c2e481d",
+          "error_types": []
+        },
+        {
+          "cell": 35,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 36,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": [
+        "arithmetic_logic_data_revised_v2.jsonl",
+        "results_v3.jsonl"
+      ]
+    },
+    "notebook62f7bf13ad_reference .ipynb": {
+      "cells": 24,
+      "code_cells": 22,
+      "markdown_cells": 2,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 122,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 763,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 166,
+          "text_output_chars": 1195,
+          "text_output_sha256": "e1356165cc9b6c6e4db133aeb7bd859b5a07f9ca0e82f8eab7dbf247b3afd891",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 227,
+          "text_output_chars": 1173,
+          "text_output_sha256": "52f7333d0a9e119a3dc7859bf46f9180ee2f459b5c4378a090290ec3580c7acc",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 203,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 188,
+          "text_output_chars": 21,
+          "text_output_sha256": "9b7823f5f95d971cc9e08f97fc221815c9592dfaf86d5232fe91f1386ace0e43",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 233,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 667,
+          "text_output_chars": 1892,
+          "text_output_sha256": "e5c8c842fd050bb54e4736b0873152c07a79af6e22ef0a0c8349c360e37bcd20",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 18,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 430,
+          "text_output_chars": 233,
+          "text_output_sha256": "93b275a96be361faa282ebb2a85872727d91534993f649b71d821c59206b4819",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 11,
+          "source_chars": 1655,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 23,
+          "text_output_chars": 654,
+          "text_output_sha256": "bfc3b404c29c53c8f445cf6e7d98df5b32460ec805d7a3c1e737b7cd2854f350",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 2595,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 4281,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 135,
+          "source_chars": 206,
+          "text_output_chars": 805,
+          "text_output_sha256": "7155e044df51c9d4bf6742b6280ac53d646ecadd98f33562222e91bedb4e9a8f",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "code",
+          "execution_count": 136,
+          "source_chars": 1756,
+          "text_output_chars": 9161,
+          "text_output_sha256": "dcf595c9de2133422cb2a43da63beb8b1fc565cd6ffefa3cf63c7844f377ccb8",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 352,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "code",
+          "execution_count": 137,
+          "source_chars": 401,
+          "text_output_chars": 672,
+          "text_output_sha256": "dd8470436a1edb41a482efbf7993c05118d37f8f55211ec0cfb5ab0055273c2e",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "code",
+          "execution_count": 19,
+          "source_chars": 2719,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 20,
+          "type": "code",
+          "execution_count": 138,
+          "source_chars": 1339,
+          "text_output_chars": 9786,
+          "text_output_sha256": "8c5594ea41bfd739e3087ca977d6c78366071ed72b1d49508fdb4ea82568e3ef",
+          "error_types": []
+        },
+        {
+          "cell": 21,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 265,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 22,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 126,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 23,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 12,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 24,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": []
+    },
+    "notebookd84987e9c1_base_cot.ipynb": {
+      "cells": 14,
+      "code_cells": 13,
+      "markdown_cells": 1,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 121,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 763,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 166,
+          "text_output_chars": 1195,
+          "text_output_sha256": "7a75a0a84c1343d2fedd7d4f42c1502267afa1847cbd906197dd3615613f9272",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 227,
+          "text_output_chars": 1172,
+          "text_output_sha256": "e8377583b43678c02c1105f9ea13a5da44a48268631c6b9f5ea9bfbbd3e2c644",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 266,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 313,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 188,
+          "text_output_chars": 21,
+          "text_output_sha256": "9b7823f5f95d971cc9e08f97fc221815c9592dfaf86d5232fe91f1386ace0e43",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 770,
+          "text_output_chars": 1890,
+          "text_output_sha256": "08cecd9cd80c4333b0de5dcdf37f29677f5f4fc6b96a955d2d37142ed58c89e4",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 1655,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 51,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 2596,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 1644,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 5217,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 479,
+          "text_output_chars": 134862,
+          "text_output_sha256": "d44a1b7e8014703db290c764cb0390af9869bb820b6ca6fc61172d50ade54fe4",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [
+        {
+          "cell": 14,
+          "total": 20,
+          "correct": 12,
+          "printed_accuracy_percent": 60.0,
+          "recomputed_accuracy_percent": 60.0,
+          "evidence_type": "historical saved output; not a new inference run"
+        }
+      ],
+      "prompt_reset_cells": [
+        {
+          "cell": 10,
+          "execution_count": null,
+          "source": "code_system_prompt = \"\"\ncot_code_system_prompt = \"\""
+        }
+      ],
+      "referenced_data_or_weight_names": [
+        "arithmetic_problems.csv",
+        "arithmetic_problems_v3.csv",
+        "evaluation_results_base_v5.csv",
+        "evaluation_results_merged.csv",
+        "random_samples_for_inference.csv"
+      ]
+    },
+    "notebookd84987e9c1_merged_cot.ipynb": {
+      "cells": 14,
+      "code_cells": 13,
+      "markdown_cells": 1,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 121,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 763,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 166,
+          "text_output_chars": 991,
+          "text_output_sha256": "3cb629aa3a971a567b59dfc87bc5de39b64491ce6a43e1bf07d52b3d5496e26f",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 227,
+          "text_output_chars": 1070,
+          "text_output_sha256": "d1e2829af3a93e9fb1d6f12fc12ce1019220a1e1d1e2b06389e4de56f8fbbb94",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 266,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 320,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 188,
+          "text_output_chars": 21,
+          "text_output_sha256": "9b7823f5f95d971cc9e08f97fc221815c9592dfaf86d5232fe91f1386ace0e43",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 770,
+          "text_output_chars": 1893,
+          "text_output_sha256": "a754fe09bf0eb417a19cb2a72b47882a3d4efa6ded36b7e475f56f6eeb07cb84",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 1655,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 51,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 2596,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 1644,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 11,
+          "source_chars": 5217,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 482,
+          "text_output_chars": 129935,
+          "text_output_sha256": "dcfa2f49eb999bc2b86a9252029817cdc9ab81a4c5abe9e4c00c9554d88e471b",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [
+        {
+          "cell": 14,
+          "total": 20,
+          "correct": 15,
+          "printed_accuracy_percent": 75.0,
+          "recomputed_accuracy_percent": 75.0,
+          "evidence_type": "historical saved output; not a new inference run"
+        }
+      ],
+      "prompt_reset_cells": [
+        {
+          "cell": 10,
+          "execution_count": null,
+          "source": "code_system_prompt = \"\"\ncot_code_system_prompt = \"\""
+        }
+      ],
+      "referenced_data_or_weight_names": [
+        "arithmetic_problems.csv",
+        "arithmetic_problems_v3.csv",
+        "evaluation_results_base_v5.csv",
+        "evaluation_results_merged_v5.csv",
+        "random_samples_for_inference.csv"
+      ]
+    },
+    "qwen4b-train-code-100920859-279441290..ipynb": {
+      "cells": 36,
+      "code_cells": 27,
+      "markdown_cells": 9,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 1039,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 8,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 1031,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 53,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 763,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 166,
+          "text_output_chars": 7950,
+          "text_output_sha256": "ba102777ccf1eb9774e19165745b90077b75167ed863fa0f646822df357c133a",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 227,
+          "text_output_chars": 4086,
+          "text_output_sha256": "d761b34b45fc6ee1f5daa2875fbb45be5afe8f373000fee0dfff54c846fbf2c4",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 1025,
+          "text_output_chars": 1585,
+          "text_output_sha256": "65850cbd19aa291cdbe74e6d2253f428642bb01775ac350e1feaebd17aaa23fa",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 30,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 1655,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 1050,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 32,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 1665,
+          "text_output_chars": 252,
+          "text_output_sha256": "1c4ab31f1563985b4b30abd44f2a82ce1827380886b64bc935b3d46d92d26139",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 23,
+          "text_output_chars": 654,
+          "text_output_sha256": "bfc3b404c29c53c8f445cf6e7d98df5b32460ec805d7a3c1e737b7cd2854f350",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 1134,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "code",
+          "execution_count": 11,
+          "source_chars": 894,
+          "text_output_chars": 331,
+          "text_output_sha256": "464b1919c1cee8b27bb15fe6e9db07db91640629226e80425efc0801557acfa3",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 77,
+          "text_output_chars": 1131,
+          "text_output_sha256": "f841dc2c785d5ac347204e0820630e057dcca639c401d0a4b801ee5b90fe8f22",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 278,
+          "text_output_chars": 211,
+          "text_output_sha256": "087db3b8f4a641a6a9f0a0eda82b9515238b7ba521fe5549294ee072d71cdc88",
+          "error_types": []
+        },
+        {
+          "cell": 20,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 37,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 21,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 748,
+          "text_output_chars": 89,
+          "text_output_sha256": "163af5caa458e1e5f2fbf20dee38c18644e09f4503e33b9295250015694cd3fd",
+          "error_types": []
+        },
+        {
+          "cell": 22,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 27,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 23,
+          "type": "code",
+          "execution_count": 15,
+          "source_chars": 85,
+          "text_output_chars": 511,
+          "text_output_sha256": "aad9c8e8fe4bdd1bc2e00a15d0241000f831a0a9283fb5bc7e4ed381a6874889",
+          "error_types": []
+        },
+        {
+          "cell": 24,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 43,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 25,
+          "type": "code",
+          "execution_count": 16,
+          "source_chars": 715,
+          "text_output_chars": 151,
+          "text_output_sha256": "fc5d6cee352235c916da3d1b5159b41562511d3fe66bc2d77dce2a828b037123",
+          "error_types": []
+        },
+        {
+          "cell": 26,
+          "type": "code",
+          "execution_count": 17,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 27,
+          "type": "code",
+          "execution_count": 18,
+          "source_chars": 282,
+          "text_output_chars": 21,
+          "text_output_sha256": "9b7823f5f95d971cc9e08f97fc221815c9592dfaf86d5232fe91f1386ace0e43",
+          "error_types": []
+        },
+        {
+          "cell": 28,
+          "type": "code",
+          "execution_count": 19,
+          "source_chars": 2527,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 29,
+          "type": "code",
+          "execution_count": 20,
+          "source_chars": 4280,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 30,
+          "type": "code",
+          "execution_count": 21,
+          "source_chars": 206,
+          "text_output_chars": 847,
+          "text_output_sha256": "c7b3ab559591099553380169fdc15327d0e536085e3a2df4d1f6759a331735b4",
+          "error_types": []
+        },
+        {
+          "cell": 31,
+          "type": "code",
+          "execution_count": 22,
+          "source_chars": 1704,
+          "text_output_chars": 2562,
+          "text_output_sha256": "4139e127c51a11ac5ed3dab4e3b3573e742968ca2a470f1ba3d30f5e2b20ca62",
+          "error_types": []
+        },
+        {
+          "cell": 32,
+          "type": "code",
+          "execution_count": 23,
+          "source_chars": 401,
+          "text_output_chars": 181,
+          "text_output_sha256": "aa0aaa77e4bf8ba385d63106580b143d006de3ec644bee31519ced9e9b0276cf",
+          "error_types": []
+        },
+        {
+          "cell": 33,
+          "type": "code",
+          "execution_count": 24,
+          "source_chars": 2719,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 34,
+          "type": "code",
+          "execution_count": 25,
+          "source_chars": 1339,
+          "text_output_chars": 2520,
+          "text_output_sha256": "74c5d77bcb39f019eacbafee8c6515a700f682c05e502e045ee7922eb0266a31",
+          "error_types": []
+        },
+        {
+          "cell": 35,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 36,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": [
+        "arithmetic_logic_data_revised_v2.jsonl",
+        "results_v3.jsonl"
+      ]
+    },
+    "Qwen3_(4B)_SFFT_code_0811(2).ipynb": {
+      "cells": 27,
+      "code_cells": 18,
+      "markdown_cells": 9,
+      "cell_inventory": [
+        {
+          "cell": 1,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 16,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 2,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 281,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 3,
+          "type": "code",
+          "execution_count": 2,
+          "source_chars": 1119,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 4,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 125,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 5,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 164,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 6,
+          "type": "code",
+          "execution_count": 3,
+          "source_chars": 137,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 7,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 51,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 8,
+          "type": "code",
+          "execution_count": 4,
+          "source_chars": 1048,
+          "text_output_chars": 7210,
+          "text_output_sha256": "d446c0dd6a27a0aac80ab2cf22d4c2e73483a58e4ae663dbee4c8c67b5633555",
+          "error_types": []
+        },
+        {
+          "cell": 9,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 26,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 10,
+          "type": "code",
+          "execution_count": 5,
+          "source_chars": 1661,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 11,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 32,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 12,
+          "type": "code",
+          "execution_count": 6,
+          "source_chars": 1706,
+          "text_output_chars": 291,
+          "text_output_sha256": "fb262c16613639d66dc50977e2ef184209496162cc29ad74723ff1ff6294a2bb",
+          "error_types": []
+        },
+        {
+          "cell": 13,
+          "type": "code",
+          "execution_count": 7,
+          "source_chars": 1134,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 14,
+          "type": "code",
+          "execution_count": 8,
+          "source_chars": 894,
+          "text_output_chars": 331,
+          "text_output_sha256": "464b1919c1cee8b27bb15fe6e9db07db91640629226e80425efc0801557acfa3",
+          "error_types": []
+        },
+        {
+          "cell": 15,
+          "type": "code",
+          "execution_count": 9,
+          "source_chars": 77,
+          "text_output_chars": 3691,
+          "text_output_sha256": "251141963fe2ac62c00b7d669c16671afa373bf840807b813009c2b430c064bf",
+          "error_types": []
+        },
+        {
+          "cell": 16,
+          "type": "code",
+          "execution_count": 10,
+          "source_chars": 278,
+          "text_output_chars": 214,
+          "text_output_sha256": "f2ff5c930f8fe6b05dd966a602bf7c93d13f536c2e9e0330a8e41032507e10ff",
+          "error_types": []
+        },
+        {
+          "cell": 17,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 37,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 18,
+          "type": "code",
+          "execution_count": 12,
+          "source_chars": 748,
+          "text_output_chars": 90,
+          "text_output_sha256": "a710588661d2d530b2f599cacfaf9fbb4ae00529095b5995f17df2102a2337ac",
+          "error_types": []
+        },
+        {
+          "cell": 19,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 27,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 20,
+          "type": "code",
+          "execution_count": 13,
+          "source_chars": 85,
+          "text_output_chars": 508,
+          "text_output_sha256": "5c46e030184804e74bedb7a6f26023597b302f3194e799d0e7fe031bbd2886cd",
+          "error_types": []
+        },
+        {
+          "cell": 21,
+          "type": "markdown",
+          "execution_count": null,
+          "source_chars": 43,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 22,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 437,
+          "text_output_chars": 159,
+          "text_output_sha256": "33b5386417b002ed349b73fd5cffe96afebb43edbfbed008459af95545f57aca",
+          "error_types": []
+        },
+        {
+          "cell": 23,
+          "type": "code",
+          "execution_count": 14,
+          "source_chars": 132,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 24,
+          "type": "code",
+          "execution_count": 20,
+          "source_chars": 233,
+          "text_output_chars": 59,
+          "text_output_sha256": "5e3c6bd0a7bfc752ae984468c9679de19c4b093923862e2b10e2d3e18be60b2e",
+          "error_types": []
+        },
+        {
+          "cell": 25,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 126,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        },
+        {
+          "cell": 26,
+          "type": "code",
+          "execution_count": 1,
+          "source_chars": 11,
+          "text_output_chars": 1778,
+          "text_output_sha256": "37f864e7c5dca0b81f7c46c3c97a56b0c2f79a603563263948f0f68c99958230",
+          "error_types": []
+        },
+        {
+          "cell": 27,
+          "type": "code",
+          "execution_count": null,
+          "source_chars": 0,
+          "text_output_chars": 0,
+          "text_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "error_types": []
+        }
+      ],
+      "saved_evaluation_summaries": [],
+      "prompt_reset_cells": [],
+      "referenced_data_or_weight_names": [
+        "arithmetic_logic_data_revised_v2.jsonl",
+        "results_v3.jsonl"
+      ]
+    }
+  },
+  "datasets": {
+    "arithmetic_logic_data_revised_v2.jsonl": {
+      "rows": 309,
+      "columns": [
+        "generated_python_code",
+        "generated_solution",
+        "is_correct",
+        "problem",
+        "problem_type"
+      ],
+      "questions": {
+        "unique": 309,
+        "duplicate_excess": 0,
+        "repeated_values": {}
+      },
+      "missing_question_rows": [],
+      "placeholder_solution_rows": [
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309
+      ],
+      "reference_code_syntax_errors": [],
+      "missing_or_placeholder_code_rows": [],
+      "is_correct_flag_counts": {
+        "True": 309
+      },
+      "contains_model_prediction_columns": false,
+      "reference_code_executed": false
+    },
+    "arithmetic_problems_v3.csv": {
+      "rows": 100,
+      "columns": [
+        "series no",
+        "arithmetical question",
+        "code for solving the question",
+        "answer to the question"
+      ],
+      "questions": {
+        "unique": 100,
+        "duplicate_excess": 0,
+        "repeated_values": {}
+      },
+      "missing_question_rows": [],
+      "placeholder_solution_rows": [],
+      "reference_code_syntax_errors": [],
+      "missing_or_placeholder_code_rows": [],
+      "is_correct_flag_counts": {
+        "absent": 100
+      },
+      "contains_model_prediction_columns": false,
+      "reference_code_executed": false
+    },
+    "random_samples_for_inference.csv": {
+      "rows": 100,
+      "columns": [
+        "arithmetical question",
+        "answer to the question",
+        "generated_python_code",
+        "generated_solution"
+      ],
+      "questions": {
+        "unique": 89,
+        "duplicate_excess": 11,
+        "repeated_values": {
+          "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?": 2,
+          "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?": 2,
+          "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?": 3,
+          "In order for Mateen to walk a kilometer (1000 meters) in his rectangular backyard, he must walk the length 25 times or walk its perimeter 10 times. What is the area of Mateen's backyard in square meters?": 2,
+          "Let \\( n \\) be a positive integer such that \\( (x^n + x - 37) \\equiv 2013 \\pmod{(x-2)} \\). Find \\( n \\).": 2,
+          "Determine the number of solutions in $\\mathbb{R}^2$ for the system of equations:\n\\[ |x| + |y| = 3 \\]\n\\[ \\frac{\\sin(\\pi x^2)}{2} = 1 \\]": 2,
+          "In how many different ways can 14 identical cans of tennis balls be sold over three days (Friday, Saturday, and Sunday)?": 3,
+          "Evaluate the limit \\(\\lim_{h \\to 0} \\frac{1}{h} \\left[ \\int_{2}^{2+h} \\sqrt{1+t^3} \\, dt \\right]\\).": 2,
+          "If $n! = 2,432,902,008,176,640,000,$ find the value of $n$ without using any electronic device.": 2
+        }
+      },
+      "missing_question_rows": [],
+      "placeholder_solution_rows": [],
+      "reference_code_syntax_errors": [],
+      "missing_or_placeholder_code_rows": [],
+      "is_correct_flag_counts": {
+        "absent": 100
+      },
+      "contains_model_prediction_columns": false,
+      "reference_code_executed": false
+    },
+    "results_v3.jsonl": {
+      "rows": 1125,
+      "columns": [
+        "execution_result",
+        "expected_answer",
+        "generated_python_code",
+        "generated_solution",
+        "is_correct",
+        "problem",
+        "problem_type"
+      ],
+      "questions": {
+        "unique": 990,
+        "duplicate_excess": 135,
+        "repeated_values": {
+          "Let \\( A := \\mathbb{Q} \\setminus \\{0, 1\\} \\) denote the set of all rationals other than \\(0\\) and \\(1\\). A function \\( f: A \\to \\mathbb{R} \\) has the property that for all \\( x \\in A \\),\n\\[ f(x) + f\\left(1 - \\frac{1}{x}\\right) = \\log |x|. \\]\nCompute the value of \\( f(2007) \\).": 2,
+          "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?": 2,
+          "Find all continuous and nondecreasing functions \\( f:[0,\\infty) \\longrightarrow \\mathbb{R} \\) that satisfy the inequality:\n\\[ \\int_0^{x+y} f(t) \\, dt \\le \\int_0^x f(t) \\, dt + \\int_0^y f(t) \\, dt, \\quad \\forall x,y \\in [0,\\infty). \\]": 2,
+          "Find the region of convergence for the infinite product \\(\\prod\\limits_{n = 1}^\\infty{(1 + \\frac{z^2}{n^2})}\\).": 2,
+          "What are the last three digits of $3^{210}$?": 2,
+          "Factor $6x^{12} + 35x^7 + 36x^2$.": 2,
+          "Two three-letter strings, $aaa^{}_{}$ and $bbb^{}_{}$, are transmitted electronically. Each string is sent letter by letter. Due to faulty equipment, each of the six letters has a 1/3 chance of being received incorrectly, as an $a^{}_{}$ when it should have been a $b^{}_{}$, or as a $b^{}_{}$ when it should be an $a^{}_{}$. However, whether a given letter is received correctly or incorrectly is independent of the reception of any other letter. Let $S_a^{}$ be the three-letter string received when $aaa^{}_{}$ is transmitted and let $S_b^{}$ be the three-letter string received when $bbb^{}_{}$ is transmitted. Let $p$ be the probability  that $S_a^{}$ comes before $S_b^{}$ in alphabetical order. When $p$ is written as a fraction  in lowest terms, what is its numerator? \nContents     1   Problem     2   Solution     2.1   Solution 1     2.2   Solution 2     2.3   Solution 3     2.4   Solution 4 (a more explicit Solution 3)         3   See also": 2,
+          "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?": 2,
+          "If \\( q_1(x) \\) and \\( r_1 \\) are the quotient and remainder, respectively, when the polynomial \\( x^8 \\) is divided by \\( x + \\frac{1}{2} \\), and if \\( q_2(x) \\) and \\( r_2 \\) are the quotient and remainder, respectively, when \\( q_1(x) \\) is divided by \\( x + \\frac{1}{2} \\), then find \\( r_2 \\).": 2,
+          "An infinite sequence of integers, \\(a_0, a_1, a_2, \\dots\\), with \\(a_0 > 0\\), has the property that for \\(n \\ge 0\\), \\(a_{n+1} = a_n - b_n\\), where \\(b_n\\) is the number having the same sign as \\(a_n\\) but with the digits written in reverse order. For example, if \\(a_0 = 1210\\), then \\(a_1 = 1089\\) and \\(a_2 = -8712\\), etc. Find the smallest value of \\(a_0\\) such that \\(a_n \\neq 0\\) for all \\(n \\ge 1\\).": 3,
+          "On which points in $\\Bbb C^2$ does the series $\\sum_{k,l \\ge 0} z^k w^l$ converge?": 2,
+          "Determine the set of integers \\( n \\) for which \\( n^2 + 19n + 92 \\) is a perfect square.": 2,
+          "On a wall, there are two clocks with the same shape (radius) and the same speed, but they may not show the same hour. The minimum distance between the edges of their hands is \\( m \\), and the maximum distance is \\( M \\). What is the distance between their centers?": 2,
+          "For a polynomial \\( f(x) = a_4 x^4 + a_3 x^3 + a_2 x^2 + a_1 x + a_0 \\), if \\( |f(x)| \\leq 1 \\) for all \\( -1 \\leq x \\leq 1 \\), find the maximum value of \\( a_0 \\).": 2,
+          "Let \\( x \\), \\( y \\), and \\( z \\) be three different real numbers such that \\( x + \\frac{1}{y} = y + \\frac{1}{z} = z + \\frac{1}{x} \\). What is the value of \\( x^2 y^2 z^2 \\)?": 2,
+          "Compute the following sum modulo 199:\n$$\\sum_{x = 0}^{99} (x^2 + 1)^{-1} \\pmod{199}$$\nwhere $x^{-1}$ is the value $0 \\le y \\le 199$ such that $xy - 1$ is divisible by $199$.": 2,
+          "Find the exact value of \\( \\frac{2x + 3y}{5x + 7y} \\) if \\( \\frac{y}{x} = 3 \\).": 3,
+          "Find all complex numbers \\( z \\in \\mathbb{C} \\) such that \\( \\mid z \\mid = \\mid \\frac{1}{z} \\mid = \\mid z - 1 \\mid \\).": 2,
+          "Find the complementary function of the differential equation $2\\frac{d^{2}y}{dx^{2}} + 3 \\frac{dy}{dx} -2y=5e^{-2x}$.": 2,
+          "Find a formula for \\( \\binom{n}{0}^2 + \\binom{n}{1}^2 + \\binom{n}{2}^2 + \\cdots + \\binom{n}{n}^2 \\).": 2,
+          "Calculate the indefinite integral $\\int \\cos \\left(2x-\\frac{\\pi}{3}\\right)dx$.": 5,
+          "Find all functions \\( f: \\mathbb{R} \\rightarrow \\mathbb{R} \\) such that \n\\[ 2f(x) + f(1 - x) = x^2. \\]": 2,
+          "Determine the smallest integer $k > 1$ such that there exist $k$ distinct primes whose squares sum to a power of $2$.": 2,
+          "Determine whether the series $\\sum^{\\infty}_{n=2}\\frac{1}{(\\ln n)^{\\ln n}}$ is absolutely convergent, conditionally convergent, or divergent.": 2,
+          "Find all integers \\(a\\) and \\(b\\) such that \\(a(a^2 - 6b^2) = 1\\).": 2,
+          "Oil spilled from a tanker spreads in a circle whose circumference increases at a rate of 40 feet per second. How fast is the area of the spill increasing when the circumference of the circle is \\(100\\pi\\) feet?": 2,
+          "A number \\( m \\) is randomly selected from the set \\(\\{11, 13, 15, 17, 19\\}\\), and a number \\( n \\) is randomly selected from \\(\\{1999, 2000, 2001, \\ldots, 2018\\}\\). What is the probability that \\( m^n \\) has a units digit of 1?": 2,
+          "Jenifer has 82 cents in pennies and nickels. Her younger brother mistook all her nickels for dimes and counted the total as $1.47. How many pennies does Jenifer have?": 2,
+          "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).": 2,
+          "What is the ninth term in the expansion of $(x+1)^{10}$?": 2,
+          "Solve the equation $p^3 + q^3 + p^2q + q^2p - p^3q^3 = 3$ for positive integers $p$ and $q$.": 2,
+          "Find the number of eight-digit numbers whose digits sum to 4.": 2,
+          "Find all functions \\( f: \\mathbb{Q} \\to \\mathbb{Q} \\) such that for all \\( x \\in \\mathbb{Q} \\):\n1. \\( f(x+1) = f(x) + 1 \\)\n2. \\( f(x^2) = f(x)^2 \\)": 2,
+          "Given that \\( x + y + z = 7 \\), \\( x^2 + y^2 + z^2 = 19 \\), and \\( x^3 + y^3 + z^3 = 64 \\), find \\( x^4 + y^4 + z^4 \\).": 2,
+          "Calculate the integral $$\\int_{0}^{1} x (\\tan^{-1}{x})^2 dx.$$": 2,
+          "Solve the following system of equations in $\\mathbb{R}^+$:\n\\[\n\\left\\{\\begin{matrix}\n\\frac{1}{x}+\\frac{1}{y}+\\frac{1}{z}=2010\\\\ \nx+y+z=\\frac{3}{670}\n\\end{matrix}\\right.\\]": 2,
+          "A hardware supplier manufactures 3 kinds of clamps; types A, B, and C. Production restrictions force it to make 20 more type C clamps than the total of the other types and twice as many type B clamps as type A clamps. The shop must produce 260 clamps per day. How many of each type are made per day?\n\nHow many type A clamps are produced?": 3,
+          "Evaluate the integral $\\int \\tan^2 x \\, dx$.": 3,
+          "Mr. Patrick teaches math to 15 students. When he graded everyone's test except Payton's, the average grade for the class was 80. After he graded Payton's test, the class average became 81. What was Payton's score on the test?": 2,
+          "How many integer pairs \\((x, y)\\) satisfy the equation \\(x^2 + 4y^2 - 2xy - 2x - 4y - 8 = 0\\)?": 2,
+          "Let m be the sum of the factors of 75 (including 1 and 75 itself). What is the ones digit of m^75?": 2,
+          "How do you find the antiderivative of $\\cos\\left(\\frac{\\pi x}{3}\\right)$?": 2,
+          "There are three groups of wrestlers: the first group contains \\( x \\) wrestlers, the second group contains \\( x+1 \\) wrestlers, and the third group contains \\( y \\) wrestlers. The total number of wrestlers in all three groups is 24. How many maximum fights can occur if each fight involves two wrestlers from different groups?": 2,
+          "How many minutes after 5:00 PM will the hands of the clock be together for the first time?": 2,
+          "How many milligrams of total fat are present in each serving, given that each serving is 5g and the total fat per serving is 1.5g?": 4,
+          "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?": 2,
+          "Find all real numbers \\( x, y, \\) and \\( z \\) which satisfy the simultaneous equations:\n\\[ x^2 - 4y + 7 = 0, \\]\n\\[ y^2 - 6z + 14 = 0, \\]\n\\[ z^2 - 2x - 7 = 0. \\]": 2,
+          "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?": 3,
+          "There are 5 white balls and 5 black balls in a bag. Three balls are drawn. What is the probability that:\na) All three balls are black?\nb) All three balls are white?": 2,
+          "Find the number of solutions of the equation \\(x^2 = y^3 + 23\\) for positive integers \\(x\\) and \\(y\\).": 2,
+          "Find the area of the inscribed circle of a triangle with sides of length 20, 21, and 29.": 3,
+          "What is the integral of $\\frac{1}{x \\ln(x)} \\, dx$?": 2,
+          "In how many different ways can 14 identical cans of tennis balls be sold over three days (Friday, Saturday, and Sunday)?": 3,
+          "Find $\\int_2^{4} (2^x) dx$.": 2,
+          "Calculate $\\int e^{x+e^x}\\ \\text{d}x$.": 2,
+          "Calculate the sum $\\sum_{k = 1}^n \\binom{n}{k}$.": 4,
+          "If $n! = 2,432,902,008,176,640,000,$ find the value of $n$ without using any electronic device.": 2,
+          "Simplify the expression \\( \\frac{1+i}{3-i} \\).": 2,
+          "Solve the equation \\(3x - 2yi = 2 + (x + y)i\\) for \\(x\\) and \\(y\\).": 3,
+          "Let \\( n \\) be a positive integer such that \\( (x^n + x - 37) \\equiv 2013 \\pmod{(x-2)} \\). Find \\( n \\).": 2,
+          "Find the measure of the subset \\( A \\subset \\mathbb{R}^2 \\) defined by \\( A = \\{ (x, y) \\in \\mathbb{R}^2 : 0 \\leq x \\leq 1, \\quad 0 \\leq y \\leq x^2 \\} \\).": 3,
+          "Mary has taken four tests and has a test average of 94. Her parents want her to maintain an average of at least 90. What is the lowest score that Mary can get on her next test while keeping her average at least 90?": 3,
+          "Evaluate the integral $\\int \\frac{x}{x^4 + 2x^2 + 1} \\, dx$.": 2,
+          "Solve the congruence equation \\(3x \\equiv 5 \\pmod{12}\\).": 2,
+          "If $10^{\\log_{10}9} = 8x + 5$, then what does $x$ equal?": 2,
+          "The number 360 in base 7 is equal to 2k0 in base 9. What is the value of k, where k is a digit?": 3,
+          "Use place value to figure out $90000 + 9000 + 900 + 90 + 9 + 1$.": 2,
+          "In order for Mateen to walk a kilometer (1000 meters) in his rectangular backyard, he must walk the length 25 times or walk its perimeter 10 times. What is the area of Mateen's backyard in square meters?": 2,
+          "In a football game, the Cougars and the Panthers scored a total of 34 points, and the Cougars won by a margin of 14 points. How many points did the Panthers score?": 2,
+          "Evaluate the series \\( \\sum_{k=1}^{\\infty}\\frac{3^{k}}{k!} \\).": 2,
+          "Given the equations \\(a + b = 2*c - 1\\), \\(a + c = 15\\), and \\(c + b = a + 14\\), find the value of \\(a + b - c\\).": 2,
+          "Given the expansion \\((1+x)^n = a_0 + a_1 x + a_2 x^2 + \\cdots + a_n x^n\\), calculate the sum \\(a_0 + a_1 + a_2 + \\cdots + a_n\\).": 2,
+          "Determine the number of solutions in $\\mathbb{R}^2$ for the system of equations:\n\\[ |x| + |y| = 3 \\]\n\\[ \\frac{\\sin(\\pi x^2)}{2} = 1 \\]": 5,
+          "Calculate the indefinite integral $\\int \\frac{1+\\cos x}{x+\\sin x}\\ dx$.": 4,
+          "If \\( x + x^{-1} = 4 \\), then what is the value of \\( x^4 + x^{-4} \\)?": 2,
+          "A record makes 1.2 revolutions per second. Find the angular speed of the record in radians per second.": 4,
+          "Find the common factor of \\(20x + 30x\\).": 2,
+          "Scott bought a home for $85,000, putting down $15,000. The current loan balance is $58,320. With monthly payments of $1,000 and an interest rate of 8%, what will the interest be on the loan this month?": 2,
+          "A taxi ride costs \\$1.50 plus \\$0.25 per mile traveled. How much does a 5-mile taxi ride cost?": 2,
+          "Johnny is cutting a 10-inch paper along a given 10-inch line. He goes astray with a probability of 2/3 for each inch he cuts. What is the probability that he does not go astray and cuts the paper perfectly along the line?": 3,
+          "Evaluate the integral $\\int_{0}^{\\infty}\\frac{1}{1 + t^{2}}dt$.": 3,
+          "Evaluate the limit \\(\\lim_{h \\to 0} \\frac{1}{h} \\left[ \\int_{2}^{2+h} \\sqrt{1+t^3} \\, dt \\right]\\).": 2,
+          "James currently takes 240 seconds to swim 100 meters. In a year's time, he will have improved his swimming time by 25%. Calculate the time he will take to swim 100 meters in a year's time.": 2,
+          "Evaluate the expression \\(15 / 3 [7 + 2(8 - 9)] - 5\\) according to the order of operations.": 4,
+          "Given the same tangent-secant problem, find the radius \\( r \\) using the Pythagorean theorem equation \\( 15^2 + r^2 = r^2 + 18r + 81 \\).": 3,
+          "Solve for \\( x \\): \\(4^{3x+2}=16^{3x+2}\\)": 2,
+          "Given the equation \\( 2x = \\frac{1}{10} + 10 \\), solve for \\( x \\).": 2,
+          "Given the polynomial \\( g(x) = x^3 + 2x - 15 \\) with a real root \\( n \\) such that \\( 2 < n < 3 \\), find a polynomial \\( h(x) \\in \\mathbb{Z}[x] \\) that has \\( 2n \\) as a root.": 2,
+          "For what value of \\( x \\) is \\( \\frac{3x}{2x} \\) undefined?": 2,
+          "Find the value of the sum \\( \\frac{1}{1} + \\frac{1}{2} + \\cdots + \\frac{1}{n} \\) for a natural number \\( n \\).": 2,
+          "Find the sum of the series $\\sum_{n=0}^{\\infty}\\frac{(-1)^nx^{3n+1}}{n!}$.": 2,
+          "Given the joint probability function of two discrete random variables $X$ and $Y$ as $P(x,y) = cxy$ for $x=1,2,3$ and $y=1,2$, find the value of the constant $c$.": 2,
+          "Given that the product of the matrix \\((1 \\ 2 \\ 3)\\) and matrix \\(A\\) results in the matrix \\((0 \\ 1)\\), what are the dimensions of matrix \\(A\\)?": 2,
+          "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?": 2,
+          "If $y^2$ varies inversely as $x^3$, and $y=3$ when $x=2$, find $y$ when $x=9$, assuming that $y > 0$.": 3,
+          "For the function \\( f(x) = |x| \\), what is the subdifferential \\(\\partial f(0)\\)?": 2,
+          "Find $\\int \\ln x\\ dx$.": 2,
+          "Compute the derivative \\(\\frac{d}{dx} 2^{\\sin x}\\).": 2,
+          "Find the derivative of $f(x)=x^2$ using the limit definition $\\lim_{h \\to 0}{\\frac{f(x+h)-f(x)}{h}}$.": 2,
+          "Find the value of the sum\n$$\\sum_{k=1}^{\\infty}\\frac{2^k}{k!}$$": 3,
+          "Find the value of \n$$ \\prod^{\\infty}_{i=1} \\Bigg(1-\\dfrac{1}{p_i^2} \\Bigg),$$\nwhere $p_i$ denotes the $i^{th}$ prime.": 2,
+          "How many non-empty subsets does the set \\( N_{2016} = \\{1, 2, \\ldots, 2016\\} \\) have?": 2,
+          "What percentage of the U.S. population were prison inmates at the end of 2002, given that there were an estimated 476 prison inmates per 100,000 U.S. residents?": 2
+        }
+      },
+      "missing_question_rows": [],
+      "placeholder_solution_rows": [],
+      "reference_code_syntax_errors": [
+        {
+          "row": 9,
+          "error": "unexpected character after line continuation character (<unknown>, line 14)"
+        },
+        {
+          "row": 20,
+          "error": "unexpected character after line continuation character (<unknown>, line 35)"
+        },
+        {
+          "row": 65,
+          "error": "unexpected character after line continuation character (<unknown>, line 17)"
+        },
+        {
+          "row": 73,
+          "error": "unexpected character after line continuation character (<unknown>, line 11)"
+        },
+        {
+          "row": 79,
+          "error": "invalid syntax (<unknown>, line 20)"
+        },
+        {
+          "row": 94,
+          "error": "invalid syntax (<unknown>, line 16)"
+        },
+        {
+          "row": 113,
+          "error": "invalid syntax (<unknown>, line 11)"
+        },
+        {
+          "row": 117,
+          "error": "unexpected character after line continuation character (<unknown>, line 12)"
+        },
+        {
+          "row": 136,
+          "error": "invalid syntax (<unknown>, line 38)"
+        },
+        {
+          "row": 164,
+          "error": "invalid syntax (<unknown>, line 18)"
+        },
+        {
+          "row": 177,
+          "error": "invalid syntax (<unknown>, line 17)"
+        },
+        {
+          "row": 179,
+          "error": "invalid syntax (<unknown>, line 35)"
+        },
+        {
+          "row": 188,
+          "error": "unexpected character after line continuation character (<unknown>, line 19)"
+        },
+        {
+          "row": 200,
+          "error": "invalid syntax (<unknown>, line 17)"
+        },
+        {
+          "row": 202,
+          "error": "unexpected character after line continuation character (<unknown>, line 16)"
+        },
+        {
+          "row": 218,
+          "error": "unexpected character after line continuation character (<unknown>, line 27)"
+        },
+        {
+          "row": 221,
+          "error": "unexpected character after line continuation character (<unknown>, line 28)"
+        },
+        {
+          "row": 222,
+          "error": "invalid syntax (<unknown>, line 14)"
+        },
+        {
+          "row": 261,
+          "error": "unexpected character after line continuation character (<unknown>, line 18)"
+        },
+        {
+          "row": 286,
+          "error": "unexpected character after line continuation character (<unknown>, line 11)"
+        },
+        {
+          "row": 301,
+          "error": "invalid syntax (<unknown>, line 24)"
+        },
+        {
+          "row": 316,
+          "error": "unexpected character after line continuation character (<unknown>, line 21)"
+        },
+        {
+          "row": 324,
+          "error": "invalid syntax (<unknown>, line 16)"
+        },
+        {
+          "row": 341,
+          "error": "invalid syntax (<unknown>, line 27)"
+        },
+        {
+          "row": 352,
+          "error": "invalid syntax (<unknown>, line 13)"
+        },
+        {
+          "row": 363,
+          "error": "unexpected character after line continuation character (<unknown>, line 35)"
+        },
+        {
+          "row": 372,
+          "error": "invalid syntax (<unknown>, line 34)"
+        },
+        {
+          "row": 398,
+          "error": "unexpected character after line continuation character (<unknown>, line 38)"
+        },
+        {
+          "row": 411,
+          "error": "invalid syntax (<unknown>, line 21)"
+        },
+        {
+          "row": 422,
+          "error": "unexpected character after line continuation character (<unknown>, line 24)"
+        },
+        {
+          "row": 426,
+          "error": "unexpected character after line continuation character (<unknown>, line 21)"
+        },
+        {
+          "row": 437,
+          "error": "unexpected character after line continuation character (<unknown>, line 17)"
+        },
+        {
+          "row": 448,
+          "error": "unexpected character after line continuation character (<unknown>, line 25)"
+        },
+        {
+          "row": 449,
+          "error": "unexpected character after line continuation character (<unknown>, line 44)"
+        },
+        {
+          "row": 462,
+          "error": "invalid syntax (<unknown>, line 31)"
+        },
+        {
+          "row": 470,
+          "error": "unexpected character after line continuation character (<unknown>, line 28)"
+        },
+        {
+          "row": 487,
+          "error": "unexpected character after line continuation character (<unknown>, line 16)"
+        },
+        {
+          "row": 493,
+          "error": "unexpected character after line continuation character (<unknown>, line 24)"
+        },
+        {
+          "row": 518,
+          "error": "unexpected character after line continuation character (<unknown>, line 17)"
+        },
+        {
+          "row": 552,
+          "error": "invalid syntax (<unknown>, line 25)"
+        },
+        {
+          "row": 583,
+          "error": "unexpected character after line continuation character (<unknown>, line 13)"
+        },
+        {
+          "row": 593,
+          "error": "invalid syntax (<unknown>, line 21)"
+        },
+        {
+          "row": 607,
+          "error": "unexpected character after line continuation character (<unknown>, line 30)"
+        },
+        {
+          "row": 623,
+          "error": "illegal target for annotation (<unknown>, line 31)"
+        },
+        {
+          "row": 634,
+          "error": "unterminated string literal (detected at line 32) (<unknown>, line 32)"
+        },
+        {
+          "row": 671,
+          "error": "invalid syntax (<unknown>, line 28)"
+        },
+        {
+          "row": 709,
+          "error": "invalid syntax (<unknown>, line 23)"
+        },
+        {
+          "row": 712,
+          "error": "unexpected character after line continuation character (<unknown>, line 24)"
+        },
+        {
+          "row": 718,
+          "error": "unterminated string literal (detected at line 22) (<unknown>, line 22)"
+        },
+        {
+          "row": 742,
+          "error": "unexpected character after line continuation character (<unknown>, line 13)"
+        },
+        {
+          "row": 768,
+          "error": "invalid syntax (<unknown>, line 30)"
+        },
+        {
+          "row": 775,
+          "error": "invalid syntax (<unknown>, line 18)"
+        },
+        {
+          "row": 783,
+          "error": "invalid syntax (<unknown>, line 25)"
+        },
+        {
+          "row": 785,
+          "error": "invalid syntax (<unknown>, line 12)"
+        },
+        {
+          "row": 795,
+          "error": "unexpected character after line continuation character (<unknown>, line 20)"
+        },
+        {
+          "row": 809,
+          "error": "invalid syntax (<unknown>, line 15)"
+        },
+        {
+          "row": 819,
+          "error": "unexpected character after line continuation character (<unknown>, line 23)"
+        },
+        {
+          "row": 823,
+          "error": "unexpected character after line continuation character (<unknown>, line 29)"
+        },
+        {
+          "row": 842,
+          "error": "invalid syntax (<unknown>, line 33)"
+        },
+        {
+          "row": 849,
+          "error": "unterminated string literal (detected at line 5) (<unknown>, line 5)"
+        },
+        {
+          "row": 851,
+          "error": "invalid syntax (<unknown>, line 21)"
+        },
+        {
+          "row": 865,
+          "error": "unterminated string literal (detected at line 19) (<unknown>, line 19)"
+        },
+        {
+          "row": 866,
+          "error": "invalid syntax (<unknown>, line 35)"
+        },
+        {
+          "row": 883,
+          "error": "invalid syntax (<unknown>, line 14)"
+        },
+        {
+          "row": 886,
+          "error": "unterminated string literal (detected at line 13) (<unknown>, line 13)"
+        },
+        {
+          "row": 900,
+          "error": "invalid syntax (<unknown>, line 9)"
+        },
+        {
+          "row": 914,
+          "error": "invalid syntax (<unknown>, line 22)"
+        },
+        {
+          "row": 920,
+          "error": "unexpected character after line continuation character (<unknown>, line 23)"
+        },
+        {
+          "row": 921,
+          "error": "invalid syntax (<unknown>, line 9)"
+        },
+        {
+          "row": 925,
+          "error": "unterminated string literal (detected at line 14) (<unknown>, line 14)"
+        },
+        {
+          "row": 929,
+          "error": "invalid syntax (<unknown>, line 17)"
+        },
+        {
+          "row": 954,
+          "error": "invalid syntax (<unknown>, line 13)"
+        },
+        {
+          "row": 956,
+          "error": "invalid syntax (<unknown>, line 16)"
+        },
+        {
+          "row": 959,
+          "error": "invalid syntax (<unknown>, line 23)"
+        },
+        {
+          "row": 962,
+          "error": "invalid syntax (<unknown>, line 27)"
+        },
+        {
+          "row": 972,
+          "error": "invalid syntax (<unknown>, line 16)"
+        },
+        {
+          "row": 978,
+          "error": "invalid syntax (<unknown>, line 25)"
+        },
+        {
+          "row": 998,
+          "error": "unterminated string literal (detected at line 14) (<unknown>, line 14)"
+        },
+        {
+          "row": 1000,
+          "error": "invalid syntax (<unknown>, line 27)"
+        },
+        {
+          "row": 1003,
+          "error": "invalid syntax (<unknown>, line 22)"
+        },
+        {
+          "row": 1008,
+          "error": "unexpected character after line continuation character (<unknown>, line 26)"
+        },
+        {
+          "row": 1013,
+          "error": "invalid syntax (<unknown>, line 27)"
+        },
+        {
+          "row": 1014,
+          "error": "invalid syntax (<unknown>, line 11)"
+        },
+        {
+          "row": 1052,
+          "error": "invalid syntax (<unknown>, line 16)"
+        },
+        {
+          "row": 1056,
+          "error": "invalid syntax (<unknown>, line 5)"
+        },
+        {
+          "row": 1057,
+          "error": "unexpected character after line continuation character (<unknown>, line 23)"
+        },
+        {
+          "row": 1078,
+          "error": "invalid syntax (<unknown>, line 20)"
+        },
+        {
+          "row": 1084,
+          "error": "unexpected character after line continuation character (<unknown>, line 16)"
+        },
+        {
+          "row": 1090,
+          "error": "invalid syntax (<unknown>, line 12)"
+        },
+        {
+          "row": 1092,
+          "error": "invalid syntax (<unknown>, line 19)"
+        },
+        {
+          "row": 1094,
+          "error": "unexpected character after line continuation character (<unknown>, line 14)"
+        },
+        {
+          "row": 1096,
+          "error": "unexpected character after line continuation character (<unknown>, line 27)"
+        },
+        {
+          "row": 1107,
+          "error": "invalid syntax (<unknown>, line 14)"
+        },
+        {
+          "row": 1110,
+          "error": "invalid syntax (<unknown>, line 5)"
+        },
+        {
+          "row": 1123,
+          "error": "unexpected character after line continuation character (<unknown>, line 27)"
+        }
+      ],
+      "missing_or_placeholder_code_rows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        21,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        58,
+        59,
+        60,
+        62,
+        63,
+        64,
+        67,
+        68,
+        69,
+        71,
+        72,
+        76,
+        78,
+        80,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        95,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        106,
+        107,
+        108,
+        110,
+        112,
+        114,
+        115,
+        116,
+        118,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        130,
+        131,
+        134,
+        137,
+        138,
+        140,
+        141,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        155,
+        156,
+        157,
+        158,
+        161,
+        162,
+        163,
+        166,
+        168,
+        170,
+        172,
+        173,
+        174,
+        178,
+        181,
+        183,
+        184,
+        185,
+        187,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        203,
+        204,
+        205,
+        207,
+        208,
+        210,
+        211,
+        212,
+        213,
+        214,
+        216,
+        219,
+        220,
+        223,
+        224,
+        225,
+        226,
+        229,
+        230,
+        231,
+        233,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        262,
+        264,
+        266,
+        267,
+        268,
+        270,
+        271,
+        273,
+        274,
+        275,
+        276,
+        278,
+        279,
+        280,
+        281,
+        282,
+        284,
+        285,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        303,
+        304,
+        305,
+        307,
+        308,
+        310,
+        311,
+        313,
+        314,
+        315,
+        317,
+        318,
+        319,
+        320,
+        322,
+        323,
+        325,
+        326,
+        327,
+        328,
+        329,
+        331,
+        333,
+        334,
+        336,
+        337,
+        338,
+        339,
+        340,
+        342,
+        343,
+        344,
+        345,
+        347,
+        348,
+        349,
+        353,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        362,
+        364,
+        366,
+        367,
+        368,
+        370,
+        371,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        387,
+        388,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        399,
+        400,
+        401,
+        402,
+        403,
+        405,
+        406,
+        407,
+        409,
+        410,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        423,
+        424,
+        425,
+        429,
+        430,
+        432,
+        433,
+        434,
+        435,
+        436,
+        438,
+        440,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        451,
+        452,
+        453,
+        454,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        465,
+        469,
+        471,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        482,
+        485,
+        486,
+        488,
+        489,
+        490,
+        491,
+        492,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        502,
+        503,
+        504,
+        505,
+        508,
+        509,
+        510,
+        511,
+        512,
+        514,
+        515,
+        516,
+        517,
+        520,
+        521,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        537,
+        538,
+        541,
+        542,
+        544,
+        545,
+        546,
+        547,
+        550,
+        551,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        561,
+        562,
+        563,
+        564,
+        566,
+        567,
+        568,
+        569,
+        571,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        582,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        592,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        602,
+        603,
+        605,
+        608,
+        609,
+        610,
+        614,
+        615,
+        617,
+        618,
+        620,
+        621,
+        622,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        636,
+        637,
+        638,
+        639,
+        640,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        672,
+        673,
+        674,
+        675,
+        677,
+        678,
+        680,
+        682,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        708,
+        710,
+        711,
+        713,
+        714,
+        717,
+        719,
+        720,
+        721,
+        722,
+        724,
+        725,
+        726,
+        727,
+        728,
+        730,
+        731,
+        733,
+        734,
+        736,
+        737,
+        738,
+        739,
+        740,
+        743,
+        745,
+        747,
+        748,
+        750,
+        751,
+        754,
+        758,
+        760,
+        761,
+        763,
+        765,
+        766,
+        767,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        784,
+        786,
+        787,
+        788,
+        789,
+        792,
+        793,
+        798,
+        801,
+        802,
+        804,
+        806,
+        807,
+        812,
+        813,
+        815,
+        817,
+        818,
+        820,
+        821,
+        822,
+        826,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        836,
+        837,
+        838,
+        840,
+        841,
+        843,
+        847,
+        859,
+        861,
+        863,
+        868,
+        870,
+        873,
+        875,
+        877,
+        879,
+        880,
+        881,
+        882,
+        884,
+        888,
+        891,
+        892,
+        896,
+        899,
+        901,
+        902,
+        903,
+        904,
+        906,
+        909,
+        912,
+        916,
+        918,
+        928,
+        930,
+        935,
+        936,
+        941,
+        947,
+        951,
+        955,
+        957,
+        958,
+        963,
+        966,
+        968,
+        969,
+        971,
+        973,
+        977,
+        979,
+        980,
+        981,
+        982,
+        983,
+        986,
+        987,
+        989,
+        995,
+        1002,
+        1004,
+        1009,
+        1011,
+        1016,
+        1020,
+        1022,
+        1027,
+        1028,
+        1030,
+        1032,
+        1033,
+        1035,
+        1039,
+        1040,
+        1041,
+        1046,
+        1047,
+        1051,
+        1061,
+        1062,
+        1063,
+        1064,
+        1066,
+        1068,
+        1073,
+        1075,
+        1079,
+        1087,
+        1089,
+        1097,
+        1098,
+        1103,
+        1105,
+        1106,
+        1109,
+        1112,
+        1113,
+        1116,
+        1117,
+        1118,
+        1120,
+        1125
+      ],
+      "is_correct_flag_counts": {
+        "True": 251,
+        "None": 816,
+        "False": 58
+      },
+      "contains_model_prediction_columns": true,
+      "reference_code_executed": false
+    },
+    "evaluation_results_base_cot_v5(1).csv": {
+      "rows": 20,
+      "columns": [
+        "question",
+        "ground_truth",
+        "llm_response",
+        "extracted_code",
+        "execution_result",
+        "is_correct"
+      ],
+      "questions": {
+        "unique": 20,
+        "duplicate_excess": 0,
+        "repeated_values": {}
+      },
+      "missing_question_rows": [],
+      "placeholder_solution_rows": [],
+      "reference_code_syntax_errors": [],
+      "missing_or_placeholder_code_rows": [
+        3,
+        5,
+        20
+      ],
+      "is_correct_flag_counts": {
+        "True": 12,
+        "False": 8
+      },
+      "contains_model_prediction_columns": true,
+      "reference_code_executed": false
+    },
+    "evaluation_results_merged_cot_v5(1).csv": {
+      "rows": 20,
+      "columns": [
+        "question",
+        "ground_truth",
+        "llm_response",
+        "extracted_code",
+        "execution_result",
+        "is_correct"
+      ],
+      "questions": {
+        "unique": 20,
+        "duplicate_excess": 0,
+        "repeated_values": {}
+      },
+      "missing_question_rows": [],
+      "placeholder_solution_rows": [],
+      "reference_code_syntax_errors": [],
+      "missing_or_placeholder_code_rows": [
+        3,
+        5,
+        20
+      ],
+      "is_correct_flag_counts": {
+        "True": 12,
+        "False": 8
+      },
+      "contains_model_prediction_columns": true,
+      "reference_code_executed": false
+    }
+  },
+  "exact_question_overlaps": [
+    {
+      "first": "arithmetic_logic_data_revised_v2.jsonl",
+      "second": "arithmetic_problems_v3.csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_logic_data_revised_v2.jsonl",
+      "second": "evaluation_results_base_cot_v5(1).csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_logic_data_revised_v2.jsonl",
+      "second": "evaluation_results_merged_cot_v5(1).csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_logic_data_revised_v2.jsonl",
+      "second": "random_samples_for_inference.csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_logic_data_revised_v2.jsonl",
+      "second": "results_v3.jsonl",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_problems_v3.csv",
+      "second": "evaluation_results_base_cot_v5(1).csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_problems_v3.csv",
+      "second": "evaluation_results_merged_cot_v5(1).csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_problems_v3.csv",
+      "second": "random_samples_for_inference.csv",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "arithmetic_problems_v3.csv",
+      "second": "results_v3.jsonl",
+      "shared_unique_questions": 0,
+      "questions": []
+    },
+    {
+      "first": "evaluation_results_base_cot_v5(1).csv",
+      "second": "evaluation_results_merged_cot_v5(1).csv",
+      "shared_unique_questions": 20,
+      "questions": [
+        "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+        "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+        "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+        "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+        "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+        "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+        "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+        "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+        "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+        "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+        "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+        "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+        "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+        "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+        "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+        "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+        "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+        "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+        "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+        "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?"
+      ]
+    },
+    {
+      "first": "evaluation_results_base_cot_v5(1).csv",
+      "second": "random_samples_for_inference.csv",
+      "shared_unique_questions": 20,
+      "questions": [
+        "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+        "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+        "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+        "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+        "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+        "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+        "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+        "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+        "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+        "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+        "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+        "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+        "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+        "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+        "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+        "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+        "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+        "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+        "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+        "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?"
+      ]
+    },
+    {
+      "first": "evaluation_results_base_cot_v5(1).csv",
+      "second": "results_v3.jsonl",
+      "shared_unique_questions": 20,
+      "questions": [
+        "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+        "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+        "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+        "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+        "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+        "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+        "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+        "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+        "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+        "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+        "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+        "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+        "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+        "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+        "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+        "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+        "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+        "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+        "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+        "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?"
+      ]
+    },
+    {
+      "first": "evaluation_results_merged_cot_v5(1).csv",
+      "second": "random_samples_for_inference.csv",
+      "shared_unique_questions": 20,
+      "questions": [
+        "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+        "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+        "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+        "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+        "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+        "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+        "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+        "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+        "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+        "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+        "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+        "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+        "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+        "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+        "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+        "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+        "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+        "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+        "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+        "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?"
+      ]
+    },
+    {
+      "first": "evaluation_results_merged_cot_v5(1).csv",
+      "second": "results_v3.jsonl",
+      "shared_unique_questions": 20,
+      "questions": [
+        "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+        "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+        "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+        "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+        "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+        "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+        "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+        "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+        "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+        "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+        "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+        "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+        "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+        "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+        "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+        "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+        "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+        "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+        "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+        "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?"
+      ]
+    },
+    {
+      "first": "random_samples_for_inference.csv",
+      "second": "results_v3.jsonl",
+      "shared_unique_questions": 89,
+      "questions": [
+        "A boy has a certain number of sweets. If he eats 16 sweets a day, they will last him 2 days longer than if he eats 18 sweets a day. How many sweets does he have?",
+        "A can of soup can feed $3$ adults or $5$ children. If there are $5$ cans of soup and $15$ children are fed, then how many adults would the remaining soup feed?",
+        "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+        "A dartboard is created by drawing 2022 concentric circles with radii from 1 to 2022. The point values of the 2022 sections created by the circles are proportional to the area of the section, with the center section having a point value of 1. What is the point value of the outermost section?",
+        "A hardware supplier manufactures 3 kinds of clamps; types A, B, and C. Production restrictions force it to make 20 more type C clamps than the total of the other types and twice as many type B clamps as type A clamps. The shop must produce 260 clamps per day. How many of each type are made per day?\n\nHow many type A clamps are produced?",
+        "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+        "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+        "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+        "Andrea has completed 3/7 of a 168 km canoe trip after three days. How many kilometers per day must she average for the remaining three days to finish the trip?",
+        "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+        "Compute the value of the expression $(x-a)(x-b)\\ldots (x-z)$.",
+        "Determine the number of solutions in $\\mathbb{R}^2$ for the system of equations:\n\\[ |x| + |y| = 3 \\]\n\\[ \\frac{\\sin(\\pi x^2)}{2} = 1 \\]",
+        "Evaluate $\\lim_{x\\rightarrow 0} \\frac{x^2-16x^4}{x^2-5x}$.",
+        "Evaluate the expression \\(15 / 3 [7 + 2(8 - 9)] - 5\\) according to the order of operations.",
+        "Evaluate the limit \\(\\lim_{h \\to 0} \\frac{1}{h} \\left[ \\int_{2}^{2+h} \\sqrt{1+t^3} \\, dt \\right]\\).",
+        "Find the area bounded by the curve \\( y = x^3 \\) and the line \\( y = x \\).",
+        "Find the maximum value of \\((a + b + c)\\left(\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}\\right)\\) given that \\(1 \\le a, b, c \\le 2\\).",
+        "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+        "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+        "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+        "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+        "Find the smallest positive value of \\( n \\) for which \\(\\left(\\frac{\\sqrt{3} + i}{\\sqrt{3} - i}\\right)^n\\) is real and positive.",
+        "Find the sum of the digits of the product of a number consisting of 2016 digits all of which are 6s, and another number consisting of 2016 digits all of which are 9s.",
+        "Find the sum of the digits of the sum of the digits of the sum of the digits of \\(5555^{5555}\\).",
+        "Find the value of \\(a + b + c\\) given that \\(\\sin (\\cos^{-1} \\frac{\\sqrt{5}}{5}) = \\frac{a \\cdot \\sqrt{b}}{c}\\), where \\(a\\), \\(b\\), and \\(c\\) do not necessarily represent different numbers.",
+        "Given $\\sqrt{x^2+165}-\\sqrt{x^2-52}=7$ and $x$ is positive, find all possible values of $x$.",
+        "Given that \\( m \\) and \\( n \\) are positive integers and \\( m^2 + 5n^2 = 36 \\), find the value of \\( m + 5n \\).",
+        "Given that x=2 and that y is a random real number from 0 to 10 inclusive, what is the probability that the point (x,y) lies on the curve y=x^2?",
+        "Given the equations \\(a + b = 2*c - 1\\), \\(a + c = 15\\), and \\(c + b = a + 14\\), find the value of \\(a + b - c\\).",
+        "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+        "Given the function \\( f(x) = \\log\\left(\\sqrt{x^2 + 1} + x\\right) + \\sin x \\), if \\( f(a+2) = 5 \\) and \\( f(b-7) = -5 \\), find the value of \\( a + b \\).",
+        "Given the progression $10^{1/11}, 10^{2/11}, \\ldots, 10^{n/11}$, find the least positive integer $n$ such that the product of the first $n$ terms of the progression exceeds 100,000.",
+        "How many distinguishable ways can we paint the four faces of a regular tetrahedron with red, blue, green, and orange paint such that no two faces are the same color?",
+        "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+        "How many positive divisors of \\(2^7 \\cdot 3^5 \\cdot 5^3 \\cdot 7^2\\) are divisible by 10?",
+        "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+        "How many subsets containing three different numbers can be selected from the set \\(\\{ 89, 95, 99, 132, 166, 173 \\}\\) so that the sum of the three numbers is even?",
+        "How many terms are in the expansion of $(a+b+c)^{30}$ when like terms are combined?",
+        "How many triples \\((x, y, z) \\in \\mathbb{N}\\) satisfy the conditions \\(x + y = z\\) and \\(x < y < z \\leq 10\\)?",
+        "How many ways are there to distribute 10 indistinguishable doughnuts among 3 distinguishable men, if no man can have more than 4 doughnuts?",
+        "How many ways can six people sit around a table?",
+        "If $n! = 2,432,902,008,176,640,000,$ find the value of $n$ without using any electronic device.",
+        "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+        "If \\( m \\) and \\( n \\) are both positive integers with \\( m > 1 \\), and \\( m \\) divides both \\( 28n + 25 \\) and \\( 7n + 3 \\), what is \\( m \\)?",
+        "If \\( x + x^{-1} = 4 \\), then what is the value of \\( x^4 + x^{-4} \\)?",
+        "If every computer is used by two people, there are three students who do not get a computer. On the other hand, if each computer is used by three people, there are three unused computers. How many students will use the computer?",
+        "In a football game, the Cougars and the Panthers scored a total of 34 points, and the Cougars won by a margin of 14 points. How many points did the Panthers score?",
+        "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+        "In how many different ways can 14 identical cans of tennis balls be sold over three days (Friday, Saturday, and Sunday)?",
+        "In how many different ways can Sarah top her sundae if she is restricted to at most 2 toppings, given that there are 5 toppings available: hot fudge, sprinkles, walnuts, cherries, and whipped cream?",
+        "In order for Mateen to walk a kilometer (1000 meters) in his rectangular backyard, he must walk the length 25 times or walk its perimeter 10 times. What is the area of Mateen's backyard in square meters?",
+        "Jenifer has 82 cents in pennies and nickels. Her younger brother mistook all her nickels for dimes and counted the total as $1.47. How many pennies does Jenifer have?",
+        "Let $\\alpha$ and $\\beta$ be roots of $x^2 + 4x + 1$. Find $(\\alpha^2 - 5\\alpha)(\\beta^2 - 5\\beta)$.",
+        "Let $\\theta$ be a complex number such that $\\theta^6 = 1$. Find the maximum algebraic degree of $\\theta$.",
+        "Let \\( A, M, \\) and \\( C \\) be digits such that \\((100A + 10M + C)(A + M + C) = 2005\\). What is the value of \\( A \\)?",
+        "Let \\( D \\) be a smooth plane domain of unit area. Let \\( u(x, y) = 3x^2 + y^2 \\). If \\( \\frac{\\partial u}{\\partial n} \\) denotes its outer normal derivative on \\( \\partial D \\), the boundary of \\( D \\), compute \\( \\int_{\\partial D} \\frac{\\partial u}{\\partial n} \\, ds \\).",
+        "Let \\( m \\) be a real number and define a linear function \\( p \\) and a constant function \\( z \\) defined on the set of real numbers such that:\n\\[\n(p \\cdot z)(x) = mx + 20\n\\]\n\\[\n(p - z)(x) = x - m + 4\n\\]\nWhat is the value of \\( (p \\circ z)(2) \\)?",
+        "Let \\( n \\) be a positive integer such that \\( (x^n + x - 37) \\equiv 2013 \\pmod{(x-2)} \\). Find \\( n \\).",
+        "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+        "Let \\( r_1 \\) and \\( r_2 \\) be the two values of \\( x \\) which solve the equation \\( x^2 + 7x - 92100 = 0 \\). Compute the smaller value of \\( r_1 \\) and \\( r_2 \\).",
+        "Let \\( x \\) and \\( y \\) be two positive integers such that \\( xy + x + y = 2020 \\). Find the greatest possible value for \\( xy \\).",
+        "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+        "Scott bought a home for $85,000, putting down $15,000. The current loan balance is $58,320. With monthly payments of $1,000 and an interest rate of 8%, what will the interest be on the loan this month?",
+        "Simplify the following integral, if possible:\n\n\\[\n\\int_{0}^{1} \\frac{22x^{\\frac{3}{2}} - 66x^{\\frac{5}{2}} + 52x^{\\frac{7}{2}}}{\\sqrt{x}} \\, dx\n\\]",
+        "Suppose \\( f: \\mathbb{C} \\rightarrow \\mathbb{C} \\) is a holomorphic function such that the real part of \\( f''(z) \\) is strictly positive for all \\( z \\in \\mathbb{C} \\). What is the maximum possible number of solutions of the equation \\( f(z) = az + b \\), as \\( a \\) and \\( b \\) vary over complex numbers?",
+        "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+        "The 80th term of an arithmetic sequence is twice the 30th term. If the first term of the sequence is 7, what is the 40th term?",
+        "The ages of Jonie's four cousins are distinct single-digit positive integers. Two of the cousins' ages multiplied together give $24$, while the other two multiply to $30$. What is the sum of the ages of Jonie's four cousins?",
+        "The entries in a 3x3 array include all the digits from 1 through 9, arranged so that the entries in every row and column are in increasing order. How many such arrays are there?",
+        "The height of triangle XYZ is 80% of the width of rectangle ABCD, and the base of triangle XYZ is 75% of the length of rectangle ABCD. If the area of triangle XYZ is 12, what is the area of rectangle ABCD?",
+        "The number $2.5252525...$ can be written as a fraction. When reduced to lowest terms, what is the sum of the numerator and denominator of this fraction?",
+        "The number 360 in base 7 is equal to 2k0 in base 9. What is the value of k, where k is a digit?",
+        "The product of four consecutive positive integers is 17160. What is their sum?",
+        "The roots of the polynomial \\(10x^3 - 39x^2 + 29x - 6\\) are the height, length, and width of a rectangular box. A new rectangular box is formed by lengthening each edge of the original box by 2 units. What is the volume of the new box?",
+        "The sides of a right triangle are 20, \\( x \\), and hypotenuse \\( y \\). The sides of another right triangle are 30, \\( x-5 \\), and hypotenuse \\( y+5 \\). Find \\( x \\).",
+        "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+        "There are three groups of wrestlers: the first group contains \\( x \\) wrestlers, the second group contains \\( x+1 \\) wrestlers, and the third group contains \\( y \\) wrestlers. The total number of wrestlers in all three groups is 24. How many maximum fights can occur if each fight involves two wrestlers from different groups?",
+        "Three positive integers \\(a\\), \\(b\\), and \\(c\\) satisfy the equation\n\n\\[4^a \\cdot 5^b \\cdot 6^c = 8^8 \\cdot 9^9 \\cdot 10^{10}.\\]\n\nDetermine the sum \\(a + b + c\\).",
+        "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+        "Two rectangles, A, with vertices at (-2, 0), (0,0), (0,4), and (-2,4) and B, with vertices at (1,0), (5,0), (1,12), and (5, 12), are simultaneously bisected by a line in the plane. What is the slope of this line?",
+        "What is $1^2 + 2^2 + 3^2 + ... + 2002^2$?",
+        "What is the 101st number in the sequence $1, 5, 13, 25, \\ldots$?",
+        "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+        "What is the characteristic of the commutative ring \\( R = F_2[t] / t^3 F_2[t] \\)?",
+        "What is the order of the symmetry group of the square?",
+        "What is the smallest positive integer $n$ such that $\\frac{n}{2010}$ is a terminating decimal?",
+        "What is the sum of real roots of the equation \\(x^4 - 8x^3 + 13x^2 - 24x + 9 = 0\\)?",
+        "When calculating the volume of a cylinder, Dina made a mistake. She entered the diameter of the base into the formula for the volume of the cylinder, when she should have entered the radius of the base. What is the ratio of the results of Dina's calculations to the expected results?",
+        "When enumerating the pages on the first half of a book, it used 582 digits. Find the number of digits employed to enumerate the whole book."
+      ]
+    }
+  ],
+  "model_training_executed": false,
+  "model_inference_executed": false,
+  "generated_code_executed": false,
+  "missing_for_historical_reproduction": [
+    "Original LoRA adapter plus tokenizer/config, or merged model plus tokenizer/config",
+    "Original arithmetic baseline/merged predictions on the same 20 questions",
+    "Original tokenizer snapshot and base weight fingerprint; public-tokenizer reconstruction is available"
+  ],
+  "recovered_in_second_upload": "results_v3.jsonl:1125 rows; duplicated CSVs both match base output, not a separate merged run.",
+  "historical_overlap": "Public-tokenizer reconstruction retains143 distilled rows;5of20 historical evaluated questions overlap. See reports/recovered_data_audit.json.",
+  "warning": "Syntax and saved-output checks do not establish model correctness, proof correctness, absence of leakage, or GPU reproducibility."
+}

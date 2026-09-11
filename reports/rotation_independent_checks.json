@@ -1,0 +1,485 @@
+{
+  "method": "Fixed-width binary-string rotation independently derived from each question; supplied code not executed.",
+  "rows": [
+    {
+      "row": 209,
+      "width": 32,
+      "input_hex": "0xABCDEFFF",
+      "shift": 4,
+      "direction": "left",
+      "binary_string_rotation_result": "3168731130",
+      "stored_solution_answer": "2882400010",
+      "matches": false
+    },
+    {
+      "row": 210,
+      "width": 32,
+      "input_hex": "0x12345678",
+      "shift": 8,
+      "direction": "right",
+      "binary_string_rotation_result": "2014458966",
+      "stored_solution_answer": "2003195395",
+      "matches": false
+    },
+    {
+      "row": 211,
+      "width": 64,
+      "input_hex": "0x123456789ABCDEF0",
+      "shift": 16,
+      "direction": "left",
+      "binary_string_rotation_result": "6230900220451885620",
+      "stored_solution_answer": "3735928559",
+      "matches": false
+    },
+    {
+      "row": 212,
+      "width": 64,
+      "input_hex": "0xFEDCBA9876543210",
+      "shift": 32,
+      "direction": "right",
+      "binary_string_rotation_result": "8526495043095935640",
+      "stored_solution_answer": "8509377377798222589",
+      "matches": false
+    },
+    {
+      "row": 227,
+      "width": 32,
+      "input_hex": "0x9c6ef33b",
+      "shift": 3,
+      "direction": "right",
+      "binary_string_rotation_result": "1938677351",
+      "stored_solution_answer": "1938677351",
+      "matches": true
+    },
+    {
+      "row": 228,
+      "width": 32,
+      "input_hex": "0x6d4d5e6f",
+      "shift": 22,
+      "direction": "left",
+      "binary_string_rotation_result": "2614842199",
+      "stored_solution_answer": "2614842199",
+      "matches": true
+    },
+    {
+      "row": 229,
+      "width": 32,
+      "input_hex": "0x88a39076",
+      "shift": 27,
+      "direction": "right",
+      "binary_string_rotation_result": "343019217",
+      "stored_solution_answer": "343019217",
+      "matches": true
+    },
+    {
+      "row": 230,
+      "width": 32,
+      "input_hex": "0xcf7ffcb1",
+      "shift": 31,
+      "direction": "right",
+      "binary_string_rotation_result": "2667575651",
+      "stored_solution_answer": "2667575651",
+      "matches": true
+    },
+    {
+      "row": 237,
+      "width": 8,
+      "input_hex": "0xf7",
+      "shift": 5,
+      "direction": "right",
+      "binary_string_rotation_result": "191",
+      "stored_solution_answer": "191",
+      "matches": true
+    },
+    {
+      "row": 238,
+      "width": 16,
+      "input_hex": "0x6d4f",
+      "shift": 12,
+      "direction": "right",
+      "binary_string_rotation_result": "54518",
+      "stored_solution_answer": "54518",
+      "matches": true
+    },
+    {
+      "row": 239,
+      "width": 64,
+      "input_hex": "0x8ef97cbe14e6e695",
+      "shift": 54,
+      "direction": "right",
+      "binary_string_rotation_result": "16569579017026033211",
+      "stored_solution_answer": "16569579017026033211",
+      "matches": true
+    },
+    {
+      "row": 240,
+      "width": 8,
+      "input_hex": "0xd0",
+      "shift": 1,
+      "direction": "right",
+      "binary_string_rotation_result": "104",
+      "stored_solution_answer": "104",
+      "matches": true
+    },
+    {
+      "row": 241,
+      "width": 8,
+      "input_hex": "0xd0",
+      "shift": 3,
+      "direction": "left",
+      "binary_string_rotation_result": "134",
+      "stored_solution_answer": "134",
+      "matches": true
+    },
+    {
+      "row": 242,
+      "width": 8,
+      "input_hex": "0x87",
+      "shift": 5,
+      "direction": "right",
+      "binary_string_rotation_result": "60",
+      "stored_solution_answer": "60",
+      "matches": true
+    },
+    {
+      "row": 243,
+      "width": 32,
+      "input_hex": "0x37542227",
+      "shift": 15,
+      "direction": "left",
+      "binary_string_rotation_result": "286497706",
+      "stored_solution_answer": "286497706",
+      "matches": true
+    },
+    {
+      "row": 244,
+      "width": 8,
+      "input_hex": "0x23",
+      "shift": 2,
+      "direction": "left",
+      "binary_string_rotation_result": "140",
+      "stored_solution_answer": "140",
+      "matches": true
+    },
+    {
+      "row": 245,
+      "width": 8,
+      "input_hex": "0xa0",
+      "shift": 5,
+      "direction": "left",
+      "binary_string_rotation_result": "20",
+      "stored_solution_answer": "20",
+      "matches": true
+    },
+    {
+      "row": 246,
+      "width": 8,
+      "input_hex": "0xc5",
+      "shift": 4,
+      "direction": "left",
+      "binary_string_rotation_result": "92",
+      "stored_solution_answer": "92",
+      "matches": true
+    },
+    {
+      "row": 247,
+      "width": 32,
+      "input_hex": "0x1ade5ab5",
+      "shift": 5,
+      "direction": "right",
+      "binary_string_rotation_result": "2832659157",
+      "stored_solution_answer": "2832659157",
+      "matches": true
+    },
+    {
+      "row": 248,
+      "width": 8,
+      "input_hex": "0x71",
+      "shift": 6,
+      "direction": "right",
+      "binary_string_rotation_result": "197",
+      "stored_solution_answer": "197",
+      "matches": true
+    },
+    {
+      "row": 249,
+      "width": 64,
+      "input_hex": "0x2203ec5a03e78fe3",
+      "shift": 24,
+      "direction": "left",
+      "binary_string_rotation_result": "6486282493520643052",
+      "stored_solution_answer": "6486282493520643052",
+      "matches": true
+    },
+    {
+      "row": 250,
+      "width": 8,
+      "input_hex": "0x82",
+      "shift": 5,
+      "direction": "right",
+      "binary_string_rotation_result": "20",
+      "stored_solution_answer": "20",
+      "matches": true
+    },
+    {
+      "row": 251,
+      "width": 32,
+      "input_hex": "0xa2e618df",
+      "shift": 28,
+      "direction": "left",
+      "binary_string_rotation_result": "4197343629",
+      "stored_solution_answer": "4197343629",
+      "matches": true
+    },
+    {
+      "row": 252,
+      "width": 8,
+      "input_hex": "0xba",
+      "shift": 1,
+      "direction": "left",
+      "binary_string_rotation_result": "117",
+      "stored_solution_answer": "117",
+      "matches": true
+    },
+    {
+      "row": 253,
+      "width": 64,
+      "input_hex": "0x649b971d9d55d545",
+      "shift": 23,
+      "direction": "left",
+      "binary_string_rotation_result": "10290350123316825547",
+      "stored_solution_answer": "10290350123316825547",
+      "matches": true
+    },
+    {
+      "row": 254,
+      "width": 8,
+      "input_hex": "0xa4",
+      "shift": 1,
+      "direction": "right",
+      "binary_string_rotation_result": "82",
+      "stored_solution_answer": "82",
+      "matches": true
+    },
+    {
+      "row": 255,
+      "width": 64,
+      "input_hex": "0xb16278f0f49d5d7c",
+      "shift": 19,
+      "direction": "left",
+      "binary_string_rotation_result": "14377641664290589459",
+      "stored_solution_answer": "14377641664290589459",
+      "matches": true
+    },
+    {
+      "row": 256,
+      "width": 16,
+      "input_hex": "0x1849",
+      "shift": 10,
+      "direction": "right",
+      "binary_string_rotation_result": "4678",
+      "stored_solution_answer": "4678",
+      "matches": true
+    },
+    {
+      "row": 257,
+      "width": 16,
+      "input_hex": "0xfff0",
+      "shift": 13,
+      "direction": "right",
+      "binary_string_rotation_result": "65415",
+      "stored_solution_answer": "65415",
+      "matches": true
+    },
+    {
+      "row": 258,
+      "width": 64,
+      "input_hex": "0x4b9188c37a44142c",
+      "shift": 35,
+      "direction": "left",
+      "binary_string_rotation_result": "15141279391051171355",
+      "stored_solution_answer": "15141279391051171355",
+      "matches": true
+    },
+    {
+      "row": 259,
+      "width": 8,
+      "input_hex": "0x59",
+      "shift": 2,
+      "direction": "right",
+      "binary_string_rotation_result": "86",
+      "stored_solution_answer": "86",
+      "matches": true
+    },
+    {
+      "row": 260,
+      "width": 8,
+      "input_hex": "0x84",
+      "shift": 4,
+      "direction": "left",
+      "binary_string_rotation_result": "72",
+      "stored_solution_answer": "72",
+      "matches": true
+    },
+    {
+      "row": 261,
+      "width": 32,
+      "input_hex": "0x1cf26110",
+      "shift": 15,
+      "direction": "right",
+      "binary_string_rotation_result": "3256891876",
+      "stored_solution_answer": "3256891876",
+      "matches": true
+    },
+    {
+      "row": 262,
+      "width": 8,
+      "input_hex": "0x26",
+      "shift": 2,
+      "direction": "right",
+      "binary_string_rotation_result": "137",
+      "stored_solution_answer": "137",
+      "matches": true
+    },
+    {
+      "row": 263,
+      "width": 64,
+      "input_hex": "0xccbc128abb87c356",
+      "shift": 60,
+      "direction": "right",
+      "binary_string_rotation_result": "14682060978204194156",
+      "stored_solution_answer": "14682060978204194156",
+      "matches": true
+    },
+    {
+      "row": 264,
+      "width": 32,
+      "input_hex": "0x85d935c1",
+      "shift": 26,
+      "direction": "left",
+      "binary_string_rotation_result": "102196439",
+      "stored_solution_answer": "102196439",
+      "matches": true
+    },
+    {
+      "row": 265,
+      "width": 64,
+      "input_hex": "0xdc63e2c36f18fce5",
+      "shift": 11,
+      "direction": "left",
+      "binary_string_rotation_result": "2240008070227242723",
+      "stored_solution_answer": "2240008070227242723",
+      "matches": true
+    },
+    {
+      "row": 266,
+      "width": 32,
+      "input_hex": "0x475e82fc",
+      "shift": 20,
+      "direction": "right",
+      "binary_string_rotation_result": "3895444597",
+      "stored_solution_answer": "3895444597",
+      "matches": true
+    },
+    {
+      "row": 267,
+      "width": 8,
+      "input_hex": "0xe7",
+      "shift": 4,
+      "direction": "right",
+      "binary_string_rotation_result": "126",
+      "stored_solution_answer": "126",
+      "matches": true
+    },
+    {
+      "row": 268,
+      "width": 64,
+      "input_hex": "0x7f77fc0cb0935531",
+      "shift": 26,
+      "direction": "left",
+      "binary_string_rotation_result": "3657570873872605168",
+      "stored_solution_answer": "3657570873872605168",
+      "matches": true
+    },
+    {
+      "row": 269,
+      "width": 64,
+      "input_hex": "0x26cd65ecc82cc5fb",
+      "shift": 58,
+      "direction": "left",
+      "binary_string_rotation_result": "17049279740002743063",
+      "stored_solution_answer": "17049279740002743063",
+      "matches": true
+    },
+    {
+      "row": 270,
+      "width": 16,
+      "input_hex": "0xae43",
+      "shift": 1,
+      "direction": "right",
+      "binary_string_rotation_result": "55073",
+      "stored_solution_answer": "55073",
+      "matches": true
+    },
+    {
+      "row": 271,
+      "width": 16,
+      "input_hex": "0x7727",
+      "shift": 4,
+      "direction": "left",
+      "binary_string_rotation_result": "29303",
+      "stored_solution_answer": "29303",
+      "matches": true
+    },
+    {
+      "row": 272,
+      "width": 16,
+      "input_hex": "0x4130",
+      "shift": 10,
+      "direction": "right",
+      "binary_string_rotation_result": "19472",
+      "stored_solution_answer": "19472",
+      "matches": true
+    },
+    {
+      "row": 273,
+      "width": 16,
+      "input_hex": "0x8cc3",
+      "shift": 8,
+      "direction": "left",
+      "binary_string_rotation_result": "50060",
+      "stored_solution_answer": "50060",
+      "matches": true
+    },
+    {
+      "row": 274,
+      "width": 8,
+      "input_hex": "0x9e",
+      "shift": 2,
+      "direction": "left",
+      "binary_string_rotation_result": "122",
+      "stored_solution_answer": "122",
+      "matches": true
+    },
+    {
+      "row": 275,
+      "width": 8,
+      "input_hex": "0xe3",
+      "shift": 1,
+      "direction": "right",
+      "binary_string_rotation_result": "241",
+      "stored_solution_answer": "241",
+      "matches": true
+    },
+    {
+      "row": 276,
+      "width": 32,
+      "input_hex": "0x708311ca",
+      "shift": 21,
+      "direction": "left",
+      "binary_string_rotation_result": "961417314",
+      "stored_solution_answer": "961417314",
+      "matches": true
+    }
+  ]
+}
