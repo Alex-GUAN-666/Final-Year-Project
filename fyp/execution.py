@@ -85,6 +85,49 @@ def ensure_docker(image):
     return result.stdout.strip()
 
 
+def _cleanup_docker_container(name, timeout=10):
+    """Confirm absence even when Docker's --rm races explicit removal.
+
+    A failed rm is not sufficient evidence of a leak or of successful cleanup.
+    Only a successful exact-name listing with no matching container confirms
+    cleanup. Retries accommodate an in-progress daemon-side removal; failures
+    to query the daemon or a container that remains present are fail-closed.
+    """
+    deadline = time.monotonic() + timeout
+    detail = "Container still present"
+    for attempt in range(5):
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            break
+        try:
+            removed = subprocess.run(["docker", "rm", "-f", name],
+                                     capture_output=True, text=True, timeout=remaining)
+            if removed.returncode:
+                detail = removed.stderr.strip() or "Docker removal failed"
+        except (OSError, subprocess.SubprocessError) as exc:
+            detail = str(exc)
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            break
+        try:
+            listed = subprocess.run(
+                ["docker", "ps", "--all", "--quiet", "--filter", "name=^/" + name + "$"],
+                capture_output=True, text=True, timeout=remaining,
+            )
+        except (OSError, subprocess.SubprocessError) as exc:
+            raise RuntimeError("Failed to confirm Docker container cleanup: " + name
+                               + "; absence check failed: " + str(exc)) from exc
+        if listed.returncode:
+            raise RuntimeError("Failed to confirm Docker container cleanup: " + name
+                               + "; absence check failed: " + listed.stderr.strip())
+        if not listed.stdout.strip():
+            return
+        detail = "Container remains present; " + detail
+        if attempt < 4:
+            time.sleep(min(0.2, max(0, deadline - time.monotonic())))
+    raise RuntimeError("Failed to confirm Docker container cleanup: " + name + "; " + detail)
+
+
 def execute_docker(code, image="python:3.11-slim", timeout=10, output_limit=65536):
     """Run a single isolated container; cap output while reading, then remove it."""
     if timeout <= 0 or output_limit <= 0:
@@ -156,11 +199,5 @@ def execute_docker(code, image="python:3.11-slim", timeout=10, output_limit=6553
                     process.stdout.close()
                     process.stderr.close()
             finally:
-                try:
-                    cleanup = subprocess.run(["docker", "rm", "-f", name],
-                                             capture_output=True, text=True, timeout=10)
-                    if cleanup.returncode and "No such container" not in cleanup.stderr:
-                        raise RuntimeError("Failed to confirm Docker container cleanup: " + name)
-                except (OSError, subprocess.SubprocessError):
-                    raise RuntimeError("Failed to confirm Docker container cleanup: " + name)
+                _cleanup_docker_container(name)
     return {"status": status, **{key: value.decode("utf-8", errors="replace") for key, value in captured.items()}}
