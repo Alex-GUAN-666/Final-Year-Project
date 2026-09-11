@@ -69,7 +69,7 @@ def verify(report):
         run_step("bundled source integrity", ["scripts/audit_artifacts.py", "--output", artifact_path])
         artifacts = read_json(artifact_path)
         bundled = [item for item in artifacts["files"] if item.get("sha256_verified")]
-        require(len(bundled) == 18, "Expected 18 bundled source/public-derivative hashes")
+        require(len(bundled) == 24, "Expected 24 bundled source/public-derivative hashes")
         report["source_integrity"] = {
             "verified_bundled_files": len(bundled),
             "source_manifest_sha256": digest(ROOT / "source_manifest.json"),
@@ -136,6 +136,24 @@ def verify(report):
             "interpretation": "Recorded numeric-output results, not new inference or an independent held-out gain.",
         }
 
+        recovered_notebooks_path = work / "recovered-notebooks.json"
+        run_step("recovered notebook settings and recorded evaluation evidence",
+                 ["scripts/verify_recovered_notebooks.py", "--output", recovered_notebooks_path])
+        recovered_notebooks = read_json(recovered_notebooks_path)
+        require(recovered_notebooks["status"] == "passed"
+                and recovered_notebooks["model_inference_executed"] is False,
+                "Recovered notebook validation must pass without model inference")
+        require(recovered_notebooks == read_json(ROOT / "reports/recovered_notebook_evidence.json"),
+                "Recovered notebook report differs from its source-derived committed evidence")
+        report["recovered_notebook_evidence"] = {
+            "verified_evaluation_runs": len(recovered_notebooks["evaluation_runs"]),
+            "recorded_correct_counts": [r["correct"] for r in recovered_notebooks["evaluation_runs"]],
+            "arithmetic_active_model_path": recovered_notebooks["evaluation_runs"][0]["recorded_model"]["active_model_path"],
+            "original_arithmetic_paired_comparison_recovered": False,
+            "model_resource": recovered_notebooks["model_resource"]["kaggle_input"],
+            "model_inference_executed": False,
+        }
+
         prepared = work / "prepared"
         run_step("fixed question-disjoint split regeneration", ["-m", "fyp.prepare", "--output-dir", prepared])
         committed = ROOT / "data/prepared/question_disjoint_v1"
@@ -187,7 +205,7 @@ def main():
         "limitations": [
             "Original fine-tuned weights and original tokenizer artifacts are absent.",
             "Historical reasoning results have 5/20 reconstructed training-question overlap.",
-            "Historical arithmetic paired predictions and exact 20-question identities are absent.",
+            "The thesis arithmetic paired comparison remains absent; a separate qwen-3/transformers/4b/1 run with 17/20 is recovered.",
             "This command does not rerun a model or guarantee historical scores from new training.",
             "Static code inspection and numeric saved-output checks do not verify all mathematical proofs.",
         ],
@@ -210,7 +228,7 @@ def main():
     if report["status"] != "passed":
         print(f"FAILED: {report['error']}", file=sys.stderr)
         return 1
-    print(f"PASS: 18 source hashes; saved reasoning scores 12/20 and 15/20; 5 overlapping questions.")
+    print(f"PASS: 24 source hashes; saved reasoning scores 12/20 and 15/20; 5 overlapping questions.")
     print(f"PASS: 436 training candidates / 187 evaluation questions reproduce byte for byte; "
           f"{report['unit_tests']['passed']} unit tests passed.")
     print("No 4B training, inference, fresh tokenization, Docker execution, or new model accuracy was produced.")

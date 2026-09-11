@@ -12,7 +12,7 @@ class SourcePathTests(unittest.TestCase):
     def test_every_source_alias_retains_the_declared_publication_hash(self):
         entries = json.loads((ROOT / "source_manifest.json").read_text(encoding="utf-8"))
         bundled = [entry for entry in entries if entry.get("repository_path")]
-        self.assertEqual(len(bundled), 18)
+        self.assertEqual(len(bundled), 24)
         renamed = [entry for entry in bundled if entry.get("previous_repository_path")]
         self.assertEqual(len(renamed), 11)
         for entry in bundled:

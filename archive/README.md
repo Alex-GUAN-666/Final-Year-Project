@@ -48,3 +48,24 @@ The original data-generation scripts remain under `scripts/`. Raw datasets retai
 their existing names under [`data/raw/`](../data/raw/) so prepared sample identities
 and checksums remain stable. Older audit and cloud reports retain the filenames
 used when they were created; the manifest resolves those names to the current files.
+
+## Additional recovered runs
+
+These six exports add execution history and model provenance. The original filenames
+are retained below, including labels that do not match the selected model. See
+[the recovered-run review](../docs/RECOVERED_NOTEBOOKS.md) for interpretation.
+
+| File | Role | Original upload name |
+|---|---|---|
+| [qwen3_4b_arithmetic_qwen_4b_run_20251122.ipynb](notebooks/qwen3_4b_arithmetic_qwen_4b_run_20251122.ipynb) | Arithmetic 17/20 using Qwen 4b/1, not the project merged checkpoint | `qwen3-4b-merged-arithmetic-102115527-280966320..ipynb` |
+| [qwen3_4b_base_reasoning_run_20251120.ipynb](notebooks/qwen3_4b_base_reasoning_run_20251120.ipynb) | Sequential base reasoning run, 12/20; same saved responses as the earlier base notebook | `qwen3-4b-base-cot-101438364-280343001..ipynb` |
+| [qwen3_4b_merged_reasoning_run_20251122.ipynb](notebooks/qwen3_4b_merged_reasoning_run_20251122.ipynb) | Sequential merged reasoning run, 15/20; complete responses remain in the earlier notebook | `qwen3-4b-merged-cot-101438391-280930433..ipynb` |
+| [qwen3_4b_base_reasoning_empty_prompt_20251120.ipynb](notebooks/qwen3_4b_base_reasoning_empty_prompt_20251120.ipynb) | Base run with cleared system prompts, 0/20 | `qwen3-4b-base-cot-101438364-280327485..ipynb` |
+| [qwen3_4b_merged_reasoning_empty_prompt_20251120.ipynb](notebooks/qwen3_4b_merged_reasoning_empty_prompt_20251120.ipynb) | Merged run with cleared system prompts, 2/20 | `qwen3-4b-merged-cot-101438391-280392283..ipynb` |
+| [qwen3_4b_merged_model_resource_20251119.ipynb](notebooks/qwen3_4b_merged_model_resource_20251119.ipynb) | Merged inference run identifying the Kaggle model resource | `qwen4b-reference-100921272-279865191..ipynb` |
+
+The existing notebooks with complete reasoning responses remain in the archive.
+Other arithmetic and training exports with repeated code or predictions remain in
+the original supplied archive; repeated runs are not additional independent test
+questions. Sources and publication transformations are recorded in
+[notebook_recovery_sources.json](../reports/notebook_recovery_sources.json).

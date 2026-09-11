@@ -1,5 +1,9 @@
 # Cloud validation
 
+This page records the dated cloud-validation snapshot below. Later recovered
+notebooks have their own [source and result checks](RECOVERED_NOTEBOOKS.md), included
+in subsequent Actions runs. Those historical records are not new 4B inference.
+
 **All three GitHub Actions jobs passed on 2026-09-11** in [run 34580694788](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788), testing [commit `cfac02190ff74c00c8facdb81b863b36c5f1981c`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c). The [retained verification record](../reports/cloud/2026-09-11/verification.json) records the observed results. This report describes that specific run; the repository badge follows the latest workflow state.
 
 ## What passed

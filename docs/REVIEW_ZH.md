@@ -4,25 +4,32 @@
 
 ## 现在的结论
 
-这批补充文件找回了最重要的 `results_v3.jsonl` 蒸馏数据，以及一次完整执行成功的训练 notebook。现有材料已经足够整理可重新训练的工程，不需要再靠记忆判断哪份 notebook 是最终版本。
+此前补充文件找回了 `results_v3.jsonl` 蒸馏数据和完整训练记录。本次 `FYP.zip` 新增的 16 份 FYP notebook 版本均已核查，其中选取 6 份关键记录纳入仓库，其余版本保留在原上传压缩包中。它们补强了历史来源，也暴露了算术结果的模型归属问题；完整索引见 [RECOVERED_NOTEBOOKS.md](RECOVERED_NOTEBOOKS.md)。
 
-项目已上传到[公开仓库](https://github.com/Alex-GUAN-666/Final-Year-Project)，并通过[云端验证 run 34580694788](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788)，对应[代码版本 `cfac021`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c)。**32 项单元测试、真实小型 Qwen3 CPU 训练/合并/推理、8 项 Docker 集成检查全部通过。** 云端重放全部 40 条历史回复后，base 12/20、merged 15/20 与原记录逐题一致，所有可比较的 stdout 也一致。详见[云端验证报告](CLOUD_VALIDATION.md)与[验证记录](../reports/cloud/2026-09-11/verification.json)。
+项目已上传到[公开仓库](https://github.com/Alex-GUAN-666/Final-Year-Project)，此前版本通过[云端验证 run 34580694788](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788)，对应[代码版本 `cfac021`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c)。**32 项单元测试、真实小型 Qwen3 CPU 训练/合并/推理、8 项 Docker 集成检查全部通过。** 云端重放全部 40 条历史回复后，base 12/20、merged 15/20 与原记录逐题一致，所有可比较的 stdout 也一致。详见[云端验证报告](CLOUD_VALIDATION.md)与[验证记录](../reports/cloud/2026-09-11/verification.json)。这些链接对应旧版本的检查范围，不代表本次新增 notebook 已在该次云端运行中验证。
 
 **完整 Qwen3-4B GPU 训练和推理尚未重新运行，旧合并模型权重尚未找回，也没有新的 4B 准确率结果。** 本次重放执行的是已经保存的程序；小模型训练和程序重放不能代替原 4B 模型重新生成答案。
 
-## 五个新文件分别解决了什么
+## 此前五个补充文件解决了什么
 
 | 补充文件 | 核查结果 | 在项目中的用途 |
 |---|---|---|
 | `results_v3(1).jsonl` | 1,125 条记录，251 条通过历史内容/正确标记过滤 | 补齐此前缺失的蒸馏池；原始字节保留为 `data/raw/results_v3.jsonl` |
-| `qwen4b-train-code-100920859-279441290..ipynb` | 36 个 cell；2025-11-18 的 Papermill 顺序执行成功，包含训练与 merge 日志 | 当前最完整的历史主训练运行证据 |
+| `qwen4b-train-code-100920859-279441290..ipynb` | 36 个 cell；2025-11-18 的 Papermill 顺序执行成功，包含训练与 merge 日志 | 已核对的历史主训练运行证据 |
 | `Qwen3_(4B)_SFFT_code_0811(2).ipynb` | 与此前同名 August 版本逐字节相同 | 保留原文件并标记重复，无须手工猜版本 |
 | `evaluation_results_base_cot_v5(1).csv` | 20 条，匹配原 base notebook 的问题、回答、代码与判分 | 补充 baseline 原始执行输出 |
 | `evaluation_results_merged_cot_v5(1).csv` | 与上一份 CSV 逐字节相同，也匹配 base | 文件名不能证明它是 merged 结果；保留原件并明确对应关系 |
 
 原来的 merged notebook 仍保存 15/20 的结果。因此不能把这两份 CSV 当成新的 base/merged 配对证据，也不能因为 CSV 重复就把原 notebook 中的 merged 记录抹掉。结果表逐项标注来源；缺失的历史 merged 成功样本 stdout 保持空值，没有用标准答案补造。云端重放产生的新 stdout 单独记录，不回填到历史记录中。
 
-目前共登记 20 个上传文件，其中两对文件是完全重复的内容。18 份代码/数据文件按原始字节纳入项目；两份论文单独保留。核查范围包括最终 PDF 的 42 页、早期 DOCX 正文与图表、9 个 notebook 文件的全部 cell 和保存的文本输出、3 个 `.py` 文件，以及全部数据/结果记录。数据按完整字段解析并做重复、来源、语法与一致性检查；这不等于对 1,125 条生成过程逐题完成了数学证明。
+此前一轮共登记 20 个上传文件，其中两对内容完全重复。18 份代码/数据文件以原件或声明过处理的公开副本纳入项目；两份论文单独保留。核查范围包括最终 PDF 的 42 页、早期 DOCX 正文与图表、9 个 notebook 文件的全部 cell 和保存的文本输出、3 个 `.py` 文件，以及全部数据/结果记录。数据按完整字段解析并做重复、来源、语法与一致性检查；这不等于对 1,125 条生成过程逐题完成了数学证明。
+
+## 本次新增 notebook 的结论
+
+- 四份算术 notebook 的题目、回答和对错标记完全相同，均为 `arithmetic_problems_v3.csv` 前 20 行的 17/20。配置和加载日志选择 `/kaggle/input/qwen-3/transformers/4b/1`，既不是项目 merged，也不是训练使用的 `4b-base/1`。不能把它们归为论文中的微调后 85%，也不能合并成 80 道独立题目。
+- 新增 CoT 顺序执行日志保存 base 12/20 和 merged 15/20。新 merged 版本没有打印完整回答，因此继续保留旧 notebook 的回答；已发现的 5/20 训练重叠仍然存在。
+- 早期 base 0/20、merged 2/20 的运行执行过系统提示词清空，后期恢复提示词，base 结果处理代码也有变化。这些版本按实际设置保留，不能作为同条件重复试验。
+- 新路径 `qwen3-4b-sfft-merged/transformers/default/1` 及 `modelId=508779` 是寻找旧权重的线索，尚未确认当前可下载，也不能证明与旧 `lora-2-3` 权重完全相同。本包仍无模型或 adapter 权重。
 
 ## 历史训练流程恢复到了什么程度
 
@@ -49,10 +56,10 @@
 
 | 类别 | 历史 baseline | 历史 merged | 当前证据强度 |
 |---|---:|---:|---|
-| 算术 | 14/20，70% | 17/20，85% | 论文记录；配对预测和具体 20 题身份缺失 |
-| 数学推理/论文中的证明类 | 12/20，60% | 15/20，75% | 原 notebook 配对结果与云端程序重放逐题一致；存在上述重建重叠问题 |
+| 算术 | 14/20，70% | 17/20，85% | 论文报告的比较尚未确认；新找回的 17/20 使用另一模型路径，不能补成这组配对证据 |
+| 数学推理/论文中的证明类 | 12/20，60% | 15/20，75% | 原 notebook 回复、新增顺序执行记录及旧云端程序重放支持；存在上述重建重叠问题 |
 
-两项差值都是 **15 个百分点**，每 20 题里多答对 3 题。指标实际检查生成代码的数值输出，使用 `rel_tol=1e-3, abs_tol=0`；论文写的 `1e-6` 与代码不同。它没有形式化验证证明，也不检查每段推理是否成立。
+论文报告的两项差值都是 **15 个百分点**，相当于每 20 题多答对 3 题；算术差值尚未由配对记录确认。指标实际检查生成代码的数值输出，使用 `rel_tol=1e-3, abs_tol=0`；论文写的 `1e-6` 与代码不同。它没有形式化验证证明，也不检查每段推理是否成立。
 
 进一步检查发现，251 条可用于这条 SFT 路径的蒸馏记录均标为 `COMPUTATIONAL`。所以 GitHub 更准确的定位是“算术与代码辅助数学推理”，避免把自动数值判分写成“证明正确率”。
 
@@ -78,7 +85,7 @@
 
 算术 prompt 要求 fenced Python 程序与数值结果；推理 prompt 要求解答过程和程序。原模板生成前缀包含 `<start_working_out>`，而训练目标不总是使用同样标签；这个历史设计也被保留和披露。
 
-新的 base/merged 推理使用相同 prompt、模板、EOS、贪心解码、生成长度和题目列表。标准答案只给评分器，不放进模型输入。原评估 notebook 中有一个未执行过的 prompt 清空 cell；直接 Run All 会改变条件，所以项目提供独立命令入口，避免依赖旧 notebook 的交互状态。
+新的 base/merged 推理使用相同 prompt、模板、EOS、贪心解码、生成长度和题目列表。标准答案只给评分器，不放进模型输入。旧手工保存的评估 notebook 含有未执行的 prompt 清空 cell，新增早期低分版本则确实执行过清空。直接 Run All 可能改变条件，所以项目提供独立命令入口，避免依赖旧 notebook 的交互状态。
 
 ## 已完成并实际检查的工程
 
@@ -90,7 +97,7 @@
 - `fyp.score`：在 Docker 中隔离执行、限定资源/超时并评分。
 - `fyp.compare`：核对题目、提示词、生成参数、计算精度、运行环境、Docker 镜像和评分条件，输出两类准确率及逐题变化。
 
-**当前云端验证：32 项单元测试通过；随机初始化的小型 Qwen3 完成 2 个真实 optimizer steps、adapter 保存、合并、重新加载与推理；8 项真实 Docker 集成检查通过。** 小模型用于检查训练链路，不作为数学评测对象。早期本地报告中的 adapter/merged 最大 logit 差约 `2.98e-8` 是该次本地测量值；本次云端证据单独保存。
+**上述旧版本云端验证记录：32 项单元测试通过；随机初始化的小型 Qwen3 完成 2 个真实 optimizer steps、adapter 保存、合并、重新加载与推理；8 项真实 Docker 集成检查通过。** 小模型用于检查训练链路，不作为数学评测对象。早期本地报告中的 adapter/merged 最大 logit 差约 `2.98e-8` 是该次本地测量值；本次云端证据单独保存。
 
 历史重放核对 40 条回复，其中 36 条有可提取程序，4 条无代码。全部 40 条完成评分，base 12/20、merged 15/20，逐题正确标记全部匹配，没有可比较 stdout 的差异，退出码为 0。前两次云端运行暴露了 Docker 清理竞态和集成测试的 `Path` 参数问题；修复后加入 5 项清理回归测试，最终全部任务通过。修复没有修改历史数据、原始回答或历史分数。
 
@@ -109,4 +116,4 @@
 
 ## 公开副本处理
 
-为避免公开个人电脑用户名和目录，9 份 notebook 去除了个人路径和界面缓存，2 份原始脚本中的本地路径改为通用路径。必要的纯文本训练/评估记录、执行计数和数学数据保留。`source_manifest.json` 同时记录原件哈希与公开副本哈希；公开副本不声称与原件字节相同。详见 `PUBLICATION_NOTES.md`。
+当前仓库包含 15 份 notebook 和共 24 份源文件/公开副本；`source_manifest.json` 登记 26 项来源，包括未打包的两份论文。公开派生副本为 15 份 notebook 和 2 份脚本，已处理个人路径及界面缓存。本次新增的 6 份 notebook 的来源和处理记录见 [RECOVERED_NOTEBOOKS.md](RECOVERED_NOTEBOOKS.md)。必要的纯文本训练/评估记录、执行计数和数学数据保留。`source_manifest.json` 同时记录原件哈希与公开副本哈希；公开副本不声称与原件字节相同。详见 `PUBLICATION_NOTES.md`。

@@ -171,5 +171,59 @@
     "repository_path": "archive/evaluation/qwen3_4b_base_reasoning_results_duplicate.csv",
     "disposition": "Second upload: byte-preserved; duplicate status and provenance documented in v2 review",
     "previous_repository_path": "archive/evaluation/evaluation_results_merged_cot_v5(1).csv"
+  },
+  {
+    "file": "qwen3-4b-merged-arithmetic-102115527-280966320..ipynb",
+    "bytes": 115447,
+    "sha256": "22602f319e26c61268a3c4f26188e63815618e4768b0e579df2c728ea3927ab4",
+    "repository_path": "archive/notebooks/qwen3_4b_arithmetic_qwen_4b_run_20251122.ipynb",
+    "disposition": "Recovered from FYP.zip. Public derivative removes notebook widgets and rich display payloads; all cell sources, execution counts, plain-text outputs and execution metadata are preserved. Arithmetic 17/20 using Qwen 4b/1, not the project merged checkpoint.",
+    "published_bytes": 103859,
+    "published_sha256": "7b3102747efb6bf400c1a73dd21f4641a18a21b3982e0eaa44c6298a6f420d4c"
+  },
+  {
+    "file": "qwen3-4b-base-cot-101438364-280343001..ipynb",
+    "bytes": 266637,
+    "sha256": "229b89daffe0eae746ea3b96e5659f1079e147134175a152402fa33ed824c3b5",
+    "repository_path": "archive/notebooks/qwen3_4b_base_reasoning_run_20251120.ipynb",
+    "disposition": "Recovered from FYP.zip. Public derivative removes notebook widgets and rich display payloads; all cell sources, execution counts, plain-text outputs and execution metadata are preserved. Sequential base reasoning run, 12/20; same saved responses as the earlier base notebook.",
+    "published_bytes": 255049,
+    "published_sha256": "09229884a7e04e3c989256eb85970275766be680917d0a1f79d3fd097252d9fe"
+  },
+  {
+    "file": "qwen3-4b-merged-cot-101438391-280930433..ipynb",
+    "bytes": 73932,
+    "sha256": "a0694c2af8b76e92dead0816a0fb7a90124465526bc13c2c4b393cfd28c9f9df",
+    "repository_path": "archive/notebooks/qwen3_4b_merged_reasoning_run_20251122.ipynb",
+    "disposition": "Recovered from FYP.zip. Public derivative removes notebook widgets and rich display payloads; all cell sources, execution counts, plain-text outputs and execution metadata are preserved. Sequential merged reasoning run, 15/20; complete responses remain in the earlier notebook.",
+    "published_bytes": 62344,
+    "published_sha256": "456625da602051c2a4f60c9679652f31460fcd05bbf135116f2fccc3647afd61"
+  },
+  {
+    "file": "qwen3-4b-base-cot-101438364-280327485..ipynb",
+    "bytes": 183498,
+    "sha256": "49343c302f61a36813c24fb167b2c6dc3b7d80a357a0a84b60c02873243d4004",
+    "repository_path": "archive/notebooks/qwen3_4b_base_reasoning_empty_prompt_20251120.ipynb",
+    "disposition": "Recovered from FYP.zip. Public derivative removes notebook widgets and rich display payloads; all cell sources, execution counts, plain-text outputs and execution metadata are preserved. Base run with cleared system prompts, 0/20.",
+    "published_bytes": 171910,
+    "published_sha256": "d42b48cb8010159a9add38ed3a81456fd58dd5110c3b4fc27726268ef818b7bd"
+  },
+  {
+    "file": "qwen3-4b-merged-cot-101438391-280392283..ipynb",
+    "bytes": 149240,
+    "sha256": "58935b3e955758e71519c0f8aceed09662db6e6dd91ad961f84252bc517b9e21",
+    "repository_path": "archive/notebooks/qwen3_4b_merged_reasoning_empty_prompt_20251120.ipynb",
+    "disposition": "Recovered from FYP.zip. Public derivative removes notebook widgets and rich display payloads; all cell sources, execution counts, plain-text outputs and execution metadata are preserved. Merged run with cleared system prompts, 2/20.",
+    "published_bytes": 137652,
+    "published_sha256": "0b07be9239a0b3d214ddf494fec559444984c2c25393d3a9b8426e7c56dd619f"
+  },
+  {
+    "file": "qwen4b-reference-100921272-279865191..ipynb",
+    "bytes": 94562,
+    "sha256": "41f6f135927acebe384f8af37766e45ede96680c1b6b2eff3f565e96816f6902",
+    "repository_path": "archive/notebooks/qwen3_4b_merged_model_resource_20251119.ipynb",
+    "disposition": "Recovered from FYP.zip. Public derivative removes notebook widgets and rich display payloads; all cell sources, execution counts, plain-text outputs and execution metadata are preserved. Merged inference run identifying the Kaggle model resource.",
+    "published_bytes": 82974,
+    "published_sha256": "7936037786e22a542e6faaed3eb9edaa2b7ab5171ecae82ea4565f52ae7f3fe3"
   }
 ]

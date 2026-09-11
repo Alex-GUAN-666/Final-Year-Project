@@ -1,0 +1,976 @@
+{
+  "protocol": "recovered_notebook_records_v1",
+  "status": "passed",
+  "model_training_executed": false,
+  "model_inference_executed": false,
+  "notebook_code_executed": false,
+  "generated_programs_executed": false,
+  "new_model_accuracy_generated": false,
+  "evaluation_runs": [
+    {
+      "notebook": "archive/notebooks/qwen3_4b_arithmetic_qwen_4b_run_20251122.ipynb",
+      "sha256": "7b3102747efb6bf400c1a73dd21f4641a18a21b3982e0eaa44c6298a6f420d4c",
+      "recorded_execution": {
+        "start_time": "2025-11-22T14:30:49.305169",
+        "end_time": "2025-11-22T14:44:20.464044",
+        "sequential_executed_cells": 13,
+        "saved_exception": null
+      },
+      "recorded_model": {
+        "load_base_model_flag": true,
+        "active_model_path": "/kaggle/input/qwen-3/transformers/4b/1",
+        "configuration_cell": 6,
+        "loading_cell": 8
+      },
+      "evaluation_cell": 14,
+      "correct": 17,
+      "total": 20,
+      "recorded_accuracy": 0.85,
+      "empty_prompt_reset_cells": [],
+      "dataset": "arithmetic_problems_v3.csv",
+      "dataset_rows": "first 20, exact question text and order",
+      "records": [
+        {
+          "number": 1,
+          "question": "Calculate the value of (4408237944462001 // 6541744901)",
+          "recorded_correct": true,
+          "dataset_gold": "673862",
+          "response_printed": true,
+          "response_sha256": "a7f05471419da76a0f6d3ce6045c42a5eb028469b1a6ad9ed853a2be12f5aff6"
+        },
+        {
+          "number": 2,
+          "question": "Calculate the value of (276935827296260017158 OR 8585191569)",
+          "recorded_correct": true,
+          "dataset_gold": "276935827303964339351",
+          "response_printed": true,
+          "response_sha256": "95a0e87a3e05325e3d39001167db748cfa77df66eb2988027295e9fab0b1a986"
+        },
+        {
+          "number": 3,
+          "question": "Calculate the value of (3085602681745 AND 81603131110598372888964)",
+          "recorded_correct": true,
+          "dataset_gold": "43624960384",
+          "response_printed": true,
+          "response_sha256": "20d86e1a994e0102a32c8f0f198b48ad87ce7e5b6c98d4455b3803b9ae4eabae"
+        },
+        {
+          "number": 4,
+          "question": "Calculate the value of (6492150 - 830353 OR 36871813401 - 779480916042)",
+          "recorded_correct": false,
+          "dataset_gold": "-742603719441",
+          "response_printed": true,
+          "response_sha256": "ae11bcea166be7e6e108ebc7d675401a59e349f63bc0c3db6c0a06be72fe0879"
+        },
+        {
+          "number": 5,
+          "question": "Calculate the value of (120777238616 * 33863879 - 316700646247373 OR 90672230584726)",
+          "recorded_correct": false,
+          "dataset_gold": "4089689022549021087",
+          "response_printed": true,
+          "response_sha256": "5282d59e292766293aad321cbbf2ba304fa43c45b90f4bfeb3461bfa52fafe53"
+        },
+        {
+          "number": 6,
+          "question": "Calculate the value of (7551674519680407020693537624 + 585735023032157664078262)",
+          "recorded_correct": true,
+          "dataset_gold": "7552260254703439178357615886",
+          "response_printed": true,
+          "response_sha256": "2acd66be83063ccd099e720d38726f082a6552b44532c2c72d2ee96d78984061"
+        },
+        {
+          "number": 7,
+          "question": "Calculate the value of (57.7030 * e)",
+          "recorded_correct": true,
+          "dataset_gold": "156.8530244796648",
+          "response_printed": true,
+          "response_sha256": "8b47b9c6f1b2d99dcc81ab1daf4715b222c153db2b7a102d9302d2dc6624ebfd"
+        },
+        {
+          "number": 8,
+          "question": "Calculate the value of (51.3499 + pi)",
+          "recorded_correct": true,
+          "dataset_gold": "54.49148872961668",
+          "response_printed": true,
+          "response_sha256": "375e201dbe15f45832e0c5e9f0998ff092f64159f9e024bf44f59d058c4b0ad8"
+        },
+        {
+          "number": 9,
+          "question": "Calculate the value of (92.3849 / pi)",
+          "recorded_correct": true,
+          "dataset_gold": "29.407030738796337",
+          "response_printed": true,
+          "response_sha256": "a2cbaa17df33094e6a5b3de515d69ad69499416d436e70faa4804638d08d773d"
+        },
+        {
+          "number": 10,
+          "question": "Calculate the value of (2511755267911261525699 // 5707070999765150246231)",
+          "recorded_correct": true,
+          "dataset_gold": "0",
+          "response_printed": true,
+          "response_sha256": "6755d57dba68714f3630b9f848ede7ab8b7bcfd4d87376bb4bb794c208fa6c0d"
+        },
+        {
+          "number": 11,
+          "question": "Calculate the value of (64894573636746 * 437933950 + 69333761 // 625298958224542)",
+          "recorded_correct": true,
+          "dataset_gold": "28419536966306040926700",
+          "response_printed": true,
+          "response_sha256": "653c22f7eb1c0ab9741bedd773e4af1d6be00ba8578f8abf637339f9385af692"
+        },
+        {
+          "number": 12,
+          "question": "Calculate the value of (979845764368716949412311956092 * 2050848410452315)",
+          "recorded_correct": true,
+          "dataset_gold": "2009515128344016746352726616548697896139752980",
+          "response_printed": true,
+          "response_sha256": "f8325c58e085d71e8f109ccbe6b9db265bce60cf3bc2fbfc7a6f640c43980578"
+        },
+        {
+          "number": 13,
+          "question": "Calculate the value of (115004776096 // 234217396397753575505)",
+          "recorded_correct": true,
+          "dataset_gold": "0",
+          "response_printed": true,
+          "response_sha256": "dc572257a02b57bb01dd6426f12f54394b9b6efdd5b5ac802f6b175ae1d0fdae"
+        },
+        {
+          "number": 14,
+          "question": "Calculate the value of (39606170915350910037 XOR 8948533652743727950214539)",
+          "recorded_correct": true,
+          "dataset_gold": "8948568484390864736231902",
+          "response_printed": true,
+          "response_sha256": "af98f18bbb4963b413b32074751df1826e8e11a7005b497ab1285060e9dd84e8"
+        },
+        {
+          "number": 15,
+          "question": "Calculate the value of (9790000 OR 5235505425 + 7706768798088)",
+          "recorded_correct": true,
+          "dataset_gold": "7712013806265",
+          "response_printed": true,
+          "response_sha256": "7a4aab038c91e473c9a0f18a6cc23c97d449ddbba34cb8cd7f137b8a698b1465"
+        },
+        {
+          "number": 16,
+          "question": "Calculate the value of (175359697167529 - 3108231849 + 9550441741557)",
+          "recorded_correct": true,
+          "dataset_gold": "184907030677237",
+          "response_printed": true,
+          "response_sha256": "ed3a38030fbf96d63f48b9d2c8f11991eb88ee5b40c20321e40945052360d4da"
+        },
+        {
+          "number": 17,
+          "question": "Calculate the value of (94710 * 77779 XOR 5962013685303)",
+          "recorded_correct": true,
+          "dataset_gold": "5968203489781",
+          "response_printed": true,
+          "response_sha256": "4df164804345fbb5944fe377cf0b2abe4371954c383a734a7c95deea1df29555"
+        },
+        {
+          "number": 18,
+          "question": "Calculate the value of (7511856812985694373 + 98866071452)",
+          "recorded_correct": true,
+          "dataset_gold": "7511856911851765825",
+          "response_printed": true,
+          "response_sha256": "7859f52ceeacdf7b6759fb1682d924c0bc6252b5086f0a0a8a7d5d757fb9fddd"
+        },
+        {
+          "number": 19,
+          "question": "Calculate the value of (68416244 << 1)",
+          "recorded_correct": true,
+          "dataset_gold": "136832488",
+          "response_printed": true,
+          "response_sha256": "fe4d4869bc4773a7e63e35a6f33a8131d9a1468deaf9933c582042a41976925e"
+        },
+        {
+          "number": 20,
+          "question": "Calculate the value of (549522671498021 OR 4302183538269 - 450070 XOR 24874891)",
+          "recorded_correct": false,
+          "dataset_gold": "549660249030637",
+          "response_printed": true,
+          "response_sha256": "e071c125701d57157834022d41cf81c7859a8664698c01a470dba848b34f5dcf"
+        }
+      ]
+    },
+    {
+      "notebook": "archive/notebooks/qwen3_4b_base_reasoning_run_20251120.ipynb",
+      "sha256": "09229884a7e04e3c989256eb85970275766be680917d0a1f79d3fd097252d9fe",
+      "recorded_execution": {
+        "start_time": "2025-11-20T15:49:59.329449",
+        "end_time": "2025-11-20T16:31:50.421494",
+        "sequential_executed_cells": 12,
+        "saved_exception": null
+      },
+      "recorded_model": {
+        "load_base_model_flag": true,
+        "active_model_path": "/kaggle/input/qwen-3/transformers/4b-base/1",
+        "configuration_cell": 6,
+        "loading_cell": 8
+      },
+      "evaluation_cell": 13,
+      "correct": 12,
+      "total": 20,
+      "recorded_accuracy": 0.6,
+      "empty_prompt_reset_cells": [],
+      "dataset": "random_samples_for_inference.csv",
+      "dataset_rows": "first 20, exact question text and order",
+      "records": [
+        {
+          "number": 1,
+          "question": "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+          "recorded_correct": true,
+          "dataset_gold": "4",
+          "response_printed": true,
+          "response_sha256": "89dfc44d144a54527ef6cfd65e2c9a4079af044b4a426c9d026e03798d23fcbd"
+        },
+        {
+          "number": 2,
+          "question": "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+          "recorded_correct": false,
+          "dataset_gold": "46",
+          "response_printed": true,
+          "response_sha256": "4b382eb279d8e228f3d600d165931660efe068fe009e9396630a34e7f1efa85c"
+        },
+        {
+          "number": 3,
+          "question": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+          "recorded_correct": false,
+          "dataset_gold": "64",
+          "response_printed": true,
+          "response_sha256": "cd3d3ad63ce85269673a883d7f8f23efb15eee1166749d7876574c811f3a68b1"
+        },
+        {
+          "number": 4,
+          "question": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+          "recorded_correct": true,
+          "dataset_gold": "12",
+          "response_printed": true,
+          "response_sha256": "a90ae4170a50d736da4a1934e6d35f09d6de787e7277f13716494d566353c453"
+        },
+        {
+          "number": 5,
+          "question": "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+          "recorded_correct": false,
+          "dataset_gold": "66",
+          "response_printed": true,
+          "response_sha256": "d3f35731771986a770bebeda276075a75bbaec3e0367ef1d9227d645a7229029"
+        },
+        {
+          "number": 6,
+          "question": "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "29dda32b594805b5c32ed6a57ef326fdd2b59e545492a69526040decc9246350"
+        },
+        {
+          "number": 7,
+          "question": "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+          "recorded_correct": false,
+          "dataset_gold": "2",
+          "response_printed": true,
+          "response_sha256": "e031714a51a128e8b80d4dae212627f635d01aedaa228db9b0c944b56027aae5"
+        },
+        {
+          "number": 8,
+          "question": "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+          "recorded_correct": true,
+          "dataset_gold": "1",
+          "response_printed": true,
+          "response_sha256": "c0dfbedf711a2a35a19d58b1621af11ddc338da0e40b69543d2ae0fe4ba7683c"
+        },
+        {
+          "number": 9,
+          "question": "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+          "recorded_correct": false,
+          "dataset_gold": "36",
+          "response_printed": true,
+          "response_sha256": "a5c039e36cb00bbefd660e7db2d4c3395f60029edcfa47629e38462ce4e127ea"
+        },
+        {
+          "number": 10,
+          "question": "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+          "recorded_correct": true,
+          "dataset_gold": "233",
+          "response_printed": true,
+          "response_sha256": "4aeee9c28e49b28191146b8d200063cf0cb83e8183fe3eab781810c8c9bbc73d"
+        },
+        {
+          "number": 11,
+          "question": "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+          "recorded_correct": false,
+          "dataset_gold": "148",
+          "response_printed": true,
+          "response_sha256": "1a9b79b97791c897cf45c5412427d94f5cc2bd32f80e96f205e53e06f474590c"
+        },
+        {
+          "number": 12,
+          "question": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+          "recorded_correct": true,
+          "dataset_gold": "4",
+          "response_printed": true,
+          "response_sha256": "7ae6b2d4e83d424812fa79a044de744b707730416dab83d6da72d26a4ec308b5"
+        },
+        {
+          "number": 13,
+          "question": "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+          "recorded_correct": true,
+          "dataset_gold": "105",
+          "response_printed": true,
+          "response_sha256": "1a33b77807d044c66032c5e9c8adf940d61eba43e42674ac35b6206f7eac15f8"
+        },
+        {
+          "number": 14,
+          "question": "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+          "recorded_correct": true,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "58280c46027b5603bf18b4faac132393ebcc4e47378d2cd5163adfa694c666d9"
+        },
+        {
+          "number": 15,
+          "question": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+          "recorded_correct": true,
+          "dataset_gold": "59",
+          "response_printed": true,
+          "response_sha256": "dbda638d25df1e54a412bd3bc534d4b509c3835d13dcb0acec805b18aea2a1c3"
+        },
+        {
+          "number": 16,
+          "question": "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+          "recorded_correct": true,
+          "dataset_gold": "2",
+          "response_printed": true,
+          "response_sha256": "908ad2b7a1f7d8846f997232a91d39e9e069bff16447eb7c1cdc49e36016ad4f"
+        },
+        {
+          "number": 17,
+          "question": "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+          "recorded_correct": true,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "431c1cf8e333adbff34d68407e0124ccf1fe9000de492edda954ce21ec98d5ba"
+        },
+        {
+          "number": 18,
+          "question": "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+          "recorded_correct": true,
+          "dataset_gold": "15",
+          "response_printed": true,
+          "response_sha256": "5b3290cb28e4157e4805d0bab156abb3856bc08ba746eac0cfa3596461f232e7"
+        },
+        {
+          "number": 19,
+          "question": "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+          "recorded_correct": true,
+          "dataset_gold": "6",
+          "response_printed": true,
+          "response_sha256": "505ebfdeb714f3e072fe1eae565378a2a1944c93b1c9eff041e5bfd6d04b7e8e"
+        },
+        {
+          "number": 20,
+          "question": "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+          "recorded_correct": false,
+          "dataset_gold": "4851",
+          "response_printed": true,
+          "response_sha256": "0af5414282c9b47d803ba199430a53e0d01882e39e36c4e674d8b19ad8e8501b"
+        }
+      ]
+    },
+    {
+      "notebook": "archive/notebooks/qwen3_4b_merged_reasoning_run_20251122.ipynb",
+      "sha256": "456625da602051c2a4f60c9679652f31460fcd05bbf135116f2fccc3647afd61",
+      "recorded_execution": {
+        "start_time": "2025-11-22T12:13:27.326242",
+        "end_time": "2025-11-22T12:56:25.414784",
+        "sequential_executed_cells": 13,
+        "saved_exception": null
+      },
+      "recorded_model": {
+        "load_base_model_flag": false,
+        "active_model_path": "/kaggle/input/qwen3-4b-sfft-merged/transformers/default/1/Qwen3-4B-SFFT-merged",
+        "configuration_cell": 6,
+        "loading_cell": 8
+      },
+      "evaluation_cell": 14,
+      "correct": 15,
+      "total": 20,
+      "recorded_accuracy": 0.75,
+      "empty_prompt_reset_cells": [],
+      "dataset": "random_samples_for_inference.csv",
+      "dataset_rows": "first 20, exact question text and order",
+      "records": [
+        {
+          "number": 1,
+          "question": "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+          "recorded_correct": true,
+          "dataset_gold": "4",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 2,
+          "question": "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+          "recorded_correct": false,
+          "dataset_gold": "46",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 3,
+          "question": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+          "recorded_correct": true,
+          "dataset_gold": "64",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 4,
+          "question": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+          "recorded_correct": true,
+          "dataset_gold": "12",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 5,
+          "question": "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+          "recorded_correct": true,
+          "dataset_gold": "66",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 6,
+          "question": "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+          "recorded_correct": true,
+          "dataset_gold": "28",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 7,
+          "question": "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+          "recorded_correct": true,
+          "dataset_gold": "2",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 8,
+          "question": "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+          "recorded_correct": true,
+          "dataset_gold": "1",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 9,
+          "question": "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+          "recorded_correct": true,
+          "dataset_gold": "36",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 10,
+          "question": "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+          "recorded_correct": false,
+          "dataset_gold": "233",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 11,
+          "question": "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+          "recorded_correct": false,
+          "dataset_gold": "148",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 12,
+          "question": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+          "recorded_correct": true,
+          "dataset_gold": "4",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 13,
+          "question": "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+          "recorded_correct": true,
+          "dataset_gold": "105",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 14,
+          "question": "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 15,
+          "question": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+          "recorded_correct": true,
+          "dataset_gold": "59",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 16,
+          "question": "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+          "recorded_correct": true,
+          "dataset_gold": "2",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 17,
+          "question": "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+          "recorded_correct": true,
+          "dataset_gold": "28",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 18,
+          "question": "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+          "recorded_correct": false,
+          "dataset_gold": "15",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 19,
+          "question": "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+          "recorded_correct": true,
+          "dataset_gold": "6",
+          "response_printed": false,
+          "response_sha256": null
+        },
+        {
+          "number": 20,
+          "question": "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+          "recorded_correct": true,
+          "dataset_gold": "4851",
+          "response_printed": false,
+          "response_sha256": null
+        }
+      ]
+    },
+    {
+      "notebook": "archive/notebooks/qwen3_4b_base_reasoning_empty_prompt_20251120.ipynb",
+      "sha256": "d42b48cb8010159a9add38ed3a81456fd58dd5110c3b4fc27726268ef818b7bd",
+      "recorded_execution": {
+        "start_time": "2025-11-20T14:50:22.003900",
+        "end_time": "2025-11-20T15:11:25.258008",
+        "sequential_executed_cells": 13,
+        "saved_exception": null
+      },
+      "recorded_model": {
+        "load_base_model_flag": true,
+        "active_model_path": "/kaggle/input/qwen-3/transformers/4b-base/1",
+        "configuration_cell": 6,
+        "loading_cell": 8
+      },
+      "evaluation_cell": 14,
+      "correct": 0,
+      "total": 20,
+      "recorded_accuracy": 0.0,
+      "empty_prompt_reset_cells": [
+        10
+      ],
+      "dataset": "random_samples_for_inference.csv",
+      "dataset_rows": "first 20, exact question text and order",
+      "records": [
+        {
+          "number": 1,
+          "question": "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+          "recorded_correct": false,
+          "dataset_gold": "4",
+          "response_printed": true,
+          "response_sha256": "29c141c6626e3224302ac88793bf3ab9ee2387b6775ba286a55233e87afc30b9"
+        },
+        {
+          "number": 2,
+          "question": "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+          "recorded_correct": false,
+          "dataset_gold": "46",
+          "response_printed": true,
+          "response_sha256": "fa45178d0eb87550262363f36a757f975d35becfc5b91d192a9d6b6800a1c10c"
+        },
+        {
+          "number": 3,
+          "question": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+          "recorded_correct": false,
+          "dataset_gold": "64",
+          "response_printed": true,
+          "response_sha256": "a7657a7dd28b6dc2196b77aaa8e088f51981ba47c849186e2e1a36f2a1953e43"
+        },
+        {
+          "number": 4,
+          "question": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+          "recorded_correct": false,
+          "dataset_gold": "12",
+          "response_printed": true,
+          "response_sha256": "6c91d09cca39defc5399d67f26421da71a6059df37c38265e81298488f232c75"
+        },
+        {
+          "number": 5,
+          "question": "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+          "recorded_correct": false,
+          "dataset_gold": "66",
+          "response_printed": true,
+          "response_sha256": "9c28fa44559cffca528db2ba3c8419bacfb6db56f55fb111d7c6d9569bfd65ed"
+        },
+        {
+          "number": 6,
+          "question": "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "79dfaa09d2776bfa5667be2cc8b85487c06ce31ef79b42e703b1bd63428798a4"
+        },
+        {
+          "number": 7,
+          "question": "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+          "recorded_correct": false,
+          "dataset_gold": "2",
+          "response_printed": true,
+          "response_sha256": "04d52d3c5ae2c016dbb4eb567c878aa429f67ac6f8ff7e2557fe29ae613f52ad"
+        },
+        {
+          "number": 8,
+          "question": "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+          "recorded_correct": false,
+          "dataset_gold": "1",
+          "response_printed": true,
+          "response_sha256": "7cae9949b68ab72c1135f2082ad9c6367b430fe713336ef954032f03d4d1cdc3"
+        },
+        {
+          "number": 9,
+          "question": "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+          "recorded_correct": false,
+          "dataset_gold": "36",
+          "response_printed": true,
+          "response_sha256": "f41391bbfdb0ba3f3eeb63fd035440f97957a3c60ddaacd1d2c2c20005964e0b"
+        },
+        {
+          "number": 10,
+          "question": "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+          "recorded_correct": false,
+          "dataset_gold": "233",
+          "response_printed": true,
+          "response_sha256": "d3594ceb3e593b256170911ec5fa0fc063298efa68cdcdc8bcafd3d96d176226"
+        },
+        {
+          "number": 11,
+          "question": "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+          "recorded_correct": false,
+          "dataset_gold": "148",
+          "response_printed": true,
+          "response_sha256": "7dc9d3d2125e1ffa5e8537e958da4f337a52a9d62c06b5780443c28bd60fb8fb"
+        },
+        {
+          "number": 12,
+          "question": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+          "recorded_correct": false,
+          "dataset_gold": "4",
+          "response_printed": true,
+          "response_sha256": "857326bb35e3395f5cfe8c06215677244fa43a9f5cceb1fd6142237111c2cc2c"
+        },
+        {
+          "number": 13,
+          "question": "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+          "recorded_correct": false,
+          "dataset_gold": "105",
+          "response_printed": true,
+          "response_sha256": "1ac27aaa0fad3070b91f9f0da1b3203b0fc7afa31a6801f16c9a95091a0b6d36"
+        },
+        {
+          "number": 14,
+          "question": "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "70d5fe3df083635c58bbc2e3d78b8d6e125f1bde0820047d485ad32e7f93292e"
+        },
+        {
+          "number": 15,
+          "question": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+          "recorded_correct": false,
+          "dataset_gold": "59",
+          "response_printed": true,
+          "response_sha256": "01417ac1e2c950ab3801f38ff834ea2e54b494033ce5c54b34b941d9c71f8d1b"
+        },
+        {
+          "number": 16,
+          "question": "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+          "recorded_correct": false,
+          "dataset_gold": "2",
+          "response_printed": true,
+          "response_sha256": "0715d285d3ca2cf72435e46dcfc0d0e6d22b2d24394eb4b93ae0fefccc02b85c"
+        },
+        {
+          "number": 17,
+          "question": "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "57905b96c1dca20f0fe415c5f9ddd71cdafb2694ed0363655737afcc469f1352"
+        },
+        {
+          "number": 18,
+          "question": "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+          "recorded_correct": false,
+          "dataset_gold": "15",
+          "response_printed": true,
+          "response_sha256": "eeaafea1cd78aa85c0a80e5b5ab8382a29ffd694baaf86530df0e709daa0b55b"
+        },
+        {
+          "number": 19,
+          "question": "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+          "recorded_correct": false,
+          "dataset_gold": "6",
+          "response_printed": true,
+          "response_sha256": "cdeba6602c0fef3d16e27eb86aec280087a89208ab96330ba841da1ad04c6e1b"
+        },
+        {
+          "number": 20,
+          "question": "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+          "recorded_correct": false,
+          "dataset_gold": "4851",
+          "response_printed": true,
+          "response_sha256": "beba51ff725ea8a9d7b1dfd636f1273db64135c541f6ec8d7198cd52ab1a15ab"
+        }
+      ]
+    },
+    {
+      "notebook": "archive/notebooks/qwen3_4b_merged_reasoning_empty_prompt_20251120.ipynb",
+      "sha256": "0b07be9239a0b3d214ddf494fec559444984c2c25393d3a9b8426e7c56dd619f",
+      "recorded_execution": {
+        "start_time": "2025-11-20T18:36:12.272087",
+        "end_time": "2025-11-20T18:58:01.795354",
+        "sequential_executed_cells": 13,
+        "saved_exception": null
+      },
+      "recorded_model": {
+        "load_base_model_flag": false,
+        "active_model_path": "/kaggle/input/qwen3-4b-sfft-merged/transformers/default/1/Qwen3-4B-SFFT-merged",
+        "configuration_cell": 6,
+        "loading_cell": 8
+      },
+      "evaluation_cell": 14,
+      "correct": 2,
+      "total": 20,
+      "recorded_accuracy": 0.1,
+      "empty_prompt_reset_cells": [
+        10
+      ],
+      "dataset": "random_samples_for_inference.csv",
+      "dataset_rows": "first 20, exact question text and order",
+      "records": [
+        {
+          "number": 1,
+          "question": "Find the maximum value of a positive constant $a$ such that $\\sqrt{x + y} + \\sqrt{y} \\geq \\sqrt{x + ay}$ for all $x \\geq 0, y \\geq 0$.",
+          "recorded_correct": false,
+          "dataset_gold": "4",
+          "response_printed": true,
+          "response_sha256": "5196286ec125246cf4445ad724bc1f9bb583227ddb62a3fac1c4427b5e26af6f"
+        },
+        {
+          "number": 2,
+          "question": "A person is walking down an escalator moving downwards and takes a total of 26 steps to reach the bottom in 30 seconds. When running down the escalator, the same person takes a total of 34 steps and reaches the bottom in 18 seconds. How many steps are on the escalator at a time?",
+          "recorded_correct": false,
+          "dataset_gold": "46",
+          "response_printed": true,
+          "response_sha256": "fae9a0c315af50824576eb09de18ba2982dc6ddf0116a837c177ac54f8c3a762"
+        },
+        {
+          "number": 3,
+          "question": "In a summer camp with 100 students, each student can sing, dance, or act. Some students have more than one talent, but no student has all three talents. There are 42 students who cannot sing, 65 students who cannot dance, and 29 students who cannot act. How many students have two of these talents?",
+          "recorded_correct": false,
+          "dataset_gold": "64",
+          "response_printed": true,
+          "response_sha256": "3f656d81e8f1b1e46fdc799cc0c388feec4c123654b856adaf5749702e972331"
+        },
+        {
+          "number": 4,
+          "question": "Suppose that the equations $y = x^3 - 3x + 5$ and $x + 2y = 8$ intersect at the points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$. What is the value of $x_1 + x_2 + x_3 + y_1 + y_2 + y_3$?",
+          "recorded_correct": false,
+          "dataset_gold": "12",
+          "response_printed": true,
+          "response_sha256": "eedd03368bdaeb450b1b287d100a2c595db3b5116ebc7e4036ae60c035160f38"
+        },
+        {
+          "number": 5,
+          "question": "How many nonnegative integer solutions are there to the equation $x + y + z = 10$?",
+          "recorded_correct": true,
+          "dataset_gold": "66",
+          "response_printed": true,
+          "response_sha256": "f97fdfb443c3f4560d336651df8821674834759e39566280ea2a272ec4fd01a0"
+        },
+        {
+          "number": 6,
+          "question": "A rectangle is inscribed in a circle with an area of $32\\pi$. The area of the rectangle is $34$. Find the perimeter of the rectangle.",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "90ae98ccbfd357c0f45f695c7f6bc4d4080e5b41a3b3ef3fd89768c77b7fac5b"
+        },
+        {
+          "number": 7,
+          "question": "At his usual rowing rate, a man rows 15 miles downstream in five hours less time than it takes him to return. If he doubles his usual rowing rate, the time downstream is only one hour less than the time upstream. Find the rate of the stream's current in miles per hour.",
+          "recorded_correct": false,
+          "dataset_gold": "2",
+          "response_printed": true,
+          "response_sha256": "876042ce2120d9a907db8c0c291064c7934d9633c2421923e244c7925c41aece"
+        },
+        {
+          "number": 8,
+          "question": "Let \\( p \\) be a prime number satisfying \\( p > 3 \\). Evaluate \\( \\left(\\frac{3^p + 1}{p}\\right) \\), where the brackets represent the Legendre symbol.",
+          "recorded_correct": true,
+          "dataset_gold": "1",
+          "response_printed": true,
+          "response_sha256": "b3a9e23e8c4305a04cc06e8be37759cfb45461de23b17ba9907f5b7a6424d65c"
+        },
+        {
+          "number": 9,
+          "question": "The triangle with side lengths $3, 5$, and $k$ has an area of $6$ for two distinct values of $k$: $x$ and $y$. Compute $|x^2 - y^2|$.",
+          "recorded_correct": false,
+          "dataset_gold": "36",
+          "response_printed": true,
+          "response_sha256": "821a14689b38b5c049103770af3cc2a7ac07c28809c3d82a6770f59441c9e6d0"
+        },
+        {
+          "number": 10,
+          "question": "A positive integer is said to be *friendly* if it is composed of the digits in the set $\\{1,2\\}$ and the sum of its digits is equal to $12$. How many friendly positive integers are there?",
+          "recorded_correct": false,
+          "dataset_gold": "233",
+          "response_printed": true,
+          "response_sha256": "c311f2344f98e9e66d8f6bd50a3e3c183a61bf252906671c071139f0257f4ccd"
+        },
+        {
+          "number": 11,
+          "question": "Find the smallest positive multiple of $15$ such that every digit of $n$ is either $0$ or $2$. Compute $\\frac{n}{15}$.",
+          "recorded_correct": false,
+          "dataset_gold": "148",
+          "response_printed": true,
+          "response_sha256": "69f088f1511789672951dfade9c6c212b08df2d398cd39d236709fdbb5026e80"
+        },
+        {
+          "number": 12,
+          "question": "What is the average book width, in centimeters, of five books with the following widths: $6$, $\\frac{1}{2}$, $1$, $2.5$, and $10$?",
+          "recorded_correct": false,
+          "dataset_gold": "4",
+          "response_printed": true,
+          "response_sha256": "ef6557fd85806e5420382bf2fd1fdbb4ca8b38a93d8bc377a23f3a4eb692ed5a"
+        },
+        {
+          "number": 13,
+          "question": "A club has 15 members and needs to choose 2 members to be co-presidents. In how many ways can the club choose its co-presidents?",
+          "recorded_correct": false,
+          "dataset_gold": "105",
+          "response_printed": true,
+          "response_sha256": "ffb528bc8c0b54529a05c7036f33c2c026e08757a5e4140fb5f8dba02c9cbb68"
+        },
+        {
+          "number": 14,
+          "question": "Tim had 5 red marbles and 2 green marbles. If he adds \\( n \\) more green marbles to his collection, the probability of drawing a green marble triples. What is the value of \\( n \\)?",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "1baec77bc547510fed47b0f7ba71e889cbbdd40e44082c4689869760e5494a1f"
+        },
+        {
+          "number": 15,
+          "question": "Qin Shi Huang arranges his warriors into lines such that the number of warriors in each line is even. When he arranges them into $2$ lines, there is a remainder of $1$; into $3$ lines, a remainder of $2$; into $4$ lines, a remainder of $3$; into $5$ lines, a remainder of $4$; and into $6$ lines, a remainder of $5$. Find the minimum number of warriors he has.",
+          "recorded_correct": false,
+          "dataset_gold": "59",
+          "response_printed": true,
+          "response_sha256": "c811498a70bc6f2279536832d31daa2a5e05c9b013edd61ab905f1e985bff512"
+        },
+        {
+          "number": 16,
+          "question": "If 3 is the least prime factor of \\( a \\) and 7 is the least prime factor of \\( b \\), find the least prime factor of \\( a + b \\). (Can you suggest a method other than hit and trial?)",
+          "recorded_correct": false,
+          "dataset_gold": "2",
+          "response_printed": true,
+          "response_sha256": "0161702e8cc34f273dfca2482bcb51af7389fa69a9a81208952e03092013e112"
+        },
+        {
+          "number": 17,
+          "question": "Given the function $f$ such that $f(3k) = k + f(3k-3)$ for any integer $k$, and $f(3) = 1$, find $f(21)$.",
+          "recorded_correct": false,
+          "dataset_gold": "28",
+          "response_printed": true,
+          "response_sha256": "c9978007dd91274ea9d6f1e4e1129fbf3c17cabb6188c51801b00985d7dc166b"
+        },
+        {
+          "number": 18,
+          "question": "Find the minimum value of the function \\( f(x) = |x - p| + |x - 15| + |x - p - 15| \\) where \\( x \\in [p, 15] \\) and \\( p \\in (0, 15) \\).",
+          "recorded_correct": false,
+          "dataset_gold": "15",
+          "response_printed": true,
+          "response_sha256": "465fbfd3b353b3d433cbfa3249e50fe4a024ad6581c0e187521a85dd5a7fe5ab"
+        },
+        {
+          "number": 19,
+          "question": "Find the minimum value of \\(x + y + z\\), where \\(x, y, z\\) are positive real numbers satisfying \\(xy^2z^3 = 108\\).",
+          "recorded_correct": false,
+          "dataset_gold": "6",
+          "response_printed": true,
+          "response_sha256": "51deeef53b0b0819cc19c8c3ec96e94e1cf36fcc80c17dcd49d567dcb51c336c"
+        },
+        {
+          "number": 20,
+          "question": "How many solutions does the equation $x + y + z = 100$ have on the set of positive integers?",
+          "recorded_correct": false,
+          "dataset_gold": "4851",
+          "response_printed": true,
+          "response_sha256": "02354e9f1ff20bf1143caf19bef2b0b337129d9b2a7dfd39b300877bde8071da"
+        }
+      ]
+    }
+  ],
+  "prior_archive_comparison": {
+    "base_questions_flags_and_responses_match": true,
+    "merged_questions_and_flags_match": true,
+    "new_merged_responses_not_printed": true,
+    "old_merged_response_source_still_required": true
+  },
+  "model_resource": {
+    "notebook": "archive/notebooks/qwen3_4b_merged_model_resource_20251119.ipynb",
+    "sha256": "7936037786e22a542e6faaed3eb9edaa2b7ab5171ecae82ea4565f52ae7f3fe3",
+    "recorded_execution": {
+      "start_time": "2025-11-19T09:00:54.069299",
+      "end_time": "2025-11-19T09:05:59.437500",
+      "sequential_executed_cells": 21,
+      "saved_exception": null
+    },
+    "active_model_path": "/kaggle/input/qwen3-4b-sfft-merged/transformers/default/1/Qwen3-4B-SFFT-merged",
+    "kaggle_input": {
+      "isSourceIdPinned": false,
+      "modelId": 508779,
+      "modelInstanceId": 493349,
+      "sourceId": 653102,
+      "sourceType": "modelInstanceVersion"
+    },
+    "weights_present": false,
+    "checkpoint_identity_authenticated": false
+  },
+  "limitations": [
+    "These are saved notebook records, not new model inference or independent checkpoint authentication.",
+    "Arithmetic 17/20 selected qwen-3/transformers/4b/1, not the project's merged checkpoint or 4b-base/1.",
+    "The thesis arithmetic 14/20 versus 17/20 paired experiment remains unrecovered.",
+    "Reasoning 12/20 and 15/20 retain 5/20 reconstructed training-question overlap.",
+    "Early 0/20 and 2/20 runs used empty system prompts and are separate settings.",
+    "The recovered 15/20 merged run does not print model responses; prior notebook responses remain necessary.",
+    "Numeric execution flags do not establish mathematical proof validity.",
+    "Kaggle input IDs and loading logs are recovery clues; original checkpoint weights are absent."
+  ]
+}

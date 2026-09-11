@@ -2,7 +2,7 @@
 
 更新时间：2026-09-11。项目已上传至[公开 GitHub 仓库](https://github.com/Alex-GUAN-666/Final-Year-Project)。
 
-**云端验证全部通过：**[run 34580694788](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788)，测试[代码版本 `cfac02190ff74c00c8facdb81b863b36c5f1981c`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c)。[完整验证说明](CLOUD_VALIDATION.md)与[验证记录](../reports/cloud/2026-09-11/verification.json)保留检查范围和证据。
+**已有云端验证快照全部通过：**[run 34580694788](https://github.com/Alex-GUAN-666/Final-Year-Project/actions/runs/34580694788)，测试[代码版本 `cfac02190ff74c00c8facdb81b863b36c5f1981c`](https://github.com/Alex-GUAN-666/Final-Year-Project/commit/cfac02190ff74c00c8facdb81b863b36c5f1981c)。[完整验证说明](CLOUD_VALIDATION.md)与[验证记录](../reports/cloud/2026-09-11/verification.json)保留检查范围和证据。下表描述该次运行，不覆盖后来新增 notebook 的核查。最新工作流状态以仓库 Actions 为准。
 
 ## 面试官可以独立核验什么
 
@@ -18,11 +18,15 @@
 
 方法论、教师分工、数据筛选、训练损失、LoRA 参数和评分规则见 [METHODOLOGY.md](METHODOLOGY.md)。本地 tokenizer 检查重建了历史 452 条与新实验 372 条训练样本；云端工作流没有重新下载 tokenizer，这两类证据分别记录。
 
+## 新增历史材料
+
+本次核查了 16 份新增 FYP notebook 版本，选取 6 份关键记录纳入仓库；其余版本保留在原上传压缩包中。重复代码、不同运行和提示词设置见 [RECOVERED_NOTEBOOKS.md](RECOVERED_NOTEBOOKS.md)。新增 CoT 顺序执行记录支持 base 12/20、merged 15/20；旧 merged notebook 继续保留完整回答。四份算术记录均为同一组 20 题的 17/20，但实际加载 `qwen-3/transformers/4b/1`，不是项目 merged 或训练基础模型 `4b-base/1`。这些是静态核查的历史记录，不是新完成的 4B 实验。
+
 ## 尚未完成的模型实验
 
 完整 Qwen3-4B GPU 训练和推理尚未重新运行，原微调权重没有恢复。云端小模型训练与历史程序重放不能证明重新训练一定得到原分数，也没有产生新的 4B 准确率。
 
-历史推理 60% → 75% 有 5/20 重建训练重合；算术 70% → 85% 只有论文报告，未恢复配对预测及确切题目名单。新的 187 题划分尚无完成的 4B 基准结果。
+历史推理 60% → 75% 仍有 5/20 重建训练重合。算术 70% → 85% 仍是未经配对记录确认的论文报告；新找回的另一模型 17/20 记录不能替代这项证据。模型资源名 `qwen3-4b-sfft-merged` 和 `modelId=508779` 仅提供查找线索，原权重仍未恢复。新的 187 题划分尚无完成的 4B 基准结果。
 
 ## 下载后核验
 

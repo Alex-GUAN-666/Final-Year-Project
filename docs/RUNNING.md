@@ -49,7 +49,7 @@ python -m fyp.prepare --protocol historical_candidates --output-dir outputs/hist
 python -m fyp.tokenize --data-dir outputs/historical-candidates --output outputs/historical-token-filter.json
 ```
 
-Expected counts are **560 candidates → 452 retained**. This intentionally retains historical duplicates and known test overlap. The associated evaluation set is only the confirmed first 20 reasoning CSV rows; the original arithmetic 20-row subset is unknown. Do not present this option as a clean evaluation protocol.
+Expected counts are **560 candidates → 452 retained**. This intentionally retains historical duplicates and known test overlap. The associated evaluation set remains the confirmed first 20 reasoning CSV rows. Later recovered arithmetic logs identify the first 20 arithmetic CSV rows, but use the separate Qwen `4b/1` model resource; they do not authenticate the thesis's base/merged arithmetic comparison. See [RECOVERED_NOTEBOOKS.md](RECOVERED_NOTEBOOKS.md). Do not present this option as a clean evaluation protocol.
 
 ## 3. Train, merge and infer
 

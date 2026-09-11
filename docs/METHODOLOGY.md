@@ -56,7 +56,9 @@ Using the supplied prompts/template and official tokenizer revision `906bfd4b4dc
 
 The 143 reasoning/code rows contain 112 normalized unique questions. These counts agree with the saved training notebook. That agreement supports the reconstruction; it does not authenticate the missing original Kaggle tokenizer files, original weights, or every historical training detail.
 
-The historical reasoning evaluation uses the first 20 rows of `random_samples_for_inference.csv`. Under the documented tokenizer reconstruction, **rows 5, 12, 13, 14, and 20 overlap retained training questions**. All 100 evaluation rows match recovered distillation records in question, answer, reference solution, and reference code. Thus the historical reasoning set is derived from the same source pool and cannot support an independent held-out generalization claim.
+The historical reasoning evaluation uses the first 20 rows of `random_samples_for_inference.csv`. Under the documented tokenizer reconstruction, **rows 5, 12, 13, 14, and 20 overlap retained training questions**. All 100 reasoning evaluation rows match recovered distillation records in question, answer, reference solution, and reference code. Thus the historical reasoning set is derived from the same source pool and cannot support an independent held-out generalization claim.
+
+The recovered arithmetic runs use the first 20 rows of `arithmetic_problems_v3.csv`, but load the Qwen `4b/1` resource rather than the project merged model or the training base at `4b-base/1`. Their question identities therefore do not resolve the thesis's missing paired arithmetic comparison.
 
 ### New `question_disjoint_v1` experiment
 
@@ -120,14 +122,16 @@ This metric is end-to-end **numeric execution-output accuracy**. A correct print
 
 | Claim | Evidence and permitted interpretation |
 |---|---|
-| Arithmetic 14/20 → 17/20 (70% → 85%) | Reported in the November thesis. Paired predictions and exact identities of these 20 questions were not recovered. It cannot currently be recomputed from paired arithmetic outputs. |
-| Reasoning 12/20 → 15/20 (60% → 75%) | The original base and merged notebooks contain aligned saved outputs/flags. Reconciliation verifies the base result against recorded stdout. Five questions overlap reconstructed training. |
-| Two newly recovered evaluation CSVs | They are byte-identical and both match the **base** notebook. The file called `merged` does not supply an independent merged run. |
+| Arithmetic 14/20 → 17/20 (70% → 85%) | Reported in the November thesis. Four recovered notebooks record 17/20 on the first 20 arithmetic CSV rows, but select `qwen-3/transformers/4b/1`, not the project merged model or `4b-base/1`. The thesis comparison still lacks authenticated paired predictions and subset identities. |
+| Reasoning 12/20 → 15/20 (60% → 75%) | The original notebooks contain aligned saved responses/flags, supported by recovered sequential execution logs. The new merged export omits full responses, so the earlier notebook remains necessary. Five questions overlap reconstructed training. |
+| Two evaluation CSVs named base/merged | They are byte-identical and both match the **base** notebook. The file called `merged` does not supply an independent merged run. |
 | Merged successful stdout | Not printed in the archived notebook for its 15 successful cases; those values remain unknown, rather than being filled with references. Five failed outputs are recovered. |
 | New split accuracy | No completed full 4B training and paired new-split benchmark is supplied. It must be produced by running the new experiment. |
 | Tiny-model smoke test | Actual small CPU training, merge, reload, and inference test software integration. A randomly initialized miniature Qwen3 does not measure 4B mathematical accuracy. |
 
-The historical changes are **+15 percentage points** in each category. They are small-sample observations with the above provenance limits. There is no single-teacher ablation, multiple-seed result, formal-proof checker, or evidence that a specific component alone caused the improvement. A new run may obtain different scores, including no improvement; preserve the complete results either way.
+The thesis reports **+15 percentage points** in each category; the arithmetic comparison remains unverified. The reasoning logs support a small-sample observation with the above provenance limits. There is no single-teacher ablation, multiple-seed result, formal-proof checker, or evidence that a specific component alone caused the improvement. A new run may obtain different scores, including no improvement; preserve the complete results either way.
+
+The [recovered notebook review](RECOVERED_NOTEBOOKS.md) also preserves early base 0/20 and merged 2/20 runs in which both system prompts were cleared. Later runs restore the prompts, and the base result-processing code also changes. These are different evaluation settings, not additional same-condition trials. Four arithmetic exports repeat identical questions, answers and correctness flags; they represent 20 questions, not 80 independent samples.
 
 ## 6. Reproduce the evidence, then run a new experiment
 

@@ -1,5 +1,10 @@
 # Paired CoT evaluation notebook audit
 
+Additional sequential Kaggle exports now document the prompt-preserved 12/20 and
+15/20 runs, along with earlier empty-prompt runs. The review below concerns the
+original two interactive exports; see [additional experiment records](RECOVERED_NOTEBOOKS.md)
+for the new sources, model resource identifiers and unchanged evaluation limits.
+
 > **Superseded interpretation — updated evidence, 2026-09-11.** The historical scores below are not an independent held-out generalization result. Reconstructing the 143 retained distilled training examples with the official Qwen3 tokenizer identifies exact training/evaluation question overlap in **5 of 20** evaluated rows: **5, 12, 13, 14, 20**. The original training tokenizer revision and exact merged checkpoint are still unauthenticated. Both subsequently uploaded evaluation CSVs are byte-identical copies of the **base** run, including the file named `merged`. Their complete responses/code match the base notebook and supply the 12 previously missing successful base stdout values. Merged successful stdout remains unobserved. The earlier statements below that `results_v3.jsonl` is missing, overlap is unknown, or all successful stdout is absent describe the initial audit and are superseded. Consult [current CSV reconciliation](../reports/evaluation_reconciliation.md), [current distilled-data audit](../reports/recovered_data_audit.json), and [enriched historical records](../reports/cot_historical_results_enriched.json). Original observations and scores remain below for traceability.
 
 Audited on 2026-09-11. Cell references are **one-based**, counting the introductory Markdown cell.

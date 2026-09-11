@@ -27,8 +27,10 @@ The original project reported the following results:
 
 | Task | Base model | Fine-tuned model | Available evidence |
 |---|---:|---:|---|
-| Arithmetic | 14/20 (70%) | 17/20 (85%) | Thesis results; the original paired predictions and exact question subset were not recovered |
-| Mathematical reasoning | 12/20 (60%) | 15/20 (75%) | Saved notebook responses; program replay reproduces every recorded correctness flag |
+| Arithmetic | 14/20 (70%) | 17/20 (85%) | Thesis-reported comparison; recovered 17/20 logs used a different model path, so the paired claim remains unverified |
+| Mathematical reasoning | 12/20 (60%) | 15/20 (75%) | Saved responses and recovered sequential execution logs; program replay reproduces every recorded correctness flag |
+
+Four recovered arithmetic notebooks record the same 17/20 result on the first 20 rows of `arithmetic_problems_v3.csv`. Their configuration and loading logs select `/kaggle/input/qwen-3/transformers/4b/1`, not the project merged model or the training base at `4b-base/1`. They do not establish the thesis's arithmetic fine-tuning gain. The [recovered notebook review](docs/RECOVERED_NOTEBOOKS.md) records model paths, repeated runs and prompt changes.
 
 The reasoning evaluation contains **five questions that overlap the reconstructed training set**, so the 15-percentage-point increase should not be treated as an independent held-out result. The metric measures numerical program output, not the validity of a mathematical proof.
 
